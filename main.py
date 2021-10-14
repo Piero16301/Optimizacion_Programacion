@@ -3,7 +3,7 @@ import pandas as pd
 from convertidorLocalizacion import convertirDireccionACoordenadas
 
 if __name__ == "__main__":
-    """"
+    """
     # Lectura inicial archivo Excel de COESTI
     excelInicial = pd.read_excel('Data_COESTI.xlsx', sheet_name='CL', header=None)
     dataFrameInicial = pd.DataFrame(excelInicial)
@@ -29,16 +29,14 @@ if __name__ == "__main__":
 
     # Reiniciar los índices de las filas
     indicesReiniciados = dataFiltroSugerido.reset_index(drop=True)
-    """
 
-    """
-    # Guardar como CSV
-    indicesReiniciados.to_csv('Data_Formateada.csv', index=False, header=True, sep=',')
+    # Guardar como Excel
+    indicesReiniciados.to_excel('Data_Formateada.xlsx', index=False, header=True)
     print(indicesReiniciados.to_string())
     """
 
-    # Carga de datos desde CSV
-    indicesReiniciados = pd.read_csv('Data_Formateada.csv', sep=',')
+    # Carga de datos desde Excel
+    indicesReiniciados = pd.read_excel('Data_Formateada.xlsx')
     # print(indicesReiniciados.to_string(index=True))
 
     # Columnas seleccionadas => Centro, Distrito, Estación, Material, Descripción, Producto, Sugerido
@@ -65,20 +63,26 @@ if __name__ == "__main__":
     totalCoesti = totalG90 + totalG95 + totalG97 + totalDiesel
     print('Total COESTI:', totalCoesti)
 
-    # Listas de latitudes y longitudes
+    # Listas de direcciones, latitudes y longitudes
+    direcciones = []
     latitudes = []
     longitudes = []
 
     # Obtención de coordenadas
     for index, row, in columnasImportantes.iterrows():
         direccion = 'Gasolinera Primax ' + row['Estación'] + ' ' + row['Distrito']
-        latitud, longitud = convertirDireccionACoordenadas(direccion)
+        direccionFormal, latitud, longitud = convertirDireccionACoordenadas(direccion)
         # print(latitud, longitud)
+        direcciones.append(direccionFormal)
         latitudes.append(latitud)
         longitudes.append(longitud)
 
-    # Agregar columnas de latitud y longitud al dataframe
-    columnasImportantes.insert(7, 'Latitud', latitudes, True)
-    columnasImportantes.insert(8, 'Longitud', longitudes, True)
+    # Agregar columnas de direccion, latitud y longitud al dataframe
+    columnasImportantes.insert(7, 'Dirección', direcciones, True)
+    columnasImportantes.insert(8, 'Latitud', latitudes, True)
+    columnasImportantes.insert(9, 'Longitud', longitudes, True)
 
     print(columnasImportantes.to_string())
+
+    # Guardar como Excel
+    columnasImportantes.to_excel('Data_Direcciones.xlsx', index=False, header=True)

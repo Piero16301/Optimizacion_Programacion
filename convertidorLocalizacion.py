@@ -18,4 +18,8 @@ def convertirDireccionACoordenadas(direccion):
 
     resultado = response['results'][0]
 
-    return resultado['geometry']['location']['lat'], resultado['geometry']['location']['lng']
+    direccionFormal = resultado['formatted_address']
+    latitud = resultado['geometry']['location']['lat']
+    longitud = resultado['geometry']['location']['lng']
+
+    return direccionFormal, latitud, longitud
