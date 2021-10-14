@@ -1,5 +1,7 @@
 import pandas as pd
 
+from convertidorLocalizacion import convertirDireccionACoordenadas
+
 if __name__ == "__main__":
     """"
     # Lectura inicial archivo Excel de COESTI
@@ -27,12 +29,56 @@ if __name__ == "__main__":
 
     # Reiniciar los índices de las filas
     indicesReiniciados = dataFiltroSugerido.reset_index(drop=True)
+    """
 
+    """
     # Guardar como CSV
-    # indicesReiniciados.to_csv('Data_Formateada.csv', index=True, header=True)
     indicesReiniciados.to_csv('Data_Formateada.csv', index=False, header=True, sep=',')
     print(indicesReiniciados.to_string())
     """
 
-    datosCargados = pd.read_csv('Data_Formateada.csv', sep=',')
-    print(datosCargados.to_string(index=True))
+    # Carga de datos desde CSV
+    indicesReiniciados = pd.read_csv('Data_Formateada.csv', sep=',')
+    # print(indicesReiniciados.to_string(index=True))
+
+    # Columnas seleccionadas => Centro, Distrito, Estación, Material, Descripción, Producto, Sugerido
+    columnasImportantes = indicesReiniciados.iloc[:, [0, 6, 7, 8, 9, 10, 29]]
+    print(columnasImportantes.to_string(), "\n")
+
+    # Calculo de la cantidad de G90
+    totalG90 = columnasImportantes[columnasImportantes['Producto'] == 'G90']['Sugerido'].sum()
+    print('Cantidad G90:', totalG90)
+
+    # Calculo de la cantidad de G95
+    totalG95 = columnasImportantes[columnasImportantes['Producto'] == 'G95']['Sugerido'].sum()
+    print('Cantidad G95:', totalG95)
+
+    # Calculo de la cantidad de G97
+    totalG97 = columnasImportantes[columnasImportantes['Producto'] == 'G97']['Sugerido'].sum()
+    print('Cantidad G97:', totalG97)
+
+    # Calculo de la cantidad de Diesel
+    totalDiesel = columnasImportantes[columnasImportantes['Producto'] == 'Diesel']['Sugerido'].sum()
+    print('Cantidad Diesel:', totalDiesel, '\n')
+
+    # Cantidad total de COESTI
+    totalCoesti = totalG90 + totalG95 + totalG97 + totalDiesel
+    print('Total COESTI:', totalCoesti)
+
+    # Listas de latitudes y longitudes
+    latitudes = []
+    longitudes = []
+
+    # Obtención de coordenadas
+    for index, row, in columnasImportantes.iterrows():
+        direccion = 'Gasolinera Primax ' + row['Estación'] + ' ' + row['Distrito']
+        latitud, longitud = convertirDireccionACoordenadas(direccion)
+        # print(latitud, longitud)
+        latitudes.append(latitud)
+        longitudes.append(longitud)
+
+    # Agregar columnas de latitud y longitud al dataframe
+    columnasImportantes.insert(7, 'Latitud', latitudes, True)
+    columnasImportantes.insert(8, 'Longitud', longitudes, True)
+
+    print(columnasImportantes.to_string())
