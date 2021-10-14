@@ -1,43 +1,21 @@
-import pandas as pd
+from PreprocesamientoCOESTI import organizarData, guardarExcel, aplicarFiltros, cargarExcel
 
-from convertidorLocalizacion import convertirDireccionACoordenadas
+from ConvertidorLocalizacion import convertirDireccionACoordenadas
 
 if __name__ == "__main__":
     """
-    # Lectura inicial archivo Excel de COESTI
-    excelInicial = pd.read_excel('Data_COESTI.xlsx', sheet_name='CL', header=None)
-    dataFrameInicial = pd.DataFrame(excelInicial)
+    # Organizar data del Excel Inicial
+    dataFrameEncabezado = organizarData('Data_COESTI.xlsx')
 
-    # Se eliminan filas y columnas no necesarias
-    filtroFilas = dataFrameInicial.iloc[9:836, 1:37]
-    nombresColumnas = ['Centro', 'JOP', 'GOP', 'Transportes', 'Zona', 'Departamento', 'Distrito', 'Estación',
-                       'Material', 'Descripción', 'Producto', 'Concatenado', 'Capacidad DGH', 'Inventario Max Deseado',
-                       'Muerto', 'Varilla', 'Descarga', 'Stock Operativo', 'VTA Promedio Emergencia', 'X 1', 'X 2',
-                       'VTA Promedio %', 'VTA Día 04', 'VTA Día 05', 'Incremento VTA', 'Días Stock Emergencia',
-                       'VTA Normal', 'Días Stock Normal', 'Pedido', 'Sugerido', 'Días Stock 1', 'Días Stock 2', 'Y 1',
-                       'Cantidad Aproximada Carga', 'Observación', 'Z 1']
-
-    # Asignación de encabezados de todas las columnas
-    dataFrameEncabezado = pd.DataFrame(filtroFilas)
-    dataFrameEncabezado.columns = nombresColumnas
-
-    # Filtro de filas de zona Lima
-    dataFiltroZona = dataFrameEncabezado[dataFrameEncabezado['Zona'] == 'LIMA']
-
-    # Filtro de filas con cantidad sugerida diferente de nulo
-    dataFiltroSugerido = dataFiltroZona[dataFiltroZona['Sugerido'].notna()]
-
-    # Reiniciar los índices de las filas
-    indicesReiniciados = dataFiltroSugerido.reset_index(drop=True)
+    # Aplicar filtros
+    indicesReiniciados = aplicarFiltros(dataFrameEncabezado)
 
     # Guardar como Excel
-    indicesReiniciados.to_excel('Data_Formateada.xlsx', index=False, header=True)
-    print(indicesReiniciados.to_string())
+    guardarExcel(indicesReiniciados, 'Data_Formateada.xlsx')
     """
 
     # Carga de datos desde Excel
-    indicesReiniciados = pd.read_excel('Data_Formateada.xlsx')
-    # print(indicesReiniciados.to_string(index=True))
+    indicesReiniciados = cargarExcel('Data_Formateada.xlsx', 'Sheet1', 0)
 
     # Columnas seleccionadas => Centro, Distrito, Estación, Material, Descripción, Producto, Sugerido
     columnasImportantes = indicesReiniciados.iloc[:, [0, 6, 7, 8, 9, 10, 29]]
