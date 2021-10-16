@@ -30,7 +30,7 @@ class VisualizadorMapa:
                     lat=promLatitud,
                     lon=promLongitud
                 ),
-                style='satellite-streets',
+                style='streets',
                 zoom=10
             ),
         )
