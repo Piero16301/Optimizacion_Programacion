@@ -3,7 +3,7 @@ from VisualizadorMapa import VisualizadorMapa
 
 if __name__ == "__main__":
     # Entrada de Excel de COESTI
-    procesador = ProcesamientoCOESTI('Data_COESTI.xlsx')
+    procesador = ProcesamientoCOESTI('datos_entrada/Data_COESTI.xlsx')
 
     # Procesamiento de data de COESTI
     procesador.preProcesarData()
@@ -12,5 +12,6 @@ if __name__ == "__main__":
     dataFrame = procesador.dataFrame
     print(dataFrame.to_string())
 
+    print('Mostrando localización de estaciones...')
     visualizador = VisualizadorMapa(dataFrame)
     visualizador.visualizarEstaciones()

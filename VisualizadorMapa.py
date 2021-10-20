@@ -1,10 +1,11 @@
 import plotly.graph_objects as go
+import json
 
 
 class VisualizadorMapa:
     def __init__(self, dataFrame):
-        self.mapboxToken =\
-            'pk.eyJ1IjoicGllcm8xNjMwMSIsImEiOiJja3VzbDgwbWE1Zzg0MzBxajFtN2tzcDVtIn0.Xlc1UX7d_VVo4LzfmKhumw'
+        credenciales = json.load(open('credenciales.json'))
+        self.mapboxToken = credenciales['keyMapbox']
         self.dataFrame = dataFrame
 
     def visualizarEstaciones(self):

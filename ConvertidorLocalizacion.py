@@ -1,8 +1,11 @@
 import requests
+import json
 
 
 class ConvertidorLocalizacion:
     def __init__(self):
+        credenciales = json.load(open('credenciales.json'))
+        self.mapsToken = credenciales['keyGoogleMaps']
         self.direcciones = {}
 
     def convertirDireccionACoordenadas(self, centro, direccion):
@@ -16,7 +19,7 @@ class ConvertidorLocalizacion:
             URLGoogleMaps = 'https://maps.googleapis.com/maps/api/geocode/json'
 
             parametros = {
-                'key': 'AIzaSyDXwhfcs7ssjeFlSVe7OWboZVG-G1z69Tc',
+                'key': self.mapsToken,
                 'address': direccion,
                 'sensor': 'false',
                 'region': 'peru',

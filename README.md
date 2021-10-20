@@ -1,6 +1,15 @@
 # Optimizacion de Programacion
 Software para la programación de pedidos transportados hacia las estaciones de servicio.
 
+## Dependencias del software
+Ejecutar los siguientes comandos, usando Python 3.8.0 como base.
+```
+pip install pandas
+pip install plotly
+pip install requests
+pip install openpyxl
+```
+
 ## Modelos de mapas disponibles
 Los modelos disponibles en las librería de Plotly son los siguientes.
 

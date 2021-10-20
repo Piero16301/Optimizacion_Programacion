@@ -56,20 +56,24 @@ class ProcesamientoCOESTI:
 
     def preProcesarData(self):
         # Organizar data del Excel Inicial
-        # self.dataFrame = self.organizarData('CL')
-        #
-        # Aplicar filtros
-        # self.dataFrame = self.aplicarFiltros()
-        # print(self.dataFrame.to_string())
-        #
-        # Guardar como Excel
-        # self.guardarExcel(self.dataFrame, 'Data_Formateada.xlsx', False, True)
+        print('Leyendo data de COESTI...')
+        self.dataFrame = self.organizarData('CL')
 
-        """
+        # Aplicar filtros
+        print('Aplicando filtros...')
+        self.dataFrame = self.aplicarFiltros()
+        # print(self.dataFrame.to_string())
+
+        # Guardar como Excel
+        print('Guardando data filtrada...')
+        guardarExcel(self.dataFrame, 'datos_intermedios/Data_Formateada.xlsx', False, True)
+
         # Carga de datos desde Excel
-        self.dataFrame = cargarExcel('Data_Formateada.xlsx', 'Sheet1', 0)
+        print('Cargando data filtrada...')
+        self.dataFrame = cargarExcel('datos_intermedios/Data_Formateada.xlsx', 'Sheet1', 0)
 
         # Columnas seleccionadas => Centro, Distrito, Estación, Material, Descripción, Producto, Sugerido
+        print('Seleccionando columnas...')
         self.dataFrame = self.dataFrame.iloc[:, [0, 6, 7, 8, 9, 10, 29]]
         # print(columnasImportantes.to_string(), "\n")
 
@@ -77,6 +81,7 @@ class ProcesamientoCOESTI:
         tiposCombustible = ['G90', 'G95', 'G97', 'Diesel']
         totalCombustible = []
 
+        print('Calculando cantidad total de productos...')
         for tipo in tiposCombustible:
             totalCombustible.append(self.dataFrame[self.dataFrame['Producto'] == tipo]['Sugerido'].sum())
             print('Cantidad', tipo + ':', totalCombustible[-1])
@@ -92,6 +97,7 @@ class ProcesamientoCOESTI:
 
         convertidorLocalizacion = ConvertidorLocalizacion()
 
+        print('Calculando localización de estaciones...')
         # Obtención de coordenadas
         for index, row, in self.dataFrame.iterrows():
             direccion = 'Gasolinera Primax ' + row['Estación'] + ' ' + row['Distrito'] + ' Perú'
@@ -111,8 +117,9 @@ class ProcesamientoCOESTI:
         # print(self.dataFrame.to_string())
 
         # Guardar como Excel
-        guardarExcel(self.dataFrame, 'Data_Direcciones.xlsx', False, True)
-        """
+        print('Guardando data de localización...')
+        guardarExcel(self.dataFrame, 'datos_intermedios/Data_Direcciones.xlsx', False, True)
 
         # Carga de datos desde Excel
-        self.dataFrame = cargarExcel('Data_Direcciones.xlsx', 'Sheet1', 0)
+        print('Cargando data de localización...')
+        self.dataFrame = cargarExcel('datos_intermedios/Data_Direcciones.xlsx', 'Sheet1', 0)
