@@ -55,6 +55,7 @@ class ProcesamientoCOESTI:
         return indicesReiniciados
 
     def preProcesarData(self):
+        """
         # Organizar data del Excel Inicial
         print('Leyendo data de COESTI...')
         self.dataFrame = self.organizarData('CL')
@@ -66,11 +67,11 @@ class ProcesamientoCOESTI:
 
         # Guardar como Excel
         print('Guardando data filtrada...')
-        guardarExcel(self.dataFrame, 'datos_intermedios/Data_Formateada.xlsx', False, True)
+        guardarExcel(self.dataFrame, 'datos_intermedios/Data_Formateada_COESTI.xlsx', False, True)
 
         # Carga de datos desde Excel
         print('Cargando data filtrada...')
-        self.dataFrame = cargarExcel('datos_intermedios/Data_Formateada.xlsx', 'Sheet1', 0)
+        self.dataFrame = cargarExcel('datos_intermedios/Data_Formateada_COESTI.xlsx', 'Sheet1', 0)
 
         # Columnas seleccionadas => Centro, Distrito, Estación, Material, Descripción, Producto, Sugerido
         print('Seleccionando columnas...')
@@ -118,8 +119,9 @@ class ProcesamientoCOESTI:
 
         # Guardar como Excel
         print('Guardando data de localización...')
-        guardarExcel(self.dataFrame, 'datos_intermedios/Data_Direcciones.xlsx', False, True)
+        guardarExcel(self.dataFrame, 'datos_intermedios/Data_Direcciones_COESTI.xlsx', False, True)
+        """
 
         # Carga de datos desde Excel
         print('Cargando data de localización...')
-        self.dataFrame = cargarExcel('datos_intermedios/Data_Direcciones.xlsx', 'Sheet1', 0)
+        self.dataFrame = cargarExcel('datos_intermedios/Data_Direcciones_COESTI.xlsx', 'Sheet1', 0)

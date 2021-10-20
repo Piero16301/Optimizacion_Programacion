@@ -1,7 +1,12 @@
+from timeit import default_timer as timer
+
 from ProcesamientoCOESTI import ProcesamientoCOESTI
 from VisualizadorMapa import VisualizadorMapa
 
 if __name__ == "__main__":
+    # Inicio de tiempo
+    inicio = timer()
+
     # Entrada de Excel de COESTI
     procesador = ProcesamientoCOESTI('datos_entrada/Pedidos_COESTI.xlsx')
 
@@ -15,3 +20,7 @@ if __name__ == "__main__":
     print('Mostrando localización de estaciones...')
     visualizador = VisualizadorMapa(dataFrame)
     visualizador.visualizarEstaciones()
+
+    # Fin de tiempo
+    fin = timer()
+    print('Tiempo total:', round(fin - inicio, 2), 'segundos')

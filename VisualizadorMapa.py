@@ -7,9 +7,10 @@ class VisualizadorMapa:
         credenciales = json.load(open('credenciales.json'))
         self.mapboxToken = credenciales['keyMapbox']
         self.dataFrame = dataFrame
+        self.mapa = go.Figure()
 
     def visualizarEstaciones(self):
-        mapa = go.Figure(go.Scattermapbox(
+        self.mapa = go.Figure(go.Scattermapbox(
             lat=self.dataFrame['Latitud'],
             lon=self.dataFrame['Longitud'],
             mode='markers',
@@ -23,7 +24,7 @@ class VisualizadorMapa:
         promLatitud = self.dataFrame['Latitud'].mean()
         promLongitud = self.dataFrame['Longitud'].mean()
 
-        mapa.update_layout(
+        self.mapa.update_layout(
             autosize=True,
             mapbox=dict(
                 accesstoken=self.mapboxToken,
@@ -36,4 +37,4 @@ class VisualizadorMapa:
             ),
         )
 
-        mapa.show()
+        self.mapa.show()
