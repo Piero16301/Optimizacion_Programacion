@@ -28,7 +28,13 @@ class ConvertidorLocalizacion:
 
             request = requests.get(URLGoogleMaps, params=parametros)
             response = request.json()
-            resultado = response['results'][0]
+
+            if len(response['results']) == 0:
+                self.direcciones[centro] = {"direccionFormal": 'No encontrado', "latitud": 0,
+                                            "longitud": 0}
+                return 'No encontrado', 0, 0
+            else:
+                resultado = response['results'][0]
 
             direccionFormal = resultado['formatted_address']
             latitud = resultado['geometry']['location']['lat']

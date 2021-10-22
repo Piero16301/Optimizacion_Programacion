@@ -1,0 +1,1802 @@
+{
+    "3004353": {
+        "Estación": "INVERSIONES SALCANI S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "ASIA",
+        "Dirección": "MZ.A LT.1 AL 4"
+    },
+    "3006302": {
+        "Estación": "ASIA GRIFOS Y SERVICIOS GRALES.S.A.",
+        "Zona": "LIMA",
+        "Distrito": "ASIA",
+        "Dirección": "CARRETERA PANAMERICANA SUR KM. 97.5"
+    },
+    "1010501": {
+        "Estación": "FULL SERVICE SAN VICENTE S R LTDA.",
+        "Zona": "LIMA",
+        "Distrito": "CAÑETE",
+        "Dirección": "AV.MARISCAL BENAVIDES NRO.2433"
+    },
+    "3003208": {
+        "Estación": "CONSULTORA NORQUEENS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "HUARAL",
+        "Dirección": "LOTIZADORA SEÑOR DE LOS"
+    },
+    "1013194": {
+        "Estación": "PETRO REAL GAS EIRL",
+        "Zona": "LIMA",
+        "Distrito": "SANTA EULALIA",
+        "Dirección": "AV.SIMON BOLIVAR NRO.1170 ASOC.SAN"
+    },
+    "3004111": {
+        "Estación": "ESTACION DE SERVICIOS HUAURA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "HUAURA",
+        "Dirección": "CARRETERA PANAMERICANA NORTE KM.145"
+    },
+    "3000653": {
+        "Estación": "PETROSUR S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "CARRETERA PANAMERICANA SUR KM. 19.5"
+    },
+    "1002634": {
+        "Estación": "INVERSIONES LUMARCO S.A.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "CAR. CENTRAL KM. 11.2 A.H. LA"
+    },
+    "1002661": {
+        "Estación": "ESTACION DE SERVICIOS MAYORAZGO",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV. PROLG.JAVIER PRADO MZA. A LOTE."
+    },
+    "3000601": {
+        "Estación": "INVERSIONES PACO HUAYCAN S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV. ANDRES AVELINO CACERES MZA. P"
+    },
+    "1012420": {
+        "Estación": "EMP.TRANSP.Y SERV.EL SOL DE STA.CLA",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV.SAN ALFONSO MZA.LOTE 58"
+    },
+    "1002643": {
+        "Estación": "ESTACION CORMAR S.A.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "CAR. CENTRAL NRO. 2.5"
+    },
+    "3000603": {
+        "Estación": "SERVICENTRO LA MERCED S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "ESQ. AV. URUBAMBA CON AV. LOS"
+    },
+    "1003117": {
+        "Estación": "ESTACION DE SERVICIOS HORNA S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV. SEPARADORA INDUSTRIAL NRO. 809"
+    },
+    "1013193": {
+        "Estación": "CORGAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "LAS TORRES NRO. 497 URB. LOS SAUCES"
+    },
+    "3001096": {
+        "Estación": "INVERSIONES GARAY S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "SANTA ANITA",
+        "Dirección": "AV. HUANCARAY MZ. A-6 LOTES DEL 44"
+    },
+    "1000146": {
+        "Estación": "SERVICENTRO LOS ROSALES S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV. AYACUCHO NRO. 140"
+    },
+    "1010766": {
+        "Estación": "INVERSIONES GASSURCO S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV.GUARDIA CIVIL MZA.B LOTE 1-2 URB"
+    },
+    "1010770": {
+        "Estación": "CORPORACION BLUE GAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV. PRIMAVERA 1695 URB.CENTRO COMER"
+    },
+    "1012890": {
+        "Estación": "REPRESENTACIONES CASASI S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV.GOLF LOS INCAS 493 URB.CLUB GOLF"
+    },
+    "1010753": {
+        "Estación": "SUR EXPORT E.I.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "Jr Cerro Azul N° 227-233-237"
+    },
+    "3000798": {
+        "Estación": "GRIFOS CAJAMARCA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA MARIA DEL TRIUNFO",
+        "Dirección": "AV. PACHACUTEC NO. 2334"
+    },
+    "1011063": {
+        "Estación": "ESTACION DE SERVICIOS NUEVO",
+        "Zona": "LIMA",
+        "Distrito": "VILLA MARIA DEL TRIUNFO",
+        "Dirección": "GRUPO 1 MZA. A LOTE. 3 A.H. NUEVO"
+    },
+    "1011615": {
+        "Estación": "SERVICIOS MULTIPLES POGAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA MARIA DEL TRIUNFO",
+        "Dirección": "AV 26 DE NOVIEMBRE MZA. D2 LT7 P.J."
+    },
+    "1012626": {
+        "Estación": "REPRESENTACIONES Y ASOCIADOS MICSA",
+        "Zona": "LIMA",
+        "Distrito": "VILLA MARIA DEL TRIUNFO",
+        "Dirección": "AV.SALVADOR ALLENDE S/N MZA.N2 L.9"
+    },
+    "1002793": {
+        "Estación": "ESTACION DE SERVICIOS AVIACION S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Dirección": "AV. AVIACION NRO. 2680"
+    },
+    "1011179": {
+        "Estación": "JLF ASOCIADOS S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Dirección": "AV. SAN BORJA NORTE N° 1415"
+    },
+    "1003199": {
+        "Estación": "MULTISERVICIOS ECOGAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "LURIGANCHO",
+        "Dirección": "SUBLT1 MZA. D LOTE. 1 URB. POPULAR"
+    },
+    "1010752": {
+        "Estación": "REIMIJ S.R.LTDA.",
+        "Zona": "LIMA",
+        "Distrito": "LURIGANCHO",
+        "Dirección": "Av Ramiro Prialé N 5747 CP CENTRO"
+    },
+    "1002654": {
+        "Estación": "ESTACION DE SERVICIO PONCE S.R. LTD",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Dirección": "AV. CAMPOY MZA. C LOTE. 25 COO. EL"
+    },
+    "1003092": {
+        "Estación": "SERVICENTRO EL PIONERO E.I.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Dirección": "MZA. C-1 LOTE. 20A2 URB. EL CLUB DE"
+    },
+    "1010757": {
+        "Estación": "HM INVERSIONES Y SERVICIOS S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Dirección": "Avenida Canto Grande 401 Mz L"
+    },
+    "3004459": {
+        "Estación": "RAPIGRIFOS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SURQUILLO",
+        "Dirección": "REPUBLICA DE PANAMA N°5185"
+    },
+    "3004645": {
+        "Estación": "GRIFOS ESPINOZA S A",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "AV. LA MOLINA 1595 URB. SOL DE LA M"
+    },
+    "1010764": {
+        "Estación": "F & R INVERSIONES Y PROYECTOS S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "PACHACAMAC",
+        "Dirección": "AV. VICTOR MALASQUEZ PARCELA NRO"
+    },
+    "1002685": {
+        "Estación": "ORGANIZACION FUTURO S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "AV. JAVIER PRADO NRO. 6651 URB."
+    },
+    "1015005": {
+        "Estación": "INVERSIONES Y COMERCIALIZACION MAKA",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "Av. Prol. Javier Prado Este 4885 Es"
+    },
+    "3008006": {
+        "Estación": "INVERSIONES Y COMERCIALIZACION MAKA",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "AV.LOS FRUTALES ESQ.ARCOS  DE LA FR"
+    },
+    "1003180": {
+        "Estación": "OLGA SALAZAR SANTIVAÑEZ S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CHACLACAYO",
+        "Dirección": "AV. N. AYLLON NRO. 405"
+    },
+    "1011113": {
+        "Estación": "SERVI GRIFOS S A",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Dirección": "CAR. PANAMERICANA SUR KM. 14 URB. S"
+    },
+    "1010994": {
+        "Estación": "INVERSIONES PERCY CAR S.R.L",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "GRUPO 25A,SECTOR 1 MZA.I LOTE.1 A.H"
+    },
+    "1011014": {
+        "Estación": "PACHACUTEC INVERSIONES GENERALES S.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "PARCELA II MZA. E LOTE. 01 PARQUE"
+    },
+    "1011026": {
+        "Estación": "ESTACION DE SERVICIOS PERCY CAR S.R",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "AV. PASTOR SEVILLA Y AV. MARIA RE"
+    },
+    "1011030": {
+        "Estación": "EUROMAXX INVERSIONES GENERALES S.A.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "GRUPO 20 MZA. N LOTE 05 SECTOR 1"
+    },
+    "1011578": {
+        "Estación": "CORPORACION ALEGROUP E.I.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "LOTE25,MZ.N´, AGRUPAMIENTO"
+    },
+    "3009726": {
+        "Estación": "EMP.TRANSP. SERV. Y COMERC. REYDA E",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Dirección": "LOTE  2B , LA RINCONADA,"
+    },
+    "1011598": {
+        "Estación": "REPRESENTACIONES E INVERSIONES",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Dirección": "CAL.SAN JUAN MZA. K10 LOTE. 12 A.H."
+    },
+    "1012213": {
+        "Estación": "ESTACION PACHACUTEC S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Dirección": "AV DEFENSORES C/ TORRES PAZ S/N PAM"
+    },
+    "3006966": {
+        "Estación": "ESTACION PACHACUTEC S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "BARRANCO",
+        "Dirección": "AV. BOLOGNESI NRO. 894 BARRANCO LIM"
+    },
+    "1002734": {
+        "Estación": "SERVICENTRO LA ALAMEDA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Dirección": "AV. ALAMEDA SUR MZA. Q LOTE. 11 URB"
+    },
+    "1003089": {
+        "Estación": "SERVICENTRO TACALA S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Dirección": "AV. EL SOL MZA. A LOTE. 4 A.H."
+    },
+    "1011114": {
+        "Estación": "OPERACIONES Y SERVICIOS GENERALES S",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Dirección": "AV. CAMINOS DEL INCA MZA. N LOTE 19"
+    },
+    "1010773": {
+        "Estación": "FERRETERIA LOS HUERTOS DE SANTA ROS",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Dirección": "ANTIGUA PANAMERICANA SUR, ESQ."
+    },
+    "1011647": {
+        "Estación": "ESTACION DE SERVICIOS LOS NORTEÑOS",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Dirección": "MZA. E LOTE. 1 URB. HUERTOS DE SANT"
+    },
+    "1007571": {
+        "Estación": "SERVICIOS Y REPRESENTACIONES TACNA",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Dirección": "AV. BAUSATE Y MEZA NRO. 801"
+    },
+    "3010229": {
+        "Estación": "SIROCO HOLDINGS SAC",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Dirección": "AV. MANCO CÁPAC N° 301, 305,311, 317,321"
+    },
+    "3000673": {
+        "Estación": "DUOGAS S.A.",
+        "Zona": "LIMA",
+        "Distrito": "BREÑA",
+        "Dirección": "AV. ARICA N° 580 - 590 ESQ. CON JR."
+    },
+    "3000197": {
+        "Estación": "SERVICENTRO EL CONDOR S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "ASOCIACION DE PROPIETARIOS NARANJIT"
+    },
+    "1005748": {
+        "Estación": "INVERSIONES GENERALES DILEO PERU S.",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "MZA Q2 LT 5 PARCELACION ZAPALLAL"
+    },
+    "3005787": {
+        "Estación": "ASIA GRIFOS Y SERVICIOS",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "AV. PUENTE PIEDRA N° 1218 KM.32"
+    },
+    "1010840": {
+        "Estación": "GRIFO TRAPICHE S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "COMAS",
+        "Dirección": "AV.HEROES DEL ALTO CENEPA 697"
+    },
+    "3010098": {
+        "Estación": "OPERACIONES Y SERVICIOS GENERALES",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Dirección": "CIRCUITO DE PLAYAS - PLAYA MARBELLA"
+    },
+    "1010564": {
+        "Estación": "VELDI S.A",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "AV.GENERAL CORDOVA 1025 URB.SANTA"
+    },
+    "3005215": {
+        "Estación": "INVERSIONES BOREAL S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Dirección": "AV.AUGUSTO PEREZ ARANIBAR N°2199"
+    },
+    "1002666": {
+        "Estación": "FORMAS METALICAS S.A. FOMETSA",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV. ARGENTINA NRO. 915"
+    },
+    "1002737": {
+        "Estación": "ESTACION DE SERVICIO NIAGARA SRL",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "JR. ELVIRA GARCIA Y GARCIA 2790"
+    },
+    "1012231": {
+        "Estación": "ESTACION SANTA MARGHERITA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV. VENEZUELA NRO. 2600 (S/R) LIMA"
+    },
+    "3009778": {
+        "Estación": "XIN XING SA.",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV. ARGENTINA NRO. 898"
+    },
+    "1003122": {
+        "Estación": "RAMPOIL S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "RÍMAC",
+        "Dirección": "JR. DOMINGO ANGULO NRO. 131"
+    },
+    "3000679": {
+        "Estación": "SERVICENTRO LA ALAMEDA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "AV. CARLOS IZAGUIRRE ESQUINA CON AV"
+    },
+    "3000237": {
+        "Estación": "INVERSIONES EL PIBE S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "AV. TOMAS VALLE MZ. I, LOTE 9 - A,"
+    },
+    "1010760": {
+        "Estación": "CORPORACION GEAMAR S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "AV. CARLOS IZAGUIRRE MZ. D"
+    },
+    "1010882": {
+        "Estación": "TRAILER GAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "AV. ALFREDO MENDIOLA NRO. 6810 LIMA"
+    },
+    "1002721": {
+        "Estación": "INVERSIONES UCHIYAMA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Dirección": "AV. LA MAR NRO. 2382"
+    },
+    "1005508": {
+        "Estación": "ESTACION DE SERVICIOS GAMARRA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Dirección": "AV. LA PAZ 1498"
+    },
+    "1010516": {
+        "Estación": "DERK S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Dirección": "AV.DEL RIO NRO.110"
+    },
+    "1011023": {
+        "Estación": "SERVICENTRO CAMINOS DEL INCA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Dirección": "AV. LA MARINA NRO. 892"
+    },
+    "1021420": {
+        "Estación": "HERBERT TOLOMEO MEZA CACEDA",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Dirección": "AV. LA MARINA 892"
+    },
+    "1010755": {
+        "Estación": "ESTACION DE SERVICIOS CORPAC S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Dirección": "AV ENRIQUE CANAVAL"
+    },
+    "3006095": {
+        "Estación": "GRUPO DE GESTION - NARANJAL",
+        "Zona": "LIMA",
+        "Distrito": "INDEPENDENCIA",
+        "Dirección": "AV. GERARDO UNGER NRO. 4885"
+    },
+    "1012886": {
+        "Estación": "ESTACIÓN DE SERVICIOS LOS OLIVOS",
+        "Zona": "LIMA",
+        "Distrito": "LOS OLIVOS",
+        "Dirección": "AV. UNIVERSITARIA NRO. S/N"
+    },
+    "1006614": {
+        "Estación": "ESTACION DE SERVICIOS LAS PAMPAS",
+        "Zona": "CALLAO",
+        "Distrito": "VENTANILLA",
+        "Dirección": "AV. LA PLAYA NRO.S/N SEC. PAMPAS"
+    },
+    "3004042": {
+        "Estación": "DERK - ALTA GRACIA",
+        "Zona": "CALLAO",
+        "Distrito": "VENTANILLA",
+        "Dirección": "AV. PRECURSORES N° 202"
+    },
+    "1011710": {
+        "Estación": "GASCORVILL S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "MZA.D LOT 3 - 4, URB. LAS COLINAS"
+    },
+    "3004519": {
+        "Estación": "SIROCO HOLDINGS SAC",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. ELMER FAUCETT 735-739"
+    },
+    "3005756": {
+        "Estación": "ESTACION SANTA MARGHERITA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV.SAENZ PEÑA N°1100 CERCADO"
+    },
+    "1002607": {
+        "Estación": "AUTO SERVICIO LA PERLA S A",
+        "Zona": "LIMA",
+        "Distrito": "LA PERLA",
+        "Dirección": "AV. VENEZUELA NRO. 1050 URB."
+    },
+    "1003274": {
+        "Estación": "ESTACION DE SERVICIOS LA MARINA SAC",
+        "Zona": "LIMA",
+        "Distrito": "LA PERLA",
+        "Dirección": "AV. DE LA MARINA NRO. 405 URB. DOIG"
+    },
+    "P118": {
+        "Estación": "E/S BARRANCA",
+        "Zona": "LIMA",
+        "Distrito": "BARRANCA",
+        "Dirección": "AV RAMÓN CASTILLA NRO 921"
+    },
+    "P294": {
+        "Estación": "E/S SAN JOSÉ",
+        "Zona": "LIMA",
+        "Distrito": "BARRANCA",
+        "Dirección": "CARRETERA PANAMERICANA NORTE"
+    },
+    "P311": {
+        "Estación": "E/S SUPE",
+        "Zona": "LIMA",
+        "Distrito": "SUPE",
+        "Dirección": "PANAMERICANA NORTE KM 185"
+    },
+    "P306": {
+        "Estación": "E/S SARAPAMPA 1",
+        "Zona": "LIMA",
+        "Distrito": "ASIA",
+        "Dirección": "ALTURA PANAMERICANA SUR"
+    },
+    "P204": {
+        "Estación": "E/S SARAPAMPA 2",
+        "Zona": "LIMA",
+        "Distrito": "ASIA",
+        "Dirección": "PANAMERICANA SUR KM 106.40"
+    },
+    "P127": {
+        "Estación": "E/S ASIA",
+        "Zona": "LIMA",
+        "Distrito": "ASIA",
+        "Dirección": "CARRETERA PANAMERICANA SUR"
+    },
+    "P193": {
+        "Estación": "E/S CHILCA",
+        "Zona": "LIMA",
+        "Distrito": "CHILCA",
+        "Dirección": "CARRETERA PANAMERICANA SUR"
+    },
+    "P174": {
+        "Estación": "E/S CAÑETE",
+        "Zona": "LIMA",
+        "Distrito": "CAÑETE",
+        "Dirección": "AV 28 DE JULIO NRO 216"
+    },
+    "P201": {
+        "Estación": "E/S CHANCAY 1",
+        "Zona": "LIMA",
+        "Distrito": "CHANCAY",
+        "Dirección": "CARRETERA PANAMERICANA NORTE"
+    },
+    "P154": {
+        "Estación": "E/S CHANCAY 2",
+        "Zona": "LIMA",
+        "Distrito": "CHANCAY",
+        "Dirección": "CARRETERA PANAMERICANA NORTE"
+    },
+    "P194": {
+        "Estación": "E/S CALLE DERECHA",
+        "Zona": "LIMA",
+        "Distrito": "HUARAL",
+        "Dirección": "CALLE DERCHA NRO 898"
+    },
+    "P113": {
+        "Estación": "E/S HUARALINO",
+        "Zona": "LIMA",
+        "Distrito": "HUARAL",
+        "Dirección": "AV CHANCAY ESQUINA CON CALLE 3"
+    },
+    "P206": {
+        "Estación": "E/S CORCONA",
+        "Zona": "LIMA",
+        "Distrito": "CHOSICA",
+        "Dirección": "AV NICOLAS DE PIEROLA SUR"
+    },
+    "P114": {
+        "Estación": "E/S COLOMA",
+        "Zona": "LIMA",
+        "Distrito": "HUACHO",
+        "Dirección": "CALLE DOMINGO COLOMA NRO 152"
+    },
+    "P126": {
+        "Estación": "E/S ATE 2",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "GRIFO PRIMAX COESTI ATE 2"
+    },
+    "P269": {
+        "Estación": "E/S ÑAÑA",
+        "Zona": "LIMA",
+        "Distrito": "ÑAÑA",
+        "Dirección": "AV NICOLAS AYLLÓN 1340"
+    },
+    "P223": {
+        "Estación": "E/S FELVERANA",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV NICOLAS AYLLON NRO 2162"
+    },
+    "P135": {
+        "Estación": "E/S ATE 1",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV NICOLAS AYLLÓN 2570"
+    },
+    "P239": {
+        "Estación": "E/S JAVIER PRADO",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV JAVIER PRADO ESTE NRO 1059"
+    },
+    "P297": {
+        "Estación": "E/S SAN LUIS 2",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Dirección": "AV SAN LUIS NRO 2605 ESQUINA"
+    },
+    "P296": {
+        "Estación": "E/S SAN LUIS 1",
+        "Zona": "LIMA",
+        "Distrito": "SAN LUIS",
+        "Dirección": "NICOLÁS AYLLÓN NRO 1340"
+    },
+    "P134": {
+        "Estación": "E/S ARRIOLA",
+        "Zona": "LIMA",
+        "Distrito": "SAN LUIS",
+        "Dirección": "AV NICOLAS ARRIOLA NRO 710"
+    },
+    "P197": {
+        "Estación": "E/S CANADA",
+        "Zona": "LIMA",
+        "Distrito": "SAN LUIS",
+        "Dirección": "AV CANADA CUADRA 11 ESQUINA"
+    },
+    "P189": {
+        "Estación": "E/S CASTILLA 3",
+        "Zona": "LIMA",
+        "Distrito": "SAN LUIS",
+        "Dirección": "AV NICOLAS ARRIOLA NRO 295 URB"
+    },
+    "P224": {
+        "Estación": "E/S FERRARI",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV TOMÁS MARSANO NRO 5010"
+    },
+    "P185": {
+        "Estación": "E/S JORGE CHÁVEZ",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV JORGE CHAVEZ NRO 877"
+    },
+    "P200": {
+        "Estación": "E/S CHAMA",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV SANTIAGO DE SURCO NRO 3291"
+    },
+    "P217": {
+        "Estación": "E/S EL ROSARIO",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV TOMAS MARSANO NRO 1008"
+    },
+    "P162": {
+        "Estación": "E/S TOMÁS MARSANO",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV TOMÁS MARSANO ESQUINA CON"
+    },
+    "P231": {
+        "Estación": "E/S GRANADA",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV MARISCAL CASTILLA NRO 905"
+    },
+    "P325": {
+        "Estación": "E/S VALLE HERMOSO",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV PRIMAVERA NRO 1159"
+    },
+    "P266": {
+        "Estación": "E/S MONTREAL",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV CAMINOS DEL INCA NRO 2017"
+    },
+    "P188": {
+        "Estación": "E/S LAS GARDENIAS",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "JR BATALLA DE SAN JUAN NRO 112"
+    },
+    "P373": {
+        "Estación": "E/S SURCO",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Dirección": "AV BENAVIDES Mz L Lt 5"
+    },
+    "P316": {
+        "Estación": "E/S TAVIRSA",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Dirección": "AV CAMINOS DEL INCA NRO 110-134"
+    },
+    "P157": {
+        "Estación": "E/S PRINCIPAL",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Dirección": "AV JOSÉ GÁLVEZ BARRENECHEA"
+    },
+    "P152": {
+        "Estación": "E/S NAVAL",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Dirección": "AV SAN LUIS NRO 2480"
+    },
+    "P372": {
+        "Estación": "E/S SAN BORJA",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Dirección": "AV. JAVIER PRADO ESTE NRO. 3095 URB"
+    },
+    "P147": {
+        "Estación": "E/S BAHIA",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Dirección": "AV AVIACIÓN S/N CUADRA 15"
+    },
+    "P171": {
+        "Estación": "E/S WIESSE",
+        "Zona": "LIMA",
+        "Distrito": "CANTO GRANDE",
+        "Dirección": "URB CANTO GRANDE MZ B LT 06"
+    },
+    "P255": {
+        "Estación": "E/S LURIGANCHO",
+        "Zona": "LIMA",
+        "Distrito": "CANTO GRANDE",
+        "Dirección": "AV LURIGNCHO CUADRA 11 MZ B"
+    },
+    "P146": {
+        "Estación": "E/S PRÓCERES",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Dirección": "AV PRÓCERES DE LA INDEPEN"
+    },
+    "P143": {
+        "Estación": "E/S AULY",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Dirección": "AV LOS PROCERES DE LA INDEPEN"
+    },
+    "P327": {
+        "Estación": "E/S ZARATE",
+        "Zona": "LIMA",
+        "Distrito": "ZARATE",
+        "Dirección": "AV. PROCERES DE LA"
+    },
+    "P166": {
+        "Estación": "E/S REPÚBLICA DE PANAMÁ",
+        "Zona": "LIMA",
+        "Distrito": "SURQUILLO",
+        "Dirección": "AV REPÚBLICA DE PANAMÁ"
+    },
+    "P177": {
+        "Estación": "E/S LA CALERA",
+        "Zona": "LIMA",
+        "Distrito": "SURQUILLO",
+        "Dirección": "AV AVIACIÓN NRO 4524"
+    },
+    "P183": {
+        "Estación": "E/S ANGAMOS",
+        "Zona": "LIMA",
+        "Distrito": "SURQUILLO",
+        "Dirección": "AV ANGAMOS ESTE NRO 1401"
+    },
+    "P234": {
+        "Estación": "E/S HIPODROMO",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "AV JAVIER PRADO ESTE  NRO 4350"
+    },
+    "P265": {
+        "Estación": "E/S MONTERRICO",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "AV LA MOLINA NRO 580"
+    },
+    "P324": {
+        "Estación": "E/S UNIVERSIDAD",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "AV LA UNIVERSIDAD NRO 1275"
+    },
+    "P225": {
+        "Estación": "E/S FERRERO",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "AV ALAMEDA DEL CORREGIDOR"
+    },
+    "P245": {
+        "Estación": "E/S LA MOLINA",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "AV JAVIER PRADO ESTE 6310"
+    },
+    "P180": {
+        "Estación": "E/S VILLA EL SALVADOR",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "MATEO PUMACAHUA MZ D LT 5"
+    },
+    "P101": {
+        "Estación": "E/S MIGUEL ANGEL.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "AV LIMA NRO 2000 PJ POETA JOSÉ"
+    },
+    "P112": {
+        "Estación": "E/S MARIÁTEGUI",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "AV JOSÉ CARLOS MARIATEGUI ESQ"
+    },
+    "P216": {
+        "Estación": "E/S EL CHORRILLANO",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Dirección": "AV LOS DEFENSORES DEL MORRO"
+    },
+    "P205": {
+        "Estación": "E/S CHORRILLOS",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Dirección": "AV DEFENSORES DEL MORRO 1391"
+    },
+    "P275": {
+        "Estación": "E/S PANSUR",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Dirección": "CARRETERA PANAMERICANA SUR"
+    },
+    "P292": {
+        "Estación": "E/S SAN CARLOS",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Dirección": "CARRETERA PANAMERICANA SUR"
+    },
+    "P371": {
+        "Estación": "E/S LA VICTORIA",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Dirección": "AV ISABEL LA CATOLICA NRO 77"
+    },
+    "P102": {
+        "Estación": "E/S 28 DE JULIO",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Dirección": "AV 28 DE JULIO NRO 2200"
+    },
+    "P181": {
+        "Estación": "E/S PUNTA HERMOSA",
+        "Zona": "LIMA",
+        "Distrito": "PUNTA HERMOSA",
+        "Dirección": "CARRETERA PANAMERICANA SUR"
+    },
+    "P150": {
+        "Estación": "E/S ARICA",
+        "Zona": "LIMA",
+        "Distrito": "BREÑA",
+        "Dirección": "AV ARICA NRO 499"
+    },
+    "P179": {
+        "Estación": "E/S BREÑA",
+        "Zona": "LIMA",
+        "Distrito": "BREÑA",
+        "Dirección": "AV TINGO MARÍA NRO 1711"
+    },
+    "P110": {
+        "Estación": "E/S NEOX",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "AV LEONCIO PRADP NRO 780"
+    },
+    "P260": {
+        "Estación": "E/S MEJIA",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "AV REPÚBLICA DE CROACIA ESQ"
+    },
+    "P105": {
+        "Estación": "E/S PUENTE PIEDRA",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "AV INDUSTRIAL  MZ F  LT 5 URB"
+    },
+    "P278": {
+        "Estación": "E/S PERSHING",
+        "Zona": "LIMA",
+        "Distrito": "JESUS MARIA",
+        "Dirección": "AV JOSÉ FAUSTINO SÁNCHEZ"
+    },
+    "P236": {
+        "Estación": "E/S HUIRACOCHA",
+        "Zona": "LIMA",
+        "Distrito": "JESUS MARIA",
+        "Dirección": "AV GREGORIO ESCOBEDO"
+    },
+    "P226": {
+        "Estación": "E/S FLORA TRISTAN",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Dirección": "AV JAVIER PRADO OESTE NRO 2504"
+    },
+    "P175": {
+        "Estación": "E/S SALAVERRY 2",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Dirección": "JIRON SALAVERRY 480"
+    },
+    "P257": {
+        "Estación": "E/S MAGDALENA",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Dirección": "AV BRASIL NRO 4191 - 4193 ESQ"
+    },
+    "P178": {
+        "Estación": "E/S BRASIL",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Dirección": "AV DEL EJERCITO NRO 110 - 112"
+    },
+    "P213": {
+        "Estación": "E/S EJÉRCITO",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Dirección": "AV EL EJERCITO NRO 412 - 422"
+    },
+    "P270": {
+        "Estación": "E/S ORRANTIA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "AV DEL EJERCITO NRO 965 - 967"
+    },
+    "P199": {
+        "Estación": "E/S CASTAÑOS",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Dirección": "AV JAVIER PRADO OESTE NRO 1895"
+    },
+    "P158": {
+        "Estación": "E/S PASEO DE LA REPÚBLICA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "AV PASEO DE LA REPÚBLICA"
+    },
+    "P285": {
+        "Estación": "E/S REPÚBLICA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "AV PASEO DE LA REPÚBLICA"
+    },
+    "P151": {
+        "Estación": "E/S RICARDO PALMA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "AV MARISCAL ANDRES A. CACERES"
+    },
+    "P122": {
+        "Estación": "E/S ALEGRÍA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "AV BENAVIDES NRO 2116"
+    },
+    "P133": {
+        "Estación": "E/S ARMENDARIZ",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "AV ARMENDARIS NRO 575"
+    },
+    "P167": {
+        "Estación": "E/S MIRAFLORES",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "AV PASEO DE LA REPÚBLICA"
+    },
+    "P291": {
+        "Estación": "E/S SAN ANTONIO",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "AV PASEO DE LA REPÚBLICA"
+    },
+    "P176": {
+        "Estación": "E/S AURORA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Dirección": "CALLE ARIAS SCHEREIBER NRO 124"
+    },
+    "P293": {
+        "Estación": "E/S SAN ISIDRO",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Dirección": "AV REPÚBLICA DE PANAMÁ"
+    },
+    "P328": {
+        "Estación": "E/S ZORRITOS",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "CALLE BAQUERO 498"
+    },
+    "P211": {
+        "Estación": "E/S DUEÑAS",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV ARGENTINA NRO 1815"
+    },
+    "P309": {
+        "Estación": "E/S SUDAMERICANO",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV COLONIAL NRO 871"
+    },
+    "P317": {
+        "Estación": "E/S TINGO MARIA",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV TINGO MARÍA NRO 1194 ESQ"
+    },
+    "P161": {
+        "Estación": "E/S COLONIAL 2",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV MARISCAL OSCAR R BENAVIDES"
+    },
+    "P159": {
+        "Estación": "E/S COLONIAL 1",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV MARISCAL OSCAR R BENAVIDES"
+    },
+    "P182": {
+        "Estación": "E/S AREQUIPA 2",
+        "Zona": "LIMA",
+        "Distrito": "LINCE",
+        "Dirección": "AV AREQUIPA NRO 1890"
+    },
+    "P124": {
+        "Estación": "E/S AREQUIPA 1",
+        "Zona": "LIMA",
+        "Distrito": "LINCE",
+        "Dirección": "AV AREQUIPA NRO 3325"
+    },
+    "P289": {
+        "Estación": "E/S SALAVERRY 1",
+        "Zona": "LIMA",
+        "Distrito": "LINCE",
+        "Dirección": "AV GENERAL CESAR CANEVARO 1598"
+    },
+    "P287": {
+        "Estación": "E/S RISSO",
+        "Zona": "LIMA",
+        "Distrito": "LINCE",
+        "Dirección": "AV ARENALES NRO 2100"
+    },
+    "P125": {
+        "Estación": "E/S LOLESA",
+        "Zona": "LIMA",
+        "Distrito": "RÍMAC",
+        "Dirección": "AV FRANCISCO PIZARRO NRO 1207"
+    },
+    "P237": {
+        "Estación": "E/S IGARZA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "AV TOMÁS VALLE NRO 1981"
+    },
+    "P132": {
+        "Estación": "E/S TOMÁS VALLE",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "AV TOMAS VALLE ESQUINA CON"
+    },
+    "P184": {
+        "Estación": "E/S GAMARRA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "ESQUINA AV ANGELICA GAMARRA"
+    },
+    "P196": {
+        "Estación": "E/S UNIVERSITARIA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "AV UNIVERSITARIA ESQUINA  CON"
+    },
+    "P215": {
+        "Estación": "E/S EL CARMELO",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Dirección": "AV LA MARINA NRO 3112"
+    },
+    "P244": {
+        "Estación": "E/S LA MARINA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Dirección": "AV LA MARINA NRO 2185"
+    },
+    "P246": {
+        "Estación": "E/S LA PAZ 1",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Dirección": "AV LA PAZ NRO 915"
+    },
+    "P222": {
+        "Estación": "E/S FAUCETT",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Dirección": "AV ELMER FAUCETT NRO 384"
+    },
+    "P274": {
+        "Estación": "E/S PANDO",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Dirección": "AV LA MARINA ESQUINA CON AV"
+    },
+    "P165": {
+        "Estación": "E/S ESCARDÓ",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Dirección": "CALLE RAFAEL ESCARDÓ NRO 250"
+    },
+    "P187": {
+        "Estación": "E/S LA PAZ 2",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Dirección": "AV LA PAZ NRO 1200 URB MIRAMAR"
+    },
+    "P160": {
+        "Estación": "E/S BOLÍVAR",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Dirección": "AV BOLÍVAR NRO 1020"
+    },
+    "P308": {
+        "Estación": "E/S SUCRE",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Dirección": "AV SUCRE NRO 1070"
+    },
+    "P338": {
+        "Estación": "E/S JOVEME",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Dirección": "AV REPÚBLICA DE PANAMÁ S/N"
+    },
+    "P235": {
+        "Estación": "E/S HUANUCO",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV GRAU NRO 1308 ESQUINA CON"
+    },
+    "P390": {
+        "Estación": "E/S GAMBETA",
+        "Zona": "CALLAO",
+        "Distrito": "OQUENDO",
+        "Dirección": "KM 8.5 CARRETERA VENTANILLA"
+    },
+    "P283": {
+        "Estación": "E/S QUILCA",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV QUILCA ESQUINA CON CALLE 10"
+    },
+    "P128": {
+        "Estación": "E/S ARGENTINA",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV ARGENTINA NRO  4247"
+    },
+    "P191": {
+        "Estación": "E/S MARCO POLO",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "CALLE ALBERTO SECADA S/N ESQ"
+    },
+    "P218": {
+        "Estación": "E/S ESCOSA",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV GUARDIA CIVIL NRO 333"
+    },
+    "P277": {
+        "Estación": "E/S PERLA",
+        "Zona": "LIMA",
+        "Distrito": "LA PERLA",
+        "Dirección": "AV LA PAZ NRO 2326"
+    },
+    "P353": {
+        "Estación": "E/S MARBELLA",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Dirección": "AV. AUGUSTO PÉREZ ARANÍBAR 2199"
+    },
+    "3001413": {
+        "Estación": "AUCALLAMAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "AUCALLAMA",
+        "Dirección": "CARRETERA PANAMERICANA NORTE KM."
+    },
+    "1000162": {
+        "Estación": "GARODI SRL",
+        "Zona": "LIMA",
+        "Distrito": "SAN ANTONIO",
+        "Dirección": "AV. PACHACUTEC -PROL. WIESE MZA. C"
+    },
+    "3003815": {
+        "Estación": "ESTACION DE SERVICIOS MAYORAZGO S.A",
+        "Zona": "LIMA",
+        "Distrito": "RICARDO PALMA",
+        "Dirección": "KM. 46.00 DE LA CARRETERA CENTRAL"
+    },
+    "3000606": {
+        "Estación": "EMPRESA DE TRANSPORTES NUEVO HORIZO",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV. SAN JUAN N. 115 I ETAPA"
+    },
+    "1012361": {
+        "Estación": "PETRO SAN JUAN REPRESENTANTES Y VEN",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "NRO. 0 UC 10715 SECTOR PACAYAL"
+    },
+    "3000859": {
+        "Estación": "SERVICENTRO SMILE S.A.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "CAL. LOS ORFEBREROS N° 129"
+    },
+    "3000680": {
+        "Estación": "INVERSIONES JIARA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV. LAS TORRES N° 508, ESQUINA CON"
+    },
+    "3009233": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV. NICOLAS AYLLON N° 2039"
+    },
+    "1001794": {
+        "Estación": "MANCO ARROYO DE SANCHEZ MERCEDES SO",
+        "Zona": "LIMA",
+        "Distrito": "EL AGUSTINO",
+        "Dirección": "AV. FERROCARRIL MZA. N LOTE. 1 COO"
+    },
+    "1007929": {
+        "Estación": "SERVICENTRO EL ASESOR SAC",
+        "Zona": "LIMA",
+        "Distrito": "SANTA ANITA",
+        "Dirección": "AV. HUAROCHIRI NRO. 905 URB. EL ASE"
+    },
+    "3013039": {
+        "Estación": "EMPRESA DE TRANSPORTES ESFUERZOS UNIDOS",
+        "Zona": "LIMA",
+        "Distrito": "VILLA MARIA DEL TRIUNFO",
+        "Dirección": "AV. SIMON BOLIVAR N°1431, 1411 Y"
+    },
+    "3002730": {
+        "Estación": "ALTA VIDDA GAS S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Dirección": "MZ. N LT. 9 PARCELACION SEMI RUSTIC"
+    },
+    "3002750": {
+        "Estación": "SHIN S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Dirección": "AV. SAN MARTIN DE PORRAS MZ CL 1"
+    },
+    "3009223": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Dirección": "AV.WIESSE SECTOR 3. LTE 41, MZ. G-8"
+    },
+    "1010575": {
+        "Estación": "SERVICENTRO MUSA E.I.R.L",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Dirección": "AV. LA MOLINA ESTE 2295 URB. EL SOL"
+    },
+    "1002706": {
+        "Estación": "GRIFOS TERESA DE CALCUTA S.A.",
+        "Zona": "LIMA",
+        "Distrito": "PACHACAMAC",
+        "Dirección": "CAR. CIENEGUILLA NRO. S/N"
+    },
+    "1010551": {
+        "Estación": "ESTACION DE SERVICIO GRECS S.R.L",
+        "Zona": "LIMA",
+        "Distrito": "PACHACAMAC",
+        "Dirección": "AV. VICTOR MALASQUEZ S 1"
+    },
+    "1007010": {
+        "Estación": "ESTACION SAN DIEGO SAC",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "MZ. J-1, LT. 04 AV. EL SOL"
+    },
+    "3009232": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "AV. LIMA ESQUINA AV. MARIA REICHE,"
+    },
+    "3009165": {
+        "Estación": "JEVARO S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "AV. 200 MILLAS ESQ. CON AV. MICAELA"
+    },
+    "1002647": {
+        "Estación": "EMP. DE TRANSP. UNIDOS DOCE DE NOV.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Dirección": "NRO. J-10 INT. 01 P.J. LEONCIO PRAD"
+    },
+    "3001425": {
+        "Estación": "EMP. DE TRANSP. UNIDOS DOCE DE NOV.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Dirección": "TERRENO PARTE DEL FUNDO RUSTICO"
+    },
+    "1003102": {
+        "Estación": "LX Y LX S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Dirección": "CAR. ANTIGUA PANAMERICANA SUR KM. 3"
+    },
+    "3009245": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Dirección": "CARRETERA ANTIGUA PANAMERICANA SUR"
+    },
+    "1007344": {
+        "Estación": "MASTER GAS GNV GLP EIRL",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Dirección": "AV. MEXICO 380 URB. BALCONCILLO"
+    },
+    "3010103": {
+        "Estación": "INVERSIONES JIARA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "BREÑA",
+        "Dirección": "AV. ARICA NRO. 1301"
+    },
+    "1006917": {
+        "Estación": "CHIE S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "BREÑA",
+        "Dirección": "CAL.MARISCAL ORBEGOSO NRO. 300"
+    },
+    "1003098": {
+        "Estación": "PETRODELSAC",
+        "Zona": "LIMA",
+        "Distrito": "CARABAYLLO",
+        "Dirección": "JR. TRINITARIAS NRO. 102 URB. SANTA"
+    },
+    "3000586": {
+        "Estación": "GRUPO SCJ & ONOFRE S S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CARABAYLLO",
+        "Dirección": "AV. JOSE CARLOS SACO ROJAS EX"
+    },
+    "1007928": {
+        "Estación": "ESTACION SANTA MARIA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CARABAYLLO",
+        "Dirección": "AV. SANTA MARIA MZA. C1 LOTE. 01"
+    },
+    "1005193": {
+        "Estación": "INVERSIONES SCJ ONOFRE E.I.R.L",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "AV. LEONCIO PRADO 344"
+    },
+    "1007251": {
+        "Estación": "EMPRESA DE TRANSPORTES APOCALIPSIS",
+        "Zona": "LIMA",
+        "Distrito": "COMAS",
+        "Dirección": "AV. TUPAC AMARU NRO. 7612 A.H. AÑO"
+    },
+    "3009228": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "COMAS",
+        "Dirección": "AV. HEROES DEL ALTO CENEPA N° 1502,"
+    },
+    "3000652": {
+        "Estación": "COOPERATIVA DE SERV. MULTIPLES ALAS",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "ESQ. DE LA AV. VENEZUELA Nº 3343 CO"
+    },
+    "3009235": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV. NICOLAS DUEÑAS Nº 308 - 310 ESQ"
+    },
+    "3009241": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV. PETIT THOUARS N° 1148, URB. SAN"
+    },
+    "3009226": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "RÍMAC",
+        "Dirección": "AV. FRANCISCO PIZARRO 770, 772, 774"
+    },
+    "3013263": {
+        "Estación": "TRANSLIMA S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "MZ. B1, LOTE 3 - PROGRAMA"
+    },
+    "1006823": {
+        "Estación": "ESTACION SANTA RITA SAC",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Dirección": "AV. CANTA CALLAO S/N"
+    },
+    "1002736": {
+        "Estación": "SERVICENTRO SANTA CECILIA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Dirección": "AV. BOLIVAR NRO. 499"
+    },
+    "1003315": {
+        "Estación": "GAS POINT S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Dirección": "AV. UNIVERSITARIA MZA. F6 LOTE. 4"
+    },
+    "3000642": {
+        "Estación": "ALTA VIDDA GAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "LOS OLIVOS",
+        "Dirección": "JR. LOS HORNOS Nº 149"
+    },
+    "3009231": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "LOS OLIVOS",
+        "Dirección": "AV. LAS PALMERAS MZ. A1 LOTES 2-3,"
+    },
+    "3009243": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "LOS OLIVOS",
+        "Dirección": "AV. ALFREDO MENDIOLA Nº 6585 - 6589"
+    },
+    "P831": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-PARAMONGA",
+        "Zona": "LIMA",
+        "Distrito": "PARAMONGA",
+        "Dirección": "AV FERROCARRIL 212 LIMA -"
+    },
+    "3014038": {
+        "Estación": "TERMINALES PORTUARIOS PERUANOS SAC",
+        "Zona": "LIMA",
+        "Distrito": "VENTANILLA",
+        "Dirección": "AV. NÉSTOR GAMBETTA KM 14.3"
+    },
+    "3004794": {
+        "Estación": "FAMESA EXPLOSIVOS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "HUARAL",
+        "Dirección": "PANAMERICANA NORTE KM. 57.5"
+    },
+    "3009902": {
+        "Estación": "UNION DE CONCRETERAS S.A",
+        "Zona": "LIMA",
+        "Distrito": "JICAMARCA",
+        "Dirección": "QUEBRADA HUAYCOLORO, SARACOTO ALTO,"
+    },
+    "3004916": {
+        "Estación": "PETRAMAS S.A.C. - HUAROCHIRI",
+        "Zona": "LIMA",
+        "Distrito": "HUACHIPA",
+        "Dirección": "QUEBRADA HUAYCOLORO KM.7 S/N"
+    },
+    "3013580": {
+        "Estación": "CHEMTRADE S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "HUACHO",
+        "Dirección": "PANAMERICANA NORTE KM177 SCT LOS VI"
+    },
+    "3004771": {
+        "Estación": "QUIMPAC S.A.",
+        "Zona": "LIMA",
+        "Distrito": "HUACHO",
+        "Dirección": "SALINAS DE HUACHO"
+    },
+    "1000435": {
+        "Estación": "ONASA S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "ATE",
+        "Dirección": "AV. ESPERANZA NRO. 680 URB. SAN"
+    },
+    "1010846": {
+        "Estación": "EMPRESA DE TRANSPORTES GOCARIVE19",
+        "Zona": "LIMA",
+        "Distrito": "SANTA CLARA",
+        "Dirección": "MZA. C LOTE. 9 URB. LA RONCADORA"
+    },
+    "3008054": {
+        "Estación": "TRANSMAR EXPRESS S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "SAN LUIS",
+        "Dirección": "NICOLAS AYLLON 639 B MZ L LOTE 6,7,"
+    },
+    "1013243": {
+        "Estación": "TRANSPORTES CRUZ DEL SUR S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SANTA ANITA",
+        "Dirección": "AV. FRANCISCO BOLOGNESI NRO. 495"
+    },
+    "3007124": {
+        "Estación": "UNION DE CONCRETERAS S.A",
+        "Zona": "LIMA",
+        "Distrito": "SANTA ANITA",
+        "Dirección": "CAL.HUAROCHIRI NRO. SN Z.I. VISTA"
+    },
+    "3000483": {
+        "Estación": "CIA MINERA E INDUSTRIAL SAGITARIO",
+        "Zona": "LIMA",
+        "Distrito": "HUACHIPA",
+        "Dirección": "AV. 1 LOTE 28 HUACHIPA NORTE"
+    },
+    "3003375": {
+        "Estación": "TRANSPORTES NACIONALES S.A.",
+        "Zona": "LIMA",
+        "Distrito": "PRIALE",
+        "Dirección": "AV. LA PAZ N° 333 333"
+    },
+    "1011958": {
+        "Estación": "COORDINAC Y TRANSMISORES INTEGRADOS",
+        "Zona": "LIMA",
+        "Distrito": "MANCHAY",
+        "Dirección": "AV. VICTOR MALASQUEZ KM. 5"
+    },
+    "1011799": {
+        "Estación": "JOCKEY CLUB DEL PERU",
+        "Zona": "LIMA",
+        "Distrito": "MONTERRICO",
+        "Dirección": "AV. EL DERBY NRO. SN INT. PTA3 URB."
+    },
+    "P815": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-SAN JUAN",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Dirección": "AV PANANMERICANA SUR KM 11.4"
+    },
+    "3004927": {
+        "Estación": "CONCREMAX S.A.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Dirección": "ANTIGUA CARRETERA PANAMERICANA SUR"
+    },
+    "1000144": {
+        "Estación": "CLUB DE REGATAS LIMA",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Dirección": "AV. CHACHI DIBOS NRO. 1201 PLAYA"
+    },
+    "P822": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-CONCREMAX",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Dirección": "MZA. F LOTE. 3A COO. LAS"
+    },
+    "P836": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-S.L.A.",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Dirección": "\"PAMPAS DE LURIN S/N, SUB LOTE"
+    },
+    "1012160": {
+        "Estación": "EMP DE TRANSPORTES TURISTICO OLANO",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Dirección": "JR. MANUEL CISNEROS NRO. 492 URB. E"
+    },
+    "1001147": {
+        "Estación": "SERVICIOS GENERALES SATURNO S.A.",
+        "Zona": "LIMA",
+        "Distrito": "PUCUSANA",
+        "Dirección": "CARRETERA PANAMERICANA SUR KM 57"
+    },
+    "3004707": {
+        "Estación": "FERROCARRIL CENTRAL ANDINO S.A",
+        "Zona": "LIMA",
+        "Distrito": "CHOSICA",
+        "Dirección": "CAL.BRASIL NRO. SN URB. SAN"
+    },
+    "3006999": {
+        "Estación": "UNION DE CONCRETERAS S.A",
+        "Zona": "LIMA",
+        "Distrito": "COLLIQUE",
+        "Dirección": "CANTERA YERBABUENA S/N"
+    },
+    "P818": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-COLLIQUE UN",
+        "Zona": "LIMA",
+        "Distrito": "PRO",
+        "Dirección": "AV.ALFREDO MENDIOLA 8380 URB."
+    },
+    "3005032": {
+        "Estación": "TRANSP. Y SERV. GENER. JOSELITO S.A",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "AV. LOS PINOS MZA. E LOTE. 13 URB."
+    },
+    "1012205": {
+        "Estación": "INMOBILIARIA E INVERS SAN FERNANDO",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "FND.SANTA INES PARCELA 10234 KM.31"
+    },
+    "3010195": {
+        "Estación": "FAMESA EXPLOSIVOS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "KM 28 DE LA PANAMERICANA NORTE"
+    },
+    "3005031": {
+        "Estación": "CERAMICOS PERUANOS S.A.",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Dirección": "Av. PERIMETRICA S/N CARABAYLLO"
+    },
+    "1013034": {
+        "Estación": "MOVIL BUS S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV. MATERIALES NRO. 2215 LIMA - LIM"
+    },
+    "1012165": {
+        "Estación": "TURISMO CIVA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "JR. SANCHO DE RIVERA NRO. 1184 URB."
+    },
+    "P816": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-MATERIALES",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "AV ENRIQUE HEIGGS 2828 LOTE LB"
+    },
+    "P817": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-ANCIETA UNI",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "PLACIDO JIMENEZ 958 EL"
+    },
+    "3010147": {
+        "Estación": "UNION DE CONCRETERAS S.A",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Dirección": "SEBASTIAN LORENTE 205"
+    },
+    "1012228": {
+        "Estación": "APM TERMINALS INLAND SERVICES S.A.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. NESTOR GAMBETTA KM. 14.5"
+    },
+    "3002847": {
+        "Estación": "NEPTUNIA S.A.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. NESTOR GAMBETTA KM 14.50"
+    },
+    "3006867": {
+        "Estación": "PETRAMAS S.A.C. - CALLAO",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. EL BIERZO S/N MARGEN DERECHA DE"
+    },
+    "3005850": {
+        "Estación": "QUIMPAC S.A.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. VENTANILLA KM. 8"
+    },
+    "3010191": {
+        "Estación": "CUPRICA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VENTANILLA",
+        "Dirección": "CALLE ALONSO DE MOLINA Nº 247"
+    },
+    "1012144": {
+        "Estación": "TRUCKS AND MOTORS DEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. ELMER FAUCETT NRO. 4800 Z.I."
+    },
+    "1012504": {
+        "Estación": "APM TERMINALS CALLAO S.A",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. CONTRALMIRANTE RAYGADA NRO. 11"
+    },
+    "1015412": {
+        "Estación": "NEPTUNIA S.A.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV ARGENTINA 2085"
+    },
+    "1012634": {
+        "Estación": "DP WORLD CALLAO S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. MANCO CAPAC NRO. 113 PROV. CONS"
+    },
+    "3004821": {
+        "Estación": "ALICORP S.A.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. ARGENTINA N° 5027"
+    },
+    "P843": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-RANSA",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. NESTOR GAMBETA NRO. "
+    },
+    "1000156": {
+        "Estación": "PRODUCTOS DE ACERO CASSADO PRODAC S",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. NESTOR GAMBETA NRO. 6429"
+    },
+    "3010105": {
+        "Estación": "CONSORCIO CONSTRUCTOR M2 LIMA",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. ELMER FAUCETT NRO. 2800"
+    },
+    "3004418": {
+        "Estación": "BLENDING S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "CAL.CARLOS CONCHA NRO. 313 (OVALO"
+    },
+    "3010116": {
+        "Estación": "ALICORP SAA",
+        "Zona": "LIMA",
+        "Distrito": "CALLAO",
+        "Dirección": "AV. ARGENTINA 4695"
+    }
+}

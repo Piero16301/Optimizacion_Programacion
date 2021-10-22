@@ -9,7 +9,7 @@ def cargarExcel(nombreExcel, nombreHoja, encabezado):
     return dataFrame
 
 
-class ProcesamientoExterno:
+class ProcesamientoRestricciones:
     def __init__(self, archivoExcel):
         self.rutaExcel = archivoExcel
         self.dataFrame = pd.DataFrame()
@@ -21,5 +21,5 @@ class ProcesamientoExterno:
 
     def procesarData(self):
         # Organizar data del Excel Inicial
-        print('Leyendo data de Pedidos Externos...')
-        self.dataFrame = self.organizarData('Sheet1')
+        print('Leyendo data de Restricciones...')
+        self.dataFrame = self.organizarData('Lima')

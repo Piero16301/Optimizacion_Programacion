@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 
 from ConvertidorLocalizacion import ConvertidorLocalizacion
 
@@ -20,6 +21,7 @@ class ProcesamientoCOESTI:
     def __init__(self, archivoExcel):
         self.rutaExcel = archivoExcel
         self.dataFrame = pd.DataFrame()
+        self.direcciones = json.load(open('direcciones.json', encoding='utf8'))
 
     def organizarData(self, hoja):
         # Lectura inicial archivo Excel de COESTI
@@ -54,7 +56,7 @@ class ProcesamientoCOESTI:
 
         return indicesReiniciados
 
-    def preProcesarData(self):
+    def procesarData(self):
         """
         # Organizar data del Excel Inicial
         print('Leyendo data de COESTI...')
@@ -68,7 +70,9 @@ class ProcesamientoCOESTI:
         # Guardar como Excel
         print('Guardando data filtrada...')
         guardarExcel(self.dataFrame, 'datos_intermedios/Data_Formateada_COESTI.xlsx', False, True)
+        """
 
+        """
         # Carga de datos desde Excel
         print('Cargando data filtrada...')
         self.dataFrame = cargarExcel('datos_intermedios/Data_Formateada_COESTI.xlsx', 'Sheet1', 0)
@@ -101,11 +105,15 @@ class ProcesamientoCOESTI:
         print('Calculando localización de estaciones...')
         # Obtención de coordenadas
         for index, row, in self.dataFrame.iterrows():
-            direccion = 'Gasolinera Primax ' + row['Estación'] + ' ' + row['Distrito'] + ' Perú'
+            dataEstacion = self.direcciones[row['Centro']]
+            direccion = dataEstacion['Dirección'] + ' ' + dataEstacion['Distrito']
+            # direccion = direccion.replace(' E/S ', ' ')
+            print('Dirección inicial:', direccion)
             direccionFormal, latitud, longitud = convertidorLocalizacion.convertirDireccionACoordenadas(
                 row['Centro'],
                 direccion
             )
+            print('Dirección final:', direccionFormal, '\n')
             direcciones.append(direccionFormal)
             latitudes.append(latitud)
             longitudes.append(longitud)
