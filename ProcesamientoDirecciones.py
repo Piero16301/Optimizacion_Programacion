@@ -36,5 +36,5 @@ class ProcesamientoDirecciones:
                 'Símbolo':   row['Símbolo']
             }
 
-        with open('direcciones.json', 'w', encoding='utf8') as direccionesJSON:
+        with open('archivos_json/direcciones.json', 'w', encoding='utf8') as direccionesJSON:
             json.dump(self.direcciones, direccionesJSON, indent=4, ensure_ascii=False)

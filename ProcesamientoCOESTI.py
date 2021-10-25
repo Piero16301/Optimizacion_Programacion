@@ -19,7 +19,7 @@ class ProcesamientoCOESTI:
     def __init__(self, archivoExcel):
         self.rutaExcel = archivoExcel
         self.dataFrame = pd.DataFrame()
-        self.direcciones = json.load(open('direcciones.json', encoding='utf8'))
+        self.direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
 
     def organizarData(self, hoja):
         # Lectura inicial archivo Excel de COESTI
@@ -61,24 +61,18 @@ class ProcesamientoCOESTI:
         self.dataFrame = self.organizarData('CL')
 
         # Aplicar filtros
-        print('Aplicando filtros...')
         self.dataFrame = self.aplicarFiltros()
-        # print(self.dataFrame.to_string())
 
         # Guardar como Excel
         print('Guardando data filtrada...')
         guardarExcel(self.dataFrame, 'datos_intermedios/Data_Formateada_COESTI.xlsx', False, True)
-        """
 
-        """
         # Carga de datos desde Excel
         print('Cargando data filtrada...')
         self.dataFrame = cargarExcel('datos_intermedios/Data_Formateada_COESTI.xlsx', 'Sheet1', 0)
 
         # Columnas seleccionadas => Centro, Distrito, Estación, Material, Descripción, Producto, Sugerido
-        print('Seleccionando columnas...')
         self.dataFrame = self.dataFrame.iloc[:, [0, 6, 7, 8, 9, 10, 29]]
-        # print(columnasImportantes.to_string(), "\n")
 
         # Lista de tipos de combustible
         tiposCombustible = ['G90', 'G95', 'G97', 'Diesel']
@@ -98,30 +92,24 @@ class ProcesamientoCOESTI:
         latitudes = []
         longitudes = []
 
-        convertidorLocalizacion = ConvertidorLocalizacion()
-
-        print('Calculando localización de estaciones...')
-        # Obtención de coordenadas
+        # Obtención de dirección y coordenadas
+        print('Obteniendo direcciones y coordenadas...')
         for index, row, in self.dataFrame.iterrows():
-            dataEstacion = self.direcciones[row['Centro']]
-            direccion = dataEstacion['Dirección'] + ' ' + dataEstacion['Distrito']
-            # direccion = direccion.replace(' E/S ', ' ')
-            print('Dirección inicial:', direccion)
-            direccionFormal, latitud, longitud = convertidorLocalizacion.convertirDireccionACoordenadas(
-                row['Centro'],
-                direccion
-            )
-            print('Dirección final:', direccionFormal, '\n')
-            direcciones.append(direccionFormal)
-            latitudes.append(latitud)
-            longitudes.append(longitud)
+            if row['Centro'] in self.direcciones:
+                dataEstacion = self.direcciones[row['Centro']]
+                direcciones.append(dataEstacion['Dirección'])
+                latitudes.append(dataEstacion['Latitud'])
+                longitudes.append(dataEstacion['Longitud'])
+            else:
+                print('Estación no mapeada')
+                direcciones.append('---')
+                latitudes.append(0.0)
+                longitudes.append(0.0)
 
         # Agregar columnas de direccion, latitud y longitud al dataframe
         self.dataFrame.insert(7, 'Dirección', direcciones, True)
         self.dataFrame.insert(8, 'Latitud', latitudes, True)
         self.dataFrame.insert(9, 'Longitud', longitudes, True)
-
-        # print(self.dataFrame.to_string())
 
         # Guardar como Excel
         print('Guardando data de localización...')

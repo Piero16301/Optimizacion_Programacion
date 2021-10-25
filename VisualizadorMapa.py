@@ -4,12 +4,13 @@ import json
 
 class VisualizadorMapa:
     def __init__(self, dataFrame):
-        credenciales = json.load(open('credenciales.json'))
+        credenciales = json.load(open('archivos_json/credenciales.json'))
         self.mapboxToken = credenciales['keyMapbox']
         self.dataFrame = dataFrame
         self.mapa = go.Figure()
 
     def visualizarEstaciones(self, columnaTexto):
+        # Iniciar las posiciones de los puntos
         self.mapa = go.Figure(go.Scattermapbox(
             mode='markers',
             lat=self.dataFrame['Latitud'],
@@ -17,6 +18,7 @@ class VisualizadorMapa:
             text=self.dataFrame[columnaTexto]
         ))
 
+        # Establecer los símbolos de las estaciones
         self.mapa.update_traces(
             marker_symbol=self.dataFrame['Símbolo'],
             marker_size=10,
@@ -30,6 +32,7 @@ class VisualizadorMapa:
         promLatitud = self.dataFrame['Latitud'].mean()
         promLongitud = self.dataFrame['Longitud'].mean()
 
+        # Establecer configuraciones del mapa
         self.mapa.update_layout(
             autosize=True,
             mapbox=dict(
