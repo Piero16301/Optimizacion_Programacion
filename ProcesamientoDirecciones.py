@@ -21,16 +21,19 @@ class ProcesamientoDirecciones:
         print('Leyendo data de Direcciones...')
         self.dataFrame = cargarExcel(self.rutaExcel, 'Lima', 0)
 
-        # Se eliminan estaciones que no tienen calles
-        self.dataFrame = self.dataFrame[self.dataFrame['Calle'].notna()]
-
         # Se crea un diccionario con los campos importantes de ubicación
         for index, row, in self.dataFrame.iterrows():
             self.direcciones[row['Destinatario']] = {
                 'Estación' : row['Cliente'],
                 'Zona': row['Zona'],
                 'Distrito': row['Distrito'],
-                'Dirección': row['Calle']
+                'Población': row['Población'],
+                'Dirección': row['Dirección'],
+                'Asesor': row['Asesor Comercial'],
+                'Grupo': row['Grupo de Clientes'],
+                'Latitud': row['Latitud'],
+                'Longitud': row['Longitud'],
+                'Símbolo': row['Símbolo']
             }
 
         with open('direcciones.json', 'w', encoding='utf8') as direccionesJSON:

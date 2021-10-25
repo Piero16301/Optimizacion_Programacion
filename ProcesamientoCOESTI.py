@@ -1,8 +1,6 @@
 import pandas as pd
 import json
 
-from ConvertidorLocalizacion import ConvertidorLocalizacion
-
 
 def cargarExcel(nombreExcel, nombreHoja, encabezado):
     # Lectura inicial archivo Excel

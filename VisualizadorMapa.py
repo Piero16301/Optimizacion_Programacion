@@ -9,16 +9,24 @@ class VisualizadorMapa:
         self.dataFrame = dataFrame
         self.mapa = go.Figure()
 
-    def visualizarEstaciones(self):
+    def visualizarEstaciones(self, columnaTexto):
         self.mapa = go.Figure(go.Scattermapbox(
+            mode='markers',
             lat=self.dataFrame['Latitud'],
             lon=self.dataFrame['Longitud'],
-            mode='markers',
-            marker=go.scattermapbox.Marker(
-                size=10
-            ),
-            text=self.dataFrame['Estación']
+            marker={
+                'size': 10,
+                'symbol': self.dataFrame['Símbolo']
+            },
+            text=self.dataFrame[columnaTexto]
         ))
+
+        # self.mapa.update_traces(
+        #     marker_symbol='fuel',
+        #     selector=dict(
+        #         type='scattermapbox'
+        #     )
+        # )
 
         # Calcular centro del mapa
         promLatitud = self.dataFrame['Latitud'].mean()

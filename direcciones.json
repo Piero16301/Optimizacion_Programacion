@@ -3,1800 +3,3288 @@
         "Estación": "INVERSIONES SALCANI S.A.C.",
         "Zona": "LIMA",
         "Distrito": "ASIA",
-        "Dirección": "MZ.A LT.1 AL 4"
+        "Población": "CAÑETE",
+        "Dirección": "795P+QX6, Asia 15690",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Dealer",
+        "Latitud": -12.7405898,
+        "Longitud": -76.6126007,
+        "Símbolo": "building"
     },
     "3006302": {
         "Estación": "ASIA GRIFOS Y SERVICIOS GRALES.S.A.",
         "Zona": "LIMA",
         "Distrito": "ASIA",
-        "Dirección": "CARRETERA PANAMERICANA SUR KM. 97.5"
-    },
-    "1010501": {
-        "Estación": "FULL SERVICE SAN VICENTE S R LTDA.",
-        "Zona": "LIMA",
-        "Distrito": "CAÑETE",
-        "Dirección": "AV.MARISCAL BENAVIDES NRO.2433"
-    },
-    "3003208": {
-        "Estación": "CONSULTORA NORQUEENS S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "HUARAL",
-        "Dirección": "LOTIZADORA SEÑOR DE LOS"
-    },
-    "1013194": {
-        "Estación": "PETRO REAL GAS EIRL",
-        "Zona": "LIMA",
-        "Distrito": "SANTA EULALIA",
-        "Dirección": "AV.SIMON BOLIVAR NRO.1170 ASOC.SAN"
-    },
-    "3004111": {
-        "Estación": "ESTACION DE SERVICIOS HUAURA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "HUAURA",
-        "Dirección": "CARRETERA PANAMERICANA NORTE KM.145"
-    },
-    "3000653": {
-        "Estación": "PETROSUR S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "CARRETERA PANAMERICANA SUR KM. 19.5"
+        "Población": "CAÑETE",
+        "Dirección": "Interplayas 500, Asia 15690",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Dealer",
+        "Latitud": -12.76212,
+        "Longitud": -76.60003,
+        "Símbolo": "building"
     },
     "1002634": {
         "Estación": "INVERSIONES LUMARCO S.A.",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "CAR. CENTRAL KM. 11.2 A.H. LA"
+        "Población": "LIMA",
+        "Dirección": "Carretera Central km 11.50 AAHH La Estrella,ATE ,Lima",
+        "Asesor": "GRANTHON CAMPOS JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.0147295,
+        "Longitud": -76.8848201,
+        "Símbolo": "building"
     },
     "1002661": {
         "Estación": "ESTACION DE SERVICIOS MAYORAZGO",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "AV. PROLG.JAVIER PRADO MZA. A LOTE."
-    },
-    "3000601": {
-        "Estación": "INVERSIONES PACO HUAYCAN S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "ATE",
-        "Dirección": "AV. ANDRES AVELINO CACERES MZA. P"
+        "Población": "LIMA",
+        "Dirección": "Gales 186, Distrito de Lima 15494",
+        "Asesor": "GRANTHON CAMPOS JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.040322772605,
+        "Longitud": -76.9234207259805,
+        "Símbolo": "building"
     },
     "1012420": {
         "Estación": "EMP.TRANSP.Y SERV.EL SOL DE STA.CLA",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "AV.SAN ALFONSO MZA.LOTE 58"
+        "Población": "LIMA",
+        "Dirección": "X4G7+XJC, Ate 15487",
+        "Asesor": "GRANTHON CAMPOS JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.0225122353289,
+        "Longitud": -76.8859664257054,
+        "Símbolo": "building"
     },
     "1002643": {
         "Estación": "ESTACION CORMAR S.A.",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "CAR. CENTRAL NRO. 2.5"
+        "Población": "LIMA",
+        "Dirección": "W2XV+88P, Ate 15012",
+        "Asesor": "GRANTHON CAMPOS JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.0515739900722,
+        "Longitud": -76.9566549549309,
+        "Símbolo": "building"
     },
     "3000603": {
         "Estación": "SERVICENTRO LA MERCED S.A.C.",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "ESQ. AV. URUBAMBA CON AV. LOS"
+        "Población": "LIMA",
+        "Dirección": "Av. Los Ingenieros 554, Ate 15012",
+        "Asesor": "GRANTHON CAMPOS JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.054684545592,
+        "Longitud": -76.9555771001738,
+        "Símbolo": "building"
     },
     "1003117": {
         "Estación": "ESTACION DE SERVICIOS HORNA S.R.L.",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "AV. SEPARADORA INDUSTRIAL NRO. 809"
+        "Población": "LIMA",
+        "Dirección": "Av. Separadora Industrial 809, Ate 15022",
+        "Asesor": "GRANTHON CAMPOS JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.0715356845659,
+        "Longitud": -76.982815253156,
+        "Símbolo": "building"
     },
     "1013193": {
         "Estación": "CORGAS S.A.C.",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "LAS TORRES NRO. 497 URB. LOS SAUCES"
-    },
-    "3001096": {
-        "Estación": "INVERSIONES GARAY S.R.L.",
-        "Zona": "LIMA",
-        "Distrito": "SANTA ANITA",
-        "Dirección": "AV. HUANCARAY MZ. A-6 LOTES DEL 44"
-    },
-    "1000146": {
-        "Estación": "SERVICENTRO LOS ROSALES S.A.",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV. AYACUCHO NRO. 140"
-    },
-    "1010766": {
-        "Estación": "INVERSIONES GASSURCO S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV.GUARDIA CIVIL MZA.B LOTE 1-2 URB"
-    },
-    "1010770": {
-        "Estación": "CORPORACION BLUE GAS S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV. PRIMAVERA 1695 URB.CENTRO COMER"
-    },
-    "1012890": {
-        "Estación": "REPRESENTACIONES CASASI S.A.",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV.GOLF LOS INCAS 493 URB.CLUB GOLF"
-    },
-    "1010753": {
-        "Estación": "SUR EXPORT E.I.R.L.",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "Jr Cerro Azul N° 227-233-237"
-    },
-    "3000798": {
-        "Estación": "GRIFOS CAJAMARCA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA MARIA DEL TRIUNFO",
-        "Dirección": "AV. PACHACUTEC NO. 2334"
-    },
-    "1011063": {
-        "Estación": "ESTACION DE SERVICIOS NUEVO",
-        "Zona": "LIMA",
-        "Distrito": "VILLA MARIA DEL TRIUNFO",
-        "Dirección": "GRUPO 1 MZA. A LOTE. 3 A.H. NUEVO"
-    },
-    "1011615": {
-        "Estación": "SERVICIOS MULTIPLES POGAS S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA MARIA DEL TRIUNFO",
-        "Dirección": "AV 26 DE NOVIEMBRE MZA. D2 LT7 P.J."
-    },
-    "1012626": {
-        "Estación": "REPRESENTACIONES Y ASOCIADOS MICSA",
-        "Zona": "LIMA",
-        "Distrito": "VILLA MARIA DEL TRIUNFO",
-        "Dirección": "AV.SALVADOR ALLENDE S/N MZA.N2 L.9"
-    },
-    "1002793": {
-        "Estación": "ESTACION DE SERVICIOS AVIACION S.A.",
-        "Zona": "LIMA",
-        "Distrito": "SAN BORJA",
-        "Dirección": "AV. AVIACION NRO. 2680"
-    },
-    "1011179": {
-        "Estación": "JLF ASOCIADOS S.A.C",
-        "Zona": "LIMA",
-        "Distrito": "SAN BORJA",
-        "Dirección": "AV. SAN BORJA NORTE N° 1415"
-    },
-    "1003199": {
-        "Estación": "MULTISERVICIOS ECOGAS S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "LURIGANCHO",
-        "Dirección": "SUBLT1 MZA. D LOTE. 1 URB. POPULAR"
-    },
-    "1010752": {
-        "Estación": "REIMIJ S.R.LTDA.",
-        "Zona": "LIMA",
-        "Distrito": "LURIGANCHO",
-        "Dirección": "Av Ramiro Prialé N 5747 CP CENTRO"
-    },
-    "1002654": {
-        "Estación": "ESTACION DE SERVICIO PONCE S.R. LTD",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE LURIGANCHO",
-        "Dirección": "AV. CAMPOY MZA. C LOTE. 25 COO. EL"
-    },
-    "1003092": {
-        "Estación": "SERVICENTRO EL PIONERO E.I.R.L.",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE LURIGANCHO",
-        "Dirección": "MZA. C-1 LOTE. 20A2 URB. EL CLUB DE"
-    },
-    "1010757": {
-        "Estación": "HM INVERSIONES Y SERVICIOS S.A.",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE LURIGANCHO",
-        "Dirección": "Avenida Canto Grande 401 Mz L"
-    },
-    "3004459": {
-        "Estación": "RAPIGRIFOS S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SURQUILLO",
-        "Dirección": "REPUBLICA DE PANAMA N°5185"
-    },
-    "3004645": {
-        "Estación": "GRIFOS ESPINOZA S A",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "AV. LA MOLINA 1595 URB. SOL DE LA M"
-    },
-    "1010764": {
-        "Estación": "F & R INVERSIONES Y PROYECTOS S.A.C",
-        "Zona": "LIMA",
-        "Distrito": "PACHACAMAC",
-        "Dirección": "AV. VICTOR MALASQUEZ PARCELA NRO"
-    },
-    "1002685": {
-        "Estación": "ORGANIZACION FUTURO S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "AV. JAVIER PRADO NRO. 6651 URB."
-    },
-    "1015005": {
-        "Estación": "INVERSIONES Y COMERCIALIZACION MAKA",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "Av. Prol. Javier Prado Este 4885 Es"
-    },
-    "3008006": {
-        "Estación": "INVERSIONES Y COMERCIALIZACION MAKA",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "AV.LOS FRUTALES ESQ.ARCOS  DE LA FR"
-    },
-    "1003180": {
-        "Estación": "OLGA SALAZAR SANTIVAÑEZ S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "CHACLACAYO",
-        "Dirección": "AV. N. AYLLON NRO. 405"
-    },
-    "1011113": {
-        "Estación": "SERVI GRIFOS S A",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE MIRAFLORES",
-        "Dirección": "CAR. PANAMERICANA SUR KM. 14 URB. S"
-    },
-    "1010994": {
-        "Estación": "INVERSIONES PERCY CAR S.R.L",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "GRUPO 25A,SECTOR 1 MZA.I LOTE.1 A.H"
-    },
-    "1011014": {
-        "Estación": "PACHACUTEC INVERSIONES GENERALES S.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "PARCELA II MZA. E LOTE. 01 PARQUE"
-    },
-    "1011026": {
-        "Estación": "ESTACION DE SERVICIOS PERCY CAR S.R",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "AV. PASTOR SEVILLA Y AV. MARIA RE"
-    },
-    "1011030": {
-        "Estación": "EUROMAXX INVERSIONES GENERALES S.A.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "GRUPO 20 MZA. N LOTE 05 SECTOR 1"
-    },
-    "1011578": {
-        "Estación": "CORPORACION ALEGROUP E.I.R.L.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "LOTE25,MZ.N´, AGRUPAMIENTO"
-    },
-    "3009726": {
-        "Estación": "EMP.TRANSP. SERV. Y COMERC. REYDA E",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE MIRAFLORES",
-        "Dirección": "LOTE  2B , LA RINCONADA,"
-    },
-    "1011598": {
-        "Estación": "REPRESENTACIONES E INVERSIONES",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE MIRAFLORES",
-        "Dirección": "CAL.SAN JUAN MZA. K10 LOTE. 12 A.H."
-    },
-    "1012213": {
-        "Estación": "ESTACION PACHACUTEC S.A.C",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE MIRAFLORES",
-        "Dirección": "AV DEFENSORES C/ TORRES PAZ S/N PAM"
+        "Población": "LIMA",
+        "Dirección": "Av. las Torres Nº 497, Ate 15022",
+        "Asesor": "GRANTHON CAMPOS JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.0701198245257,
+        "Longitud": -76.9883900357557,
+        "Símbolo": "building"
     },
     "3006966": {
         "Estación": "ESTACION PACHACUTEC S.A.C",
         "Zona": "LIMA",
         "Distrito": "BARRANCO",
-        "Dirección": "AV. BOLOGNESI NRO. 894 BARRANCO LIM"
-    },
-    "1002734": {
-        "Estación": "SERVICENTRO LA ALAMEDA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "CHORRILLOS",
-        "Dirección": "AV. ALAMEDA SUR MZA. Q LOTE. 11 URB"
-    },
-    "1003089": {
-        "Estación": "SERVICENTRO TACALA S.R.L.",
-        "Zona": "LIMA",
-        "Distrito": "CHORRILLOS",
-        "Dirección": "AV. EL SOL MZA. A LOTE. 4 A.H."
-    },
-    "1011114": {
-        "Estación": "OPERACIONES Y SERVICIOS GENERALES S",
-        "Zona": "LIMA",
-        "Distrito": "CHORRILLOS",
-        "Dirección": "AV. CAMINOS DEL INCA MZA. N LOTE 19"
-    },
-    "1010773": {
-        "Estación": "FERRETERIA LOS HUERTOS DE SANTA ROS",
-        "Zona": "LIMA",
-        "Distrito": "LURIN",
-        "Dirección": "ANTIGUA PANAMERICANA SUR, ESQ."
-    },
-    "1011647": {
-        "Estación": "ESTACION DE SERVICIOS LOS NORTEÑOS",
-        "Zona": "LIMA",
-        "Distrito": "LURIN",
-        "Dirección": "MZA. E LOTE. 1 URB. HUERTOS DE SANT"
-    },
-    "1007571": {
-        "Estación": "SERVICIOS Y REPRESENTACIONES TACNA",
-        "Zona": "LIMA",
-        "Distrito": "LA VICTORIA",
-        "Dirección": "AV. BAUSATE Y MEZA NRO. 801"
-    },
-    "3010229": {
-        "Estación": "SIROCO HOLDINGS SAC",
-        "Zona": "LIMA",
-        "Distrito": "LA VICTORIA",
-        "Dirección": "AV. MANCO CÁPAC N° 301, 305,311, 317,321"
+        "Población": "LIMA",
+        "Dirección": "Av. Francisco Bolognesi 894, Barranco 15063",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1427659904286,
+        "Longitud": -77.0180116425935,
+        "Símbolo": "building"
     },
     "3000673": {
         "Estación": "DUOGAS S.A.",
         "Zona": "LIMA",
         "Distrito": "BREÑA",
-        "Dirección": "AV. ARICA N° 580 - 590 ESQ. CON JR."
-    },
-    "3000197": {
-        "Estación": "SERVICENTRO EL CONDOR S.R.L.",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "ASOCIACION DE PROPIETARIOS NARANJIT"
-    },
-    "1005748": {
-        "Estación": "INVERSIONES GENERALES DILEO PERU S.",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "MZA Q2 LT 5 PARCELACION ZAPALLAL"
-    },
-    "3005787": {
-        "Estación": "ASIA GRIFOS Y SERVICIOS",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "AV. PUENTE PIEDRA N° 1218 KM.32"
-    },
-    "1010840": {
-        "Estación": "GRIFO TRAPICHE S.R.L.",
-        "Zona": "LIMA",
-        "Distrito": "COMAS",
-        "Dirección": "AV.HEROES DEL ALTO CENEPA 697"
-    },
-    "3010098": {
-        "Estación": "OPERACIONES Y SERVICIOS GENERALES",
-        "Zona": "LIMA",
-        "Distrito": "MAGDALENA DEL MAR",
-        "Dirección": "CIRCUITO DE PLAYAS - PLAYA MARBELLA"
-    },
-    "1010564": {
-        "Estación": "VELDI S.A",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "AV.GENERAL CORDOVA 1025 URB.SANTA"
-    },
-    "3005215": {
-        "Estación": "INVERSIONES BOREAL S.A.",
-        "Zona": "LIMA",
-        "Distrito": "SAN ISIDRO",
-        "Dirección": "AV.AUGUSTO PEREZ ARANIBAR N°2199"
-    },
-    "1002666": {
-        "Estación": "FORMAS METALICAS S.A. FOMETSA",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV. ARGENTINA NRO. 915"
-    },
-    "1002737": {
-        "Estación": "ESTACION DE SERVICIO NIAGARA SRL",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "JR. ELVIRA GARCIA Y GARCIA 2790"
-    },
-    "1012231": {
-        "Estación": "ESTACION SANTA MARGHERITA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV. VENEZUELA NRO. 2600 (S/R) LIMA"
-    },
-    "3009778": {
-        "Estación": "XIN XING SA.",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV. ARGENTINA NRO. 898"
-    },
-    "1003122": {
-        "Estación": "RAMPOIL S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "RÍMAC",
-        "Dirección": "JR. DOMINGO ANGULO NRO. 131"
-    },
-    "3000679": {
-        "Estación": "SERVICENTRO LA ALAMEDA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "AV. CARLOS IZAGUIRRE ESQUINA CON AV"
-    },
-    "3000237": {
-        "Estación": "INVERSIONES EL PIBE S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "AV. TOMAS VALLE MZ. I, LOTE 9 - A,"
-    },
-    "1010760": {
-        "Estación": "CORPORACION GEAMAR S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "AV. CARLOS IZAGUIRRE MZ. D"
-    },
-    "1010882": {
-        "Estación": "TRAILER GAS S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "AV. ALFREDO MENDIOLA NRO. 6810 LIMA"
-    },
-    "1002721": {
-        "Estación": "INVERSIONES UCHIYAMA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SAN MIGUEL",
-        "Dirección": "AV. LA MAR NRO. 2382"
-    },
-    "1005508": {
-        "Estación": "ESTACION DE SERVICIOS GAMARRA",
-        "Zona": "LIMA",
-        "Distrito": "SAN MIGUEL",
-        "Dirección": "AV. LA PAZ 1498"
-    },
-    "1010516": {
-        "Estación": "DERK S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "PUEBLO LIBRE",
-        "Dirección": "AV.DEL RIO NRO.110"
-    },
-    "1011023": {
-        "Estación": "SERVICENTRO CAMINOS DEL INCA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "PUEBLO LIBRE",
-        "Dirección": "AV. LA MARINA NRO. 892"
-    },
-    "1021420": {
-        "Estación": "HERBERT TOLOMEO MEZA CACEDA",
-        "Zona": "LIMA",
-        "Distrito": "PUEBLO LIBRE",
-        "Dirección": "AV. LA MARINA 892"
-    },
-    "1010755": {
-        "Estación": "ESTACION DE SERVICIOS CORPAC S.A.",
-        "Zona": "LIMA",
-        "Distrito": "SAN ISIDRO",
-        "Dirección": "AV ENRIQUE CANAVAL"
-    },
-    "3006095": {
-        "Estación": "GRUPO DE GESTION - NARANJAL",
-        "Zona": "LIMA",
-        "Distrito": "INDEPENDENCIA",
-        "Dirección": "AV. GERARDO UNGER NRO. 4885"
-    },
-    "1012886": {
-        "Estación": "ESTACIÓN DE SERVICIOS LOS OLIVOS",
-        "Zona": "LIMA",
-        "Distrito": "LOS OLIVOS",
-        "Dirección": "AV. UNIVERSITARIA NRO. S/N"
-    },
-    "1006614": {
-        "Estación": "ESTACION DE SERVICIOS LAS PAMPAS",
-        "Zona": "CALLAO",
-        "Distrito": "VENTANILLA",
-        "Dirección": "AV. LA PLAYA NRO.S/N SEC. PAMPAS"
-    },
-    "3004042": {
-        "Estación": "DERK - ALTA GRACIA",
-        "Zona": "CALLAO",
-        "Distrito": "VENTANILLA",
-        "Dirección": "AV. PRECURSORES N° 202"
+        "Población": "LIMA",
+        "Dirección": "Av. Arica 580, Breña 15082",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0582293590105,
+        "Longitud": -77.0468068892807,
+        "Símbolo": "building"
     },
     "1011710": {
         "Estación": "GASCORVILL S.A.C.",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "MZA.D LOT 3 - 4, URB. LAS COLINAS"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Pacasmayo 3, Callao 07031",
+        "Asesor": "COTRINA ARABUS SEIDA ANGELICA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0032129696651,
+        "Longitud": -77.1049453310544,
+        "Símbolo": "building"
     },
     "3004519": {
         "Estación": "SIROCO HOLDINGS SAC",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. ELMER FAUCETT 735-739"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "28 De Julio 125, Carmen de La Legua - Reynoso 07006",
+        "Asesor": "COTRINA ARABUS SEIDA ANGELICA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0455591336021,
+        "Longitud": -77.0989350722025,
+        "Símbolo": "building"
     },
-    "3005756": {
+    "1010501": {
+        "Estación": "FULL SERVICE SAN VICENTE S R LTDA.",
+        "Zona": "LIMA",
+        "Distrito": "CAÑETE",
+        "Población": "CAÑETE",
+        "Dirección": "Av. Mariscal Benavides, San Vicente de Cañete 15701",
+        "Asesor": "CATTER BARUA JOSE ANTONIO",
+        "Grupo": "Dealer",
+        "Latitud": -13.0651425048518,
+        "Longitud": -76.3573308902519,
+        "Símbolo": "building"
+    },
+    "1002666": {
+        "Estación": "FORMAS METALICAS S.A. FOMETSA",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Argentina 987, Grau, Cercado de Lima 15082",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0446932052753,
+        "Longitud": -77.0538034929804,
+        "Símbolo": "building"
+    },
+    "1002737": {
+        "Estación": "ESTACION DE SERVICIO NIAGARA SRL",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Jiron Elvira Garcia y Garcia 2790, Cercado de Lima 15081",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0513431332576,
+        "Longitud": -77.0779004202129,
+        "Símbolo": "building"
+    },
+    "1012231": {
         "Estación": "ESTACION SANTA MARGHERITA S.A.C.",
         "Zona": "LIMA",
-        "Distrito": "CALLAO",
-        "Dirección": "AV.SAENZ PEÑA N°1100 CERCADO"
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. República de Venezuela 2600, Cercado de Lima 15081",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0576083800274,
+        "Longitud": -77.0685989467483,
+        "Símbolo": "building"
+    },
+    "3009778": {
+        "Estación": "XIN XING SA.",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Argentina 898, Cercado de Lima 15079",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0441978689628,
+        "Longitud": -77.0532746357557,
+        "Símbolo": "building"
+    },
+    "1003180": {
+        "Estación": "OLGA SALAZAR SANTIVAÑEZ S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CHACLACAYO",
+        "Población": "LIMA",
+        "Dirección": "Carr. Central 387, Chaclacayo 15472",
+        "Asesor": "CONTRERAS AGUILAR GINO ELTON",
+        "Grupo": "Dealer",
+        "Latitud": -11.976515185049,
+        "Longitud": -76.7734979001899,
+        "Símbolo": "building"
+    },
+    "1002734": {
+        "Estación": "SERVICENTRO LA ALAMEDA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Población": "LIMA",
+        "Dirección": "Av Sta Rosa, San Martín de Porres 15108",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -11.9905055665932,
+        "Longitud": -77.0974147755107,
+        "Símbolo": "building"
+    },
+    "1003089": {
+        "Estación": "SERVICENTRO TACALA S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Población": "LIMA",
+        "Dirección": "Av San Martín, Chorrillos 15057",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1868979397001,
+        "Longitud": -76.9892849973581,
+        "Símbolo": "building"
+    },
+    "1010840": {
+        "Estación": "GRIFO TRAPICHE S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "COMAS",
+        "Población": "LIMA",
+        "Dirección": "Au. Chillón Trapiche 665, Comas 15316",
+        "Asesor": "DELLEPIANE SALAZAR GINO AMADEO",
+        "Grupo": "Dealer",
+        "Latitud": -11.9209356820925,
+        "Longitud": -77.062273381545,
+        "Símbolo": "building"
+    },
+    "3003208": {
+        "Estación": "CONSULTORA NORQUEENS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "HUARAL",
+        "Población": "HUARAL",
+        "Dirección": "Lotizadora Sr.de los Milagros Mz B lt 26-27, Huaral 15201",
+        "Asesor": "MARTINEZ ROCA ALEX VIJOU",
+        "Grupo": "Dealer",
+        "Latitud": -11.4901993381644,
+        "Longitud": -77.2129906483139,
+        "Símbolo": "building"
+    },
+    "3006095": {
+        "Estación": "GRUPO DE GESTION - NARANJAL",
+        "Zona": "LIMA",
+        "Distrito": "INDEPENDENCIA",
+        "Población": "LIMA",
+        "Dirección": "Av Gerardo Unger 4885, Independencia 15311",
+        "Asesor": "MEDINA BELLO VIOLETA NOELIA",
+        "Grupo": "Dealer",
+        "Latitud": -11.9769312967962,
+        "Longitud": -77.0603283826678,
+        "Símbolo": "building"
+    },
+    "3004645": {
+        "Estación": "GRIFOS ESPINOZA S A",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Jr. Paracas 280, La Molina 15026",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.0857606612295,
+        "Longitud": -76.9016247174122,
+        "Símbolo": "building"
+    },
+    "1002685": {
+        "Estación": "ORGANIZACION FUTURO S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Av. Javier Prado Este 6651, La Molina 15012",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.067752665334,
+        "Longitud": -76.9465969557271,
+        "Símbolo": "building"
+    },
+    "1015005": {
+        "Estación": "INVERSIONES Y COMERCIALIZACION MAKA",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Av. Javier Prado Este 4885, La Molina 15023",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.0816857129408,
+        "Longitud": -76.9680302286293,
+        "Símbolo": "building"
+    },
+    "3008006": {
+        "Estación": "INVERSIONES Y COMERCIALIZACION MAKA",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Av Los Frutales 968, Lima 15023",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.0730392719243,
+        "Longitud": -76.9647674086678,
+        "Símbolo": "building"
     },
     "1002607": {
         "Estación": "AUTO SERVICIO LA PERLA S A",
         "Zona": "LIMA",
         "Distrito": "LA PERLA",
-        "Dirección": "AV. VENEZUELA NRO. 1050 URB."
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. República de Venezuela, Bellavista 07011",
+        "Asesor": "COTRINA ARABUS SEIDA ANGELICA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0643958017856,
+        "Longitud": -77.1124421896093,
+        "Símbolo": "building"
     },
     "1003274": {
         "Estación": "ESTACION DE SERVICIOS LA MARINA SAC",
         "Zona": "LIMA",
         "Distrito": "LA PERLA",
-        "Dirección": "AV. DE LA MARINA NRO. 405 URB. DOIG"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. la Marina 405, La Perla 07011",
+        "Asesor": "COTRINA ARABUS SEIDA ANGELICA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0672084417974,
+        "Longitud": -77.1157232268568,
+        "Símbolo": "building"
     },
-    "P118": {
-        "Estación": "E/S BARRANCA",
+    "1007571": {
+        "Estación": "SERVICIOS Y REPRESENTACIONES TACNA",
         "Zona": "LIMA",
-        "Distrito": "BARRANCA",
-        "Dirección": "AV RAMÓN CASTILLA NRO 921"
+        "Distrito": "LA VICTORIA",
+        "Población": "LIMA",
+        "Dirección": "Av Bausate y Meza 1050, La Victoria 15018",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0636095934342,
+        "Longitud": -77.0232624226751,
+        "Símbolo": "building"
     },
-    "P294": {
-        "Estación": "E/S SAN JOSÉ",
+    "3010229": {
+        "Estación": "SIROCO HOLDINGS SAC",
         "Zona": "LIMA",
-        "Distrito": "BARRANCA",
-        "Dirección": "CARRETERA PANAMERICANA NORTE"
+        "Distrito": "LA VICTORIA",
+        "Población": "LIMA",
+        "Dirección": "Av. Manco Cápac 301, La Victoria 15033",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0619377222565,
+        "Longitud": -77.0293054064484,
+        "Símbolo": "building"
     },
-    "P311": {
-        "Estación": "E/S SUPE",
+    "1012886": {
+        "Estación": "ESTACIÓN DE SERVICIOS LOS OLIVOS",
         "Zona": "LIMA",
-        "Distrito": "SUPE",
-        "Dirección": "PANAMERICANA NORTE KM 185"
+        "Distrito": "LOS OLIVOS",
+        "Población": "LIMA",
+        "Dirección": "2WFF+H3Q, Los Olivos 15306",
+        "Asesor": "MEDINA BELLO VIOLETA NOELIA",
+        "Grupo": "Dealer",
+        "Latitud": -11.97603535029,
+        "Longitud": -77.0771892179781,
+        "Símbolo": "building"
+    },
+    "1003199": {
+        "Estación": "MULTISERVICIOS ECOGAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "LURIGANCHO",
+        "Población": "LIMA",
+        "Dirección": "Esq Av Principal c/Calle Los Robles, Principal, Lurigancho-Chosica",
+        "Asesor": "CONTRERAS AGUILAR GINO ELTON",
+        "Grupo": "Dealer",
+        "Latitud": -12.000606013746,
+        "Longitud": -76.853373193295,
+        "Símbolo": "building"
+    },
+    "1010752": {
+        "Estación": "REIMIJ S.R.LTDA.",
+        "Zona": "LIMA",
+        "Distrito": "LURIGANCHO",
+        "Población": "LIMA",
+        "Dirección": "Au. Ramiro Prialé 137, Lurigancho-Chosica 15457",
+        "Asesor": "CONTRERAS AGUILAR GINO ELTON",
+        "Grupo": "Dealer",
+        "Latitud": -12.0200365810644,
+        "Longitud": -76.9192199874825,
+        "Símbolo": "building"
+    },
+    "1011647": {
+        "Estación": "ESTACION DE SERVICIOS LOS NORTEÑOS",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Población": "LIMA",
+        "Dirección": "Antigua Panamericana Sur 16, Lurín 15823",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Dealer",
+        "Latitud": -12.2982327046592,
+        "Longitud": -76.848401345862,
+        "Símbolo": "building"
+    },
+    "1010564": {
+        "Estación": "VELDI S.A",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Av. Gral. Córdova 1025, Cercado de Lima 15076",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1093523369761,
+        "Longitud": -77.0484047793589,
+        "Símbolo": "building"
+    },
+    "1010516": {
+        "Estación": "DERK S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Población": "LIMA",
+        "Dirección": "Av. del Rio 110, Pueblo Libre 15084",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.066731709336,
+        "Longitud": -77.0544745206745,
+        "Símbolo": "building"
+    },
+    "1011023": {
+        "Estación": "SERVICENTRO CAMINOS DEL INCA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Población": "LIMA",
+        "Dirección": "Av. la Marina 892, Pueblo Libre 15084",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.081488002282,
+        "Longitud": -77.0709988014209,
+        "Símbolo": "building"
+    },
+    "3005787": {
+        "Estación": "ASIA GRIFOS Y SERVICIOS",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Población": "LIMA",
+        "Dirección": "Av. Puente Piedra 1218, Puente Piedra 15118",
+        "Asesor": "COTRINA ARABUS SEIDA ANGELICA",
+        "Grupo": "Dealer",
+        "Latitud": -11.8574292019243,
+        "Longitud": -77.0840366172605,
+        "Símbolo": "building"
+    },
+    "1003122": {
+        "Estación": "RAMPOIL S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "RÍMAC",
+        "Población": "LIMA",
+        "Dirección": "Alameda Los Bobos, Rímac 15093",
+        "Asesor": "MEDINA BELLO VIOLETA NOELIA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0327999643944,
+        "Longitud": -77.0266009463382,
+        "Símbolo": "building"
+    },
+    "1002793": {
+        "Estación": "ESTACION DE SERVICIOS AVIACION S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Población": "LIMA",
+        "Dirección": "Av. San Borja Nte. 561, San Borja 15036",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.0939702586023,
+        "Longitud": -77.0029496969649,
+        "Símbolo": "building"
+    },
+    "1011179": {
+        "Estación": "JLF ASOCIADOS S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Población": "LIMA",
+        "Dirección": "Jr Paseo del Bosque 810-890, San Borja 15037",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.0960808400087,
+        "Longitud": -76.9884297426017,
+        "Símbolo": "building"
+    },
+    "3005215": {
+        "Estación": "INVERSIONES BOREAL S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Población": "LIMA",
+        "Dirección": "Av. Augusto Pérez Araníbar 2199, San Isidro 15076",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1033246607464,
+        "Longitud": -77.0582139343249,
+        "Símbolo": "building"
+    },
+    "1010755": {
+        "Estación": "ESTACION DE SERVICIOS CORPAC S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Población": "LIMA",
+        "Dirección": "Av. Canaval y Moreyra 202, San Isidro 15047",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.0971156047964,
+        "Longitud": -77.0238767680458,
+        "Símbolo": "building"
+    },
+    "1002654": {
+        "Estación": "ESTACION DE SERVICIO PONCE S.R. LTD",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Población": "LIMA",
+        "Dirección": "Av. Malecón Checa, San Juan de Lurigancho 15457",
+        "Asesor": "DELLEPIANE SALAZAR GINO AMADEO",
+        "Grupo": "Dealer",
+        "Latitud": -12.0204645870094,
+        "Longitud": -76.957975993405,
+        "Símbolo": "building"
+    },
+    "1003092": {
+        "Estación": "SERVICENTRO EL PIONERO E.I.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Población": "LIMA",
+        "Dirección": "C. Los Gavilanes, Lurigancho-Chosica 15457",
+        "Asesor": "CONTRERAS AGUILAR GINO ELTON",
+        "Grupo": "Dealer",
+        "Latitud": -12.0115739729988,
+        "Longitud": -76.9351142669395,
+        "Símbolo": "building"
+    },
+    "1011113": {
+        "Estación": "SERVI GRIFOS S A",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Av Pedro Miotta 130, Distrito de Lima 15842",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1733872016886,
+        "Longitud": -76.9778542261982,
+        "Símbolo": "building"
+    },
+    "3009726": {
+        "Estación": "EMP.TRANSP. SERV. Y COMERC. REYDA E",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "V2FX+H97, San Juan de Miraflores 15806",
+        "Asesor": "RODRIGUEZ TORRES JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.1260857197261,
+        "Longitud": -76.9515733959955,
+        "Símbolo": "building"
+    },
+    "1012213": {
+        "Estación": "ESTACION PACHACUTEC S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Av. Defensores de Lima, esquina con Torres Paz, 03 Abril, San Juan de Miraflores",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1467844455747,
+        "Longitud": -76.9706500215507,
+        "Símbolo": "building"
+    },
+    "3000679": {
+        "Estación": "SERVICENTRO LA ALAMEDA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Población": "LIMA",
+        "Dirección": "Av Sta Rosa, San Martín de Porres 15108",
+        "Asesor": "MEDINA BELLO VIOLETA NOELIA",
+        "Grupo": "Dealer",
+        "Latitud": -11.9905216679934,
+        "Longitud": -77.0974260455971,
+        "Símbolo": "building"
+    },
+    "3000237": {
+        "Estación": "INVERSIONES EL PIBE S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Población": "LIMA",
+        "Dirección": "Av. Tomas Valle, San Martín de Porres 15107",
+        "Asesor": "MEDINA BELLO VIOLETA NOELIA",
+        "Grupo": "Dealer",
+        "Latitud": -12.013292676857,
+        "Longitud": -77.082751356153,
+        "Símbolo": "building"
+    },
+    "1010882": {
+        "Estación": "TRAILER GAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Población": "LIMA",
+        "Dirección": "Naranjas 190, Los Olivos 15314",
+        "Asesor": "MEDINA BELLO VIOLETA NOELIA",
+        "Grupo": "Dealer",
+        "Latitud": -11.9431668815256,
+        "Longitud": -77.0705640546562,
+        "Símbolo": "building"
+    },
+    "1002721": {
+        "Estación": "INVERSIONES UCHIYAMA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Población": "LIMA",
+        "Dirección": "Av. La Mar 2382, San Miguel 15088",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0743040461438,
+        "Longitud": -77.0835193532819,
+        "Símbolo": "building"
+    },
+    "1005508": {
+        "Estación": "ESTACION DE SERVICIOS GAMARRA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Población": "LIMA",
+        "Dirección": "Av. Rafael Escardó 230, San Miguel 15087",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0838974376795,
+        "Longitud": -77.0962771747665,
+        "Símbolo": "building"
+    },
+    "3001096": {
+        "Estación": "INVERSIONES GARAY S.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "SANTA ANITA",
+        "Población": "LIMA",
+        "Dirección": "Metropolitana, Santa Anita 15011",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Dealer",
+        "Latitud": -12.0383889589906,
+        "Longitud": -76.954703877955,
+        "Símbolo": "building"
+    },
+    "1013194": {
+        "Estación": "PETRO REAL GAS EIRL",
+        "Zona": "LIMA",
+        "Distrito": "SANTA EULALIA",
+        "Población": "HUAROCHIRÍ",
+        "Dirección": "38HP+587, Lurigancho-Chosica 15500",
+        "Asesor": "CONTRERAS AGUILAR GINO ELTON",
+        "Grupo": "Dealer",
+        "Latitud": -11.9220915143137,
+        "Longitud": -76.6642158586318,
+        "Símbolo": "building"
+    },
+    "1000146": {
+        "Estación": "SERVICENTRO LOS ROSALES S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Av. Ayacucho, Santiago de Surco 15049",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1421748002233,
+        "Longitud": -77.0018634778662,
+        "Símbolo": "building"
+    },
+    "1010766": {
+        "Estación": "INVERSIONES GASSURCO S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Jr. Guardia Civil, Cercado de Lima 15056",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1715111640844,
+        "Longitud": -76.9918206436837,
+        "Símbolo": "building"
+    },
+    "1010770": {
+        "Estación": "CORPORACION BLUE GAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Jirón el Alamo 121, Lima 15023",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1088721911248,
+        "Longitud": -76.9709993250558,
+        "Símbolo": "building"
+    },
+    "1012890": {
+        "Estación": "REPRESENTACIONES CASASI S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Av. Raúl Ferrero 5941, Santiago de Surco 15023",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.0935464376524,
+        "Longitud": -76.967244586135,
+        "Símbolo": "building"
+    },
+    "1010753": {
+        "Estación": "SUR EXPORT E.I.R.L.",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Jr.Cerro Azul 227, Santiago de Surco 15803",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1315773743939,
+        "Longitud": -76.9768990121525,
+        "Símbolo": "building"
+    },
+    "3004459": {
+        "Estación": "RAPIGRIFOS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SURQUILLO",
+        "Población": "LIMA",
+        "Dirección": "Av. República de Panamá 5185, Surquillo 15048",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Dealer",
+        "Latitud": -12.1159869720985,
+        "Longitud": -77.0180844006493,
+        "Símbolo": "building"
+    },
+    "3004042": {
+        "Estación": "DERK - ALTA GRACIA",
+        "Zona": "CALLAO",
+        "Distrito": "VENTANILLA",
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Nestor Gambetta 202, Ventanilla 07036",
+        "Asesor": "COTRINA ARABUS SEIDA ANGELICA",
+        "Grupo": "Dealer",
+        "Latitud": -11.8717711001232,
+        "Longitud": -77.1270985511164,
+        "Símbolo": "building"
+    },
+    "3000653": {
+        "Estación": "PETROSUR S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Antigua Panamericana Sur 2, Villa EL Salvador 15067",
+        "Asesor": "RODRIGUEZ TORRES JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.2231285892358,
+        "Longitud": -76.9745788165743,
+        "Símbolo": "building"
+    },
+    "1011014": {
+        "Estación": "PACHACUTEC INVERSIONES GENERALES S.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Av El Sol 127, Villa EL Salvador 15816",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Dealer",
+        "Latitud": -12.1957592526539,
+        "Longitud": -76.9350134504503,
+        "Símbolo": "building"
+    },
+    "1011026": {
+        "Estación": "ESTACION DE SERVICIOS PERCY CAR S.R",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Auxiliar Av. Mariano Pastor Sevilla, Villa EL Salvador 15829",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Dealer",
+        "Latitud": -12.205159526535,
+        "Longitud": -76.9528338180811,
+        "Símbolo": "building"
+    },
+    "1011030": {
+        "Estación": "EUROMAXX INVERSIONES GENERALES S.A.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Av. los Angeles 1183, Villa EL Salvador 15829",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Dealer",
+        "Latitud": -12.2008893779725,
+        "Longitud": -76.9506348130718,
+        "Símbolo": "building"
+    },
+    "3000798": {
+        "Estación": "GRIFOS CAJAMARCA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA MARIA DEL TRIUNFO",
+        "Población": "LIMA",
+        "Dirección": "Av Pachacutec, Villa María del Triunfo 15828",
+        "Asesor": "RODRIGUEZ TORRES JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.1682269413244,
+        "Longitud": -76.9512459150689,
+        "Símbolo": "building"
+    },
+    "1011615": {
+        "Estación": "SERVICIOS MULTIPLES POGAS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA MARIA DEL TRIUNFO",
+        "Población": "LIMA",
+        "Dirección": "Av 26 de Noviembre 2415, Villa María del Triunfo 15817",
+        "Asesor": "RODRIGUEZ TORRES JUAN CARLOS",
+        "Grupo": "Dealer",
+        "Latitud": -12.1709489484897,
+        "Longitud": -76.9172224998741,
+        "Símbolo": "building"
     },
     "P306": {
         "Estación": "E/S SARAPAMPA 1",
         "Zona": "LIMA",
         "Distrito": "ASIA",
-        "Dirección": "ALTURA PANAMERICANA SUR"
+        "Población": "CAÑETE",
+        "Dirección": "5FJ6+CQX, Asia 15690",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.8188599733398,
+        "Longitud": -76.5380043344871,
+        "Símbolo": "fuel"
     },
     "P204": {
         "Estación": "E/S SARAPAMPA 2",
         "Zona": "LIMA",
         "Distrito": "ASIA",
-        "Dirección": "PANAMERICANA SUR KM 106.40"
+        "Población": "CAÑETE",
+        "Dirección": "5FJ6+PXC, Asia 15690",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.818191955917,
+        "Longitud": -76.5376188077009,
+        "Símbolo": "fuel"
     },
     "P127": {
         "Estación": "E/S ASIA",
         "Zona": "LIMA",
         "Distrito": "ASIA",
-        "Dirección": "CARRETERA PANAMERICANA SUR"
-    },
-    "P193": {
-        "Estación": "E/S CHILCA",
-        "Zona": "LIMA",
-        "Distrito": "CHILCA",
-        "Dirección": "CARRETERA PANAMERICANA SUR"
-    },
-    "P174": {
-        "Estación": "E/S CAÑETE",
-        "Zona": "LIMA",
-        "Distrito": "CAÑETE",
-        "Dirección": "AV 28 DE JULIO NRO 216"
-    },
-    "P201": {
-        "Estación": "E/S CHANCAY 1",
-        "Zona": "LIMA",
-        "Distrito": "CHANCAY",
-        "Dirección": "CARRETERA PANAMERICANA NORTE"
-    },
-    "P154": {
-        "Estación": "E/S CHANCAY 2",
-        "Zona": "LIMA",
-        "Distrito": "CHANCAY",
-        "Dirección": "CARRETERA PANAMERICANA NORTE"
-    },
-    "P194": {
-        "Estación": "E/S CALLE DERECHA",
-        "Zona": "LIMA",
-        "Distrito": "HUARAL",
-        "Dirección": "CALLE DERCHA NRO 898"
-    },
-    "P113": {
-        "Estación": "E/S HUARALINO",
-        "Zona": "LIMA",
-        "Distrito": "HUARAL",
-        "Dirección": "AV CHANCAY ESQUINA CON CALLE 3"
-    },
-    "P206": {
-        "Estación": "E/S CORCONA",
-        "Zona": "LIMA",
-        "Distrito": "CHOSICA",
-        "Dirección": "AV NICOLAS DE PIEROLA SUR"
-    },
-    "P114": {
-        "Estación": "E/S COLOMA",
-        "Zona": "LIMA",
-        "Distrito": "HUACHO",
-        "Dirección": "CALLE DOMINGO COLOMA NRO 152"
+        "Población": "CAÑETE",
+        "Dirección": "Interplayas, Asia 15690",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.7629293301805,
+        "Longitud": -76.5992377022115,
+        "Símbolo": "fuel"
     },
     "P126": {
         "Estación": "E/S ATE 2",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "GRIFO PRIMAX COESTI ATE 2"
-    },
-    "P269": {
-        "Estación": "E/S ÑAÑA",
-        "Zona": "LIMA",
-        "Distrito": "ÑAÑA",
-        "Dirección": "AV NICOLAS AYLLÓN 1340"
+        "Población": "LIMA",
+        "Dirección": "Residencial Portales de Pariachi Mz S1 lote 36, Ate 15476",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0026003108764,
+        "Longitud": -76.8413625672687,
+        "Símbolo": "fuel"
     },
     "P223": {
         "Estación": "E/S FELVERANA",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "AV NICOLAS AYLLON NRO 2162"
+        "Población": "LIMA",
+        "Dirección": "Av. Nicolás Ayllón 2162, Ate 15022",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0632487109759,
+        "Longitud": -76.9816331939713,
+        "Símbolo": "fuel"
     },
     "P135": {
         "Estación": "E/S ATE 1",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "AV NICOLAS AYLLÓN 2570"
+        "Población": "LIMA",
+        "Dirección": "Tomas Alva Edison 160, Lima 15022",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0601424867401,
+        "Longitud": -76.9762370807892,
+        "Símbolo": "fuel"
     },
-    "P239": {
-        "Estación": "E/S JAVIER PRADO",
+    "P118": {
+        "Estación": "E/S BARRANCA",
         "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV JAVIER PRADO ESTE NRO 1059"
+        "Distrito": "BARRANCA",
+        "Población": "BARRANCA",
+        "Dirección": "Pje. Callao 104, Barranca 15169",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -10.7454801557989,
+        "Longitud": -77.7660279441,
+        "Símbolo": "fuel"
     },
-    "P297": {
-        "Estación": "E/S SAN LUIS 2",
+    "P294": {
+        "Estación": "E/S SAN JOSÉ",
         "Zona": "LIMA",
-        "Distrito": "SAN BORJA",
-        "Dirección": "AV SAN LUIS NRO 2605 ESQUINA"
-    },
-    "P296": {
-        "Estación": "E/S SAN LUIS 1",
-        "Zona": "LIMA",
-        "Distrito": "SAN LUIS",
-        "Dirección": "NICOLÁS AYLLÓN NRO 1340"
-    },
-    "P134": {
-        "Estación": "E/S ARRIOLA",
-        "Zona": "LIMA",
-        "Distrito": "SAN LUIS",
-        "Dirección": "AV NICOLAS ARRIOLA NRO 710"
-    },
-    "P197": {
-        "Estación": "E/S CANADA",
-        "Zona": "LIMA",
-        "Distrito": "SAN LUIS",
-        "Dirección": "AV CANADA CUADRA 11 ESQUINA"
-    },
-    "P189": {
-        "Estación": "E/S CASTILLA 3",
-        "Zona": "LIMA",
-        "Distrito": "SAN LUIS",
-        "Dirección": "AV NICOLAS ARRIOLA NRO 295 URB"
-    },
-    "P224": {
-        "Estación": "E/S FERRARI",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV TOMÁS MARSANO NRO 5010"
-    },
-    "P185": {
-        "Estación": "E/S JORGE CHÁVEZ",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV JORGE CHAVEZ NRO 877"
-    },
-    "P200": {
-        "Estación": "E/S CHAMA",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV SANTIAGO DE SURCO NRO 3291"
-    },
-    "P217": {
-        "Estación": "E/S EL ROSARIO",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV TOMAS MARSANO NRO 1008"
-    },
-    "P162": {
-        "Estación": "E/S TOMÁS MARSANO",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV TOMÁS MARSANO ESQUINA CON"
-    },
-    "P231": {
-        "Estación": "E/S GRANADA",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV MARISCAL CASTILLA NRO 905"
-    },
-    "P325": {
-        "Estación": "E/S VALLE HERMOSO",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV PRIMAVERA NRO 1159"
-    },
-    "P266": {
-        "Estación": "E/S MONTREAL",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV CAMINOS DEL INCA NRO 2017"
-    },
-    "P188": {
-        "Estación": "E/S LAS GARDENIAS",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "JR BATALLA DE SAN JUAN NRO 112"
-    },
-    "P373": {
-        "Estación": "E/S SURCO",
-        "Zona": "LIMA",
-        "Distrito": "SANTIAGO DE SURCO",
-        "Dirección": "AV BENAVIDES Mz L Lt 5"
-    },
-    "P316": {
-        "Estación": "E/S TAVIRSA",
-        "Zona": "LIMA",
-        "Distrito": "CHORRILLOS",
-        "Dirección": "AV CAMINOS DEL INCA NRO 110-134"
-    },
-    "P157": {
-        "Estación": "E/S PRINCIPAL",
-        "Zona": "LIMA",
-        "Distrito": "SAN BORJA",
-        "Dirección": "AV JOSÉ GÁLVEZ BARRENECHEA"
-    },
-    "P152": {
-        "Estación": "E/S NAVAL",
-        "Zona": "LIMA",
-        "Distrito": "SAN BORJA",
-        "Dirección": "AV SAN LUIS NRO 2480"
-    },
-    "P372": {
-        "Estación": "E/S SAN BORJA",
-        "Zona": "LIMA",
-        "Distrito": "SAN BORJA",
-        "Dirección": "AV. JAVIER PRADO ESTE NRO. 3095 URB"
-    },
-    "P147": {
-        "Estación": "E/S BAHIA",
-        "Zona": "LIMA",
-        "Distrito": "LA VICTORIA",
-        "Dirección": "AV AVIACIÓN S/N CUADRA 15"
-    },
-    "P171": {
-        "Estación": "E/S WIESSE",
-        "Zona": "LIMA",
-        "Distrito": "CANTO GRANDE",
-        "Dirección": "URB CANTO GRANDE MZ B LT 06"
-    },
-    "P255": {
-        "Estación": "E/S LURIGANCHO",
-        "Zona": "LIMA",
-        "Distrito": "CANTO GRANDE",
-        "Dirección": "AV LURIGNCHO CUADRA 11 MZ B"
-    },
-    "P146": {
-        "Estación": "E/S PRÓCERES",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE LURIGANCHO",
-        "Dirección": "AV PRÓCERES DE LA INDEPEN"
-    },
-    "P143": {
-        "Estación": "E/S AULY",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE LURIGANCHO",
-        "Dirección": "AV LOS PROCERES DE LA INDEPEN"
-    },
-    "P327": {
-        "Estación": "E/S ZARATE",
-        "Zona": "LIMA",
-        "Distrito": "ZARATE",
-        "Dirección": "AV. PROCERES DE LA"
-    },
-    "P166": {
-        "Estación": "E/S REPÚBLICA DE PANAMÁ",
-        "Zona": "LIMA",
-        "Distrito": "SURQUILLO",
-        "Dirección": "AV REPÚBLICA DE PANAMÁ"
-    },
-    "P177": {
-        "Estación": "E/S LA CALERA",
-        "Zona": "LIMA",
-        "Distrito": "SURQUILLO",
-        "Dirección": "AV AVIACIÓN NRO 4524"
-    },
-    "P183": {
-        "Estación": "E/S ANGAMOS",
-        "Zona": "LIMA",
-        "Distrito": "SURQUILLO",
-        "Dirección": "AV ANGAMOS ESTE NRO 1401"
-    },
-    "P234": {
-        "Estación": "E/S HIPODROMO",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "AV JAVIER PRADO ESTE  NRO 4350"
-    },
-    "P265": {
-        "Estación": "E/S MONTERRICO",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "AV LA MOLINA NRO 580"
-    },
-    "P324": {
-        "Estación": "E/S UNIVERSIDAD",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "AV LA UNIVERSIDAD NRO 1275"
-    },
-    "P225": {
-        "Estación": "E/S FERRERO",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "AV ALAMEDA DEL CORREGIDOR"
-    },
-    "P245": {
-        "Estación": "E/S LA MOLINA",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "AV JAVIER PRADO ESTE 6310"
-    },
-    "P180": {
-        "Estación": "E/S VILLA EL SALVADOR",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "MATEO PUMACAHUA MZ D LT 5"
-    },
-    "P101": {
-        "Estación": "E/S MIGUEL ANGEL.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "AV LIMA NRO 2000 PJ POETA JOSÉ"
-    },
-    "P112": {
-        "Estación": "E/S MARIÁTEGUI",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "AV JOSÉ CARLOS MARIATEGUI ESQ"
-    },
-    "P216": {
-        "Estación": "E/S EL CHORRILLANO",
-        "Zona": "LIMA",
-        "Distrito": "CHORRILLOS",
-        "Dirección": "AV LOS DEFENSORES DEL MORRO"
-    },
-    "P205": {
-        "Estación": "E/S CHORRILLOS",
-        "Zona": "LIMA",
-        "Distrito": "CHORRILLOS",
-        "Dirección": "AV DEFENSORES DEL MORRO 1391"
-    },
-    "P275": {
-        "Estación": "E/S PANSUR",
-        "Zona": "LIMA",
-        "Distrito": "LURIN",
-        "Dirección": "CARRETERA PANAMERICANA SUR"
-    },
-    "P292": {
-        "Estación": "E/S SAN CARLOS",
-        "Zona": "LIMA",
-        "Distrito": "LURIN",
-        "Dirección": "CARRETERA PANAMERICANA SUR"
-    },
-    "P371": {
-        "Estación": "E/S LA VICTORIA",
-        "Zona": "LIMA",
-        "Distrito": "LA VICTORIA",
-        "Dirección": "AV ISABEL LA CATOLICA NRO 77"
-    },
-    "P102": {
-        "Estación": "E/S 28 DE JULIO",
-        "Zona": "LIMA",
-        "Distrito": "LA VICTORIA",
-        "Dirección": "AV 28 DE JULIO NRO 2200"
-    },
-    "P181": {
-        "Estación": "E/S PUNTA HERMOSA",
-        "Zona": "LIMA",
-        "Distrito": "PUNTA HERMOSA",
-        "Dirección": "CARRETERA PANAMERICANA SUR"
+        "Distrito": "BARRANCA",
+        "Población": "BARRANCA",
+        "Dirección": "Av. Panamericana Nte. 928, Barranca 15169",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -10.7428854593875,
+        "Longitud": -77.7669304840382,
+        "Símbolo": "fuel"
     },
     "P150": {
         "Estación": "E/S ARICA",
         "Zona": "LIMA",
         "Distrito": "BREÑA",
-        "Dirección": "AV ARICA NRO 499"
+        "Población": "LIMA",
+        "Dirección": "Av. Arica 499, Breña 15082",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0592799117636,
+        "Longitud": -77.0458299614045,
+        "Símbolo": "fuel"
     },
     "P179": {
         "Estación": "E/S BREÑA",
         "Zona": "LIMA",
         "Distrito": "BREÑA",
-        "Dirección": "AV TINGO MARÍA NRO 1711"
-    },
-    "P110": {
-        "Estación": "E/S NEOX",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "AV LEONCIO PRADP NRO 780"
-    },
-    "P260": {
-        "Estación": "E/S MEJIA",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "AV REPÚBLICA DE CROACIA ESQ"
-    },
-    "P105": {
-        "Estación": "E/S PUENTE PIEDRA",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "AV INDUSTRIAL  MZ F  LT 5 URB"
-    },
-    "P278": {
-        "Estación": "E/S PERSHING",
-        "Zona": "LIMA",
-        "Distrito": "JESUS MARIA",
-        "Dirección": "AV JOSÉ FAUSTINO SÁNCHEZ"
-    },
-    "P236": {
-        "Estación": "E/S HUIRACOCHA",
-        "Zona": "LIMA",
-        "Distrito": "JESUS MARIA",
-        "Dirección": "AV GREGORIO ESCOBEDO"
-    },
-    "P226": {
-        "Estación": "E/S FLORA TRISTAN",
-        "Zona": "LIMA",
-        "Distrito": "MAGDALENA DEL MAR",
-        "Dirección": "AV JAVIER PRADO OESTE NRO 2504"
-    },
-    "P175": {
-        "Estación": "E/S SALAVERRY 2",
-        "Zona": "LIMA",
-        "Distrito": "MAGDALENA DEL MAR",
-        "Dirección": "JIRON SALAVERRY 480"
-    },
-    "P257": {
-        "Estación": "E/S MAGDALENA",
-        "Zona": "LIMA",
-        "Distrito": "MAGDALENA DEL MAR",
-        "Dirección": "AV BRASIL NRO 4191 - 4193 ESQ"
-    },
-    "P178": {
-        "Estación": "E/S BRASIL",
-        "Zona": "LIMA",
-        "Distrito": "MAGDALENA DEL MAR",
-        "Dirección": "AV DEL EJERCITO NRO 110 - 112"
-    },
-    "P213": {
-        "Estación": "E/S EJÉRCITO",
-        "Zona": "LIMA",
-        "Distrito": "MAGDALENA DEL MAR",
-        "Dirección": "AV EL EJERCITO NRO 412 - 422"
-    },
-    "P270": {
-        "Estación": "E/S ORRANTIA",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "AV DEL EJERCITO NRO 965 - 967"
-    },
-    "P199": {
-        "Estación": "E/S CASTAÑOS",
-        "Zona": "LIMA",
-        "Distrito": "SAN ISIDRO",
-        "Dirección": "AV JAVIER PRADO OESTE NRO 1895"
-    },
-    "P158": {
-        "Estación": "E/S PASEO DE LA REPÚBLICA",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "AV PASEO DE LA REPÚBLICA"
-    },
-    "P285": {
-        "Estación": "E/S REPÚBLICA",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "AV PASEO DE LA REPÚBLICA"
-    },
-    "P151": {
-        "Estación": "E/S RICARDO PALMA",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "AV MARISCAL ANDRES A. CACERES"
-    },
-    "P122": {
-        "Estación": "E/S ALEGRÍA",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "AV BENAVIDES NRO 2116"
-    },
-    "P133": {
-        "Estación": "E/S ARMENDARIZ",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "AV ARMENDARIS NRO 575"
-    },
-    "P167": {
-        "Estación": "E/S MIRAFLORES",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "AV PASEO DE LA REPÚBLICA"
-    },
-    "P291": {
-        "Estación": "E/S SAN ANTONIO",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "AV PASEO DE LA REPÚBLICA"
-    },
-    "P176": {
-        "Estación": "E/S AURORA",
-        "Zona": "LIMA",
-        "Distrito": "MIRAFLORES",
-        "Dirección": "CALLE ARIAS SCHEREIBER NRO 124"
-    },
-    "P293": {
-        "Estación": "E/S SAN ISIDRO",
-        "Zona": "LIMA",
-        "Distrito": "SAN ISIDRO",
-        "Dirección": "AV REPÚBLICA DE PANAMÁ"
-    },
-    "P328": {
-        "Estación": "E/S ZORRITOS",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "CALLE BAQUERO 498"
-    },
-    "P211": {
-        "Estación": "E/S DUEÑAS",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV ARGENTINA NRO 1815"
-    },
-    "P309": {
-        "Estación": "E/S SUDAMERICANO",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV COLONIAL NRO 871"
-    },
-    "P317": {
-        "Estación": "E/S TINGO MARIA",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV TINGO MARÍA NRO 1194 ESQ"
-    },
-    "P161": {
-        "Estación": "E/S COLONIAL 2",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV MARISCAL OSCAR R BENAVIDES"
-    },
-    "P159": {
-        "Estación": "E/S COLONIAL 1",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV MARISCAL OSCAR R BENAVIDES"
-    },
-    "P182": {
-        "Estación": "E/S AREQUIPA 2",
-        "Zona": "LIMA",
-        "Distrito": "LINCE",
-        "Dirección": "AV AREQUIPA NRO 1890"
-    },
-    "P124": {
-        "Estación": "E/S AREQUIPA 1",
-        "Zona": "LIMA",
-        "Distrito": "LINCE",
-        "Dirección": "AV AREQUIPA NRO 3325"
-    },
-    "P289": {
-        "Estación": "E/S SALAVERRY 1",
-        "Zona": "LIMA",
-        "Distrito": "LINCE",
-        "Dirección": "AV GENERAL CESAR CANEVARO 1598"
-    },
-    "P287": {
-        "Estación": "E/S RISSO",
-        "Zona": "LIMA",
-        "Distrito": "LINCE",
-        "Dirección": "AV ARENALES NRO 2100"
-    },
-    "P125": {
-        "Estación": "E/S LOLESA",
-        "Zona": "LIMA",
-        "Distrito": "RÍMAC",
-        "Dirección": "AV FRANCISCO PIZARRO NRO 1207"
-    },
-    "P237": {
-        "Estación": "E/S IGARZA",
-        "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "AV TOMÁS VALLE NRO 1981"
-    },
-    "P132": {
-        "Estación": "E/S TOMÁS VALLE",
-        "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "AV TOMAS VALLE ESQUINA CON"
-    },
-    "P184": {
-        "Estación": "E/S GAMARRA",
-        "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "ESQUINA AV ANGELICA GAMARRA"
-    },
-    "P196": {
-        "Estación": "E/S UNIVERSITARIA",
-        "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "AV UNIVERSITARIA ESQUINA  CON"
-    },
-    "P215": {
-        "Estación": "E/S EL CARMELO",
-        "Zona": "LIMA",
-        "Distrito": "SAN MIGUEL",
-        "Dirección": "AV LA MARINA NRO 3112"
-    },
-    "P244": {
-        "Estación": "E/S LA MARINA",
-        "Zona": "LIMA",
-        "Distrito": "SAN MIGUEL",
-        "Dirección": "AV LA MARINA NRO 2185"
-    },
-    "P246": {
-        "Estación": "E/S LA PAZ 1",
-        "Zona": "LIMA",
-        "Distrito": "SAN MIGUEL",
-        "Dirección": "AV LA PAZ NRO 915"
-    },
-    "P222": {
-        "Estación": "E/S FAUCETT",
-        "Zona": "LIMA",
-        "Distrito": "SAN MIGUEL",
-        "Dirección": "AV ELMER FAUCETT NRO 384"
-    },
-    "P274": {
-        "Estación": "E/S PANDO",
-        "Zona": "LIMA",
-        "Distrito": "SAN MIGUEL",
-        "Dirección": "AV LA MARINA ESQUINA CON AV"
-    },
-    "P165": {
-        "Estación": "E/S ESCARDÓ",
-        "Zona": "LIMA",
-        "Distrito": "SAN MIGUEL",
-        "Dirección": "CALLE RAFAEL ESCARDÓ NRO 250"
-    },
-    "P187": {
-        "Estación": "E/S LA PAZ 2",
-        "Zona": "LIMA",
-        "Distrito": "SAN MIGUEL",
-        "Dirección": "AV LA PAZ NRO 1200 URB MIRAMAR"
-    },
-    "P160": {
-        "Estación": "E/S BOLÍVAR",
-        "Zona": "LIMA",
-        "Distrito": "PUEBLO LIBRE",
-        "Dirección": "AV BOLÍVAR NRO 1020"
-    },
-    "P308": {
-        "Estación": "E/S SUCRE",
-        "Zona": "LIMA",
-        "Distrito": "PUEBLO LIBRE",
-        "Dirección": "AV SUCRE NRO 1070"
-    },
-    "P338": {
-        "Estación": "E/S JOVEME",
-        "Zona": "LIMA",
-        "Distrito": "SAN ISIDRO",
-        "Dirección": "AV REPÚBLICA DE PANAMÁ S/N"
-    },
-    "P235": {
-        "Estación": "E/S HUANUCO",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV GRAU NRO 1308 ESQUINA CON"
-    },
-    "P390": {
-        "Estación": "E/S GAMBETA",
-        "Zona": "CALLAO",
-        "Distrito": "OQUENDO",
-        "Dirección": "KM 8.5 CARRETERA VENTANILLA"
+        "Población": "LIMA",
+        "Dirección": "Av. Tingo Maria 1711, Breña 15083",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0652694311626,
+        "Longitud": -77.0602906557782,
+        "Símbolo": "fuel"
     },
     "P283": {
         "Estación": "E/S QUILCA",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV QUILCA ESQUINA CON CALLE 10"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Quilca 531, San Martín de Porres 15106",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0308274316058,
+        "Longitud": -77.0950915257138,
+        "Símbolo": "fuel"
     },
     "P128": {
         "Estación": "E/S ARGENTINA",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV ARGENTINA NRO  4247"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Argentina 4247, Callao 07001",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0485015485951,
+        "Longitud": -77.1014879926683,
+        "Símbolo": "fuel"
     },
     "P191": {
         "Estación": "E/S MARCO POLO",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "CALLE ALBERTO SECADA S/N ESQ"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Marco Polo, Callao 07021",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0633672399451,
+        "Longitud": -77.1428240307733,
+        "Símbolo": "fuel"
     },
     "P218": {
         "Estación": "E/S ESCOSA",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV GUARDIA CIVIL NRO 333"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Guardia Civil Sur 341, Chorrillos 15056",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1838629783152,
+        "Longitud": -77.0031576461033,
+        "Símbolo": "fuel"
+    },
+    "P171": {
+        "Estación": "E/S WIESSE",
+        "Zona": "LIMA",
+        "Distrito": "CANTO GRANDE",
+        "Población": "LIMA",
+        "Dirección": "Av. El Bosque, San Juan de Lurigancho 15419",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.9795162912195,
+        "Longitud": -77.0050420233666,
+        "Símbolo": "fuel"
+    },
+    "P255": {
+        "Estación": "E/S LURIGANCHO",
+        "Zona": "LIMA",
+        "Distrito": "CANTO GRANDE",
+        "Población": "LIMA",
+        "Dirección": "Av. Lurigancho 1175, San Juan de Lurigancho 15427",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0166990630142,
+        "Longitud": -76.9948286710048,
+        "Símbolo": "fuel"
+    },
+    "P174": {
+        "Estación": "E/S CAÑETE",
+        "Zona": "LIMA",
+        "Distrito": "CAÑETE",
+        "Población": "CAÑETE",
+        "Dirección": "28 de Julio 216, San Luis de Cañete 15719",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -13.0500772253076,
+        "Longitud": -76.432537080915,
+        "Símbolo": "fuel"
+    },
+    "P239": {
+        "Estación": "E/S JAVIER PRADO",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Javier Prado Este 1059, San Isidro 15046",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0900593087825,
+        "Longitud": -77.0204967357459,
+        "Símbolo": "fuel"
+    },
+    "P328": {
+        "Estación": "E/S ZORRITOS",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Jr. Coronel Miguel Baquero 448, Cercado de Lima 15082",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0502416583719,
+        "Longitud": -77.0468474054271,
+        "Símbolo": "fuel"
+    },
+    "P211": {
+        "Estación": "E/S DUEÑAS",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Argentina 629, Cercado de Lima 15081",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0458317675665,
+        "Longitud": -77.0653845140524,
+        "Símbolo": "fuel"
+    },
+    "P309": {
+        "Estación": "E/S SUDAMERICANO",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Tingo Maria, Cercado de Lima 15082",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0478461783754,
+        "Longitud": -77.0536581422806,
+        "Símbolo": "fuel"
+    },
+    "P317": {
+        "Estación": "E/S TINGO MARIA",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Avenida Tingo Maria Chacra Rios Sur 1711, Cercado de Lima 15083",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0595193157412,
+        "Longitud": -77.0588534634652,
+        "Símbolo": "fuel"
+    },
+    "P161": {
+        "Estación": "E/S COLONIAL 2",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Oscar R. Benavides 300, Cercado de Lima 15082",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0464927891803,
+        "Longitud": -77.0458190012917,
+        "Símbolo": "fuel"
+    },
+    "P159": {
+        "Estación": "E/S COLONIAL 1",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Ricardo Herrera 1406, Cercado de Lima 15082",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0479046299727,
+        "Longitud": -77.0595730843663,
+        "Símbolo": "fuel"
+    },
+    "P235": {
+        "Estación": "E/S HUANUCO",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Jr. Huánuco 1153, Cercado de Lima 15018",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0577032497069,
+        "Longitud": -77.0172320586143,
+        "Símbolo": "fuel"
+    },
+    "P201": {
+        "Estación": "E/S CHANCAY 1",
+        "Zona": "LIMA",
+        "Distrito": "CHANCAY",
+        "Población": "HUARAL",
+        "Dirección": "Au. Panamericana Nte., 15130",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.4976207699218,
+        "Longitud": -77.3022245465997,
+        "Símbolo": "fuel"
+    },
+    "P154": {
+        "Estación": "E/S CHANCAY 2",
+        "Zona": "LIMA",
+        "Distrito": "CHANCAY",
+        "Población": "HUARAL",
+        "Dirección": "Au. Panamericana Nte. 39, 15130",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.5436011479177,
+        "Longitud": -77.2796294095379,
+        "Símbolo": "fuel"
+    },
+    "P193": {
+        "Estación": "E/S CHILCA",
+        "Zona": "LIMA",
+        "Distrito": "CHILCA",
+        "Población": "CAÑETE",
+        "Dirección": "1S, Chilca 15871",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.5086101268111,
+        "Longitud": -76.7375965349348,
+        "Símbolo": "fuel"
+    },
+    "P316": {
+        "Estación": "E/S TAVIRSA",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Población": "LIMA",
+        "Dirección": "Av. Prol. Huaylas 600, Lima 15067",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1904144870926,
+        "Longitud": -77.0063285855375,
+        "Símbolo": "fuel"
+    },
+    "P216": {
+        "Estación": "E/S EL CHORRILLANO",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Población": "LIMA",
+        "Dirección": "Av. Defensores del Morro 350, Cercado de Lima, 15064",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1678001679389,
+        "Longitud": -77.0256002003777,
+        "Símbolo": "fuel"
+    },
+    "P205": {
+        "Estación": "E/S CHORRILLOS",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Población": "LIMA",
+        "Dirección": "Av. Defensores del Morro 1391, Chorrillos 15064",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1755311697206,
+        "Longitud": -77.0176079424996,
+        "Símbolo": "fuel"
+    },
+    "P206": {
+        "Estación": "E/S CORCONA",
+        "Zona": "LIMA",
+        "Distrito": "CHOSICA",
+        "Población": "HUAROCHIRÍ",
+        "Dirección": "3CQ7+8X7, 15545",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.9116804893685,
+        "Longitud": -76.5850814605005,
+        "Símbolo": "fuel"
+    },
+    "P114": {
+        "Estación": "E/S COLOMA",
+        "Zona": "LIMA",
+        "Distrito": "HUACHO",
+        "Población": "HUAURA",
+        "Dirección": "Jirón Domingo Coloma 152, Huacho 15136",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.1064814974013,
+        "Longitud": -77.6060952350687,
+        "Símbolo": "fuel"
+    },
+    "P194": {
+        "Estación": "E/S CALLE DERECHA",
+        "Zona": "LIMA",
+        "Distrito": "HUARAL",
+        "Población": "HUARAL",
+        "Dirección": "Av García Alonso 195, Huaral 15201",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.4930804841361,
+        "Longitud": -77.2021551752597,
+        "Símbolo": "fuel"
+    },
+    "P113": {
+        "Estación": "E/S HUARALINO",
+        "Zona": "LIMA",
+        "Distrito": "HUARAL",
+        "Población": "HUARAL",
+        "Dirección": "Chancay 351, Huaral 15202",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.4974906192335,
+        "Longitud": -77.2132318698139,
+        "Símbolo": "fuel"
+    },
+    "P278": {
+        "Estación": "E/S PERSHING",
+        "Zona": "LIMA",
+        "Distrito": "JESUS MARIA",
+        "Población": "LIMA",
+        "Dirección": "Av Sánchez Carrion 471, Jesús María 15076",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0890835137274,
+        "Longitud": -77.0587467932563,
+        "Símbolo": "fuel"
+    },
+    "P236": {
+        "Estación": "E/S HUIRACOCHA",
+        "Zona": "LIMA",
+        "Distrito": "JESUS MARIA",
+        "Población": "LIMA",
+        "Dirección": "Av. Gregorio Escobedo 410, Jesús María 15072",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.084048030983,
+        "Longitud": -77.0518147448125,
+        "Símbolo": "fuel"
+    },
+    "P234": {
+        "Estación": "E/S HIPODROMO",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Av. Javier Prado Este 4561, Lima 15023",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0844328581157,
+        "Longitud": -76.9746758669459,
+        "Símbolo": "fuel"
+    },
+    "P265": {
+        "Estación": "E/S MONTERRICO",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Av. la Molina 580, La Molina 15023",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.064371389137,
+        "Longitud": -76.9604852827563,
+        "Símbolo": "fuel"
+    },
+    "P324": {
+        "Estación": "E/S UNIVERSIDAD",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Av. La Universidad 22, La Molina 15026",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.075248392321,
+        "Longitud": -76.93614842156,
+        "Símbolo": "fuel"
+    },
+    "P225": {
+        "Estación": "E/S FERRERO",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Raul Ferrero 1455, La Molina 15024",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0918343512697,
+        "Longitud": -76.9528291863465,
+        "Símbolo": "fuel"
+    },
+    "P245": {
+        "Estación": "E/S LA MOLINA",
+        "Zona": "LIMA",
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Av. Javier Prado Este 6310, La Molina 15024",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0699966714235,
+        "Longitud": -76.9511254810288,
+        "Símbolo": "fuel"
     },
     "P277": {
         "Estación": "E/S PERLA",
         "Zona": "LIMA",
         "Distrito": "LA PERLA",
-        "Dirección": "AV LA PAZ NRO 2326"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "La Paz 2370, La Perla 07016",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0758582529162,
+        "Longitud": -77.1147625037387,
+        "Símbolo": "fuel"
+    },
+    "P147": {
+        "Estación": "E/S BAHIA",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Población": "LIMA",
+        "Dirección": "WXCQ+CRJ, La Victoria 15034",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0789041117328,
+        "Longitud": -77.0104898224316,
+        "Símbolo": "fuel"
+    },
+    "P371": {
+        "Estación": "E/S LA VICTORIA",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Población": "LIMA",
+        "Dirección": "Av. Isabel la Católica 77, La Victoria 15033",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0703845729208,
+        "Longitud": -77.0306832051888,
+        "Símbolo": "fuel"
+    },
+    "P102": {
+        "Estación": "E/S 28 DE JULIO",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Población": "LIMA",
+        "Dirección": "Avenida 28 de Julio 2200, La Victoria 15018",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0619140622746,
+        "Longitud": -77.0186263154479,
+        "Símbolo": "fuel"
+    },
+    "P182": {
+        "Estación": "E/S AREQUIPA 2",
+        "Zona": "LIMA",
+        "Distrito": "LINCE",
+        "Población": "LIMA",
+        "Dirección": "Av. Arequipa 1890, Lince 15073",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.08350488654,
+        "Longitud": -77.0347836560314,
+        "Símbolo": "fuel"
+    },
+    "P124": {
+        "Estación": "E/S AREQUIPA 1",
+        "Zona": "LIMA",
+        "Distrito": "LINCE",
+        "Población": "LIMA",
+        "Dirección": "Av. Arequipa 3325, San Isidro 15046",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0987677881982,
+        "Longitud": -77.0321971101285,
+        "Símbolo": "fuel"
+    },
+    "P289": {
+        "Estación": "E/S SALAVERRY 1",
+        "Zona": "LIMA",
+        "Distrito": "LINCE",
+        "Población": "LIMA",
+        "Dirección": "Av. César Canevaro 1598, Lince 15073",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0851939688016,
+        "Longitud": -77.0482626815758,
+        "Símbolo": "fuel"
+    },
+    "P287": {
+        "Estación": "E/S RISSO",
+        "Zona": "LIMA",
+        "Distrito": "LINCE",
+        "Población": "LIMA",
+        "Dirección": "Av. Gral. Antonio Alvarez de Arenales 2100, Lince 15046",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.086060101873,
+        "Longitud": -77.0356243628869,
+        "Símbolo": "fuel"
+    },
+    "P275": {
+        "Estación": "E/S PANSUR",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Población": "LIMA",
+        "Dirección": "Km, Antigua Panamericana Sur 30, Lurín",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.2756123880631,
+        "Longitud": -76.8893087401074,
+        "Símbolo": "fuel"
+    },
+    "P292": {
+        "Estación": "E/S SAN CARLOS",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Población": "LIMA",
+        "Dirección": "P4H3+35F, Lurín 15823",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.272251289534,
+        "Longitud": -76.897042957689,
+        "Símbolo": "fuel"
+    },
+    "P226": {
+        "Estación": "E/S FLORA TRISTAN",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Población": "LIMA",
+        "Dirección": "Av Javier Prado Oeste 2504, Magdalena del Mar 15076",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0936488848253,
+        "Longitud": -77.0572368281276,
+        "Símbolo": "fuel"
+    },
+    "P175": {
+        "Estación": "E/S SALAVERRY 2",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Población": "LIMA",
+        "Dirección": "Jirón Salaverry 480, Magdalena del Mar 15086",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0941940094888,
+        "Longitud": -77.0748723236314,
+        "Símbolo": "fuel"
+    },
+    "P257": {
+        "Estación": "E/S MAGDALENA",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Población": "LIMA",
+        "Dirección": "Av. Brasil 4191, Magdalena del Mar 15086",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0971170471632,
+        "Longitud": -77.0714985286563,
+        "Símbolo": "fuel"
+    },
+    "P178": {
+        "Estación": "E/S BRASIL",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Población": "LIMA",
+        "Dirección": "Av. del Ejército 110, Lima 15076",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0973249445032,
+        "Longitud": -77.0716589476971,
+        "Símbolo": "fuel"
+    },
+    "P213": {
+        "Estación": "E/S EJÉRCITO",
+        "Zona": "LIMA",
+        "Distrito": "MAGDALENA DEL MAR",
+        "Población": "LIMA",
+        "Dirección": "Av. del Ejército 412, Miraflores 15074",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1166009976711,
+        "Longitud": -77.0449634136639,
+        "Símbolo": "fuel"
+    },
+    "P270": {
+        "Estación": "E/S ORRANTIA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Av. del Ejército 965, Magdalena del Mar 15076",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1004205622682,
+        "Longitud": -77.0619233597077,
+        "Símbolo": "fuel"
+    },
+    "P158": {
+        "Estación": "E/S PASEO DE LA REPÚBLICA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Av. Ricardo Palma 564, Cercado de Lima 15047",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.119368384071,
+        "Longitud": -77.0251667411961,
+        "Símbolo": "fuel"
+    },
+    "P285": {
+        "Estación": "E/S REPÚBLICA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Av. Andrés Aramburú 390, Miraflores 15046",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1026371262477,
+        "Longitud": -77.0277015373681,
+        "Símbolo": "fuel"
+    },
+    "P151": {
+        "Estación": "E/S RICARDO PALMA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Av. Ricardo Palma 510, Miraflores 15047",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1199584357904,
+        "Longitud": -77.0235743153879,
+        "Símbolo": "fuel"
+    },
+    "P122": {
+        "Estación": "E/S ALEGRÍA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Av. Alfredo Benavides 2116, Miraflores 15048",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1276715778241,
+        "Longitud": -77.0104655161821,
+        "Símbolo": "fuel"
+    },
+    "P133": {
+        "Estación": "E/S ARMENDARIZ",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Armendariz 575, Miraflores 15074",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1350055492554,
+        "Longitud": -77.0251749370895,
+        "Símbolo": "fuel"
+    },
+    "P167": {
+        "Estación": "E/S MIRAFLORES",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "VXGG+H2W, Lima 15074",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1234992864366,
+        "Longitud": -77.024910278762,
+        "Símbolo": "fuel"
+    },
+    "P291": {
+        "Estación": "E/S SAN ANTONIO",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "VXGG+H8J, Lima 15047",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.12352406007,
+        "Longitud": -77.0242323194083,
+        "Símbolo": "fuel"
+    },
+    "P176": {
+        "Estación": "E/S AURORA",
+        "Zona": "LIMA",
+        "Distrito": "MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Coronel Luis Arias Schereiber 123, Miraflores 15048",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1225820597273,
+        "Longitud": -77.0109473376893,
+        "Símbolo": "fuel"
+    },
+    "P269": {
+        "Estación": "E/S ÑAÑA",
+        "Zona": "LIMA",
+        "Distrito": "ÑAÑA",
+        "Población": "LIMA",
+        "Dirección": "Carr. Central 912, Chaclacayo 15476",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.9904111483349,
+        "Longitud": -76.8205579712541,
+        "Símbolo": "fuel"
+    },
+    "P390": {
+        "Estación": "E/S GAMBETA",
+        "Zona": "CALLAO",
+        "Distrito": "OQUENDO",
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Nestor Gambetta 76, Callao 07046",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.9639075009985,
+        "Longitud": -77.1261494260859,
+        "Símbolo": "fuel"
+    },
+    "P160": {
+        "Estación": "E/S BOLÍVAR",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Población": "LIMA",
+        "Dirección": "WWHP+649, Pueblo Libre 15084",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.071970667906,
+        "Longitud": -77.0646297710887,
+        "Símbolo": "fuel"
+    },
+    "P308": {
+        "Estación": "E/S SUCRE",
+        "Zona": "LIMA",
+        "Distrito": "PUEBLO LIBRE",
+        "Población": "LIMA",
+        "Dirección": "Av Antonio José de Sucre 13, Pueblo Libre 15084",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0817014469289,
+        "Longitud": -77.0668409812528,
+        "Símbolo": "fuel"
+    },
+    "P110": {
+        "Estación": "E/S NEOX",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Población": "LIMA",
+        "Dirección": "Leoncio Prado 888, Puente Piedra 15122",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.8410338912942,
+        "Longitud": -77.103478583334,
+        "Símbolo": "fuel"
+    },
+    "P260": {
+        "Estación": "E/S MEJIA",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Población": "LIMA",
+        "Dirección": "5V8P+7HQ, Puente Piedra 07076",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.8342636497783,
+        "Longitud": -77.1135264816018,
+        "Símbolo": "fuel"
+    },
+    "P105": {
+        "Estación": "E/S PUENTE PIEDRA",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Población": "LIMA",
+        "Dirección": "Av. San Juan de Dios 515, Puente Piedra 15121",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.8640258144293,
+        "Longitud": -77.0676233114641,
+        "Símbolo": "fuel"
+    },
+    "P181": {
+        "Estación": "E/S PUNTA HERMOSA",
+        "Zona": "LIMA",
+        "Distrito": "PUNTA HERMOSA",
+        "Población": "LIMA",
+        "Dirección": "Carr. Panamericana Sur, 1S, Lima",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.3160848548241,
+        "Longitud": -76.8318097610277,
+        "Símbolo": "fuel"
+    },
+    "P125": {
+        "Estación": "E/S LOLESA",
+        "Zona": "LIMA",
+        "Distrito": "RÍMAC",
+        "Población": "LIMA",
+        "Dirección": "Av. Francisco Pizarro Cdra. 9, Rímac 15094",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0308367532999,
+        "Longitud": -77.042131064617,
+        "Símbolo": "fuel"
+    },
+    "P297": {
+        "Estación": "E/S SAN LUIS 2",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Población": "LIMA",
+        "Dirección": "Av. San Luis 2605, San Borja 15037",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1008251152492,
+        "Longitud": -76.994379468857,
+        "Símbolo": "fuel"
+    },
+    "P157": {
+        "Estación": "E/S PRINCIPAL",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Población": "LIMA",
+        "Dirección": "Jr. Ernesto Rutherford 103, Distrito de Lima 15036",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1073573319387,
+        "Longitud": -77.0102123722537,
+        "Símbolo": "fuel"
+    },
+    "P152": {
+        "Estación": "E/S NAVAL",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Población": "LIMA",
+        "Dirección": "Av. San Luis 2480, San Borja 15037",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0983264789608,
+        "Longitud": -76.9952399217164,
+        "Símbolo": "fuel"
+    },
+    "P372": {
+        "Estación": "E/S SAN BORJA",
+        "Zona": "LIMA",
+        "Distrito": "SAN BORJA",
+        "Población": "LIMA",
+        "Dirección": "Av. Javier Prado Este 3095, San Borja 15021",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0862331998801,
+        "Longitud": -76.9931138645059,
+        "Símbolo": "fuel"
+    },
+    "P199": {
+        "Estación": "E/S CASTAÑOS",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Población": "LIMA",
+        "Dirección": "Av Javier Prado Oeste 1895, San Isidro 15076",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0948717602614,
+        "Longitud": -77.0503372687645,
+        "Símbolo": "fuel"
+    },
+    "P293": {
+        "Estación": "E/S SAN ISIDRO",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Población": "LIMA",
+        "Dirección": "Av. República de Panamá 3690, Lima 15047",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1018062736728,
+        "Longitud": -77.0190377880759,
+        "Símbolo": "fuel"
+    },
+    "P338": {
+        "Estación": "E/S JOVEME",
+        "Zona": "LIMA",
+        "Distrito": "SAN ISIDRO",
+        "Población": "LIMA",
+        "Dirección": "WX3H+GJX, Cercado de Lima 15047",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0961352808733,
+        "Longitud": -77.0209052061847,
+        "Símbolo": "fuel"
     },
     "P353": {
         "Estación": "E/S MARBELLA",
         "Zona": "LIMA",
         "Distrito": "SAN ISIDRO",
-        "Dirección": "AV. AUGUSTO PÉREZ ARANÍBAR 2199"
+        "Población": "LIMA",
+        "Dirección": "Av. Augusto Pérez Araníbar 2199, San Isidro 15076",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1033281207526,
+        "Longitud": -77.0582171303133,
+        "Símbolo": "fuel"
     },
-    "3001413": {
-        "Estación": "AUCALLAMAS S.A.C.",
+    "P146": {
+        "Estación": "E/S PRÓCERES",
         "Zona": "LIMA",
-        "Distrito": "AUCALLAMA",
-        "Dirección": "CARRETERA PANAMERICANA NORTE KM."
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Población": "LIMA",
+        "Dirección": "Eleboros 119, Cercado de Lima 15401",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0198906641002,
+        "Longitud": -77.0049462551142,
+        "Símbolo": "fuel"
     },
-    "1000162": {
-        "Estación": "GARODI SRL",
+    "P143": {
+        "Estación": "E/S AULY",
         "Zona": "LIMA",
-        "Distrito": "SAN ANTONIO",
-        "Dirección": "AV. PACHACUTEC -PROL. WIESE MZA. C"
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Población": "LIMA",
+        "Dirección": "Av. Próceres de la Independencia 3357, Cercado de Lima 15419",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.9849154655868,
+        "Longitud": -77.0071842353155,
+        "Símbolo": "fuel"
     },
-    "3003815": {
-        "Estación": "ESTACION DE SERVICIOS MAYORAZGO S.A",
+    "P296": {
+        "Estación": "E/S SAN LUIS 1",
         "Zona": "LIMA",
-        "Distrito": "RICARDO PALMA",
-        "Dirección": "KM. 46.00 DE LA CARRETERA CENTRAL"
+        "Distrito": "SAN LUIS",
+        "Población": "LIMA",
+        "Dirección": "Av. Nicolás Ayllón 1340, San Luis 15019",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0640754460868,
+        "Longitud": -76.9953646769365,
+        "Símbolo": "fuel"
+    },
+    "P134": {
+        "Estación": "E/S ARRIOLA",
+        "Zona": "LIMA",
+        "Distrito": "SAN LUIS",
+        "Población": "LIMA",
+        "Dirección": "Av. Canadá 1125, La Victoria 15034",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0832591282222,
+        "Longitud": -77.0135671691771,
+        "Símbolo": "fuel"
+    },
+    "P197": {
+        "Estación": "E/S CANADA",
+        "Zona": "LIMA",
+        "Distrito": "SAN LUIS",
+        "Población": "LIMA",
+        "Dirección": "WX8P+HXQ, 11 Esq. Alzamora, Av. Canadá, La Victoria 15034",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0837090683064,
+        "Longitud": -77.0124860022751,
+        "Símbolo": "fuel"
+    },
+    "P189": {
+        "Estación": "E/S CASTILLA",
+        "Zona": "LIMA",
+        "Distrito": "SAN LUIS",
+        "Población": "LIMA",
+        "Dirección": "Av Nicolás Arriola 295, La Victoria 15034",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0872229257244,
+        "Longitud": -77.0164300860642,
+        "Símbolo": "fuel"
+    },
+    "P237": {
+        "Estación": "E/S IGARZA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Población": "LIMA",
+        "Dirección": "Av. Tomas Valle 1981, San Martín de Porres 15107",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0128793588952,
+        "Longitud": -77.0855883062676,
+        "Símbolo": "fuel"
+    },
+    "P132": {
+        "Estación": "E/S TOMÁS VALLE",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Población": "LIMA",
+        "Dirección": "Av. Tomas Valle 846, San Martín de Porres 15302",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0103430872195,
+        "Longitud": -77.0701873334809,
+        "Símbolo": "fuel"
+    },
+    "P184": {
+        "Estación": "E/S GAMARRA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Población": "LIMA",
+        "Dirección": "Av. Universitaria 2015, San Martín de Porres 15108",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.006935065118,
+        "Longitud": -77.0827634783026,
+        "Símbolo": "fuel"
+    },
+    "P196": {
+        "Estación": "E/S UNIVERSITARIA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Población": "LIMA",
+        "Dirección": "2W38+M27, San Martín de Porres 15108",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -11.9958385633391,
+        "Longitud": -77.0849615027535,
+        "Símbolo": "fuel"
+    },
+    "P215": {
+        "Estación": "E/S EL CARMELO",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Población": "LIMA",
+        "Dirección": "Av. la Marina 3112, San Miguel 15088",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0754679720711,
+        "Longitud": -77.0969743433713,
+        "Símbolo": "fuel"
+    },
+    "P244": {
+        "Estación": "E/S LA MARINA",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Población": "LIMA",
+        "Dirección": "Av. la Marina 2155, San Miguel 15087",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0782865199289,
+        "Longitud": -77.084219326433,
+        "Símbolo": "fuel"
+    },
+    "P246": {
+        "Estación": "E/S LA PAZ 1",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Población": "LIMA",
+        "Dirección": "Av. La Paz 925, San Miguel 15087",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0865097142438,
+        "Longitud": -77.0916542936918,
+        "Símbolo": "fuel"
+    },
+    "P222": {
+        "Estación": "E/S FAUCETT",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Población": "LIMA",
+        "Dirección": "Av. Elmer Faucett 384, San Miguel 15088",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0671554497356,
+        "Longitud": -77.0971944733874,
+        "Símbolo": "fuel"
+    },
+    "P274": {
+        "Estación": "E/S PANDO",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Población": "LIMA",
+        "Dirección": "Av. la Marina 2001, San Miguel 15087",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0786862686952,
+        "Longitud": -77.0820229041999,
+        "Símbolo": "fuel"
+    },
+    "P165": {
+        "Estación": "E/S ESCARDÓ",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Población": "LIMA",
+        "Dirección": "Av. Rafael Escardó 250, San Miguel 15087",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0807291387247,
+        "Longitud": -77.0947816741614,
+        "Símbolo": "fuel"
+    },
+    "P187": {
+        "Estación": "E/S LA PAZ 2",
+        "Zona": "LIMA",
+        "Distrito": "SAN MIGUEL",
+        "Población": "LIMA",
+        "Dirección": "Av. La Paz 1200, San Miguel 15087",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.0852061612377,
+        "Longitud": -77.0938482537461,
+        "Símbolo": "fuel"
+    },
+    "P224": {
+        "Estación": "E/S FERRARI",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Av Tomás Marsano 5010, Santiago de Surco 15054",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1480023469326,
+        "Longitud": -76.9865823193251,
+        "Símbolo": "fuel"
+    },
+    "P185": {
+        "Estación": "E/S JORGE CHÁVEZ",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "VX3Q+784, Santiago de Surco 15049",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1468660224849,
+        "Longitud": -77.0116817124206,
+        "Símbolo": "fuel"
+    },
+    "P200": {
+        "Estación": "E/S CHAMA",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Av. Santiago de Surco 3291, Santiago de Surco 15038",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1316324204107,
+        "Longitud": -76.9989470836976,
+        "Símbolo": "fuel"
+    },
+    "P217": {
+        "Estación": "E/S EL ROSARIO",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Av. Angamos 1795, Surquillo 15048",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.112681464575,
+        "Longitud": -77.0123541418915,
+        "Símbolo": "fuel"
+    },
+    "P162": {
+        "Estación": "E/S TOMÁS MARSANO",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Av Tomás Marsano 4080, Santiago de Surco 15039",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1391984025715,
+        "Longitud": -76.9941743361616,
+        "Símbolo": "fuel"
+    },
+    "P231": {
+        "Estación": "E/S GRANADA",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Av. Mariscal Ramón Castilla 905, Santiago de Surco 15048",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1352429852887,
+        "Longitud": -77.0071773759271,
+        "Símbolo": "fuel"
+    },
+    "P325": {
+        "Estación": "E/S VALLE HERMOSO",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "V2RF+334, Santiago de Surco 15023",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1098648815583,
+        "Longitud": -76.9773123891666,
+        "Símbolo": "fuel"
+    },
+    "P266": {
+        "Estación": "E/S MONTREAL",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Av. Caminos del Inca 2017, Santiago de Surco 15039",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1302472783789,
+        "Longitud": -76.9817297067297,
+        "Símbolo": "fuel"
+    },
+    "P188": {
+        "Estación": "E/S LAS GARDENIAS",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Jirón Batalla de San Juan 112, Santiago de Surco 15039",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1274413755016,
+        "Longitud": -76.9774254658792,
+        "Símbolo": "fuel"
+    },
+    "P373": {
+        "Estación": "E/S SURCO",
+        "Zona": "LIMA",
+        "Distrito": "SANTIAGO DE SURCO",
+        "Población": "LIMA",
+        "Dirección": "Avenida Benavides 377, Santiago de Surco 15803",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1309994444005,
+        "Longitud": -76.9775404775058,
+        "Símbolo": "fuel"
+    },
+    "P311": {
+        "Estación": "E/S SUPE",
+        "Zona": "LIMA",
+        "Distrito": "SUPE",
+        "Población": "BARRANCA",
+        "Dirección": "57WR+PJW, Barranca 15162",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -10.8031543018191,
+        "Longitud": -77.7083234433141,
+        "Símbolo": "fuel"
+    },
+    "P166": {
+        "Estación": "E/S REPÚBLICA DE PANAMÁ",
+        "Zona": "LIMA",
+        "Distrito": "SURQUILLO",
+        "Población": "LIMA",
+        "Dirección": "Av. República de Panamá 5160, Surquillo 15047",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1159933510202,
+        "Longitud": -77.0185450896413,
+        "Símbolo": "fuel"
+    },
+    "P177": {
+        "Estación": "E/S LA CALERA",
+        "Zona": "LIMA",
+        "Distrito": "SURQUILLO",
+        "Población": "LIMA",
+        "Dirección": "Av. Aviación 4524, Surquillo 15038",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1198312817196,
+        "Longitud": -76.9985242790653,
+        "Símbolo": "fuel"
+    },
+    "P183": {
+        "Estación": "E/S ANGAMOS",
+        "Zona": "LIMA",
+        "Distrito": "SURQUILLO",
+        "Población": "LIMA",
+        "Dirección": "Av. Angamos 1401, Surquillo 15048",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1127767180148,
+        "Longitud": -77.0169830662585,
+        "Símbolo": "fuel"
+    },
+    "P180": {
+        "Estación": "E/S VILLA EL SALVADOR",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "R24P+P5X, Villa EL Salvador 15842",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.1931460595188,
+        "Longitud": -76.9645023152947,
+        "Símbolo": "fuel"
+    },
+    "P101": {
+        "Estación": "E/S MIGUEL ANGEL",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Av. Lima 2000, Villa María del Triunfo 15816",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.2238717341667,
+        "Longitud": -76.9084075542356,
+        "Símbolo": "fuel"
+    },
+    "P112": {
+        "Estación": "E/S MARIÁTEGUI",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Av. Jose Carlos Mariategui, Villa EL Salvador 15834",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.2207573637512,
+        "Longitud": -76.9323977442741,
+        "Símbolo": "fuel"
+    },
+    "P327": {
+        "Estación": "E/S ZARATE",
+        "Zona": "LIMA",
+        "Distrito": "ZARATE",
+        "Población": "LIMA",
+        "Dirección": "Av. Malecón Checa, San Juan de Lurigancho 15401",
+        "Asesor": "PRIMAX",
+        "Grupo": "COESTI",
+        "Latitud": -12.031684196295,
+        "Longitud": -77.011883486387,
+        "Símbolo": "fuel"
     },
     "3000606": {
         "Estación": "EMPRESA DE TRANSPORTES NUEVO HORIZO",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "AV. SAN JUAN N. 115 I ETAPA"
-    },
-    "1012361": {
-        "Estación": "PETRO SAN JUAN REPRESENTANTES Y VEN",
-        "Zona": "LIMA",
-        "Distrito": "ATE",
-        "Dirección": "NRO. 0 UC 10715 SECTOR PACAYAL"
+        "Población": "LIMA",
+        "Dirección": "Av. San Juan 115, Cercado de Lima 15021",
+        "Asesor": "GRANTHON CAMPOS JUAN CARLOS",
+        "Grupo": "Independientes",
+        "Latitud": -12.0260193359519,
+        "Longitud": -76.9343730517483,
+        "Símbolo": "bus"
     },
     "3000859": {
         "Estación": "SERVICENTRO SMILE S.A.",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "CAL. LOS ORFEBREROS N° 129"
+        "Población": "LIMA",
+        "Dirección": "Av. Separadora Industrial 1980, La Molina 15023",
+        "Asesor": "GRANTHON CAMPOS JUAN CARLOS",
+        "Grupo": "Independientes",
+        "Latitud": -12.0635976744345,
+        "Longitud": -76.9633999157865,
+        "Símbolo": "bus"
     },
     "3000680": {
         "Estación": "INVERSIONES JIARA S.A.C.",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "AV. LAS TORRES N° 508, ESQUINA CON"
+        "Población": "LIMA",
+        "Dirección": "W2J6+6G7, Cercado de Lima 15022",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Independientes",
+        "Latitud": -12.0694540523049,
+        "Longitud": -76.9887054464002,
+        "Símbolo": "bus"
     },
     "3009233": {
         "Estación": "TERPEL PERU S.A.C.",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "AV. NICOLAS AYLLON N° 2039"
+        "Población": "LIMA",
+        "Dirección": "Av. Nicolás Ayllón 2035, El Agustino 15022",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -12.0630662710991,
+        "Longitud": -76.9830481617851,
+        "Símbolo": "bus"
     },
-    "1001794": {
-        "Estación": "MANCO ARROYO DE SANCHEZ MERCEDES SO",
+    "3001413": {
+        "Estación": "AUCALLAMAS S.A.C.",
         "Zona": "LIMA",
-        "Distrito": "EL AGUSTINO",
-        "Dirección": "AV. FERROCARRIL MZA. N LOTE. 1 COO"
-    },
-    "1007929": {
-        "Estación": "SERVICENTRO EL ASESOR SAC",
-        "Zona": "LIMA",
-        "Distrito": "SANTA ANITA",
-        "Dirección": "AV. HUAROCHIRI NRO. 905 URB. EL ASE"
-    },
-    "3013039": {
-        "Estación": "EMPRESA DE TRANSPORTES ESFUERZOS UNIDOS",
-        "Zona": "LIMA",
-        "Distrito": "VILLA MARIA DEL TRIUNFO",
-        "Dirección": "AV. SIMON BOLIVAR N°1431, 1411 Y"
-    },
-    "3002730": {
-        "Estación": "ALTA VIDDA GAS S.A.C",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE LURIGANCHO",
-        "Dirección": "MZ. N LT. 9 PARCELACION SEMI RUSTIC"
-    },
-    "3002750": {
-        "Estación": "SHIN S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE LURIGANCHO",
-        "Dirección": "AV. SAN MARTIN DE PORRAS MZ CL 1"
-    },
-    "3009223": {
-        "Estación": "TERPEL PERU S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE LURIGANCHO",
-        "Dirección": "AV.WIESSE SECTOR 3. LTE 41, MZ. G-8"
-    },
-    "1010575": {
-        "Estación": "SERVICENTRO MUSA E.I.R.L",
-        "Zona": "LIMA",
-        "Distrito": "LA MOLINA",
-        "Dirección": "AV. LA MOLINA ESTE 2295 URB. EL SOL"
-    },
-    "1002706": {
-        "Estación": "GRIFOS TERESA DE CALCUTA S.A.",
-        "Zona": "LIMA",
-        "Distrito": "PACHACAMAC",
-        "Dirección": "CAR. CIENEGUILLA NRO. S/N"
-    },
-    "1010551": {
-        "Estación": "ESTACION DE SERVICIO GRECS S.R.L",
-        "Zona": "LIMA",
-        "Distrito": "PACHACAMAC",
-        "Dirección": "AV. VICTOR MALASQUEZ S 1"
-    },
-    "1007010": {
-        "Estación": "ESTACION SAN DIEGO SAC",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "MZ. J-1, LT. 04 AV. EL SOL"
-    },
-    "3009232": {
-        "Estación": "TERPEL PERU S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "AV. LIMA ESQUINA AV. MARIA REICHE,"
-    },
-    "3009165": {
-        "Estación": "JEVARO S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "AV. 200 MILLAS ESQ. CON AV. MICAELA"
-    },
-    "1002647": {
-        "Estación": "EMP. DE TRANSP. UNIDOS DOCE DE NOV.",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE MIRAFLORES",
-        "Dirección": "NRO. J-10 INT. 01 P.J. LEONCIO PRAD"
-    },
-    "3001425": {
-        "Estación": "EMP. DE TRANSP. UNIDOS DOCE DE NOV.",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE MIRAFLORES",
-        "Dirección": "TERRENO PARTE DEL FUNDO RUSTICO"
-    },
-    "1003102": {
-        "Estación": "LX Y LX S.R.L.",
-        "Zona": "LIMA",
-        "Distrito": "LURIN",
-        "Dirección": "CAR. ANTIGUA PANAMERICANA SUR KM. 3"
-    },
-    "3009245": {
-        "Estación": "TERPEL PERU S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "LURIN",
-        "Dirección": "CARRETERA ANTIGUA PANAMERICANA SUR"
-    },
-    "1007344": {
-        "Estación": "MASTER GAS GNV GLP EIRL",
-        "Zona": "LIMA",
-        "Distrito": "LA VICTORIA",
-        "Dirección": "AV. MEXICO 380 URB. BALCONCILLO"
+        "Distrito": "AUCALLAMA",
+        "Población": "HUARAL",
+        "Dirección": "Au. Panamericana Nte. 500, Chacra y Mar 15125",
+        "Asesor": "MARTINEZ ROCA ALEX VIJOU",
+        "Grupo": "Independientes",
+        "Latitud": -11.6128444446483,
+        "Longitud": -77.2327373877609,
+        "Símbolo": "bus"
     },
     "3010103": {
         "Estación": "INVERSIONES JIARA S.A.C.",
         "Zona": "LIMA",
         "Distrito": "BREÑA",
-        "Dirección": "AV. ARICA NRO. 1301"
+        "Población": "LIMA",
+        "Dirección": "Av. Arica 1341, Breña 15083",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Independientes",
+        "Latitud": -12.0565702220292,
+        "Longitud": -77.0543504114743,
+        "Símbolo": "bus"
     },
     "1006917": {
         "Estación": "CHIE S.A.C.",
         "Zona": "LIMA",
         "Distrito": "BREÑA",
-        "Dirección": "CAL.MARISCAL ORBEGOSO NRO. 300"
+        "Población": "LIMA",
+        "Dirección": "Gral. Orbegoso 300, Breña 15083",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Independientes",
+        "Latitud": -12.0662299055598,
+        "Longitud": -77.0504838463335,
+        "Símbolo": "bus"
     },
     "1003098": {
         "Estación": "PETRODELSAC",
         "Zona": "LIMA",
         "Distrito": "CARABAYLLO",
-        "Dirección": "JR. TRINITARIAS NRO. 102 URB. SANTA"
-    },
-    "3000586": {
-        "Estación": "GRUPO SCJ & ONOFRE S S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "CARABAYLLO",
-        "Dirección": "AV. JOSE CARLOS SACO ROJAS EX"
+        "Población": "LIMA",
+        "Dirección": "Trinitarias 103, Lima 15313",
+        "Asesor": "DELLEPIANE SALAZAR GINO AMADEO",
+        "Grupo": "Independientes",
+        "Latitud": -11.9002529807052,
+        "Longitud": -77.0368101588949,
+        "Símbolo": "bus"
     },
     "1007928": {
         "Estación": "ESTACION SANTA MARIA S.A.C.",
         "Zona": "LIMA",
         "Distrito": "CARABAYLLO",
-        "Dirección": "AV. SANTA MARIA MZA. C1 LOTE. 01"
-    },
-    "1005193": {
-        "Estación": "INVERSIONES SCJ ONOFRE E.I.R.L",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "AV. LEONCIO PRADO 344"
-    },
-    "1007251": {
-        "Estación": "EMPRESA DE TRANSPORTES APOCALIPSIS",
-        "Zona": "LIMA",
-        "Distrito": "COMAS",
-        "Dirección": "AV. TUPAC AMARU NRO. 7612 A.H. AÑO"
-    },
-    "3009228": {
-        "Estación": "TERPEL PERU S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "COMAS",
-        "Dirección": "AV. HEROES DEL ALTO CENEPA N° 1502,"
+        "Población": "LIMA",
+        "Dirección": "5W6X+QJQ, Carabayllo 15122",
+        "Asesor": "DELLEPIANE SALAZAR GINO AMADEO",
+        "Grupo": "Independientes",
+        "Latitud": -11.8380274094588,
+        "Longitud": -77.0509114889317,
+        "Símbolo": "bus"
     },
     "3000652": {
         "Estación": "COOPERATIVA DE SERV. MULTIPLES ALAS",
         "Zona": "LIMA",
         "Distrito": "CERCADO DE LIMA",
-        "Dirección": "ESQ. DE LA AV. VENEZUELA Nº 3343 CO"
+        "Población": "LIMA",
+        "Dirección": "Av. República de Venezuela 3343, Cercado de Lima 15088",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Independientes",
+        "Latitud": -12.0601112364555,
+        "Longitud": -77.0772162660852,
+        "Símbolo": "bus"
     },
     "3009235": {
         "Estación": "TERPEL PERU S.A.C.",
         "Zona": "LIMA",
         "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV. NICOLAS DUEÑAS Nº 308 - 310 ESQ"
+        "Población": "LIMA",
+        "Dirección": "Esq, Av. Nicolás Dueñas y Av. Enrique Meiggs, Cercado de Lima 15081",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -12.0387102405276,
+        "Longitud": -77.066279123197,
+        "Símbolo": "bus"
     },
     "3009241": {
         "Estación": "TERPEL PERU S.A.C.",
         "Zona": "LIMA",
         "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV. PETIT THOUARS N° 1148, URB. SAN"
+        "Población": "LIMA",
+        "Dirección": "Av. Petit Thouars 1148, Cercado de Lima 15046",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -12.075613671276,
+        "Longitud": -77.0348470861518,
+        "Símbolo": "bus"
     },
-    "3009226": {
+    "1007251": {
+        "Estación": "EMPRESA DE TRANSPORTES APOCALIPSIS",
+        "Zona": "LIMA",
+        "Distrito": "COMAS",
+        "Población": "LIMA",
+        "Dirección": "Av. Túpac Amaru 7612, Comas 15313",
+        "Asesor": "DELLEPIANE SALAZAR GINO AMADEO",
+        "Grupo": "Independientes",
+        "Latitud": -11.9187239426804,
+        "Longitud": -77.0413472218833,
+        "Símbolo": "bus"
+    },
+    "3009228": {
         "Estación": "TERPEL PERU S.A.C.",
         "Zona": "LIMA",
-        "Distrito": "RÍMAC",
-        "Dirección": "AV. FRANCISCO PIZARRO 770, 772, 774"
+        "Distrito": "COMAS",
+        "Población": "LIMA",
+        "Dirección": "3WQV+PQ7, Comas 15316",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -11.9107072665136,
+        "Longitud": -77.0555654839786,
+        "Símbolo": "bus"
     },
-    "3013263": {
-        "Estación": "TRANSLIMA S.A.",
+    "1010575": {
+        "Estación": "SERVICENTRO MUSA E.I.R.L",
         "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "MZ. B1, LOTE 3 - PROGRAMA"
+        "Distrito": "LA MOLINA",
+        "Población": "LIMA",
+        "Dirección": "Av. la Molina Este 4385, La Molina 15026",
+        "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
+        "Grupo": "Independientes",
+        "Latitud": -12.0859147346313,
+        "Longitud": -76.8922349167872,
+        "Símbolo": "bus"
     },
-    "1006823": {
-        "Estación": "ESTACION SANTA RITA SAC",
+    "1007344": {
+        "Estación": "MASTER GAS GNV GLP EIRL",
         "Zona": "LIMA",
-        "Distrito": "SAN MARTÍN DE PORRES",
-        "Dirección": "AV. CANTA CALLAO S/N"
-    },
-    "1002736": {
-        "Estación": "SERVICENTRO SANTA CECILIA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "PUEBLO LIBRE",
-        "Dirección": "AV. BOLIVAR NRO. 499"
-    },
-    "1003315": {
-        "Estación": "GAS POINT S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "PUEBLO LIBRE",
-        "Dirección": "AV. UNIVERSITARIA MZA. F6 LOTE. 4"
+        "Distrito": "LA VICTORIA",
+        "Población": "LIMA",
+        "Dirección": "Jacintos 134, Cercado de Lima 15034",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Independientes",
+        "Latitud": -12.0758914314964,
+        "Longitud": -77.0256444994404,
+        "Símbolo": "bus"
     },
     "3000642": {
         "Estación": "ALTA VIDDA GAS S.A.C.",
         "Zona": "LIMA",
         "Distrito": "LOS OLIVOS",
-        "Dirección": "JR. LOS HORNOS Nº 149"
+        "Población": "LIMA",
+        "Dirección": "Jiron Marco 149, Los Olivos 15311",
+        "Asesor": "MEDINA BELLO VIOLETA NOELIA",
+        "Grupo": "Independientes",
+        "Latitud": -11.9741054179587,
+        "Longitud": -77.0610481835379,
+        "Símbolo": "bus"
     },
     "3009231": {
         "Estación": "TERPEL PERU S.A.C.",
         "Zona": "LIMA",
         "Distrito": "LOS OLIVOS",
-        "Dirección": "AV. LAS PALMERAS MZ. A1 LOTES 2-3,"
+        "Población": "LIMA",
+        "Dirección": "Av. Las Palmeras 4999, Cercado de Lima 15304",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -11.978814931787,
+        "Longitud": -77.0725878278068,
+        "Símbolo": "bus"
     },
     "3009243": {
         "Estación": "TERPEL PERU S.A.C.",
         "Zona": "LIMA",
         "Distrito": "LOS OLIVOS",
-        "Dirección": "AV. ALFREDO MENDIOLA Nº 6585 - 6589"
+        "Población": "LIMA",
+        "Dirección": "San Fernando 710, Los Olivos 15306",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -11.9522241409701,
+        "Longitud": -77.0703900026249,
+        "Símbolo": "bus"
     },
-    "P831": {
-        "Estación": "CORPORACIÓN PRIMAX S.A.-PARAMONGA",
+    "3009245": {
+        "Estación": "TERPEL PERU S.A.C.",
         "Zona": "LIMA",
-        "Distrito": "PARAMONGA",
-        "Dirección": "AV FERROCARRIL 212 LIMA -"
+        "Distrito": "LURIN",
+        "Población": "LIMA",
+        "Dirección": "P4R7+6WX, Lurín 15823",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -12.2594250216789,
+        "Longitud": -76.8852017806184,
+        "Símbolo": "bus"
     },
-    "3014038": {
-        "Estación": "TERMINALES PORTUARIOS PERUANOS SAC",
+    "1002706": {
+        "Estación": "GRIFOS TERESA DE CALCUTA S.A.",
         "Zona": "LIMA",
-        "Distrito": "VENTANILLA",
-        "Dirección": "AV. NÉSTOR GAMBETTA KM 14.3"
+        "Distrito": "PACHACAMAC",
+        "Población": "LIMA",
+        "Dirección": "Dsv.Manchay, Car. Cieneguilla Nro. S/n (Km 11.5, Pachacamac",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Independientes",
+        "Latitud": -12.0844928148657,
+        "Longitud": -76.8780557447449,
+        "Símbolo": "bus"
     },
-    "3004794": {
-        "Estación": "FAMESA EXPLOSIVOS S.A.C.",
+    "1010551": {
+        "Estación": "ESTACION DE SERVICIO GRECS S.R.L",
         "Zona": "LIMA",
-        "Distrito": "HUARAL",
-        "Dirección": "PANAMERICANA NORTE KM. 57.5"
+        "Distrito": "PACHACAMAC",
+        "Población": "LIMA",
+        "Dirección": "V4JH+736, Cercado de Lima 15594",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Independientes",
+        "Latitud": -12.1193462048517,
+        "Longitud": -76.8723761847347,
+        "Símbolo": "bus"
     },
-    "3009902": {
-        "Estación": "UNION DE CONCRETERAS S.A",
+    "1002736": {
+        "Estación": "SERVICENTRO SANTA CECILIA S.A.C.",
         "Zona": "LIMA",
-        "Distrito": "JICAMARCA",
-        "Dirección": "QUEBRADA HUAYCOLORO, SARACOTO ALTO,"
+        "Distrito": "PUEBLO LIBRE",
+        "Población": "LIMA",
+        "Dirección": "Av. Simón Bolivar 499, Pueblo Libre 15084",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Independientes",
+        "Latitud": -12.0724646105176,
+        "Longitud": -77.0577880982539,
+        "Símbolo": "bus"
     },
-    "3004916": {
-        "Estación": "PETRAMAS S.A.C. - HUAROCHIRI",
+    "1003315": {
+        "Estación": "GAS POINT S.A.C.",
         "Zona": "LIMA",
-        "Distrito": "HUACHIPA",
-        "Dirección": "QUEBRADA HUAYCOLORO KM.7 S/N"
+        "Distrito": "PUEBLO LIBRE",
+        "Población": "LIMA",
+        "Dirección": "Av. Universitaria 3, Pueblo Libre 15084",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Independientes",
+        "Latitud": -12.0773426185404,
+        "Longitud": -77.0807462710085,
+        "Símbolo": "bus"
     },
-    "3013580": {
-        "Estación": "CHEMTRADE S.A.C.",
+    "3003815": {
+        "Estación": "ESTACION DE SERVICIOS MAYORAZGO S.A",
         "Zona": "LIMA",
-        "Distrito": "HUACHO",
-        "Dirección": "PANAMERICANA NORTE KM177 SCT LOS VI"
+        "Distrito": "RICARDO PALMA",
+        "Población": "HUAROCHIRÍ",
+        "Dirección": "3CP2+Q2W, 15545",
+        "Asesor": "CONTRERAS AGUILAR GINO ELTON",
+        "Grupo": "Independientes",
+        "Latitud": -11.9130361583745,
+        "Longitud": -76.5999014955974,
+        "Símbolo": "bus"
     },
-    "3004771": {
-        "Estación": "QUIMPAC S.A.",
+    "3009226": {
+        "Estación": "TERPEL PERU S.A.C.",
         "Zona": "LIMA",
-        "Distrito": "HUACHO",
-        "Dirección": "SALINAS DE HUACHO"
+        "Distrito": "RÍMAC",
+        "Población": "LIMA",
+        "Dirección": "Av. Francisco Pizarro 790, Cercado de Lima 15093",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -12.0338019414513,
+        "Longitud": -77.0384411479227,
+        "Símbolo": "bus"
+    },
+    "3002730": {
+        "Estación": "ALTA VIDDA GAS S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Población": "LIMA",
+        "Dirección": "Av. Sta. Rosa de Lima 942, San Juan de Lurigancho 15434",
+        "Asesor": "CONTRERAS AGUILAR GINO ELTON",
+        "Grupo": "Independientes",
+        "Latitud": -11.9848388352891,
+        "Longitud": -76.9948253757076,
+        "Símbolo": "bus"
+    },
+    "3002750": {
+        "Estación": "SHIN S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Población": "LIMA",
+        "Dirección": "2XJX+C2X, San Juan de Lurigancho 15419",
+        "Asesor": "CONTRERAS AGUILAR GINO ELTON",
+        "Grupo": "Independientes",
+        "Latitud": -11.9688500347433,
+        "Longitud": -77.0023907458785,
+        "Símbolo": "bus"
+    },
+    "3009223": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE LURIGANCHO",
+        "Población": "LIMA",
+        "Dirección": "3238+G63, San Juan de Lurigancho 15453",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -11.946236732857,
+        "Longitud": -76.9844589648381,
+        "Símbolo": "bus"
+    },
+    "1002647": {
+        "Estación": "EMP. DE TRANSP. UNIDOS DOCE DE NOV.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Av. Central 1028, San Juan de Miraflores 15806",
+        "Asesor": "RODRIGUEZ TORRES JUAN CARLOS",
+        "Grupo": "Independientes",
+        "Latitud": -12.1361591519271,
+        "Longitud": -76.9612966065755,
+        "Símbolo": "bus"
+    },
+    "3001425": {
+        "Estación": "EMP. DE TRANSP. UNIDOS DOCE DE NOV.",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "V2GQ+VRM, Cercado de Lima 15806",
+        "Asesor": "RODRIGUEZ TORRES JUAN CARLOS",
+        "Grupo": "Independientes",
+        "Latitud": -12.1227764610939,
+        "Longitud": -76.9604695489321,
+        "Símbolo": "bus"
+    },
+    "3013263": {
+        "Estación": "TRANSLIMA S.A.",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Población": "LIMA",
+        "Dirección": "Filadelfia IV, San Martín de Porres 15112",
+        "Asesor": "MEDINA BELLO VIOLETA NOELIA",
+        "Grupo": "Independientes",
+        "Latitud": -11.9884395593428,
+        "Longitud": -77.115349757846,
+        "Símbolo": "bus"
+    },
+    "1006823": {
+        "Estación": "ESTACION SANTA RITA SAC",
+        "Zona": "LIMA",
+        "Distrito": "SAN MARTÍN DE PORRES",
+        "Población": "LIMA",
+        "Dirección": "Av. Carlos Izaguirre, San Martín de Porres 15112",
+        "Asesor": "MEDINA BELLO VIOLETA NOELIA",
+        "Grupo": "Independientes",
+        "Latitud": -11.9892855528592,
+        "Longitud": -77.1062968466339,
+        "Símbolo": "bus"
+    },
+    "1007929": {
+        "Estación": "SERVICENTRO EL ASESOR SAC",
+        "Zona": "LIMA",
+        "Distrito": "SANTA ANITA",
+        "Población": "LIMA",
+        "Dirección": "Av. Huarochiri 905, Santa Anita 15011",
+        "Asesor": "BALLERO OVIEDO FLAVIA FRANCCESCA",
+        "Grupo": "Independientes",
+        "Latitud": -12.0377307456563,
+        "Longitud": -76.9546123517866,
+        "Símbolo": "bus"
+    },
+    "1007010": {
+        "Estación": "ESTACION SAN DIEGO SAC",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Av El Sol 2303, Cercado de Lima 15842",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Independientes",
+        "Latitud": -12.2122731654455,
+        "Longitud": -76.9645025741834,
+        "Símbolo": "bus"
+    },
+    "3009232": {
+        "Estación": "TERPEL PERU S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Ovalo '' Maria Reiche - Lima '', Av. Lima, Villa EL Salvador 15841",
+        "Asesor": "WALLIN DEVOTO SVEN ARTHUR",
+        "Grupo": "Independientes",
+        "Latitud": -12.2394374235841,
+        "Longitud": -76.9126551249982,
+        "Símbolo": "bus"
+    },
+    "3009165": {
+        "Estación": "JEVARO S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Av Micaela Bastidas, Villa EL Salvador 15836",
+        "Asesor": "BATTISTINI FERNANDEZ FABIOLA",
+        "Grupo": "Independientes",
+        "Latitud": -12.231134847276,
+        "Longitud": -76.9328734545198,
+        "Símbolo": "bus"
+    },
+    "3013039": {
+        "Estación": "EMPRESA DE TRANSPORTES ESFUERZOS UNIDOS",
+        "Zona": "LIMA",
+        "Distrito": "VILLA MARIA DEL TRIUNFO",
+        "Población": "LIMA",
+        "Dirección": "Primavera 2300, Villa María del Triunfo 15811",
+        "Asesor": "RODRIGUEZ TORRES JUAN CARLOS",
+        "Grupo": "Independientes",
+        "Latitud": -12.134627702855,
+        "Longitud": -76.945544316955,
+        "Símbolo": "bus"
     },
     "1000435": {
         "Estación": "ONASA S.R.L.",
         "Zona": "LIMA",
         "Distrito": "ATE",
-        "Dirección": "AV. ESPERANZA NRO. 680 URB. SAN"
-    },
-    "1010846": {
-        "Estación": "EMPRESA DE TRANSPORTES GOCARIVE19",
-        "Zona": "LIMA",
-        "Distrito": "SANTA CLARA",
-        "Dirección": "MZA. C LOTE. 9 URB. LA RONCADORA"
-    },
-    "3008054": {
-        "Estación": "TRANSMAR EXPRESS S.A.C",
-        "Zona": "LIMA",
-        "Distrito": "SAN LUIS",
-        "Dirección": "NICOLAS AYLLON 639 B MZ L LOTE 6,7,"
-    },
-    "1013243": {
-        "Estación": "TRANSPORTES CRUZ DEL SUR S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "SANTA ANITA",
-        "Dirección": "AV. FRANCISCO BOLOGNESI NRO. 495"
-    },
-    "3007124": {
-        "Estación": "UNION DE CONCRETERAS S.A",
-        "Zona": "LIMA",
-        "Distrito": "SANTA ANITA",
-        "Dirección": "CAL.HUAROCHIRI NRO. SN Z.I. VISTA"
-    },
-    "3000483": {
-        "Estación": "CIA MINERA E INDUSTRIAL SAGITARIO",
-        "Zona": "LIMA",
-        "Distrito": "HUACHIPA",
-        "Dirección": "AV. 1 LOTE 28 HUACHIPA NORTE"
-    },
-    "3003375": {
-        "Estación": "TRANSPORTES NACIONALES S.A.",
-        "Zona": "LIMA",
-        "Distrito": "PRIALE",
-        "Dirección": "AV. LA PAZ N° 333 333"
-    },
-    "1011958": {
-        "Estación": "COORDINAC Y TRANSMISORES INTEGRADOS",
-        "Zona": "LIMA",
-        "Distrito": "MANCHAY",
-        "Dirección": "AV. VICTOR MALASQUEZ KM. 5"
-    },
-    "1011799": {
-        "Estación": "JOCKEY CLUB DEL PERU",
-        "Zona": "LIMA",
-        "Distrito": "MONTERRICO",
-        "Dirección": "AV. EL DERBY NRO. SN INT. PTA3 URB."
-    },
-    "P815": {
-        "Estación": "CORPORACIÓN PRIMAX S.A.-SAN JUAN",
-        "Zona": "LIMA",
-        "Distrito": "SAN JUAN DE MIRAFLORES",
-        "Dirección": "AV PANANMERICANA SUR KM 11.4"
-    },
-    "3004927": {
-        "Estación": "CONCREMAX S.A.",
-        "Zona": "LIMA",
-        "Distrito": "VILLA EL SALVADOR",
-        "Dirección": "ANTIGUA CARRETERA PANAMERICANA SUR"
-    },
-    "1000144": {
-        "Estación": "CLUB DE REGATAS LIMA",
-        "Zona": "LIMA",
-        "Distrito": "CHORRILLOS",
-        "Dirección": "AV. CHACHI DIBOS NRO. 1201 PLAYA"
-    },
-    "P822": {
-        "Estación": "CORPORACIÓN PRIMAX S.A.-CONCREMAX",
-        "Zona": "LIMA",
-        "Distrito": "LURIN",
-        "Dirección": "MZA. F LOTE. 3A COO. LAS"
-    },
-    "P836": {
-        "Estación": "CORPORACIÓN PRIMAX S.A.-S.L.A.",
-        "Zona": "LIMA",
-        "Distrito": "LURIN",
-        "Dirección": "\"PAMPAS DE LURIN S/N, SUB LOTE"
-    },
-    "1012160": {
-        "Estación": "EMP DE TRANSPORTES TURISTICO OLANO",
-        "Zona": "LIMA",
-        "Distrito": "LA VICTORIA",
-        "Dirección": "JR. MANUEL CISNEROS NRO. 492 URB. E"
-    },
-    "1001147": {
-        "Estación": "SERVICIOS GENERALES SATURNO S.A.",
-        "Zona": "LIMA",
-        "Distrito": "PUCUSANA",
-        "Dirección": "CARRETERA PANAMERICANA SUR KM 57"
-    },
-    "3004707": {
-        "Estación": "FERROCARRIL CENTRAL ANDINO S.A",
-        "Zona": "LIMA",
-        "Distrito": "CHOSICA",
-        "Dirección": "CAL.BRASIL NRO. SN URB. SAN"
-    },
-    "3006999": {
-        "Estación": "UNION DE CONCRETERAS S.A",
-        "Zona": "LIMA",
-        "Distrito": "COLLIQUE",
-        "Dirección": "CANTERA YERBABUENA S/N"
-    },
-    "P818": {
-        "Estación": "CORPORACIÓN PRIMAX S.A.-COLLIQUE UN",
-        "Zona": "LIMA",
-        "Distrito": "PRO",
-        "Dirección": "AV.ALFREDO MENDIOLA 8380 URB."
-    },
-    "3005032": {
-        "Estación": "TRANSP. Y SERV. GENER. JOSELITO S.A",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "AV. LOS PINOS MZA. E LOTE. 13 URB."
-    },
-    "1012205": {
-        "Estación": "INMOBILIARIA E INVERS SAN FERNANDO",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "FND.SANTA INES PARCELA 10234 KM.31"
-    },
-    "3010195": {
-        "Estación": "FAMESA EXPLOSIVOS S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "KM 28 DE LA PANAMERICANA NORTE"
-    },
-    "3005031": {
-        "Estación": "CERAMICOS PERUANOS S.A.",
-        "Zona": "LIMA",
-        "Distrito": "PUENTE PIEDRA",
-        "Dirección": "Av. PERIMETRICA S/N CARABAYLLO"
-    },
-    "1013034": {
-        "Estación": "MOVIL BUS S.A.C",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV. MATERIALES NRO. 2215 LIMA - LIM"
-    },
-    "1012165": {
-        "Estación": "TURISMO CIVA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "JR. SANCHO DE RIVERA NRO. 1184 URB."
-    },
-    "P816": {
-        "Estación": "CORPORACIÓN PRIMAX S.A.-MATERIALES",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "AV ENRIQUE HEIGGS 2828 LOTE LB"
-    },
-    "P817": {
-        "Estación": "CORPORACIÓN PRIMAX S.A.-ANCIETA UNI",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "PLACIDO JIMENEZ 958 EL"
-    },
-    "3010147": {
-        "Estación": "UNION DE CONCRETERAS S.A",
-        "Zona": "LIMA",
-        "Distrito": "CERCADO DE LIMA",
-        "Dirección": "SEBASTIAN LORENTE 205"
+        "Población": "LIMA",
+        "Dirección": "Av Esperanza 680, Ate 15491",
+        "Asesor": "BERNABE DANIEL BARRIENTOS",
+        "Grupo": "Industria",
+        "Latitud": -12.0282671768318,
+        "Longitud": -76.9059510177365,
+        "Símbolo": "industry"
     },
     "1012228": {
         "Estación": "APM TERMINALS INLAND SERVICES S.A.",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. NESTOR GAMBETTA KM. 14.5"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Nestor Gambetta 14, Callao 07046",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -11.9547292648882,
+        "Longitud": -77.1260239792602,
+        "Símbolo": "industry"
     },
     "3002847": {
         "Estación": "NEPTUNIA S.A.",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. NESTOR GAMBETTA KM 14.50"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Nestor Gambetta 14.5, Callao 07046",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -11.9537230523231,
+        "Longitud": -77.1308139328003,
+        "Símbolo": "industry"
     },
     "3006867": {
         "Estación": "PETRAMAS S.A.C. - CALLAO",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. EL BIERZO S/N MARGEN DERECHA DE"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. El Bierzo S/N, Callao 07046",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -11.9355347769943,
+        "Longitud": -77.1266236573043,
+        "Símbolo": "industry"
     },
     "3005850": {
         "Estación": "QUIMPAC S.A.",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. VENTANILLA KM. 8"
-    },
-    "3010191": {
-        "Estación": "CUPRICA S.A.C.",
-        "Zona": "LIMA",
-        "Distrito": "VENTANILLA",
-        "Dirección": "CALLE ALONSO DE MOLINA Nº 247"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Néstor Gambeta, 8585, Callao 07046",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -11.9750035640196,
+        "Longitud": -77.1264784859476,
+        "Símbolo": "industry"
     },
     "1012144": {
         "Estación": "TRUCKS AND MOTORS DEL PERU S.A.C.",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. ELMER FAUCETT NRO. 4800 Z.I."
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Elmer Faucett 4805, Callao 07031",
+        "Asesor": "JORGE ALEJANDRO MESIA",
+        "Grupo": "Industria",
+        "Latitud": -12.0056682981726,
+        "Longitud": -77.1137214687105,
+        "Símbolo": "industry"
     },
     "1012504": {
         "Estación": "APM TERMINALS CALLAO S.A",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. CONTRALMIRANTE RAYGADA NRO. 11"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Contralmirante Toribio Raygada 11, Callao 07021",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -12.0522802882151,
+        "Longitud": -77.1436094723856,
+        "Símbolo": "industry"
     },
     "1015412": {
         "Estación": "NEPTUNIA S.A.",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV ARGENTINA 2085"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Argentina 2085, Callao 07001",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -12.04789282463,
+        "Longitud": -77.1199651540473,
+        "Símbolo": "industry"
     },
     "1012634": {
         "Estación": "DP WORLD CALLAO S.R.L.",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. MANCO CAPAC NRO. 113 PROV. CONS"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Jr Manco Capac 113, Callao 07021",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -12.0563689484088,
+        "Longitud": -77.1481937683286,
+        "Símbolo": "industry"
     },
     "3004821": {
         "Estación": "ALICORP S.A.",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. ARGENTINA N° 5027"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Argentina 5027, Carmen de La Legua - Reynoso 07006",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -12.0478973279091,
+        "Longitud": -77.0943846983154,
+        "Símbolo": "industry"
     },
     "P843": {
         "Estación": "CORPORACIÓN PRIMAX S.A.-RANSA",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. NESTOR GAMBETA NRO. "
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Nestor Gambetta 338, Callao 07046",
+        "Asesor": "PRIMAX",
+        "Grupo": "Industria",
+        "Latitud": -12.0208381645576,
+        "Longitud": -77.1305410597876,
+        "Símbolo": "industry"
     },
     "1000156": {
         "Estación": "PRODUCTOS DE ACERO CASSADO PRODAC S",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. NESTOR GAMBETA NRO. 6429"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Nestor Gambetta 6429, Callao 07046",
+        "Asesor": "BERNABE DANIEL BARRIENTOS",
+        "Grupo": "Industria",
+        "Latitud": -11.9879820141644,
+        "Longitud": -77.1280467166018,
+        "Símbolo": "industry"
     },
     "3010105": {
         "Estación": "CONSORCIO CONSTRUCTOR M2 LIMA",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. ELMER FAUCETT NRO. 2800"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Elmer Faucett 2800, Callao 07041",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -12.0227603282293,
+        "Longitud": -77.105385770577,
+        "Símbolo": "industry"
     },
     "3004418": {
         "Estación": "BLENDING S.A.C.",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "CAL.CARLOS CONCHA NRO. 313 (OVALO"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Carlos Concha 313, Callao 07021",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -12.0434081795944,
+        "Longitud": -77.1369273895475,
+        "Símbolo": "industry"
     },
     "3010116": {
         "Estación": "ALICORP SAA",
         "Zona": "LIMA",
         "Distrito": "CALLAO",
-        "Dirección": "AV. ARGENTINA 4695"
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "Av. Argentina 4695, Carmen de La Legua - Reynoso 07006",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -12.0481915362986,
+        "Longitud": -77.0974662594625,
+        "Símbolo": "industry"
+    },
+    "1013034": {
+        "Estación": "MOVIL BUS S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Materiales 2215, Cercado de Lima 15081",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -12.0415393285888,
+        "Longitud": -77.0702817445282,
+        "Símbolo": "industry"
+    },
+    "1012165": {
+        "Estación": "TURISMO CIVA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Sancho de Rivera 1184, Cercado de Lima 15001",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -12.0407771619208,
+        "Longitud": -77.041890281048,
+        "Símbolo": "industry"
+    },
+    "P816": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-MATERIALES",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Minerales 310, Cercado de Lima 15081",
+        "Asesor": "PRIMAX",
+        "Grupo": "Industria",
+        "Latitud": -12.0401142460605,
+        "Longitud": -77.0817127530142,
+        "Símbolo": "industry"
+    },
+    "P817": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-ANCIETA UNI",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Plácido Jiménez 1041, Cercado de Lima 15003",
+        "Asesor": "PRIMAX",
+        "Grupo": "Industria",
+        "Latitud": -12.0379957195267,
+        "Longitud": -77.0074097443959,
+        "Símbolo": "industry"
+    },
+    "3010147": {
+        "Estación": "UNION DE CONCRETERAS S.A",
+        "Zona": "LIMA",
+        "Distrito": "CERCADO DE LIMA",
+        "Población": "LIMA",
+        "Dirección": "Av. Sebastian Lorente 205, Cercado de Lima 15003",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -12.0424872277945,
+        "Longitud": -77.0117411438134,
+        "Símbolo": "industry"
+    },
+    "1000144": {
+        "Estación": "CLUB DE REGATAS LIMA",
+        "Zona": "LIMA",
+        "Distrito": "CHORRILLOS",
+        "Población": "LIMA",
+        "Dirección": "Chachi Dibós 1201, Chorrillos 15063, Lima",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -12.1671836544998,
+        "Longitud": -77.0311812877046,
+        "Símbolo": "industry"
+    },
+    "3004707": {
+        "Estación": "FERROCARRIL CENTRAL ANDINO S.A",
+        "Zona": "LIMA",
+        "Distrito": "CHOSICA",
+        "Población": "LIMA",
+        "Dirección": "Jr.Brasil, Lurigancho-Chosica 15472",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -11.9347327662536,
+        "Longitud": -76.6916478763134,
+        "Símbolo": "industry"
+    },
+    "3006999": {
+        "Estación": "UNION DE CONCRETERAS S.A",
+        "Zona": "LIMA",
+        "Distrito": "COLLIQUE",
+        "Población": "LIMA",
+        "Dirección": "Cantera Yerba Buena, Carabayllo 15320",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -11.7754684986648,
+        "Longitud": -76.9355790255604,
+        "Símbolo": "industry"
+    },
+    "3004916": {
+        "Estación": "PETRAMAS S.A.C. - HUAROCHIRI",
+        "Zona": "LIMA",
+        "Distrito": "HUACHIPA",
+        "Población": "HUAROCHIRÍ",
+        "Dirección": "349G+JCF, San Antonio de Chaclla 15510",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -11.9320729267387,
+        "Longitud": -76.8730762198564,
+        "Símbolo": "industry"
+    },
+    "3000483": {
+        "Estación": "CIA MINERA E INDUSTRIAL SAGITARIO",
+        "Zona": "LIMA",
+        "Distrito": "HUACHIPA",
+        "Población": "LIMA",
+        "Dirección": "Av. 1 Lote 28, Lurigancho-Chosica 15461",
+        "Asesor": "BERNABE DANIEL BARRIENTOS",
+        "Grupo": "Industria",
+        "Latitud": -12.0016105749476,
+        "Longitud": -76.9277769402049,
+        "Símbolo": "industry"
+    },
+    "3013580": {
+        "Estación": "CHEMTRADE S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "HUACHO",
+        "Población": "HUAURA",
+        "Dirección": "01 Car antigua Panamericana norte Km 177 - Atarraya, Barranca 15169",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -10.8887373980359,
+        "Longitud": -77.6747199505833,
+        "Símbolo": "industry"
+    },
+    "3004771": {
+        "Estación": "QUIMPAC S.A.",
+        "Zona": "LIMA",
+        "Distrito": "HUACHO",
+        "Población": "HUAURA",
+        "Dirección": "Salinas, El Vergel 15135",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -11.2963178796148,
+        "Longitud": -77.5760835838544,
+        "Símbolo": "industry"
+    },
+    "3004794": {
+        "Estación": "FAMESA EXPLOSIVOS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "HUARAL",
+        "Población": "HUARAL",
+        "Dirección": "CQRJ+59R, Chancay 15130",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -11.5620699762589,
+        "Longitud": -77.2210773060408,
+        "Símbolo": "industry"
+    },
+    "1012160": {
+        "Estación": "EMP DE TRANSPORTES TURISTICO OLANO",
+        "Zona": "LIMA",
+        "Distrito": "LA VICTORIA",
+        "Población": "LIMA",
+        "Dirección": "Jirón Manuel Cisneros 492, La Victoria 15033",
+        "Asesor": "BERNABE DANIEL BARRIENTOS",
+        "Grupo": "Industria",
+        "Latitud": -12.0660972252463,
+        "Longitud": -77.0216303468101,
+        "Símbolo": "industry"
+    },
+    "P822": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-CONCREMAX",
+        "Zona": "LIMA",
+        "Distrito": "LURIN",
+        "Población": "LIMA",
+        "Dirección": "Eucaliptos, Cercado de Lima 15823",
+        "Asesor": "PRIMAX",
+        "Grupo": "Industria",
+        "Latitud": -12.2782550503719,
+        "Longitud": -76.8274754023034,
+        "Símbolo": "industry"
+    },
+    "1011958": {
+        "Estación": "COORDINAC Y TRANSMISORES INTEGRADOS",
+        "Zona": "LIMA",
+        "Distrito": "MANCHAY",
+        "Población": "LIMA",
+        "Dirección": "V4FH+J2V, Pachacamac 15594",
+        "Asesor": "BERNABE DANIEL BARRIENTOS",
+        "Grupo": "Industria",
+        "Latitud": -12.125884867713,
+        "Longitud": -76.872457280223,
+        "Símbolo": "industry"
+    },
+    "1011799": {
+        "Estación": "JOCKEY CLUB DEL PERU",
+        "Zona": "LIMA",
+        "Distrito": "MONTERRICO",
+        "Población": "LIMA",
+        "Dirección": "W24C+J4H, Santiago de Surco 15023",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -12.0925212750508,
+        "Longitud": -76.9787767339629,
+        "Símbolo": "industry"
+    },
+    "P831": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-PARAMONGA",
+        "Zona": "LIMA",
+        "Distrito": "PARAMONGA",
+        "Población": "BARRANCA",
+        "Dirección": "Ferrocarril 212, Paramonga 15178",
+        "Asesor": "PRIMAX",
+        "Grupo": "Industria",
+        "Latitud": -10.6741262781705,
+        "Longitud": -77.8208647428894,
+        "Símbolo": "industry"
+    },
+    "3003375": {
+        "Estación": "TRANSPORTES NACIONALES S.A.",
+        "Zona": "LIMA",
+        "Distrito": "PRIALE",
+        "Población": "LIMA",
+        "Dirección": "X3JM+HR6, Lurigancho-Chosica 15457",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -12.0185804491905,
+        "Longitud": -76.9154817422143,
+        "Símbolo": "industry"
+    },
+    "P818": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-COLLIQUE UN",
+        "Zona": "LIMA",
+        "Distrito": "PRO",
+        "Población": "LIMA",
+        "Dirección": "Av. Alfredo Mendiola 8380, Los Olivos 15316",
+        "Asesor": "PRIMAX",
+        "Grupo": "Industria",
+        "Latitud": -11.9221194098194,
+        "Longitud": -77.0725300701209,
+        "Símbolo": "industry"
+    },
+    "1001147": {
+        "Estación": "SERVICIOS GENERALES SATURNO S.A.",
+        "Zona": "LIMA",
+        "Distrito": "PUCUSANA",
+        "Población": "LIMA",
+        "Dirección": "Carr. Panamericana Sur 57, Pucusana 15866",
+        "Asesor": "BERNABE DANIEL BARRIENTOS",
+        "Grupo": "Industria",
+        "Latitud": -12.4584129695089,
+        "Longitud": -76.7540592658179,
+        "Símbolo": "industry"
+    },
+    "3005032": {
+        "Estación": "TRANSP. Y SERV. GENER. JOSELITO S.A",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Población": "LIMA",
+        "Dirección": "3WPG+C7C, Puente Piedra 15117",
+        "Asesor": "JORGE ALEJANDRO MESIA",
+        "Grupo": "Industria",
+        "Latitud": -11.9139465830961,
+        "Longitud": -77.0743607140417,
+        "Símbolo": "industry"
+    },
+    "1012205": {
+        "Estación": "INMOBILIARIA E INVERS SAN FERNANDO",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Población": "LIMA",
+        "Dirección": "Av. San Juan, Carabayllo 15121",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -11.8567794879488,
+        "Longitud": -77.0545155800828,
+        "Símbolo": "industry"
+    },
+    "3010195": {
+        "Estación": "FAMESA EXPLOSIVOS S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Población": "LIMA",
+        "Dirección": "Av. Antigua Panamericana Nte. 1, Puente Piedra 15117",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -11.8876020763209,
+        "Longitud": -77.0761027428197,
+        "Símbolo": "industry"
+    },
+    "3005031": {
+        "Estación": "CERAMICOS PERUANOS S.A.",
+        "Zona": "LIMA",
+        "Distrito": "PUENTE PIEDRA",
+        "Población": "LIMA",
+        "Dirección": "Av. Perimétrica 12005, Carabayllo 15121",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -11.8450739490435,
+        "Longitud": -77.0609037519167,
+        "Símbolo": "industry"
+    },
+    "P815": {
+        "Estación": "CORPORACIÓN PRIMAX S.A.-SAN JUAN",
+        "Zona": "LIMA",
+        "Distrito": "SAN JUAN DE MIRAFLORES",
+        "Población": "LIMA",
+        "Dirección": "Antigua Panamericana Sur 15803, Cercado de Lima 15803",
+        "Asesor": "PRIMAX",
+        "Grupo": "Industria",
+        "Latitud": -12.1466370518367,
+        "Longitud": -76.9795452373723,
+        "Símbolo": "industry"
+    },
+    "3008054": {
+        "Estación": "TRANSMAR EXPRESS S.A.C",
+        "Zona": "LIMA",
+        "Distrito": "SAN LUIS",
+        "Población": "LIMA",
+        "Dirección": "WXQW+95W, Cercado de Lima 15004",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -12.0616347196059,
+        "Longitud": -77.0045697203256,
+        "Símbolo": "industry"
+    },
+    "1013243": {
+        "Estación": "TRANSPORTES CRUZ DEL SUR S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "SANTA ANITA",
+        "Población": "LIMA",
+        "Dirección": "Av. Francisco Bolognesi 501, Santa Anita 15008",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -12.0545534886077,
+        "Longitud": -76.9706763612822,
+        "Símbolo": "industry"
+    },
+    "3007124": {
+        "Estación": "UNION DE CONCRETERAS S.A",
+        "Zona": "LIMA",
+        "Distrito": "SANTA ANITA",
+        "Población": "LIMA",
+        "Dirección": "Av. Huarochiri, Santa Anita 15011",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -12.0459313061268,
+        "Longitud": -76.9509621343827,
+        "Símbolo": "industry"
+    },
+    "1010846": {
+        "Estación": "EMPRESA DE TRANSPORTES GOCARIVE19",
+        "Zona": "LIMA",
+        "Distrito": "SANTA CLARA",
+        "Población": "LIMA",
+        "Dirección": "Mza \"B\", Lote \"2\", La Roncadora de Ate, Ate",
+        "Asesor": "BERNABE DANIEL BARRIENTOS",
+        "Grupo": "Industria",
+        "Latitud": -12.0392738855888,
+        "Longitud": -76.8789466050834,
+        "Símbolo": "industry"
+    },
+    "3014038": {
+        "Estación": "TERMINALES PORTUARIOS PERUANOS SAC",
+        "Zona": "LIMA",
+        "Distrito": "VENTANILLA",
+        "Población": "CALLAO",
+        "Dirección": "Pje. Virú, Callao 07046",
+        "Asesor": "LUIS ENRIQUE NUÑEZ",
+        "Grupo": "Industria",
+        "Latitud": -11.9521274354389,
+        "Longitud": -77.1286477261683,
+        "Símbolo": "industry"
+    },
+    "3010191": {
+        "Estación": "CUPRICA S.A.C.",
+        "Zona": "LIMA",
+        "Distrito": "VENTANILLA",
+        "Población": "PROV. CONST. DEL CALLAO",
+        "Dirección": "C. Alonso de Molina 247, Ventanilla 07056",
+        "Asesor": "BERNABE DANIEL BARRIENTOS",
+        "Grupo": "Industria",
+        "Latitud": -11.8621277056029,
+        "Longitud": -77.1255153416225,
+        "Símbolo": "industry"
+    },
+    "3004927": {
+        "Estación": "CONCREMAX S.A.",
+        "Zona": "LIMA",
+        "Distrito": "VILLA EL SALVADOR",
+        "Población": "LIMA",
+        "Dirección": "Q2PH+W2Q, Villa EL Salvador 15842",
+        "Asesor": "OSCAR PAUL LAZO",
+        "Grupo": "Industria",
+        "Latitud": -12.2129239499062,
+        "Longitud": -76.9713770302586,
+        "Símbolo": "industry"
     }
 }
