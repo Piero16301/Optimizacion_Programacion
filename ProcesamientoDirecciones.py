@@ -24,16 +24,16 @@ class ProcesamientoDirecciones:
         # Se crea un diccionario con los campos importantes de ubicación
         for index, row, in self.dataFrame.iterrows():
             self.direcciones[row['Destinatario']] = {
-                'Estación' : row['Cliente'],
-                'Zona': row['Zona'],
-                'Distrito': row['Distrito'],
+                'Estación':  row['Cliente'],
+                'Zona':      row['Zona'],
+                'Distrito':  row['Distrito'],
                 'Población': row['Población'],
                 'Dirección': row['Dirección'],
-                'Asesor': row['Asesor Comercial'],
-                'Grupo': row['Grupo de Clientes'],
-                'Latitud': row['Latitud'],
-                'Longitud': row['Longitud'],
-                'Símbolo': row['Símbolo']
+                'Asesor':    row['Asesor Comercial'],
+                'Grupo':     row['Grupo de Clientes'],
+                'Latitud':   row['Latitud'],
+                'Longitud':  row['Longitud'],
+                'Símbolo':   row['Símbolo']
             }
 
         with open('direcciones.json', 'w', encoding='utf8') as direccionesJSON:

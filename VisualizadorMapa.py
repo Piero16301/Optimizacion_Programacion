@@ -14,19 +14,17 @@ class VisualizadorMapa:
             mode='markers',
             lat=self.dataFrame['Latitud'],
             lon=self.dataFrame['Longitud'],
-            marker={
-                'size': 10,
-                'symbol': self.dataFrame['Símbolo']
-            },
             text=self.dataFrame[columnaTexto]
         ))
 
-        # self.mapa.update_traces(
-        #     marker_symbol='fuel',
-        #     selector=dict(
-        #         type='scattermapbox'
-        #     )
-        # )
+        self.mapa.update_traces(
+            marker_symbol=self.dataFrame['Símbolo'],
+            marker_size=10,
+            marker_color='brown',
+            selector=dict(
+                type='scattermapbox'
+            )
+        )
 
         # Calcular centro del mapa
         promLatitud = self.dataFrame['Latitud'].mean()
