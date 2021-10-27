@@ -41,7 +41,7 @@ class ProcesamientoUnidades:
                            'Fecha Vencimiento Inspección Técnica V. Cisterna', 'N° DGH',
                            'Fecha Vencimiento Resolución MATPEL MTC - TRACTO', 'Nombre Empresa Aseguradora',
                            'Fecha Vencimiento Poliza RC', 'Fecha Vencimiento Poliza Millón Anual',
-                           'Fecha Vencimiento Póliza Millón o Póliza RC Pago Mensual', 'Tipologia de Unidades',
+                           'Fecha Vencimiento Poliza Millón o Poliza RC Pago Mensual', 'Tipologia de Unidades',
                            'Unidad Dedicada a Corporacion Primax', 'Fecha Vencimiento IQBF', 'Nombre Proveedor GPS',
                            'Esta en Plataforma Primax', 'Ultimo Mantenimiento GPS', 'Fecha de Fabricacion de GPS',
                            'Modelo de GPS', 'Lleva Tablet S/N', 'Care Drive S/N (Sensor Fatiga)', 'Camara S/N',
@@ -59,29 +59,41 @@ class ProcesamientoUnidades:
         return dataFrameTranscord
 
     def organizarDataLTP(self, hojaLTP):
-        pass
+        dataFrameLTP = cargarExcel(self.rutaExcel, hojaLTP, 0)
+
+        # Se seleccionan solo las columnas con datos
+        dataFrameLTP = dataFrameLTP.iloc[:, 0:51]
+
+        return dataFrameLTP
 
     def guardarIndice(self, dataFrame, tipo):
+        indice = {}
         for index, row, in dataFrame.iterrows():
-            if tipo == 'transcord':
-                placa = row['Placa de Tracto o Camión']
-                self.indiceTranscord[placa] = {
-                    'Empresa': row['Nombre de Empresa de Transporte'],
-                    'Placa Cisterna': row['Placa de Cisterna'],
-                    'Propietario': row['Unidad Propia o Tercera'],
-                    'Capacidad': row['Capacidad Cisterna'],
-                    '# Compartimentos': row['# Compartimentos'],
-                    'Compartimentos': [],
-                    'Código Petro Perú': row['Código Petro Perú']
-                }
-                for i in range(1, 10):
-                    if pd.notna(row[str(i)]):
-                        self.indiceTranscord[placa]['Compartimentos'].append(row[str(i)])
-                self.indiceTranscord[placa]['Capacidad'] = self.indiceTranscord[placa]['Capacidad'].replace(' GLS.', '')
-                self.indiceTranscord[placa]['Capacidad'] = float(self.indiceTranscord[placa]['Capacidad'])
+            placa = row['Placa de Tracto o Camión']
+            indice[placa] = {
+                'Empresa': row['Nombre de Empresa de Transporte'],
+                'Placa Cisterna': row['Placa de Cisterna'],
+                'Propietario': row['Unidad Propia o Tercera'],
+                'Capacidad': row['Capacidad Cisterna'],
+                '# Compartimentos': row['# Compartimentos'],
+                'Compartimentos': []
+            }
 
-        with open('archivos_json/transcord.json', 'w', encoding='utf8') as transcordJSON:
-            json.dump(self.indiceTranscord, transcordJSON, indent=4, ensure_ascii=False)
+            for i in range(1, 10):
+                if pd.notna(row[str(i)]):
+                    indice[placa]['Compartimentos'].append(float(row[str(i)]))
+
+            indice[placa]['Capacidad'] = indice[placa]['Capacidad'].replace(' GLS.', '')
+            indice[placa]['Capacidad'] = float(indice[placa]['Capacidad'])
+
+        if tipo == 'transcord':
+            self.indiceTranscord = indice
+            with open('archivos_json/transcord.json', 'w', encoding='utf8') as transcordJSON:
+                json.dump(self.indiceTranscord, transcordJSON, indent=4, ensure_ascii=False)
+        elif tipo == 'LTP':
+            self.indiceLTP = indice
+            with open('archivos_json/ltp.json', 'w', encoding='utf8') as ltpJSON:
+                json.dump(self.indiceLTP, ltpJSON, indent=4, ensure_ascii=False)
 
     def procesarData(self):
         # Organizar data del Excel inicial
