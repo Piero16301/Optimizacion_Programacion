@@ -21,7 +21,7 @@ class VisualizadorMapa:
         # Establecer los símbolos de las estaciones
         self.mapa.update_traces(
             marker_symbol=self.dataFrame['Símbolo'],
-            marker_size=10,
+            marker_size=13,
             marker_color='brown',
             selector=dict(
                 type='scattermapbox'
@@ -42,7 +42,7 @@ class VisualizadorMapa:
                     lon=promLongitud
                 ),
                 style='streets',
-                zoom=10
+                zoom=12
             ),
         )
 

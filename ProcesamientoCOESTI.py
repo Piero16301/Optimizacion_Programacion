@@ -74,19 +74,6 @@ class ProcesamientoCOESTI:
         # Columnas seleccionadas => Centro, Distrito, Estación, Material, Descripción, Producto, Sugerido
         self.dataFrame = self.dataFrame.iloc[:, [0, 6, 7, 8, 9, 10, 29]]
 
-        # Lista de tipos de combustible
-        tiposCombustible = ['G90', 'G95', 'G97', 'Diesel']
-        totalCombustible = []
-
-        print('Calculando cantidad total de productos...')
-        for tipo in tiposCombustible:
-            totalCombustible.append(self.dataFrame[self.dataFrame['Producto'] == tipo]['Sugerido'].sum())
-            print('Cantidad', tipo + ':', totalCombustible[-1])
-
-        # Cantidad total de COESTI
-        totalCoesti = sum(totalCombustible)
-        print('\nTotal COESTI:', totalCoesti, '\n')
-
         # Listas de direcciones, latitudes y longitudes
         direcciones = []
         latitudes = []

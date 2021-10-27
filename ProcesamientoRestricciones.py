@@ -20,6 +20,6 @@ class ProcesamientoRestricciones:
         return dataFrameInicial
 
     def procesarData(self):
-        # Organizar data del Excel Inicial
+        # Organizar data del Excel inicial
         print('Leyendo data de Restricciones...')
         self.dataFrame = self.organizarData('Lima')
