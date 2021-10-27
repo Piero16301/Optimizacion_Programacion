@@ -1,0 +1,478 @@
+{
+    "AJF-705": {
+        "Empresa": "TRANSPORTES TESA",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            1000.0,
+            1000.0,
+            500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "B7K-982": {
+        "Empresa": "TRANSPORTES TESA",
+        "Placa Cisterna": "B4J-889",
+        "Propietario": "PROPIA",
+        "Capacidad": 7500.0,
+        "# Compartimentos": 8,
+        "Compartimentos": [
+            2000.0,
+            1000.0,
+            1000.0,
+            1000.0,
+            500.0,
+            500.0,
+            500.0,
+            1000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "AYR-771": {
+        "Empresa": "TRANSPORTES TESA",
+        "Placa Cisterna": "B9B-998",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 3,
+        "Compartimentos": [
+            4000.0,
+            3000.0,
+            2000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "BED-794": {
+        "Empresa": "TRANSPORTES TESA",
+        "Placa Cisterna": "ALW-999",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 1,
+        "Compartimentos": [
+            9000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "BCQ-737": {
+        "Empresa": "MULTITRANS RR ",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4500.0,
+        "# Compartimentos": 6,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            1000.0,
+            1000.0,
+            500.0,
+            500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "BJV-928": {
+        "Empresa": "MULTITRANS RR ",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4500.0,
+        "# Compartimentos": 7,
+        "Compartimentos": [
+            1000.0,
+            500.0,
+            500.0,
+            500.0,
+            500.0,
+            500.0,
+            1000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "B7N-933": {
+        "Empresa": "INVERSIONES GALVEZ MARTINEZ",
+        "Placa Cisterna": "AJO-981",
+        "Propietario": "PROPIA",
+        "Capacidad": 6000.0,
+        "# Compartimentos": 7,
+        "Compartimentos": [
+            1500.0,
+            1000.0,
+            500.0,
+            500.0,
+            500.0,
+            1000.0,
+            1000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "ANC-872": {
+        "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            2500.0,
+            1500.0,
+            1000.0,
+            1500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "AUG-888": {
+        "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4500.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            1000.0,
+            1000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "AXY-949": {
+        "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
+        "Placa Cisterna": "AJZ-994",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 3,
+        "Compartimentos": [
+            3000.0,
+            3000.0,
+            3000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "B6J-896": {
+        "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
+        "Placa Cisterna": "-",
+        "Propietario": "TERCERA",
+        "Capacidad": 3000.0,
+        "# Compartimentos": 4,
+        "Compartimentos": [
+            1000.0,
+            500.0,
+            1000.0,
+            500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "AUG-895": {
+        "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4500.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            1000.0,
+            1500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "AHP-831": {
+        "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
+        "Placa Cisterna": "-",
+        "Propietario": "TERCERA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 4,
+        "Compartimentos": [
+            2000.0,
+            1000.0,
+            1000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "AVL-851": {
+        "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
+        "Placa Cisterna": "F9O-990",
+        "Propietario": "PROPIA",
+        "Capacidad": 7000.0,
+        "# Compartimentos": 7,
+        "Compartimentos": [
+            2000.0,
+            500.0,
+            500.0,
+            500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "V5I-821": {
+        "Empresa": "UL&PH INVERSIONES SAC",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            1000.0,
+            1000.0,
+            500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "APM-857": {
+        "Empresa": "UL&PH INVERSIONES SAC",
+        "Placa Cisterna": "F0P-977",
+        "Propietario": "PROPIA",
+        "Capacidad": 8500.0,
+        "# Compartimentos": 8,
+        "Compartimentos": [
+            2000.0,
+            1500.0,
+            1000.0,
+            500.0,
+            500.0,
+            1000.0,
+            1000.0,
+            100.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "ANW-916": {
+        "Empresa": "UL&PH INVERSIONES SAC",
+        "Placa Cisterna": "AJA-984",
+        "Propietario": "PROPIA",
+        "Capacidad": 7500.0,
+        "# Compartimentos": 8,
+        "Compartimentos": [
+            2000.0,
+            500.0,
+            500.0,
+            500.0,
+            1000.0,
+            1000.0,
+            1000.0,
+            1000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "D5D-868": {
+        "Empresa": "HERMELINDA HUATAY MANTILLA",
+        "Placa Cisterna": "AXV-975",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 6,
+        "Compartimentos": [
+            2000.0,
+            1500.0,
+            1000.0,
+            1000.0,
+            1500.0,
+            2000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "D5Q-922": {
+        "Empresa": "HERMELINDA HUATAY MANTILLA",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 3000.0,
+        "# Compartimentos": 4,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            500.0,
+            500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "D1J-885": {
+        "Empresa": "HERMELINDA HUATAY MANTILLA",
+        "Placa Cisterna": "-",
+        "Propietario": "TERCERA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            500.0,
+            500.0,
+            1000.0,
+            500.0,
+            1500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "AFZ-941": {
+        "Empresa": "HERMELINDA HUATAY MANTILLA",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            500.0,
+            500.0,
+            1000.0,
+            1000.0,
+            1000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "C6Z-768": {
+        "Empresa": "RAMOS",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 6,
+        "Compartimentos": [
+            500.0,
+            500.0,
+            500.0,
+            1000.0,
+            1000.0,
+            500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "AUV-718": {
+        "Empresa": "JWENVERT TRANSPORTES",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            1000.0,
+            1000.0,
+            500.0
+        ],
+        "Código Petro Perú": 14486
+    },
+    "D6H-880": {
+        "Empresa": "JWENVERT TRANSPORTES",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 6,
+        "Compartimentos": [
+            500.0,
+            500.0,
+            500.0,
+            500.0,
+            1000.0,
+            1000.0
+        ],
+        "Código Petro Perú": 7083
+    },
+    "AYX-789": {
+        "Empresa": "JWENVERT TRANSPORTES",
+        "Placa Cisterna": "ALH-986",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 8,
+        "Compartimentos": [
+            2000.0,
+            1000.0,
+            500.0,
+            1000.0,
+            1000.0,
+            1500.0,
+            500.0,
+            1500.0
+        ],
+        "Código Petro Perú": 16595
+    },
+    "AMQ-925": {
+        "Empresa": "JWENVERT TRANSPORTES",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            1000.0,
+            500.0,
+            1000.0,
+            500.0,
+            1000.0
+        ],
+        "Código Petro Perú": 11416
+    },
+    "AWJ-767": {
+        "Empresa": "CORPORACIÓN ENRIQUE & JANIS ",
+        "Placa Cisterna": "ABS-990",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 7,
+        "Compartimentos": [
+            1000.0,
+            2500.0,
+            1500.0,
+            1000.0,
+            1000.0,
+            1500.0,
+            1500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "AFH-736": {
+        "Empresa": "CORPORACIÓN ENRIQUE & JANIS ",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            1000.0,
+            500.0,
+            1000.0,
+            1000.0,
+            500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "BBF-813": {
+        "Empresa": "CORPORACIÓN ENRIQUE & JANIS ",
+        "Placa Cisterna": "AMO-993",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 7,
+        "Compartimentos": [
+            2500.0,
+            1500.0,
+            500.0,
+            500.0,
+            1000.0,
+            1500.0,
+            1500.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "BJL-708": {
+        "Empresa": "INVERSIONES JULIO III",
+        "Placa Cisterna": "M4I-971",
+        "Propietario": "PROPIA",
+        "Capacidad": 10000.0,
+        "# Compartimentos": 9,
+        "Compartimentos": [
+            2000.0,
+            1000.0,
+            1000.0,
+            500.0,
+            1000.0,
+            500.0,
+            1000.0,
+            1000.0,
+            2000.0
+        ],
+        "Código Petro Perú": "-"
+    },
+    "C2Y-745": {
+        "Empresa": "TRANSCORD S.R.L",
+        "Placa Cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 4,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            1000.0,
+            1500.0
+        ],
+        "Código Petro Perú": "-"
+    }
+}

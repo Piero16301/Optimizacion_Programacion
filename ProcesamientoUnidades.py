@@ -1,3 +1,5 @@
+import json
+
 import pandas as pd
 
 
@@ -12,9 +14,12 @@ def cargarExcel(nombreExcel, nombreHoja, encabezado):
 class ProcesamientoUnidades:
     def __init__(self, archivoExcel):
         self.rutaExcel = archivoExcel
-        self.dataUnidadesTranscord = pd.DataFrame()
-        self.dataUnidadesLTP = pd.DataFrame()
-        self.dataUnidadesApoyo = pd.DataFrame()
+        self.dataTranscord = pd.DataFrame()
+        self.dataLTP = pd.DataFrame()
+        self.dataApoyo = pd.DataFrame()
+        self.indiceTranscord = {}
+        self.indiceLTP = {}
+        self.indiceApoyo = {}
 
     def organizarDataTranscord(self, hojaTranscord):
         dataFrameTranscord = cargarExcel(self.rutaExcel, hojaTranscord, None)
@@ -53,7 +58,39 @@ class ProcesamientoUnidades:
 
         return dataFrameTranscord
 
+    def organizarDataLTP(self, hojaLTP):
+        pass
+
+    def guardarIndice(self, dataFrame, tipo):
+        for index, row, in dataFrame.iterrows():
+            if tipo == 'transcord':
+                placa = row['Placa de Tracto o Camión']
+                self.indiceTranscord[placa] = {
+                    'Empresa': row['Nombre de Empresa de Transporte'],
+                    'Placa Cisterna': row['Placa de Cisterna'],
+                    'Propietario': row['Unidad Propia o Tercera'],
+                    'Capacidad': row['Capacidad Cisterna'],
+                    '# Compartimentos': row['# Compartimentos'],
+                    'Compartimentos': [],
+                    'Código Petro Perú': row['Código Petro Perú']
+                }
+                for i in range(1, 10):
+                    if pd.notna(row[str(i)]):
+                        self.indiceTranscord[placa]['Compartimentos'].append(row[str(i)])
+                self.indiceTranscord[placa]['Capacidad'] = self.indiceTranscord[placa]['Capacidad'].replace(' GLS.', '')
+                self.indiceTranscord[placa]['Capacidad'] = float(self.indiceTranscord[placa]['Capacidad'])
+
+        with open('archivos_json/transcord.json', 'w', encoding='utf8') as transcordJSON:
+            json.dump(self.indiceTranscord, transcordJSON, indent=4, ensure_ascii=False)
+
     def procesarData(self):
         # Organizar data del Excel inicial
         print('Leyendo data de Unidades...')
-        self.dataUnidadesTranscord = self.organizarDataTranscord('Flota Transcord')
+
+        # Procesar data Transcord
+        self.dataTranscord = self.organizarDataTranscord('Flota Transcord')
+        self.guardarIndice(self.dataTranscord, 'transcord')
+
+        # Procesar data LTP
+        self.dataLTP = self.organizarDataLTP('Flota LTP')
+        self.guardarIndice(self.dataLTP, 'LTP')
