@@ -42,7 +42,7 @@ class VisualizadorMapa:
                     lon=promLongitud
                 ),
                 style='streets',
-                zoom=12
+                zoom=11
             ),
         )
 

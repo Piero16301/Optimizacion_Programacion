@@ -13,24 +13,24 @@ if __name__ == "__main__":
     inicio = timer()
 
     # Archivos de Excel de entrada
-    # procesadorDirecciones = ProcesamientoDirecciones('datos_entrada/Direcciones_Estaciones.xlsx')
-    # procesadorCOESTI = ProcesamientoCOESTI('datos_entrada/Pedidos_COESTI.xlsx')
-    # procesadorExterno = ProcesamientoExterno('datos_entrada/Pedidos_Externos.xlsx')
-    # procesadorRestricciones = ProcesamientoRestricciones('datos_entrada/Restricciones_Estaciones.xlsx')
+    procesadorDirecciones = ProcesamientoDirecciones('datos_entrada/Direcciones_Estaciones.xlsx')
+    procesadorCOESTI = ProcesamientoCOESTI('datos_entrada/Pedidos_COESTI.xlsx')
+    procesadorExterno = ProcesamientoExterno('datos_entrada/Pedidos_Externos.xlsx')
+    procesadorRestricciones = ProcesamientoRestricciones('datos_entrada/Restricciones_Estaciones.xlsx')
     procesadorUnidades = ProcesamientoUnidades('datos_entrada/Detalle_Unidades.xlsx')
 
     # Procesamiento de data
-    # procesadorDirecciones.procesarData()
-    # procesadorCOESTI.procesarData()
-    # procesadorExterno.procesarData()
-    # procesadorRestricciones.procesarData()
+    procesadorDirecciones.procesarData()
+    procesadorCOESTI.procesarData()
+    procesadorExterno.procesarData()
+    procesadorRestricciones.procesarData()
     procesadorUnidades.procesarData()
 
     # Se obtiene el data frame con toda la data necesaria
-    # dataFrameDirecciones = procesadorDirecciones.dataFrame
-    # dataFrameCOESTI = procesadorCOESTI.dataFrame
-    # dataFrameExterno = procesadorExterno.dataFrame
-    # dataFrameRestricciones = procesadorRestricciones.dataFrame
+    dataFrameDirecciones = procesadorDirecciones.dataFrame
+    dataFrameCOESTI = procesadorCOESTI.dataFrame
+    dataFrameExterno = procesadorExterno.dataFrame
+    dataFrameRestricciones = procesadorRestricciones.dataFrame
 
     # Mostrar datos de Data Frames
     # print('\n\n================ Data Frame Direcciones ================\n')
@@ -42,9 +42,10 @@ if __name__ == "__main__":
     # print('\n\n================ Data Frame Restricciones ================\n')
     # print(dataFrameRestricciones.to_string())
 
-    # print('Mostrando localización de estaciones...')
-    # visualizador = VisualizadorMapa(dataFrameDirecciones)
-    # visualizador.visualizarEstaciones('Cliente')
+    # Se muestran las estaciones en el mapa
+    print('Mostrando localización de estaciones...')
+    visualizador = VisualizadorMapa(dataFrameDirecciones)
+    visualizador.visualizarEstaciones('Cliente')
 
     # Fin de tiempo
     fin = timer()
