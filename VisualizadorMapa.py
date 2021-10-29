@@ -34,7 +34,7 @@ class VisualizadorMapa:
 
         # Establecer configuraciones del mapa
         self.mapa.update_layout(
-            autosize=True,
+            margin={'l': 0, 't': 0, 'b': 0, 'r': 0},
             mapbox=dict(
                 accesstoken=self.mapboxToken,
                 center=dict(
