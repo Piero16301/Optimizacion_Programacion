@@ -8,6 +8,9 @@ pip install pandas
 pip install plotly
 pip install requests
 pip install openpyxl
+pip install osmnx
+pip install networkx
+pip install cryptography
 ```
 
 ## Modelos de mapas disponibles

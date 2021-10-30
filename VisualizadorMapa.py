@@ -1,16 +1,36 @@
 import plotly.graph_objects as go
 import osmnx as ox
 import networkx as nx
+from cryptography.fernet import Fernet
 import json
 
 
 class VisualizadorMapa:
     def __init__(self, dataFrame):
+        # Se desencripta la key de mapbox con la key de fernet
         credenciales = json.load(open('archivos_json/credenciales.json'))
-        self.mapboxToken = credenciales['keyMapbox']
+        keyFernet = credenciales['keyFernet']
+        keyMapbox = credenciales['keyMapbox']
+
+        fernet = Fernet(bytes(keyFernet, 'UTF-8'))
+        keyDesencriptada = fernet.decrypt(bytes(keyMapbox, 'UTF-8')).decode()
+
+        self.mapboxToken = keyDesencriptada
         self.dataFrame = dataFrame
         self.mapa = go.Figure()
         self.grafo = ox.load_graphml('pruebas/grafoLima.graphml')
+
+        # Se encripta la key de mapbox con una nueva key de fernet
+        keyFernet = Fernet.generate_key().decode()
+        fernet = Fernet(keyFernet)
+        keyMapbox = fernet.encrypt(keyDesencriptada.encode()).decode()
+
+        nuevasCredenciales = {
+            'keyFernet': keyFernet,
+            'keyMapbox': keyMapbox
+        }
+        with open('archivos_json/credenciales.json', 'w', encoding='utf8') as credencialesJSON:
+            json.dump(nuevasCredenciales, credencialesJSON, indent=4, ensure_ascii=False)
 
     def construirGrafo(self):
         pass
