@@ -14,23 +14,23 @@ if __name__ == "__main__":
 
     # Archivos de Excel de entrada
     procesadorDirecciones = ProcesamientoDirecciones('datos_entrada/Direcciones_Estaciones.xlsx')
-    procesadorCOESTI = ProcesamientoCOESTI('datos_entrada/Pedidos_COESTI.xlsx')
-    procesadorExterno = ProcesamientoExterno('datos_entrada/Pedidos_Externos.xlsx')
-    procesadorRestricciones = ProcesamientoRestricciones('datos_entrada/Restricciones_Estaciones.xlsx')
-    procesadorUnidades = ProcesamientoUnidades('datos_entrada/Detalle_Unidades.xlsx')
+    # procesadorCOESTI = ProcesamientoCOESTI('datos_entrada/Pedidos_COESTI.xlsx')
+    # procesadorExterno = ProcesamientoExterno('datos_entrada/Pedidos_Externos.xlsx')
+    # procesadorRestricciones = ProcesamientoRestricciones('datos_entrada/Restricciones_Estaciones.xlsx')
+    # procesadorUnidades = ProcesamientoUnidades('datos_entrada/Detalle_Unidades.xlsx')
 
     # Procesamiento de data
     procesadorDirecciones.procesarData()
-    procesadorCOESTI.procesarData()
-    procesadorExterno.procesarData()
-    procesadorRestricciones.procesarData()
-    procesadorUnidades.procesarData()
+    # procesadorCOESTI.procesarData()
+    # procesadorExterno.procesarData()
+    # procesadorRestricciones.procesarData()
+    # procesadorUnidades.procesarData()
 
     # Se obtiene el data frame con toda la data necesaria
     dataFrameDirecciones = procesadorDirecciones.dataFrame
-    dataFrameCOESTI = procesadorCOESTI.dataFrame
-    dataFrameExterno = procesadorExterno.dataFrame
-    dataFrameRestricciones = procesadorRestricciones.dataFrame
+    # dataFrameCOESTI = procesadorCOESTI.dataFrame
+    # dataFrameExterno = procesadorExterno.dataFrame
+    # dataFrameRestricciones = procesadorRestricciones.dataFrame
 
     # Mostrar datos de Data Frames
     # print('\n\n================ Data Frame Direcciones ================\n')

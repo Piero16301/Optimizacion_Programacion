@@ -1,4 +1,5 @@
 import plotly.graph_objects as go
+import osmnx as ox
 import json
 
 
@@ -9,7 +10,30 @@ class VisualizadorMapa:
         self.dataFrame = dataFrame
         self.mapa = go.Figure()
 
+    def construirGrafo(self):
+        # maxLatitud = self.dataFrame['Latitud'].max()
+        # minLatitud = self.dataFrame['Latitud'].min()
+        #
+        # maxLongitud = self.dataFrame['Longitud'].max()
+        # minLongitud = self.dataFrame['Longitud'].min()
+        #
+        # margenLatitud = 0.001789912
+        # margenLongitud = 0.001814071
+        #
+        # norte = maxLatitud + margenLatitud
+        # este = maxLongitud + margenLongitud
+        # sur = minLatitud - margenLatitud
+        # oeste = minLongitud - margenLongitud
+
+        # G = ox.graph_from_bbox(norte, sur, este, oeste, network_type='drive')
+        # ox.save_graphml(G, 'pruebas/grafo.graphml')
+        G = ox.load_graphml('pruebas/grafo.graphml')
+        # ox.plot_graph(G)
+
     def visualizarEstaciones(self, columnaTexto):
+        # Construir grafo para las rutas
+        self.construirGrafo()
+
         # Iniciar las posiciones de los puntos
         self.mapa = go.Figure(go.Scattermapbox(
             mode='markers',
@@ -46,4 +70,4 @@ class VisualizadorMapa:
             ),
         )
 
-        self.mapa.show()
+        # self.mapa.show()
