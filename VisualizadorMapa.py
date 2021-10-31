@@ -6,7 +6,7 @@ import json
 
 
 class VisualizadorMapa:
-    def __init__(self, dataFrame):
+    def __init__(self, dataFrame, origenes, destinos, unidades):
         # Se desencripta la key de mapbox con la key de fernet
         credenciales = json.load(open('archivos_json/credenciales.json'))
         keyFernet = credenciales['keyFernet']
@@ -18,7 +18,12 @@ class VisualizadorMapa:
         self.mapboxToken = keyDesencriptada
         self.dataFrame = dataFrame
         self.mapa = go.Figure()
+        print('Cargando grafo del mapa...')
         self.grafo = ox.load_graphml('grafos/grafoLima.graphml')
+
+        self.origenes = origenes
+        self.destinos = destinos
+        self.unidades = unidades
 
         # Se encripta la key de mapbox con una nueva key de fernet
         keyFernet = Fernet.generate_key().decode()
@@ -73,7 +78,7 @@ class VisualizadorMapa:
 
         return lineas
 
-    def agregarCamino(self, origen, destino, unidad, color):
+    def agregarCamino(self, origen, destino, unidad):
         puntoOrigen = origen
         puntoDestino = destino
 
@@ -102,14 +107,15 @@ class VisualizadorMapa:
             lon=longitudes,
             marker={'size': 10},
             line=dict(
-                width=3,
-                color=color
+                width=3
             )
         ))
 
     def visualizarEstaciones(self, columnaTexto):
         # Construir grafo para las rutas
         self.construirGrafo()
+
+        print('Construyendo caminos...')
 
         # Iniciar las posiciones de los puntos
         self.mapa = go.Figure(go.Scattermapbox(
@@ -125,13 +131,13 @@ class VisualizadorMapa:
             }
         ))
 
-        origenes = [(-12.05228029, -77.14360947), (-11.93553478, -77.12662366), (-12.13157737, -76.97689901)]
-        destinos = [(-12.116601, -77.04496341), (-11.97719639, -77.01030252), (-12.06775267, -76.94659696)]
-        unidades = ['AJF-705', 'B7K-982', 'AYR-771']
-        colores = ['blue', 'green', 'red']
+        # origenes = [(-12.05228029, -77.14360947), (-11.93553478, -77.12662366), (-12.13157737, -76.97689901)]
+        # destinos = [(-12.116601, -77.04496341), (-11.97719639, -77.01030252), (-12.06775267, -76.94659696)]
+        # unidades = ['AJF-705', 'B7K-982', 'AYR-771']
+        # colores = ['blue', 'green', 'red']
 
-        for i in range(len(origenes)):
-            self.agregarCamino(origenes[i], destinos[i], unidades[i], colores[i])
+        for i in range(len(self.origenes)):
+            self.agregarCamino(self.origenes[i], self.destinos[i], self.unidades[i])
 
         # Calcular centro del mapa
         promLatitud = self.dataFrame['Latitud'].mean()

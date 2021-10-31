@@ -11,28 +11,33 @@ pip install openpyxl
 pip install osmnx
 pip install networkx
 pip install cryptography
+pip install geopy
 ```
+
+## Rutas en el mapa
+Las rutas por cada unidad se muestran de la siguiente manera.
+![](imagenes_mapas/mapa-rutas.png "Mapa rutas")
 
 ## Modelos de mapas disponibles
 Los modelos disponibles en las librería de Plotly son los siguientes.
 
 ### Modelo "basic"
-![](tipos_mapas/basic.png "Modelo basic")
+![](imagenes_mapas/mapa-basic.png "Modelo basic")
 
 ### Modelo "streets"
-![](tipos_mapas/streets.png "Modelo streets")
+![](imagenes_mapas/mapa-streets.png "Modelo streets")
 
 ### Modelo "outdoors"
-![](tipos_mapas/outdoors.png "Modelo outdoors")
+![](imagenes_mapas/mapa-outdoors.png "Modelo outdoors")
 
 ### Modelo "light"
-![](tipos_mapas/light.png "Modelo light")
+![](imagenes_mapas/mapa-light.png "Modelo light")
 
 ### Modelo "dark"
-![](tipos_mapas/dark.png "Modelo dark")
+![](imagenes_mapas/mapa-dark.png "Modelo dark")
 
 ### Modelo "satellite"
-![](tipos_mapas/satellite.png "Modelo satellite")
+![](imagenes_mapas/mapa-satellite.png "Modelo satellite")
 
 ### Modelo "satellite-streets"
-![](tipos_mapas/satellite-streets.png "Modelo satellite-streets")
+![](imagenes_mapas/mapa-satellite-streets.png "Modelo satellite-streets")
