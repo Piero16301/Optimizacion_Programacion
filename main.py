@@ -61,13 +61,13 @@ if __name__ == "__main__":
     fin = timer()
     print('Tiempo total:', round(fin - inicio, 2), 'segundos')
 
-    # Server para mostrar el mapa
-    app = dash.Dash()
-    server = app.server
-
-    app.layout = html.Div(children=[
-        # Alto y ancho seteado para Chrome 1080p
-        dcc.Graph(style={'width': '98vw', 'height': '97.5vh'}, figure=visualizador.mapa)
-    ])
-
-    app.run_server()
+    # # Server para mostrar el mapa
+    # app = dash.Dash()
+    # server = app.server
+    #
+    # app.layout = html.Div(children=[
+    #     # Alto y ancho seteado para Chrome 1080p
+    #     dcc.Graph(style={'width': '98vw', 'height': '97.5vh'}, figure=visualizador.mapa)
+    # ])
+    #
+    # app.run_server()

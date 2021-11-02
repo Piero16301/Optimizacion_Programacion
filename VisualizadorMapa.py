@@ -165,3 +165,5 @@ class VisualizadorMapa:
                 zoom=11
             ),
         )
+
+        self.mapa.show()
