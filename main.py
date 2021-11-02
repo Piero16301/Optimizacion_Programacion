@@ -9,6 +9,10 @@ from ProcesamientoRutas import ProcesamientoRutas
 
 from VisualizadorMapa import VisualizadorMapa
 
+import dash
+from dash import dcc
+from dash import html
+
 if __name__ == "__main__":
     # Inicio de tiempo
     inicio = timer()
@@ -55,3 +59,14 @@ if __name__ == "__main__":
     # Fin de tiempo
     fin = timer()
     print('Tiempo total:', round(fin - inicio, 2), 'segundos')
+
+    # Server para mostrar el mapa
+    app = dash.Dash()
+    server = app.server
+
+    app.layout = html.Div(children=[
+        # Alto y ancho seteado para Chrome 1080p
+        dcc.Graph(style={'width': '98vw', 'height': '97.5vh'}, figure=visualizador.mapa)
+    ])
+
+    app.run_server()

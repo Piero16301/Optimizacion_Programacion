@@ -115,8 +115,6 @@ class VisualizadorMapa:
         # Construir grafo para las rutas
         self.construirGrafo()
 
-        print('Construyendo caminos...')
-
         # Iniciar las posiciones de los puntos
         self.mapa = go.Figure(go.Scattermapbox(
             mode='markers',
@@ -135,6 +133,8 @@ class VisualizadorMapa:
         # destinos = [(-12.116601, -77.04496341), (-11.97719639, -77.01030252), (-12.06775267, -76.94659696)]
         # unidades = ['AJF-705', 'B7K-982', 'AYR-771']
         # colores = ['blue', 'green', 'red']
+
+        print('Construyendo caminos...')
 
         for i in range(len(self.origenes)):
             self.agregarCamino(self.origenes[i], self.destinos[i], self.unidades[i])
@@ -165,5 +165,3 @@ class VisualizadorMapa:
                 zoom=11
             ),
         )
-
-        self.mapa.show()
