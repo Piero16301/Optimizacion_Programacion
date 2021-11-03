@@ -161,7 +161,7 @@ class VisualizadorMapa:
                     lat=promLatitud,
                     lon=promLongitud
                 ),
-                style='streets',
+                style='basic',
                 zoom=11
             ),
         )

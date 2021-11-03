@@ -12,32 +12,29 @@ pip install osmnx
 pip install networkx
 pip install cryptography
 pip install geopy
+pip install dash
 ```
 
-## Rutas en el mapa
-Las rutas por cada unidad se muestran de la siguiente manera.
-![](imagenes_mapas/mapa-rutas.png "Mapa rutas")
-
-## Modelos de mapas disponibles
-Los modelos disponibles en las librería de Plotly son los siguientes.
+## Rutas por tipo de mapa
+Las rutas por cada unidad se pueden mostrar en los siguientes tipos de mapas.
 
 ### Modelo "basic"
-![](imagenes_mapas/mapa-basic.png "Modelo basic")
+![](imagenes_mapas/rutas-basic.png "Modelo basic")
 
 ### Modelo "streets"
-![](imagenes_mapas/mapa-streets.png "Modelo streets")
+![](imagenes_mapas/rutas-streets.png "Modelo streets")
 
 ### Modelo "outdoors"
-![](imagenes_mapas/mapa-outdoors.png "Modelo outdoors")
+![](imagenes_mapas/rutas-outdoors.png "Modelo outdoors")
 
 ### Modelo "light"
-![](imagenes_mapas/mapa-light.png "Modelo light")
+![](imagenes_mapas/rutas-light.png "Modelo light")
 
 ### Modelo "dark"
-![](imagenes_mapas/mapa-dark.png "Modelo dark")
+![](imagenes_mapas/rutas-dark.png "Modelo dark")
 
 ### Modelo "satellite"
-![](imagenes_mapas/mapa-satellite.png "Modelo satellite")
+![](imagenes_mapas/rutas-satellite.png "Modelo satellite")
 
 ### Modelo "satellite-streets"
-![](imagenes_mapas/mapa-satellite-streets.png "Modelo satellite-streets")
+![](imagenes_mapas/rutas-satellite-streets.png "Modelo satellite-streets")
