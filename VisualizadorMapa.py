@@ -6,7 +6,7 @@ import json
 
 
 class VisualizadorMapa:
-    def __init__(self, dataFrame, origenes, destinos, unidades):
+    def __init__(self, dataFrame, recorrido, unidades):
         # Se desencripta la key de mapbox con la key de fernet
         credenciales = json.load(open('archivos_json/credenciales.json'))
         keyFernet = credenciales['keyFernet']
@@ -21,8 +21,7 @@ class VisualizadorMapa:
         print('Cargando grafo del mapa...')
         self.grafo = ox.load_graphml('grafos/grafoLima.graphml')
 
-        self.origenes = origenes
-        self.destinos = destinos
+        self.recorrido = recorrido
         self.unidades = unidades
 
         # Se encripta la key de mapbox con una nueva key de fernet
@@ -78,22 +77,35 @@ class VisualizadorMapa:
 
         return lineas
 
-    def agregarCamino(self, origen, destino, unidad):
-        puntoOrigen = origen
-        puntoDestino = destino
+    def agregarCamino(self, recorrido, unidad):
+        caminoTotal = []
+        for i in range(len(recorrido) - 1):
+            puntoOrigen = recorrido[i]
+            puntoDestino = recorrido[i + 1]
 
-        nodoOrigen = ox.get_nearest_node(self.grafo, puntoOrigen)
-        nodoDestino = ox.get_nearest_node(self.grafo, puntoDestino)
+            nodoOrigen = ox.get_nearest_node(self.grafo, puntoOrigen)
+            nodoDestino = ox.get_nearest_node(self.grafo, puntoDestino)
 
-        ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
+            ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
 
-        camino = self.construirCamino(ruta)
+            camino = self.construirCamino(ruta)
+            caminoTotal = caminoTotal + camino
+
+        if len(recorrido) == 1:
+            # Se mueve 100m a la derecha
+            nodoOrigen = ox.get_nearest_node(self.grafo, (recorrido[0][0], recorrido[0][1] + 0.0009204086027))
+            nodoDestino = ox.get_nearest_node(self.grafo, recorrido[0])
+
+            ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
+
+            camino = self.construirCamino(ruta)
+            caminoTotal = caminoTotal + camino
 
         latitudes = []
         longitudes = []
 
-        for i in range(len(camino)):
-            z = list(camino[i])
+        for i in range(len(caminoTotal)):
+            z = list(caminoTotal[i])
             l1 = list(list(zip(*z))[0])
             l2 = list(list(zip(*z))[1])
             for j in range(len(l1)):
@@ -107,7 +119,7 @@ class VisualizadorMapa:
             lon=longitudes,
             marker={'size': 10},
             line=dict(
-                width=3
+                width=4
             )
         ))
 
@@ -136,8 +148,8 @@ class VisualizadorMapa:
 
         print('Construyendo caminos...')
 
-        for i in range(len(self.origenes)):
-            self.agregarCamino(self.origenes[i], self.destinos[i], self.unidades[i])
+        for i in range(len(self.recorrido)):
+            self.agregarCamino(self.recorrido[i], self.unidades[i])
 
         # Calcular centro del mapa
         promLatitud = self.dataFrame['Latitud'].mean()

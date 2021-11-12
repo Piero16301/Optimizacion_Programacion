@@ -1,5 +1,6 @@
 import json
 from geopy.distance import geodesic
+from statsmodels.graphics.plot_grids import scatter_ellipse
 
 
 def unirUnidades():
@@ -65,19 +66,16 @@ class ProcesamientoRutas:
         #     costoMinimo += peso
         return resultado
 
-    def construirResultado(self, resultadoEstaciones):
-        origenes = []
-        destinos = []
-        unidades = []
+    def construirResultado(self, recorridoGlobal):
+        recorrido = [[(-12.7405898, -76.6126007), (-12.76212, -76.60003), (-12.0147295, -76.8848201)],
+                     [(-12.02251, -76.88596), (-12.0403227, -76.9234207)],
+                     [(-12.0546845, -76.9555771)]]
+        unidades = ['AJF-705', 'B7K-982', 'AYR-771']
 
-        for origen, destino, unidad in resultadoEstaciones:
-            origenes.append((self.direcciones[origen]['Latitud'], self.direcciones[origen]['Longitud']))
-            destinos.append((self.direcciones[destino]['Latitud'], self.direcciones[destino]['Longitud']))
-            unidades.append(unidad)
-
-        return origenes, destinos, unidades
+        return recorrido, unidades
 
     def calcularRutas(self):
+        print('Calculando rutas óptimas...')
         estaciones = self.dataCOESTI['Centro'].unique().tolist()
         for i in range(len(estaciones)):
             for j in range(len(estaciones)):
@@ -88,12 +86,16 @@ class ProcesamientoRutas:
                     self.grafo.append([estaciones.index(estaciones[i]), estaciones.index(estaciones[j]), distancia])
         resultadoKruskal = self.kruskalMST(len(estaciones))
 
-        # Convertir indices a nombres de estaciones
-        resultadoEstaciones = []
-        listaKeys = list(self.unidades)
-        i = 0
-        for u, v, peso in resultadoKruskal:
-            resultadoEstaciones.append([estaciones[u], estaciones[v], listaKeys[i]])
-            i = i + 1
+        # Ordenar las unidades de menor a mayor
+        unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'])
+        unidadesOrdenadasDict = {}
+        for unidad in unidadesOrdenadas:
+            unidadesOrdenadasDict[unidad] = self.unidades[unidad]
+        self.unidades = unidadesOrdenadasDict
 
-        return self.construirResultado(resultadoEstaciones)
+        # Convertir indices a nombres de estaciones
+        recorridoGlobal = []
+        for u, v, peso in resultadoKruskal:
+            recorridoGlobal.append([estaciones[u], estaciones[v]])
+
+        return self.construirResultado(recorridoGlobal)

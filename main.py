@@ -50,23 +50,23 @@ if __name__ == "__main__":
 
     # Calcular las rutas de las unidades
     procesadorRutas = ProcesamientoRutas(dataFrameCOESTI, dataFrameExterno)
-    origenes, destinos, unidades = procesadorRutas.calcularRutas()
+    recorrido, unidades = procesadorRutas.calcularRutas()
 
     # Se muestran las estaciones en el mapa
     print('Mostrando localización de estaciones...')
-    visualizador = VisualizadorMapa(dataFrameDirecciones, origenes, destinos, unidades)
+    visualizador = VisualizadorMapa(dataFrameDirecciones, recorrido, unidades)
     visualizador.visualizarEstaciones('Cliente')
 
     # Fin de tiempo
     fin = timer()
     print('Tiempo total:', round(fin - inicio, 2), 'segundos')
 
-    # Server para mostrar el mapa
-    app = dash.Dash()
-
-    app.layout = html.Div(children=[
-        # Alto y ancho seteado para Chrome 1080p
-        dcc.Graph(style={'width': '98vw', 'height': '97.5vh'}, figure=visualizador.mapa)
-    ])
-    
-    app.run_server(host='0.0.0.0', port=80)
+    # # Server para mostrar el mapa
+    # app = dash.Dash()
+    #
+    # app.layout = html.Div(children=[
+    #     # Alto y ancho seteado para Chrome 1080p
+    #     dcc.Graph(style={'width': '98vw', 'height': '97.5vh'}, figure=visualizador.mapa)
+    # ])
+    #
+    # app.run_server(host='0.0.0.0', port=80)
