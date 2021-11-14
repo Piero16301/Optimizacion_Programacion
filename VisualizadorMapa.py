@@ -15,9 +15,14 @@ class VisualizadorMapa:
         fernet = Fernet(bytes(keyFernet, 'UTF-8'))
         keyDesencriptada = fernet.decrypt(bytes(keyMapbox, 'UTF-8')).decode()
 
+        self.direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
+
         self.mapboxToken = keyDesencriptada
+
         self.dataFrame = dataFrame
+
         self.mapa = go.Figure()
+
         print('Cargando grafo del mapa...')
         self.grafo = ox.load_graphml('grafos/grafoLima.graphml')
 
@@ -77,11 +82,17 @@ class VisualizadorMapa:
 
         return lineas
 
-    def agregarCamino(self, recorrido, unidad):
+    def agregarCamino(self, recorridoUnidad, unidad):
         caminoTotal = []
-        for i in range(len(recorrido) - 1):
-            puntoOrigen = recorrido[i]
-            puntoDestino = recorrido[i + 1]
+        for i in range(len(recorridoUnidad) - 1):
+            puntoOrigen = (
+                self.direcciones[recorridoUnidad[i]]['Latitud'],
+                self.direcciones[recorridoUnidad[i]]['Longitud']
+            )
+            puntoDestino = (
+                self.direcciones[recorridoUnidad[i + 1]]['Latitud'],
+                self.direcciones[recorridoUnidad[i + 1]]['Longitud']
+            )
 
             nodoOrigen = ox.get_nearest_node(self.grafo, puntoOrigen)
             nodoDestino = ox.get_nearest_node(self.grafo, puntoDestino)
@@ -91,10 +102,16 @@ class VisualizadorMapa:
             camino = self.construirCamino(ruta)
             caminoTotal = caminoTotal + camino
 
-        if len(recorrido) == 1:
+        if len(recorridoUnidad) == 1:
             # Se mueve 100m a la derecha
-            nodoOrigen = ox.get_nearest_node(self.grafo, (recorrido[0][0], recorrido[0][1] + 0.0009204086027))
-            nodoDestino = ox.get_nearest_node(self.grafo, recorrido[0])
+            nodoOrigen = ox.get_nearest_node(self.grafo, (
+                self.direcciones[recorridoUnidad[0]]['Latitud'],
+                self.direcciones[recorridoUnidad[0]]['Longitud'] + 0.0018204086027)
+                                             )
+            nodoDestino = ox.get_nearest_node(self.grafo, (
+                self.direcciones[recorridoUnidad[0]]['Latitud'],
+                self.direcciones[recorridoUnidad[0]]['Latitud'])
+                                              )
 
             ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
 

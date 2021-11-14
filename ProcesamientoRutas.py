@@ -67,9 +67,9 @@ class ProcesamientoRutas:
         return resultado
 
     def construirResultado(self, recorridoGlobal):
-        recorrido = [[(-12.7405898, -76.6126007), (-12.76212, -76.60003), (-12.0147295, -76.8848201)],
-                     [(-12.02251, -76.88596), (-12.0403227, -76.9234207)],
-                     [(-12.0546845, -76.9555771)]]
+        recorrido = [['1002634', '3008006', 'P371'],
+                     ['1002661', '1000435', '1012420'],
+                     ['1012144', 'P125', '3002730']]
         unidades = ['AJF-705', 'B7K-982', 'AYR-771']
 
         return recorrido, unidades
