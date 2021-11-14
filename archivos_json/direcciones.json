@@ -727,8 +727,8 @@
         "Dirección": "Av. Raúl Ferrero 5941, Santiago de Surco 15023",
         "Asesor": "DIAZ ESCALANTE EMILIO ALONSO",
         "Grupo": "Dealer",
-        "Latitud": -12.0935464376524,
-        "Longitud": -76.967244586135,
+        "Latitud": -12.0936089048694,
+        "Longitud": -76.9673313422919,
         "Símbolo": "rail"
     },
     "1010753": {
@@ -1123,8 +1123,8 @@
         "Dirección": "Av. Javier Prado Este 1059, San Isidro 15046",
         "Asesor": "PRIMAX",
         "Grupo": "COESTI",
-        "Latitud": -12.0900593087825,
-        "Longitud": -77.0204967357459,
+        "Latitud": -12.0904798335498,
+        "Longitud": -77.0198567964544,
         "Símbolo": "fuel"
     },
     "P328": {
@@ -2251,8 +2251,8 @@
         "Dirección": "Av. República de Panamá 5160, Surquillo 15047",
         "Asesor": "PRIMAX",
         "Grupo": "COESTI",
-        "Latitud": -12.1159933510202,
-        "Longitud": -77.0185450896413,
+        "Latitud": -12.1160398855112,
+        "Longitud": -77.0186231834517,
         "Símbolo": "fuel"
     },
     "P177": {

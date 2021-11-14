@@ -67,10 +67,13 @@ class ProcesamientoRutas:
         return resultado
 
     def construirResultado(self, recorridoGlobal):
-        recorrido = [['1002634', '3008006', 'P371'],
-                     ['1002661', '1000435', '1012420'],
-                     ['1012144', 'P125', '3002730']]
-        unidades = ['AJF-705', 'B7K-982', 'AYR-771']
+        recorrido = []
+        with open('datos_intermedios/rutaGlobal.txt', 'r') as ruta:
+            rutaGlobal = []
+            for estacion in ruta:
+                rutaGlobal.append(str(estacion.strip()))
+            recorrido.append(rutaGlobal)
+        unidades = ['AJF-705']
 
         return recorrido, unidades
 

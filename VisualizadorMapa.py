@@ -110,7 +110,7 @@ class VisualizadorMapa:
                                              )
             nodoDestino = ox.get_nearest_node(self.grafo, (
                 self.direcciones[recorridoUnidad[0]]['Latitud'],
-                self.direcciones[recorridoUnidad[0]]['Latitud'])
+                self.direcciones[recorridoUnidad[0]]['Longitud'])
                                               )
 
             ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
