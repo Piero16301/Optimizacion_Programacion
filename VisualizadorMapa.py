@@ -85,6 +85,7 @@ class VisualizadorMapa:
     def agregarCamino(self, recorridoUnidad, unidad):
         caminoTotal = []
         for i in range(len(recorridoUnidad) - 1):
+            print('Número de camino:', i+1)
             puntoOrigen = (
                 self.direcciones[recorridoUnidad[i]]['Latitud'],
                 self.direcciones[recorridoUnidad[i]]['Longitud']

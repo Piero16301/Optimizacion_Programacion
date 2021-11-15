@@ -1,6 +1,7 @@
-"""
+
 import mlrose
 import json
+import pandas as pd
 from geopy.distance import geodesic
 from timeit import default_timer as timer
 
@@ -11,7 +12,11 @@ print('Flag 1')
 
 direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
 
-ordenDirecciones = list(direcciones.keys())
+dataCOESTI = pd.DataFrame(
+    pd.read_excel('datos_intermedios/Data_Direcciones_COESTI.xlsx', sheet_name='Sheet1', header=0)
+)
+
+ordenDirecciones = dataCOESTI['Centro'].unique().tolist()
 
 # Create list of city coordinates
 coords_list = []
@@ -55,9 +60,9 @@ print('The best state found is: ', best_state)
 print('The fitness at the best state is: ', best_fitness)
 
 print('Tiempo total:', round(fin - inicio, 2), 'segundos')
+
+
 """
-
-
 import osmnx as ox
 import networkx as nx
 import osmnx.distance
@@ -72,4 +77,4 @@ nodoDestino = ox.get_nearest_node(grafo, (-12.0936089048694, -76.96733134229191)
 
 ruta = nx.dijkstra_path(grafo, nodoOrigen, nodoDestino, weight='length')
 print(ruta)
-
+"""

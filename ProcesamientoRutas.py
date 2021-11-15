@@ -72,7 +72,32 @@ class ProcesamientoRutas:
             rutaGlobal = []
             for estacion in ruta:
                 rutaGlobal.append(str(estacion.strip()))
-            recorrido.append(rutaGlobal)
+            rutaGlobal.append(rutaGlobal[0])
+
+            maximaDistancia = 0
+            indiceMaximo = ''
+
+            for i in range(len(rutaGlobal) - 1):
+                origen = (self.direcciones[rutaGlobal[i]]['Latitud'], self.direcciones[rutaGlobal[i]]['Longitud'])
+                destino = (self.direcciones[rutaGlobal[i+1]]['Latitud'], self.direcciones[rutaGlobal[i+1]]['Longitud'])
+                if geodesic(origen, destino).kilometers > maximaDistancia:
+                    maximaDistancia = geodesic(origen, destino).kilometers
+                    indiceMaximo = i
+
+            if indiceMaximo == len(rutaGlobal) - 1:
+                rutaGlobal.pop(indiceMaximo)
+                recorrido.append(rutaGlobal)
+            else:
+                nuevaRutaGlobal = []
+                rutaGlobal.pop(indiceMaximo)
+                for i in range(indiceMaximo, len(rutaGlobal)):
+                    nuevaRutaGlobal.append(rutaGlobal[i])
+
+                for i in range(indiceMaximo):
+                    nuevaRutaGlobal.append(rutaGlobal[i])
+
+                recorrido.append(nuevaRutaGlobal)
+
         unidades = ['AJF-705']
 
         return recorrido, unidades
