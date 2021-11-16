@@ -1,4 +1,3 @@
-
 import mlrose
 import json
 import pandas as pd
@@ -43,7 +42,7 @@ print('Flag 3')
 # Initialize fitness function object using dist_list
 fitness_dists = mlrose.TravellingSales(distances=dist_list)
 
-problem_fit = mlrose.TSPOpt(length=len(ordenDirecciones), fitness_fn=fitness_coords, maximize=False)
+problem_fit = mlrose.TSPOpt(length=len(ordenDirecciones), fitness_fn=fitness_dists, maximize=False)
 
 print('Flag 4')
 
@@ -51,7 +50,7 @@ best_state, best_fitness = mlrose.genetic_alg(problem_fit, mutation_prob=0.2, ma
 
 fin = timer()
 
-with open('datos_intermedios/rutaGlobal.txt', 'w') as ruta:
+with open('datos_intermedios/rutaDistancias.txt', 'w') as ruta:
     for estacion in best_state:
         ruta.write(str(ordenDirecciones[estacion]) + '\n')
 
@@ -60,7 +59,6 @@ print('The best state found is: ', best_state)
 print('The fitness at the best state is: ', best_fitness)
 
 print('Tiempo total:', round(fin - inicio, 2), 'segundos')
-
 
 """
 import osmnx as ox

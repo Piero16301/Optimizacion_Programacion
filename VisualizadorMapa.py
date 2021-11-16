@@ -3,6 +3,7 @@ import osmnx as ox
 import networkx as nx
 from cryptography.fernet import Fernet
 import json
+from geopy.distance import geodesic
 
 
 class VisualizadorMapa:
@@ -84,8 +85,8 @@ class VisualizadorMapa:
 
     def agregarCamino(self, recorridoUnidad, unidad):
         caminoTotal = []
+        distanciaTotal = 0
         for i in range(len(recorridoUnidad) - 1):
-            print('Número de camino:', i+1)
             puntoOrigen = (
                 self.direcciones[recorridoUnidad[i]]['Latitud'],
                 self.direcciones[recorridoUnidad[i]]['Longitud']
@@ -99,12 +100,16 @@ class VisualizadorMapa:
             nodoDestino = ox.get_nearest_node(self.grafo, puntoDestino)
 
             ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
+            distanciaActual = geodesic(puntoOrigen, puntoDestino).kilometers
+            print('Número de camino:', i + 1, 'Distancia:', distanciaActual,
+                  'Origen:', recorridoUnidad[i], 'Destino:', recorridoUnidad[i+1])
+            distanciaTotal = distanciaTotal + distanciaActual
 
             camino = self.construirCamino(ruta)
             caminoTotal = caminoTotal + camino
 
         if len(recorridoUnidad) == 1:
-            # Se mueve 100m a la derecha
+            # Se mueve 200m a la derecha
             nodoOrigen = ox.get_nearest_node(self.grafo, (
                 self.direcciones[recorridoUnidad[0]]['Latitud'],
                 self.direcciones[recorridoUnidad[0]]['Longitud'] + 0.0018204086027)
@@ -121,6 +126,8 @@ class VisualizadorMapa:
 
         latitudes = []
         longitudes = []
+
+        print('Distancia total:', distanciaTotal)
 
         for i in range(len(caminoTotal)):
             z = list(caminoTotal[i])

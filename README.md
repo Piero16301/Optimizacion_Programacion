@@ -15,6 +15,15 @@ pip install geopy
 pip install dash
 ```
 
+## Distancias y tiempos obtenidos del algoritmo TSP
+### Usando coordenadas de entrada
+Distancia total: 830.414300663492 Km
+Tiempo total: 114.82 segundos
+
+### Usando distancias de entrada
+Distancia total: 808.8525647069278 Km
+Tiempo total: 111.34 segundos
+
 ## Rutas por tipo de mapa
 Las rutas por cada unidad se pueden mostrar en los siguientes tipos de mapas.
 

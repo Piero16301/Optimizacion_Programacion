@@ -1,6 +1,5 @@
 import json
 from geopy.distance import geodesic
-from statsmodels.graphics.plot_grids import scatter_ellipse
 
 
 def unirUnidades():
@@ -68,35 +67,45 @@ class ProcesamientoRutas:
 
     def construirResultado(self, recorridoGlobal):
         recorrido = []
-        with open('datos_intermedios/rutaGlobal.txt', 'r') as ruta:
+        with open('datos_intermedios/rutaDistancias.txt', 'r') as ruta:
             rutaGlobal = []
             for estacion in ruta:
                 rutaGlobal.append(str(estacion.strip()))
-            rutaGlobal.append(rutaGlobal[0])
 
             maximaDistancia = 0
-            indiceMaximo = ''
+            indiceMaximo = 0
 
-            for i in range(len(rutaGlobal) - 1):
-                origen = (self.direcciones[rutaGlobal[i]]['Latitud'], self.direcciones[rutaGlobal[i]]['Longitud'])
-                destino = (self.direcciones[rutaGlobal[i+1]]['Latitud'], self.direcciones[rutaGlobal[i+1]]['Longitud'])
+            for i in range(len(rutaGlobal)):
+                if i == len(rutaGlobal) - 1:
+                    origen = (
+                        self.direcciones[rutaGlobal[i]]['Latitud'], self.direcciones[rutaGlobal[i]]['Longitud']
+                    )
+                    destino = (
+                        self.direcciones[rutaGlobal[0]]['Latitud'], self.direcciones[rutaGlobal[0]]['Longitud']
+                    )
+                else:
+                    origen = (
+                        self.direcciones[rutaGlobal[i]]['Latitud'], self.direcciones[rutaGlobal[i]]['Longitud']
+                    )
+                    destino = (
+                        self.direcciones[rutaGlobal[i+1]]['Latitud'], self.direcciones[rutaGlobal[i+1]]['Longitud']
+                    )
+
                 if geodesic(origen, destino).kilometers > maximaDistancia:
                     maximaDistancia = geodesic(origen, destino).kilometers
                     indiceMaximo = i
 
-            if indiceMaximo == len(rutaGlobal) - 1:
-                rutaGlobal.pop(indiceMaximo)
-                recorrido.append(rutaGlobal)
-            else:
+            if indiceMaximo != (len(rutaGlobal) - 1):
                 nuevaRutaGlobal = []
-                rutaGlobal.pop(indiceMaximo)
-                for i in range(indiceMaximo, len(rutaGlobal)):
+                for i in range(indiceMaximo + 1, len(rutaGlobal)):
                     nuevaRutaGlobal.append(rutaGlobal[i])
 
-                for i in range(indiceMaximo):
+                for i in range(indiceMaximo + 1):
                     nuevaRutaGlobal.append(rutaGlobal[i])
 
                 recorrido.append(nuevaRutaGlobal)
+            else:
+                recorrido.append(rutaGlobal)
 
         unidades = ['AJF-705']
 
