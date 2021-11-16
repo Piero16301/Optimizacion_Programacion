@@ -9,6 +9,7 @@ pip install -r requirements.txt
 
 ## Distancias y tiempos obtenidos del algoritmo TSP
 ### Usando coordenadas de entrada
+<<<<<<< HEAD
 **Distancia total:** 830.414300663492 Km
 
 **Tiempo total:** 114.82 segundos
@@ -23,6 +24,14 @@ Se ha usado el algoritmo TSP incluído en la librería ```mlrose``` para un caso
 obtenido la siguiente ruta.
 
 ![](imagenes_mapas/recorrido-TSP.gif)
+=======
+Distancia total: 830.414300663492 Km
+Tiempo total: 114.82 segundos
+
+### Usando distancias de entrada
+Distancia total: 808.8525647069278 Km
+Tiempo total: 111.34 segundos
+>>>>>>> 88df795e7900cd77f4ada4968a8ac81827d418f1
 
 ## Rutas por tipo de mapa
 Las rutas por cada unidad se pueden mostrar en los siguientes tipos de mapas.
