@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
     # Fin de tiempo
     fin = timer()
-    print('Tiempo total:', round(fin - inicio, 2), 'segundos')
+    print('Tiempo total:', round(fin - inicio, 3), 'segundos')
 
     # # Server para mostrar el mapa
     # app = dash.Dash()

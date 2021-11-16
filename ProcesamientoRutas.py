@@ -1,6 +1,7 @@
 import json
+
+import mlrose
 from geopy.distance import geodesic
-from statsmodels.graphics.plot_grids import scatter_ellipse
 
 
 def unirUnidades():
@@ -24,70 +25,83 @@ class ProcesamientoRutas:
         self.dataExternos = dataExternos
         self.direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
         self.unidades = unirUnidades()
-        self.grafo = []
 
-    def buscar(self, padre, i):
-        if padre[i] == i:
-            return i
-        return self.buscar(padre, padre[i])
+    def optimizacionRutaMayor(self, recorridoGlobal):
+        maximaDistancia = 0
+        indiceMaximo = 0
 
-    def unir(self, padre, rank, x, y):
-        raizX = self.buscar(padre, x)
-        raizY = self.buscar(padre, y)
-        if rank[raizX] < rank[raizY]:
-            padre[raizX] = raizY
-        elif rank[raizX] > rank[raizY]:
-            padre[raizY] = raizX
+        for i in range(len(recorridoGlobal)):
+            if i == len(recorridoGlobal) - 1:
+                origen = (
+                    self.direcciones[recorridoGlobal[i]]['Latitud'],
+                    self.direcciones[recorridoGlobal[i]]['Longitud']
+                )
+                destino = (
+                    self.direcciones[recorridoGlobal[0]]['Latitud'],
+                    self.direcciones[recorridoGlobal[0]]['Longitud']
+                )
+            else:
+                origen = (
+                    self.direcciones[recorridoGlobal[i]]['Latitud'],
+                    self.direcciones[recorridoGlobal[i]]['Longitud']
+                )
+                destino = (
+                    self.direcciones[recorridoGlobal[i + 1]]['Latitud'],
+                    self.direcciones[recorridoGlobal[i + 1]]['Longitud']
+                )
+
+            if geodesic(origen, destino).kilometers > maximaDistancia:
+                maximaDistancia = geodesic(origen, destino).kilometers
+                indiceMaximo = i
+
+        if indiceMaximo != (len(recorridoGlobal) - 1):
+            nuevoRecorridoGlobal = []
+            for i in range(indiceMaximo + 1, len(recorridoGlobal)):
+                nuevoRecorridoGlobal.append(recorridoGlobal[i])
+
+            for i in range(indiceMaximo + 1):
+                nuevoRecorridoGlobal.append(recorridoGlobal[i])
+
+            return nuevoRecorridoGlobal
         else:
-            padre[raizY] = raizX
-            rank[raizX] += 1
-
-    def kruskalMST(self, vertices):
-        resultado = []
-        i = 0
-        e = 0
-        self.grafo = sorted(self.grafo, key=lambda item: item[2])
-        padre = []
-        rank = []
-        for nodo in range(vertices):
-            padre.append(nodo)
-            rank.append(0)
-        while e < vertices - 1:
-            u, v, w = self.grafo[i]
-            i = i + 1
-            x = self.buscar(padre, u)
-            y = self.buscar(padre, v)
-            if x != y:
-                e = e + 1
-                resultado.append([u, v, w])
-                self.unir(padre, rank, x, y)
-        # costoMinimo = 0
-        # for u, v, peso in resultado:
-        #     costoMinimo += peso
-        return resultado
-
-    def construirResultado(self, recorridoGlobal):
-        recorrido = []
-        with open('datos_intermedios/rutaGlobal.txt', 'r') as ruta:
-            rutaGlobal = []
-            for estacion in ruta:
-                rutaGlobal.append(str(estacion.strip()))
-            recorrido.append(rutaGlobal)
-        unidades = ['AJF-705']
-
-        return recorrido, unidades
+            return recorridoGlobal
 
     def calcularRutas(self):
         print('Calculando rutas óptimas...')
-        estaciones = self.dataCOESTI['Centro'].unique().tolist()
+        estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()
+        estacionesExternos = self.dataExternos['Documento comercial'].unique().tolist()
+        # estaciones = estacionesCOESTI + estacionesExternos
+        estaciones = estacionesCOESTI
+
+        print('Calculando distancias...')
+
+        # Construir lista de distancias
+        distanciasEstaciones = []
         for i in range(len(estaciones)):
             for j in range(len(estaciones)):
                 if i != j:
                     origen = (self.direcciones[estaciones[i]]['Latitud'], self.direcciones[estaciones[i]]['Longitud'])
                     destino = (self.direcciones[estaciones[j]]['Latitud'], self.direcciones[estaciones[j]]['Longitud'])
                     distancia = geodesic(origen, destino).kilometers
-                    self.grafo.append([estaciones.index(estaciones[i]), estaciones.index(estaciones[j]), distancia])
-        resultadoKruskal = self.kruskalMST(len(estaciones))
+                    distanciasEstaciones.append((i, j, distancia))
+
+        print('Construyendo recorrido TSP...')
+
+        # Construir recorrido TSP
+        funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
+        ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=False)
+        posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
+            ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
+        )
+
+        print('Distancia total:', round(distanciaGlobal, 3), 'Km')
+
+        # Convertir posiciones a codigos de estación
+        recorridoGlobal = []
+        for i in range(len(posicionesRecorrido)):
+            recorridoGlobal.append(estaciones[posicionesRecorrido[i]])
+
+        recorridoGlobal = self.optimizacionRutaMayor(recorridoGlobal)
 
         # Ordenar las unidades de menor a mayor
         unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'])
@@ -96,9 +110,8 @@ class ProcesamientoRutas:
             unidadesOrdenadasDict[unidad] = self.unidades[unidad]
         self.unidades = unidadesOrdenadasDict
 
-        # Convertir indices a nombres de estaciones
-        recorridoGlobal = []
-        for u, v, peso in resultadoKruskal:
-            recorridoGlobal.append([estaciones[u], estaciones[v]])
+        recorrido = []
+        for i in range(len(recorridoGlobal) - 1):
+            recorrido.append([recorridoGlobal[i], recorridoGlobal[i + 1]])
 
-        return self.construirResultado(recorridoGlobal)
+        return recorrido, list(range(1, len(recorridoGlobal)))

@@ -3,6 +3,7 @@ import osmnx as ox
 import networkx as nx
 from cryptography.fernet import Fernet
 import json
+from geopy.distance import geodesic
 
 
 class VisualizadorMapa:
@@ -84,6 +85,7 @@ class VisualizadorMapa:
 
     def agregarCamino(self, recorridoUnidad, unidad):
         caminoTotal = []
+        distanciaTotal = 0
         for i in range(len(recorridoUnidad) - 1):
             puntoOrigen = (
                 self.direcciones[recorridoUnidad[i]]['Latitud'],
@@ -98,12 +100,14 @@ class VisualizadorMapa:
             nodoDestino = ox.get_nearest_node(self.grafo, puntoDestino)
 
             ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
+            distanciaActual = geodesic(puntoOrigen, puntoDestino).kilometers
+            distanciaTotal = distanciaTotal + distanciaActual
 
             camino = self.construirCamino(ruta)
             caminoTotal = caminoTotal + camino
 
         if len(recorridoUnidad) == 1:
-            # Se mueve 100m a la derecha
+            # Se mueve 200m a la derecha
             nodoOrigen = ox.get_nearest_node(self.grafo, (
                 self.direcciones[recorridoUnidad[0]]['Latitud'],
                 self.direcciones[recorridoUnidad[0]]['Longitud'] + 0.0018204086027)
@@ -140,6 +144,8 @@ class VisualizadorMapa:
             )
         ))
 
+        return distanciaTotal
+
     def visualizarEstaciones(self, columnaTexto):
         # Construir grafo para las rutas
         self.construirGrafo()
@@ -165,8 +171,13 @@ class VisualizadorMapa:
 
         print('Construyendo caminos...')
 
+        distanciaTotal = 0
         for i in range(len(self.recorrido)):
-            self.agregarCamino(self.recorrido[i], self.unidades[i])
+            distanciaCamino = self.agregarCamino(self.recorrido[i], self.unidades[i])
+            print('Camino:', i+1, 'Distancia:', round(distanciaCamino, 3), 'Km')
+            distanciaTotal = distanciaTotal + distanciaCamino
+
+        print('Distancia Total:', round(distanciaTotal, 3), 'Km')
 
         # Calcular centro del mapa
         promLatitud = self.dataFrame['Latitud'].mean()
