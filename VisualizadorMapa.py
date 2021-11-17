@@ -217,7 +217,7 @@ class VisualizadorMapa:
                     lat=promLatitud,
                     lon=promLongitud
                 ),
-                style='basic',
+                style='satellite-streets',
                 zoom=11
             ),
         )

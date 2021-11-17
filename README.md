@@ -24,7 +24,7 @@ obtenido la siguiente ruta.
 
 ![](imagenes_mapas/recorrido-TSP.gif)
 
-## Rutas por tipo de mapa
+## Tipos de mapas
 Las rutas por cada unidad se pueden mostrar en los siguientes tipos de mapas.
 
 ### Modelo "basic"
