@@ -19,6 +19,27 @@ def unirUnidades():
     return unidades
 
 
+def guardarRutaTSP(rutaArchivo, TSP, distancia):
+    with open(rutaArchivo, 'w') as ruta:
+        for estacion in TSP:
+            ruta.write(str(estacion) + '\n')
+        ruta.write('{:.3f}'.format(round(distancia, 3)) + '\n')
+    ruta.close()
+
+
+def cargarRutaTSP(rutaArchivo):
+    TSP = []
+    with open(rutaArchivo, 'r') as ruta:
+        elemento = ' '
+        for estacion in ruta:
+            if elemento != ' ':
+                TSP.append(int(elemento))
+            elemento = str(estacion.strip())
+        distancia = float(elemento)
+    ruta.close()
+    return TSP, distancia
+
+
 class ProcesamientoRutas:
     def __init__(self, dataCOESTI, dataExternos):
         self.dataCOESTI = dataCOESTI
@@ -78,15 +99,21 @@ class ProcesamientoRutas:
             separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        # Construir lista de distancias
-        distanciasEstaciones = []
-        for i in range(len(estaciones)):
-            for j in range(len(estaciones)):
-                if i != j:
-                    origen = (self.direcciones[estaciones[i]]['Latitud'], self.direcciones[estaciones[i]]['Longitud'])
-                    destino = (self.direcciones[estaciones[j]]['Latitud'], self.direcciones[estaciones[j]]['Longitud'])
-                    distancia = geodesic(origen, destino).kilometers
-                    distanciasEstaciones.append((i, j, distancia))
+        # # Construir lista de distancias
+        # distanciasEstaciones = []
+        # for i in range(len(estaciones)):
+        #     for j in range(len(estaciones)):
+        #         if i != j:
+        #             origen = (
+        #                 self.direcciones[estaciones[i]]['Latitud'],
+        #                 self.direcciones[estaciones[i]]['Longitud']
+        #             )
+        #             destino = (
+        #                 self.direcciones[estaciones[j]]['Latitud'],
+        #                 self.direcciones[estaciones[j]]['Longitud']
+        #             )
+        #             distancia = geodesic(origen, destino).kilometers
+        #             distanciasEstaciones.append((i, j, distancia))
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
@@ -94,12 +121,16 @@ class ProcesamientoRutas:
             separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        # Construir recorrido TSP
-        funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
-        ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=False)
-        posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
-            ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
-        )
+        # # Construir recorrido TSP
+        # funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
+        # ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=False)
+        # posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
+        #     ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
+        # )
+        #
+        # guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
+
+        posicionesRecorrido, distanciaGlobal = cargarRutaTSP('datos_intermedios/rutaTSP.txt')
 
         stringDistanciaTotal = '        2.2.1. Distancia total: ' + str(round(distanciaGlobal, 3)) + ' Km'
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
