@@ -120,6 +120,48 @@ class ProcesamientoRutas:
 
         return recorrido, unidades
 
+    def optimizarRutasUnidades(self, recorrido):
+        for i in range(len(recorrido)):
+            if len(recorrido[i]) > 2:
+                recorridoActual = recorrido[i]
+                maximaDistancia = 0
+                indiceMaximo = 0
+                for j in range(len(recorridoActual)):
+                    if j == len(recorridoActual) - 1:
+                        origen = (
+                            self.direcciones[recorridoActual[j]]['Latitud'],
+                            self.direcciones[recorridoActual[j]]['Longitud']
+                        )
+                        destino = (
+                            self.direcciones[recorridoActual[0]]['Latitud'],
+                            self.direcciones[recorridoActual[0]]['Longitud']
+                        )
+                    else:
+                        origen = (
+                            self.direcciones[recorridoActual[j]]['Latitud'],
+                            self.direcciones[recorridoActual[j]]['Longitud']
+                        )
+                        destino = (
+                            self.direcciones[recorridoActual[j + 1]]['Latitud'],
+                            self.direcciones[recorridoActual[j + 1]]['Longitud']
+                        )
+
+                    if geodesic(origen, destino).kilometers > maximaDistancia:
+                        maximaDistancia = geodesic(origen, destino).kilometers
+                        indiceMaximo = j
+
+                if indiceMaximo != (len(recorridoActual) - 1):
+                    nuevoRecorridoActual = []
+                    for j in range(indiceMaximo + 1, len(recorridoActual)):
+                        nuevoRecorridoActual.append(recorridoActual[j])
+
+                    for j in range(indiceMaximo + 1):
+                        nuevoRecorridoActual.append(recorridoActual[j])
+
+                    recorrido[i] = nuevoRecorridoActual
+
+        return recorrido
+
     def calcularRutas(self, separador, inicio):
         estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()
         # estacionesExternos = self.dataExternos['Documento comercial'].unique().tolist()
@@ -186,7 +228,7 @@ class ProcesamientoRutas:
         )
 
         # Ordenar las unidades de menor a mayor
-        unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'], reverse=True)
+        unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'], reverse=False)
         unidadesOrdenadasDict = {}
         for unidad in unidadesOrdenadas:
             unidadesOrdenadasDict[unidad] = self.unidades[unidad]
@@ -199,5 +241,6 @@ class ProcesamientoRutas:
         )
 
         recorrido, unidades = self.distribuirUnidades(recorridoGlobal)
+        recorrido = self.optimizarRutasUnidades(recorrido)
 
         return recorrido, unidades
