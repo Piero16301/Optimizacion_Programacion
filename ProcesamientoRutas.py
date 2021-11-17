@@ -1,5 +1,5 @@
 import json
-
+from timeit import default_timer as timer
 import mlrose
 from geopy.distance import geodesic
 
@@ -66,14 +66,16 @@ class ProcesamientoRutas:
         else:
             return recorridoGlobal
 
-    def calcularRutas(self):
-        print('Calculando rutas óptimas...')
+    def calcularRutas(self, separador, inicio):
         estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()
         estacionesExternos = self.dataExternos['Documento comercial'].unique().tolist()
         # estaciones = estacionesCOESTI + estacionesExternos
         estaciones = estacionesCOESTI
 
-        print('Calculando distancias...')
+        print(
+            '{0: <50}'.format('   2.1. Calculando distancias entre estaciones'),
+            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+        )
 
         # Construir lista de distancias
         distanciasEstaciones = []
@@ -85,7 +87,10 @@ class ProcesamientoRutas:
                     distancia = geodesic(origen, destino).kilometers
                     distanciasEstaciones.append((i, j, distancia))
 
-        print('Construyendo recorrido TSP...')
+        print(
+            '{0: <50}'.format('   2.2. Construyendo recorrido óptimo'),
+            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+        )
 
         # Construir recorrido TSP
         funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
@@ -94,7 +99,11 @@ class ProcesamientoRutas:
             ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
         )
 
-        print('Distancia total:', round(distanciaGlobal, 3), 'Km')
+        stringDistanciaTotal = '        2.2.1. Distancia total: ' + str(round(distanciaGlobal, 3)) + ' Km'
+        print(
+            '{0: <50}'.format(stringDistanciaTotal),
+            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+        )
 
         # Convertir posiciones a codigos de estación
         recorridoGlobal = []
@@ -103,12 +112,22 @@ class ProcesamientoRutas:
 
         recorridoGlobal = self.optimizacionRutaMayor(recorridoGlobal)
 
+        print(
+            '{0: <50}'.format('   2.3. Ordenando unidades'),
+            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+        )
+
         # Ordenar las unidades de menor a mayor
         unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'])
         unidadesOrdenadasDict = {}
         for unidad in unidadesOrdenadas:
             unidadesOrdenadasDict[unidad] = self.unidades[unidad]
         self.unidades = unidadesOrdenadasDict
+
+        print(
+            '{0: <50}'.format('   2.4. Distribuyendo unidades'),
+            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+        )
 
         recorrido = []
         for i in range(len(recorridoGlobal) - 1):

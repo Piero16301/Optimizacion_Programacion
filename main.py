@@ -1,4 +1,8 @@
+import dash
+from dash import dcc
+from dash import html
 from timeit import default_timer as timer
+import time
 
 from ProcesamientoCOESTI import ProcesamientoCOESTI
 from ProcesamientoExterno import ProcesamientoExterno
@@ -6,31 +10,61 @@ from ProcesamientoRestricciones import ProcesamientoRestricciones
 from ProcesamientoDirecciones import ProcesamientoDirecciones
 from ProcesamientoUnidades import ProcesamientoUnidades
 from ProcesamientoRutas import ProcesamientoRutas
-
 from VisualizadorMapa import VisualizadorMapa
 
-import dash
-from dash import dcc
-from dash import html
+separador = '='
 
 
 if __name__ == "__main__":
     # Inicio de tiempo
     inicio = timer()
+    time.sleep(0.111)
+
+    horaInicio = time.localtime()
+    print(separador * 39, 'INICIANDO EL PROGRAMA', separador * 39, '\t')
+    print(' ' * 44, time.strftime('%I:%M:%S %p', horaInicio), '\n')
 
     # Archivos de Excel de entrada
+    print('{0: <50}'.format('1. Lectura de datos'),
+          separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+          )
+
     procesadorDirecciones = ProcesamientoDirecciones('datos_entrada/Direcciones_Estaciones.xlsx')
     procesadorCOESTI = ProcesamientoCOESTI('datos_entrada/Pedidos_COESTI.xlsx')
     procesadorExterno = ProcesamientoExterno('datos_entrada/Pedidos_Externos.xlsx')
-    # procesadorRestricciones = ProcesamientoRestricciones('datos_entrada/Restricciones_Estaciones.xlsx')
     procesadorUnidades = ProcesamientoUnidades('datos_entrada/Detalle_Unidades.xlsx')
+    # procesadorRestricciones = ProcesamientoRestricciones('datos_entrada/Restricciones_Estaciones.xlsx')
 
     # Procesamiento de data
+    print(
+        '{0: <50}'.format('   1.1. Leyendo direcciones'),
+        separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+    )
     procesadorDirecciones.procesarData()
+
+    print(
+        '{0: <50}'.format('   1.2. Leyendo pedidos de COESTI'),
+        separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+    )
     procesadorCOESTI.procesarData()
+
+    print(
+        '{0: <50}'.format('   1.3. Leyendo pedidos externos'),
+        separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+    )
     procesadorExterno.procesarData()
-    # procesadorRestricciones.procesarData()
+
+    print(
+        '{0: <50}'.format('   1.4. Leyendo detalles de unidades'),
+        separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+    )
     procesadorUnidades.procesarData()
+
+    # print(
+    #     '{0: <50}'.format('   1.5. Leyendo restricciones de estaciones'),
+    #     separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+    # )
+    # procesadorRestricciones.procesarData()
 
     # Se obtiene el data frame con toda la data necesaria
     dataFrameDirecciones = procesadorDirecciones.dataFrame
@@ -38,28 +72,35 @@ if __name__ == "__main__":
     dataFrameExterno = procesadorExterno.dataFrame
     # dataFrameRestricciones = procesadorRestricciones.dataFrame
 
-    # Mostrar datos de Data Frames
-    # print('\n\n================ Data Frame Direcciones ================\n')
-    # print(dataFrameDirecciones.to_string())
-    # print('\n\n================ Data Frame COESTI ================\n')
-    # print(dataFrameCOESTI.to_string())
-    # print('\n\n================ Data Frame Externo ================\n')
-    # print(dataFrameExterno.to_string())
-    # print('\n\n================ Data Frame Restricciones ================\n')
-    # print(dataFrameRestricciones.to_string())
-
     # Calcular las rutas de las unidades
+    print('{0: <50}'.format('\n2. Procesamiento de rutas'),
+          separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+          )
+
     procesadorRutas = ProcesamientoRutas(dataFrameCOESTI, dataFrameExterno)
-    recorrido, unidades = procesadorRutas.calcularRutas()
+    recorrido, unidades = procesadorRutas.calcularRutas(separador, inicio)
 
     # Se muestran las estaciones en el mapa
-    print('Mostrando localización de estaciones...')
+    print('{0: <50}'.format('\n3. Graficación de rutas'),
+          separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+          )
+
+    print('{0: <50}'.format('   3.1. Cargando grafo de la ciudad'),
+          separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+          )
     visualizador = VisualizadorMapa(dataFrameDirecciones, recorrido, unidades)
-    visualizador.visualizarEstaciones('Cliente')
+
+    visualizador.visualizarEstaciones('Cliente', separador, inicio)
 
     # Fin de tiempo
     fin = timer()
-    print('Tiempo total:', round(fin - inicio, 3), 'segundos')
+    print('{0: <50}'.format('\n4. Término de todos los cálculos'),
+          separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+          )
+
+    horaFin = time.localtime()
+    print('\n', separador * 37, 'FINALIZANDO EL PROGRAMA', separador * 38, '\t')
+    print(' ' * 44, time.strftime('%I:%M:%S %p', horaFin))
 
     # # Server para mostrar el mapa
     # app = dash.Dash()

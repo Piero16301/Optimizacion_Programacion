@@ -18,7 +18,6 @@ class ProcesamientoDirecciones:
 
     def procesarData(self):
         # Organizar data del Excel Inicial
-        print('Leyendo data de Direcciones...')
         self.dataFrame = cargarExcel(self.rutaExcel, 'Lima', 0)
 
         # Se crea un diccionario con los campos importantes de ubicación

@@ -21,5 +21,4 @@ class ProcesamientoExterno:
 
     def procesarData(self):
         # Organizar data del Excel Inicial
-        print('Leyendo data de Pedidos Externos...')
         self.dataFrame = self.organizarData('Sheet1')

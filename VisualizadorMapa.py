@@ -4,6 +4,7 @@ import networkx as nx
 from cryptography.fernet import Fernet
 import json
 from geopy.distance import geodesic
+from timeit import default_timer as timer
 
 
 class VisualizadorMapa:
@@ -24,7 +25,6 @@ class VisualizadorMapa:
 
         self.mapa = go.Figure()
 
-        print('Cargando grafo del mapa...')
         self.grafo = ox.load_graphml('grafos/grafoLima.graphml')
 
         self.recorrido = recorrido
@@ -146,11 +146,15 @@ class VisualizadorMapa:
 
         return distanciaTotal
 
-    def visualizarEstaciones(self, columnaTexto):
+    def visualizarEstaciones(self, columnaTexto, separador, inicio):
         # Construir grafo para las rutas
         self.construirGrafo()
 
         # Iniciar las posiciones de los puntos
+        print(
+            '{0: <50}'.format('   3.2. Agregando localizacion de estaciones'),
+            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+        )
         self.mapa = go.Figure(go.Scattermapbox(
             mode='markers',
             showlegend=False,
@@ -169,15 +173,21 @@ class VisualizadorMapa:
         # unidades = ['AJF-705', 'B7K-982', 'AYR-771']
         # colores = ['blue', 'green', 'red']
 
-        print('Construyendo caminos...')
+        print(
+            '{0: <50}'.format('   3.3. Construyendo caminos de cada unidad'),
+            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+        )
 
         distanciaTotal = 0
         for i in range(len(self.recorrido)):
             distanciaCamino = self.agregarCamino(self.recorrido[i], self.unidades[i])
-            print('Camino:', i+1, 'Distancia:', round(distanciaCamino, 3), 'Km')
             distanciaTotal = distanciaTotal + distanciaCamino
 
-        print('Distancia Total:', round(distanciaTotal, 3), 'Km')
+        stringDistanciaTotal = '        3.3.1. Distancia total: ' + str(round(distanciaTotal, 3)) + ' Km'
+        print(
+            '{0: <50}'.format(stringDistanciaTotal),
+            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+        )
 
         # Calcular centro del mapa
         promLatitud = self.dataFrame['Latitud'].mean()

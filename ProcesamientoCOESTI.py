@@ -57,18 +57,15 @@ class ProcesamientoCOESTI:
     def procesarData(self):
         """
         # Organizar data del Excel Inicial
-        print('Leyendo data de COESTI...')
         self.dataFrame = self.organizarData('CL')
 
         # Aplicar filtros
         self.dataFrame = self.aplicarFiltros()
 
         # Guardar como Excel
-        print('Guardando data filtrada...')
         guardarExcel(self.dataFrame, 'datos_intermedios/Data_Formateada_COESTI.xlsx', False, True)
 
         # Carga de datos desde Excel
-        print('Cargando data filtrada...')
         self.dataFrame = cargarExcel('datos_intermedios/Data_Formateada_COESTI.xlsx', 'Sheet1', 0)
 
         # Columnas seleccionadas => Centro, Distrito, Estación, Material, Descripción, Producto, Sugerido
@@ -80,7 +77,6 @@ class ProcesamientoCOESTI:
         longitudes = []
 
         # Obtención de dirección y coordenadas
-        print('Obteniendo direcciones y coordenadas...')
         for index, row, in self.dataFrame.iterrows():
             if row['Centro'] in self.direcciones:
                 dataEstacion = self.direcciones[row['Centro']]
@@ -99,10 +95,8 @@ class ProcesamientoCOESTI:
         self.dataFrame.insert(9, 'Longitud', longitudes, True)
 
         # Guardar como Excel
-        print('Guardando data de localización...')
         guardarExcel(self.dataFrame, 'datos_intermedios/Data_Direcciones_COESTI.xlsx', False, True)
         """
 
         # Carga de datos desde Excel
-        print('Cargando data de localización...')
         self.dataFrame = cargarExcel('datos_intermedios/Data_Direcciones_COESTI.xlsx', 'Sheet1', 0)

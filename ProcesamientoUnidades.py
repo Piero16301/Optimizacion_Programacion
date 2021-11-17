@@ -81,9 +81,6 @@ class ProcesamientoUnidades:
                 json.dump(self.indiceApoyo, apoyoJSON, indent=4, ensure_ascii=False)
 
     def procesarData(self):
-        # Organizar data del Excel inicial
-        print('Leyendo data de Unidades...')
-
         # Procesar data Transcord
         self.dataTranscord = self.organizarDataTranscord('Flota Transcord')
         self.guardarIndice(self.dataTranscord, 'transcord')

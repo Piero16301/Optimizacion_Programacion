@@ -21,5 +21,4 @@ class ProcesamientoRestricciones:
 
     def procesarData(self):
         # Organizar data del Excel inicial
-        print('Leyendo data de Restricciones...')
         self.dataFrame = self.organizarData('Lima')
