@@ -154,7 +154,7 @@ class VisualizadorMapa:
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   3.2. Agregando localizacion de estaciones'),
-            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
         self.mapa = go.Figure(go.Scattermapbox(
             mode='markers',
@@ -169,15 +169,10 @@ class VisualizadorMapa:
             }
         ))
 
-        # origenes = [(-12.05228029, -77.14360947), (-11.93553478, -77.12662366), (-12.13157737, -76.97689901)]
-        # destinos = [(-12.116601, -77.04496341), (-11.97719639, -77.01030252), (-12.06775267, -76.94659696)]
-        # unidades = ['AJF-705', 'B7K-982', 'AYR-771']
-        # colores = ['blue', 'green', 'red']
-
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   3.3. Construyendo caminos de cada unidad'),
-            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         distanciaTotal = 0
@@ -189,7 +184,15 @@ class VisualizadorMapa:
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format(stringDistanciaTotal),
-            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
+        )
+
+        stringPromedioUnidad = '        3.3.2. Promedio por unidad: ' + \
+                               str(round(distanciaTotal / len(self.unidades), 3)) + ' Km'
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
+        print(
+            '{0: <50}'.format(stringPromedioUnidad),
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # Calcular centro del mapa

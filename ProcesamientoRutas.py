@@ -87,16 +87,49 @@ class ProcesamientoRutas:
         else:
             return recorridoGlobal
 
+    def distribuirUnidades(self, recorridoGlobal):
+        recorrido = []
+        unidades = []
+
+        rutaActual = []
+
+        listaUnidades = list(self.unidades.keys())
+        capacidades = [self.unidades[key]['Capacidad'] for key in self.unidades]
+        unidadLlenando = 0
+        for estacion in recorridoGlobal:
+            pedido = self.dataCOESTI[self.dataCOESTI['Centro'] == estacion]['Sugerido'].sum()
+            while pedido > 0.0:
+                if pedido <= capacidades[unidadLlenando]:
+                    capacidades[unidadLlenando] = capacidades[unidadLlenando] - pedido
+
+                    rutaActual.append(estacion)
+
+                    pedido = pedido - pedido
+                else:
+                    pedido = pedido - capacidades[unidadLlenando]
+                    capacidades[unidadLlenando] = capacidades[unidadLlenando] - capacidades[unidadLlenando]
+
+                    rutaActual.append(estacion)
+
+                    recorrido.append([i for i in rutaActual])
+                    unidades.append(listaUnidades[unidadLlenando])
+
+                    rutaActual.clear()
+
+                    unidadLlenando = unidadLlenando + 1
+
+        return recorrido, unidades
+
     def calcularRutas(self, separador, inicio):
         estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()
-        estacionesExternos = self.dataExternos['Documento comercial'].unique().tolist()
+        # estacionesExternos = self.dataExternos['Documento comercial'].unique().tolist()
         # estaciones = estacionesCOESTI + estacionesExternos
         estaciones = estacionesCOESTI
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   2.1. Calculando distancias entre estaciones'),
-            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # # Construir lista de distancias
@@ -118,7 +151,7 @@ class ProcesamientoRutas:
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   2.2. Construyendo recorrido óptimo'),
-            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # # Construir recorrido TSP
@@ -136,7 +169,7 @@ class ProcesamientoRutas:
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format(stringDistanciaTotal),
-            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # Convertir posiciones a codigos de estación
@@ -149,11 +182,11 @@ class ProcesamientoRutas:
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   2.3. Ordenando unidades'),
-            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # Ordenar las unidades de menor a mayor
-        unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'])
+        unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'], reverse=True)
         unidadesOrdenadasDict = {}
         for unidad in unidadesOrdenadas:
             unidadesOrdenadasDict[unidad] = self.unidades[unidad]
@@ -162,11 +195,9 @@ class ProcesamientoRutas:
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   2.4. Distribuyendo unidades'),
-            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        recorrido = []
-        for i in range(len(recorridoGlobal) - 1):
-            recorrido.append([recorridoGlobal[i], recorridoGlobal[i + 1]])
+        recorrido, unidades = self.distribuirUnidades(recorridoGlobal)
 
-        return recorrido, list(range(1, len(recorridoGlobal)))
+        return recorrido, unidades
