@@ -47,3 +47,10 @@ Las rutas por cada unidad se pueden mostrar en los siguientes tipos de mapas.
 
 ### Modelo "satellite-streets"
 ![](imagenes_mapas/rutas-satellite-streets.png "Modelo satellite-streets")
+
+## Ejecución del programa
+Durante la ejecución del programa, se mostrará cada una de las etapas del
+programa, así como también los tiempos de ejecución de cada una de ellas. La manera
+de mostrar las etapas es la siguiente.
+
+![](imagenes_mapas/ejecucion-programa.png)

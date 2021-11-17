@@ -151,9 +151,10 @@ class VisualizadorMapa:
         self.construirGrafo()
 
         # Iniciar las posiciones de los puntos
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   3.2. Agregando localizacion de estaciones'),
-            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
         self.mapa = go.Figure(go.Scattermapbox(
             mode='markers',
@@ -173,9 +174,10 @@ class VisualizadorMapa:
         # unidades = ['AJF-705', 'B7K-982', 'AYR-771']
         # colores = ['blue', 'green', 'red']
 
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   3.3. Construyendo caminos de cada unidad'),
-            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         distanciaTotal = 0
@@ -184,9 +186,10 @@ class VisualizadorMapa:
             distanciaTotal = distanciaTotal + distanciaCamino
 
         stringDistanciaTotal = '        3.3.1. Distancia total: ' + str(round(distanciaTotal, 3)) + ' Km'
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format(stringDistanciaTotal),
-            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # Calcular centro del mapa

@@ -72,9 +72,10 @@ class ProcesamientoRutas:
         # estaciones = estacionesCOESTI + estacionesExternos
         estaciones = estacionesCOESTI
 
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   2.1. Calculando distancias entre estaciones'),
-            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # Construir lista de distancias
@@ -87,9 +88,10 @@ class ProcesamientoRutas:
                     distancia = geodesic(origen, destino).kilometers
                     distanciasEstaciones.append((i, j, distancia))
 
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   2.2. Construyendo recorrido óptimo'),
-            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # Construir recorrido TSP
@@ -100,9 +102,10 @@ class ProcesamientoRutas:
         )
 
         stringDistanciaTotal = '        2.2.1. Distancia total: ' + str(round(distanciaGlobal, 3)) + ' Km'
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format(stringDistanciaTotal),
-            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # Convertir posiciones a codigos de estación
@@ -112,9 +115,10 @@ class ProcesamientoRutas:
 
         recorridoGlobal = self.optimizacionRutaMayor(recorridoGlobal)
 
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   2.3. Ordenando unidades'),
-            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         # Ordenar las unidades de menor a mayor
@@ -124,9 +128,10 @@ class ProcesamientoRutas:
             unidadesOrdenadasDict[unidad] = self.unidades[unidad]
         self.unidades = unidadesOrdenadasDict
 
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
             '{0: <50}'.format('   2.4. Distribuyendo unidades'),
-            separador * 30, '\t', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+            separador * 30, '\t', '{0: >7}'.format(tiempo), 'segundos'
         )
 
         recorrido = []
