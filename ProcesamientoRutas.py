@@ -97,7 +97,11 @@ class ProcesamientoRutas:
         capacidades = [self.unidades[key]['Capacidad'] for key in self.unidades]
         unidadLlenando = 0
         for estacion in recorridoGlobal:
-            pedido = self.dataCOESTI[self.dataCOESTI['Centro'] == estacion]['Sugerido'].sum()
+            if estacion[0] == 'P':
+                pedido = self.dataCOESTI[self.dataCOESTI['Centro'] == estacion]['Sugerido'].sum()
+            else:
+                pedido = \
+                    self.dataExternos[self.dataExternos['Solicitante'] == int(estacion)]['Cantidad de pedido'].sum()
             while pedido > 0.0:
                 if pedido <= capacidades[unidadLlenando]:
                     capacidades[unidadLlenando] = capacidades[unidadLlenando] - pedido
@@ -164,9 +168,15 @@ class ProcesamientoRutas:
 
     def calcularRutas(self, separador, inicio):
         estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()
-        # estacionesExternos = self.dataExternos['Documento comercial'].unique().tolist()
-        # estaciones = estacionesCOESTI + estacionesExternos
-        estaciones = estacionesCOESTI
+        estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
+        estaciones = estacionesCOESTI + estacionesExternos
+        # estaciones = estacionesCOESTI
+
+        estacionesExistentes = []
+        for estacion in estaciones:
+            if estacion in self.direcciones:
+                estacionesExistentes.append(estacion)
+        estaciones = estacionesExistentes
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
@@ -174,21 +184,21 @@ class ProcesamientoRutas:
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        # # Construir lista de distancias
-        # distanciasEstaciones = []
-        # for i in range(len(estaciones)):
-        #     for j in range(len(estaciones)):
-        #         if i != j:
-        #             origen = (
-        #                 self.direcciones[estaciones[i]]['Latitud'],
-        #                 self.direcciones[estaciones[i]]['Longitud']
-        #             )
-        #             destino = (
-        #                 self.direcciones[estaciones[j]]['Latitud'],
-        #                 self.direcciones[estaciones[j]]['Longitud']
-        #             )
-        #             distancia = geodesic(origen, destino).kilometers
-        #             distanciasEstaciones.append((i, j, distancia))
+        # Construir lista de distancias
+        distanciasEstaciones = []
+        for i in range(len(estaciones)):
+            for j in range(len(estaciones)):
+                if i != j:
+                    origen = (
+                        self.direcciones[str(estaciones[i])]['Latitud'],
+                        self.direcciones[str(estaciones[i])]['Longitud']
+                    )
+                    destino = (
+                        self.direcciones[str(estaciones[j])]['Latitud'],
+                        self.direcciones[str(estaciones[j])]['Longitud']
+                    )
+                    distancia = geodesic(origen, destino).kilometers
+                    distanciasEstaciones.append((i, j, distancia))
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
@@ -196,14 +206,14 @@ class ProcesamientoRutas:
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        # # Construir recorrido TSP
-        # funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
-        # ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=False)
-        # posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
-        #     ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
-        # )
-        #
-        # guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
+        # Construir recorrido TSP
+        funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
+        ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=False)
+        posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
+            ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
+        )
+
+        guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
 
         posicionesRecorrido, distanciaGlobal = cargarRutaTSP('datos_intermedios/rutaTSP.txt')
 
