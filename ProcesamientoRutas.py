@@ -1,6 +1,7 @@
 import json
 from timeit import default_timer as timer
 import mlrose
+import pandas as pd
 from geopy.distance import geodesic
 
 
@@ -54,6 +55,7 @@ class ProcesamientoRutas:
         self.dataExternos = dataExternos
         self.direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
         self.unidades = unirUnidades()
+        self.combustibles = json.load(open('archivos_json/combustibles.json', encoding='utf8'))
 
     def optimizacionRutaMayor(self, recorridoGlobal):
         maximaDistancia = 0
@@ -94,6 +96,80 @@ class ProcesamientoRutas:
             return nuevoRecorridoGlobal
         else:
             return recorridoGlobal
+
+    def exportarDetalleCombustiblePorCompartimento(self, rutaSalida, unidades, capacidadCompartimento,
+                                                   tiposCombustible):
+        # Placa de tracto | Empresa | Capacidad total | Total de compartimentos | Número de compartimento |
+        # Capacidad de compartimento | Material | Descripción | Producto | Cantidad suministrada
+        unidadesUtilizadas = [unidad for unidad in unidades]
+        datos = []
+        while len(unidadesUtilizadas) > 0:
+            unidad = unidadesUtilizadas[0]
+            numeroCompartimentos = self.unidades[unidad]['# Compartimentos']
+
+            # Se extrae datos de la unidad
+            capacidadCompartimentoActual = capacidadCompartimento[:numeroCompartimentos]
+            tiposCombustibleActual = tiposCombustible[:numeroCompartimentos]
+
+            # Se eliminan los datos de los arrays globales
+            del capacidadCompartimento[:numeroCompartimentos]
+            del tiposCombustible[:numeroCompartimentos]
+            del unidadesUtilizadas[0]
+
+            arrayCompartimentos = self.unidades[unidad]['Compartimentos']
+
+            for i in range(numeroCompartimentos):
+                fila = []
+
+                # Se agrega columna de Placa de tracto
+                fila.append(unidad)
+
+                # Se agrega columna de Empresa
+                fila.append(self.unidades[unidad]['Empresa'])
+
+                # Se agrega columna de Capacidad total
+                fila.append(self.unidades[unidad]['Capacidad'])
+
+                # Se agrega columna de Total de compartimentos
+                fila.append(self.unidades[unidad]['# Compartimentos'])
+
+                # Se agrega columna de Número de compartimento
+                fila.append(i + 1)
+
+                # Se agrega columna de Capacidad de compartimento
+                fila.append(arrayCompartimentos[i])
+
+                if str(tiposCombustibleActual[i]) == '-':
+                    # Se agrega columna de Material
+                    fila.append('Ninguno')
+
+                    # Se agrega columna de Descripción
+                    fila.append('Ninguno')
+
+                    # Se agrega columna de Producto
+                    fila.append('Ninguno')
+                else:
+                    # Se agrega columna de Material
+                    fila.append(str(tiposCombustibleActual[i]))
+
+                    # Se agrega columna de Descripción
+                    fila.append(self.combustibles[str(tiposCombustibleActual[i])]['Descripción'])
+
+                    # Se agrega columna de Producto
+                    fila.append(self.combustibles[str(tiposCombustibleActual[i])]['Producto'])
+
+                # Se agrega columna de Cantidad
+                fila.append(arrayCompartimentos[i] - capacidadCompartimentoActual[i])
+
+                # Se agrega la fila a los datos
+                datos.append(fila)
+
+        # Se crea y exporta el data frame con los datos
+        encabezados = ['Placa de tracto', 'Empresa', 'Capacidad total', 'Total de compartimentos',
+                       'Número de compartimento', 'Capacidad de compartimento', 'Material', 'Descripción',
+                       'Producto', 'Cantidad suministrada']
+        dataFrameFinal = pd.DataFrame(datos, columns=encabezados)
+        dataFrameFinal.to_excel(rutaSalida, index=True, header=True)
 
     def distribuirUnidades(self, recorridoGlobal):
         recorrido = []
@@ -160,6 +236,10 @@ class ProcesamientoRutas:
                 # Se agrega la unidad y el array del recorrido, eliminando los duplicados
                 unidades.append(idUnidad)
                 recorrido.append(list(dict.fromkeys(estacionesPorUnidades[idUnidad])))
+
+        # Exportar Excel con los tipos de combustibles por compartimento
+        self.exportarDetalleCombustiblePorCompartimento('datos_salida/Combustibles_Compartimentos.xlsx', unidades,
+                                                        capacidadCompartimento, tiposCombustible)
 
         return recorrido, unidades
 
