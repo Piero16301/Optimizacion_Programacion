@@ -40,6 +40,14 @@ def cargarRutaTSP(rutaArchivo):
     return TSP, distancia
 
 
+def buscarSiguienteCompartimento(tipo, capacidadCompartimento, tiposCombustible):
+    for i in range(len(tiposCombustible)):
+        if tiposCombustible[i] == tipo and capacidadCompartimento[i] > 0.0:
+            return i
+        elif tiposCombustible[i] == '-':
+            return i
+
+
 class ProcesamientoRutas:
     def __init__(self, dataCOESTI, dataExternos):
         self.dataCOESTI = dataCOESTI
@@ -91,36 +99,67 @@ class ProcesamientoRutas:
         recorrido = []
         unidades = []
 
-        rutaActual = []
+        capacidadCompartimento = []
+        tiposCombustible = []
+        unidadesCompartimento = []
 
+        estacionesPorUnidades = {}
         listaUnidades = list(self.unidades.keys())
-        capacidades = [self.unidades[key]['Capacidad'] for key in self.unidades]
-        unidadLlenando = 0
+        for idUnidad in listaUnidades:
+            unidad = self.unidades[idUnidad]
+            capacidadCompartimento = capacidadCompartimento + unidad['Compartimentos']
+            tiposCombustible = tiposCombustible + ['-' for i in range(unidad['# Compartimentos'])]
+            unidadesCompartimento = unidadesCompartimento + [idUnidad for i in range(unidad['# Compartimentos'])]
+            estacionesPorUnidades[idUnidad] = []
+
         for estacion in recorridoGlobal:
-            if estacion[0] == 'P':
-                pedido = self.dataCOESTI[self.dataCOESTI['Centro'] == estacion]['Sugerido'].sum()
-            else:
-                pedido = \
-                    self.dataExternos[self.dataExternos['Solicitante'] == int(estacion)]['Cantidad de pedido'].sum()
-            while pedido > 0.0:
-                if pedido <= capacidades[unidadLlenando]:
-                    capacidades[unidadLlenando] = capacidades[unidadLlenando] - pedido
+            # Filtrar pedidos de una estación
+            dataFrameEstacion = self.dataCOESTI[self.dataCOESTI['Centro'] == estacion]
+            # print(dataFrameEstacion.to_string())
 
-                    rutaActual.append(estacion)
+            # Recorrer pedidos de la estación
+            for index, row, in dataFrameEstacion.iterrows():
+                # Se extrae la cantidad y tipo de combustible al pedido
+                pedido = row['Sugerido']
+                tipo = row['Material']
+                while pedido > 0.0:
+                    # Buscar compartimento no lleno del mismo tipo de combustible o uno que esté vacío
+                    compartimentoALlenar = buscarSiguienteCompartimento(tipo, capacidadCompartimento, tiposCombustible)
 
-                    pedido = pedido - pedido
-                else:
-                    pedido = pedido - capacidades[unidadLlenando]
-                    capacidades[unidadLlenando] = capacidades[unidadLlenando] - capacidades[unidadLlenando]
+                    # Se asigna el tipo de combustible al compartimento
+                    tiposCombustible[compartimentoALlenar] = tipo
 
-                    rutaActual.append(estacion)
+                    # Si el pedido alcanza en el compartimento
+                    if pedido <= capacidadCompartimento[compartimentoALlenar]:
+                        # Se reduce la cantidad del pedido al compartimento
+                        capacidadCompartimento[compartimentoALlenar] = \
+                            capacidadCompartimento[compartimentoALlenar] - pedido
 
-                    recorrido.append([i for i in rutaActual])
-                    unidades.append(listaUnidades[unidadLlenando])
+                        # Se agrega la estación al recorrido de la unidad
+                        estacionesPorUnidades[unidadesCompartimento[compartimentoALlenar]].append(estacion)
 
-                    rutaActual.clear()
+                        # El pedido queda en cero
+                        pedido = pedido - pedido
 
-                    unidadLlenando = unidadLlenando + 1
+                    # Si el pedido no alcanza en el compartimento
+                    else:
+                        # Se resta la capacidad restante del compartimento al pedido
+                        pedido = pedido - capacidadCompartimento[compartimentoALlenar]
+
+                        # La capacidad del compartimento queda en cero
+                        capacidadCompartimento[compartimentoALlenar] = \
+                            capacidadCompartimento[compartimentoALlenar] - capacidadCompartimento[compartimentoALlenar]
+
+                        # Se agrega la estación al recorrido de la unidad
+                        estacionesPorUnidades[unidadesCompartimento[compartimentoALlenar]].append(estacion)
+
+        # Se recorren todas las unidades
+        for idUnidad in estacionesPorUnidades.keys():
+            # Si se tiene al menos una parada en la unidad
+            if len(estacionesPorUnidades[idUnidad]) > 0:
+                # Se agrega la unidad y el array del recorrido, eliminando los duplicados
+                unidades.append(idUnidad)
+                recorrido.append(list(dict.fromkeys(estacionesPorUnidades[idUnidad])))
 
         return recorrido, unidades
 
@@ -168,10 +207,11 @@ class ProcesamientoRutas:
 
     def calcularRutas(self, separador, inicio):
         estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()
-        estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
-        estaciones = estacionesCOESTI + estacionesExternos
-        # estaciones = estacionesCOESTI
+        # estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
+        # estaciones = estacionesCOESTI + estacionesExternos
+        estaciones = estacionesCOESTI
 
+        # Se verifica si es que existen las estaciones en el Excel de direcciones
         estacionesExistentes = []
         for estacion in estaciones:
             if estacion in self.direcciones:
@@ -185,20 +225,20 @@ class ProcesamientoRutas:
         )
 
         # Construir lista de distancias
-        distanciasEstaciones = []
-        for i in range(len(estaciones)):
-            for j in range(len(estaciones)):
-                if i != j:
-                    origen = (
-                        self.direcciones[str(estaciones[i])]['Latitud'],
-                        self.direcciones[str(estaciones[i])]['Longitud']
-                    )
-                    destino = (
-                        self.direcciones[str(estaciones[j])]['Latitud'],
-                        self.direcciones[str(estaciones[j])]['Longitud']
-                    )
-                    distancia = geodesic(origen, destino).kilometers
-                    distanciasEstaciones.append((i, j, distancia))
+        # distanciasEstaciones = []
+        # for i in range(len(estaciones)):
+        #     for j in range(len(estaciones)):
+        #         if i != j:
+        #             origen = (
+        #                 self.direcciones[estaciones[i]]['Latitud'],
+        #                 self.direcciones[estaciones[i]]['Longitud']
+        #             )
+        #             destino = (
+        #                 self.direcciones[estaciones[j]]['Latitud'],
+        #                 self.direcciones[estaciones[j]]['Longitud']
+        #             )
+        #             distancia = geodesic(origen, destino).kilometers
+        #             distanciasEstaciones.append((i, j, distancia))
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
@@ -206,14 +246,14 @@ class ProcesamientoRutas:
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        # Construir recorrido TSP
-        funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
-        ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=False)
-        posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
-            ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
-        )
-
-        guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
+        # # Construir recorrido TSP
+        # funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
+        # ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=True)
+        # posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
+        #     ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
+        # )
+        #
+        # guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
 
         posicionesRecorrido, distanciaGlobal = cargarRutaTSP('datos_intermedios/rutaTSP.txt')
 
@@ -238,7 +278,7 @@ class ProcesamientoRutas:
         )
 
         # Ordenar las unidades de menor a mayor
-        unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'], reverse=False)
+        unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'], reverse=True)
         unidadesOrdenadasDict = {}
         for unidad in unidadesOrdenadas:
             unidadesOrdenadasDict[unidad] = self.unidades[unidad]

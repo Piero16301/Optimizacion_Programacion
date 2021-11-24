@@ -103,8 +103,8 @@
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
         "Placa Cisterna": "-",
         "Propietario": "PROPIA",
-        "Capacidad": 9000.0,
-        "# Compartimentos": 5,
+        "Capacidad": 6500.0,
+        "# Compartimentos": 4,
         "Compartimentos": [
             2500.0,
             1500.0,
@@ -116,8 +116,8 @@
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
         "Placa Cisterna": "-",
         "Propietario": "PROPIA",
-        "Capacidad": 4500.0,
-        "# Compartimentos": 5,
+        "Capacidad": 3500.0,
+        "# Compartimentos": 4,
         "Compartimentos": [
             500.0,
             1000.0,
@@ -154,8 +154,8 @@
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
         "Placa Cisterna": "-",
         "Propietario": "PROPIA",
-        "Capacidad": 4500.0,
-        "# Compartimentos": 5,
+        "Capacidad": 4000.0,
+        "# Compartimentos": 4,
         "Compartimentos": [
             500.0,
             1000.0,
@@ -168,7 +168,7 @@
         "Placa Cisterna": "-",
         "Propietario": "TERCERA",
         "Capacidad": 4000.0,
-        "# Compartimentos": 4,
+        "# Compartimentos": 3,
         "Compartimentos": [
             2000.0,
             1000.0,
@@ -179,8 +179,8 @@
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
         "Placa Cisterna": "F9O-990",
         "Propietario": "PROPIA",
-        "Capacidad": 7000.0,
-        "# Compartimentos": 7,
+        "Capacidad": 3500.0,
+        "# Compartimentos": 4,
         "Compartimentos": [
             2000.0,
             500.0,
@@ -206,7 +206,7 @@
         "Empresa": "UL&PH INVERSIONES SAC",
         "Placa Cisterna": "F0P-977",
         "Propietario": "PROPIA",
-        "Capacidad": 8500.0,
+        "Capacidad": 7600.0,
         "# Compartimentos": 8,
         "Compartimentos": [
             2000.0,
@@ -255,7 +255,7 @@
         "Empresa": "HERMELINDA HUATAY MANTILLA",
         "Placa Cisterna": "-",
         "Propietario": "PROPIA",
-        "Capacidad": 3000.0,
+        "Capacidad": 2500.0,
         "# Compartimentos": 4,
         "Compartimentos": [
             500.0,
@@ -371,7 +371,7 @@
         "Empresa": "CORPORACIÓN ENRIQUE & JANIS ",
         "Placa Cisterna": "ABS-990",
         "Propietario": "PROPIA",
-        "Capacidad": 9000.0,
+        "Capacidad": 10000.0,
         "# Compartimentos": 7,
         "Compartimentos": [
             1000.0,
