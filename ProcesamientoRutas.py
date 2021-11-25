@@ -167,9 +167,15 @@ class ProcesamientoRutas:
         # Se crea y exporta el data frame con los datos
         encabezados = ['Placa de tracto', 'Empresa', 'Capacidad total', 'Total de compartimentos',
                        'Número de compartimento', 'Capacidad de compartimento', 'Material', 'Descripción',
-                       'Producto', 'Cantidad suministrada']
+                       'Producto', 'Cantidad llenada']
         dataFrameFinal = pd.DataFrame(datos, columns=encabezados)
-        dataFrameFinal.to_excel(rutaSalida, index=True, header=True)
+
+        # Exportar varias hojas en el mismo archivo Excel
+        with pd.ExcelWriter(rutaSalida) as archivoExcel:
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 1')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 2')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 3')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 4')
 
     def distribuirUnidades(self, recorridoGlobal):
         recorrido = []
@@ -238,8 +244,8 @@ class ProcesamientoRutas:
                 recorrido.append(list(dict.fromkeys(estacionesPorUnidades[idUnidad])))
 
         # Exportar Excel con los tipos de combustibles por compartimento
-        self.exportarDetalleCombustiblePorCompartimento('datos_salida/Combustibles_Compartimentos.xlsx', unidades,
-                                                        capacidadCompartimento, tiposCombustible)
+        self.exportarDetalleCombustiblePorCompartimento('datos_salida/Distribución_Combustibles_Unidades.xlsx',
+                                                        unidades, capacidadCompartimento, tiposCombustible)
 
         return recorrido, unidades
 
@@ -284,6 +290,62 @@ class ProcesamientoRutas:
                     recorrido[i] = nuevoRecorridoActual
 
         return recorrido
+
+    def exportarRecorridoUnidades(self, rutaSalida, recorrido, unidades):
+        # Placa de tracto | Empresa | Capacidad total | # Compartimentos | Orden de llegada | Destinatario |
+        # Distrito | Estación | Dirección | Grupo
+        datos = []
+        for i in range(len(unidades)):
+            unidad = unidades[i]
+            recorridoActual = recorrido[i]
+            for j in range(len(recorridoActual)):
+                fila = []
+                estacion = recorridoActual[j]
+
+                # Se agrega columna de Placa de tracto
+                fila.append(unidad)
+
+                # Se agrega columna de Empresa
+                fila.append(self.unidades[unidad]['Empresa'])
+
+                # Se agrega columna de Capacidad total
+                fila.append(self.unidades[unidad]['Capacidad'])
+
+                # Se agrega columna de # Compartimentos
+                fila.append(self.unidades[unidad]['# Compartimentos'])
+
+                # Se agrega columna de Orden de llegada
+                fila.append(j + 1)
+
+                # Se agrega columna de Destinatario
+                fila.append(estacion)
+
+                # Se agrega columna de Distrito
+                fila.append(self.direcciones[estacion]['Distrito'])
+
+                # Se agrega columna de Estación
+                fila.append(self.direcciones[estacion]['Estación'])
+
+                # Se agrega columna de Dirección
+                fila.append(self.direcciones[estacion]['Dirección'])
+
+                # Se agrega columna de Grupo
+                fila.append(self.direcciones[estacion]['Grupo'])
+
+                # Se agrega la fila a los datos
+                datos.append(fila)
+
+        # Se crea y exporta el data frame con los datos
+        encabezados = ['Placa de tracto', 'Empresa', 'Capacidad total', '# Compartimentos', 'Orden de llegada',
+                       'Destinatario', '# Distrito', 'Estación', 'Dirección', 'Grupo']
+        dataFrameFinal = pd.DataFrame(datos, columns=encabezados)
+
+        # Exportar varias hojas en el mismo archivo Excel
+        with pd.ExcelWriter(rutaSalida) as archivoExcel:
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 1')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 2')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 3')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 4')
 
     def calcularRutas(self, separador, inicio):
         estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()
@@ -372,5 +434,8 @@ class ProcesamientoRutas:
 
         recorrido, unidades = self.distribuirUnidades(recorridoGlobal)
         recorrido = self.optimizarRutasUnidades(recorrido)
+
+        # Exportar rutas de unidades
+        self.exportarRecorridoUnidades('datos_salida/Recorrido_Estaciones_Unidades.xlsx', recorrido, unidades)
 
         return recorrido, unidades
