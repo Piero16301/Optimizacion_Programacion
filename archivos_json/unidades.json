@@ -1,7 +1,8 @@
 {
     "AJF-705": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES TESA",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 5,
@@ -14,8 +15,9 @@
         ]
     },
     "B7K-982": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES TESA",
-        "Placa Cisterna": "B4J-889",
+        "Placa de cisterna": "B4J-889",
         "Propietario": "PROPIA",
         "Capacidad": 7500.0,
         "# Compartimentos": 8,
@@ -31,8 +33,9 @@
         ]
     },
     "AYR-771": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES TESA",
-        "Placa Cisterna": "B9B-998",
+        "Placa de cisterna": "B9B-998",
         "Propietario": "PROPIA",
         "Capacidad": 9000.0,
         "# Compartimentos": 3,
@@ -43,8 +46,9 @@
         ]
     },
     "BED-794": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES TESA",
-        "Placa Cisterna": "ALW-999",
+        "Placa de cisterna": "ALW-999",
         "Propietario": "PROPIA",
         "Capacidad": 9000.0,
         "# Compartimentos": 1,
@@ -53,8 +57,9 @@
         ]
     },
     "BCQ-737": {
+        "Flota": "TRANSCORD",
         "Empresa": "MULTITRANS RR",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4500.0,
         "# Compartimentos": 6,
@@ -68,8 +73,9 @@
         ]
     },
     "BJV-928": {
+        "Flota": "TRANSCORD",
         "Empresa": "MULTITRANS RR",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4500.0,
         "# Compartimentos": 7,
@@ -84,8 +90,9 @@
         ]
     },
     "B7N-933": {
+        "Flota": "TRANSCORD",
         "Empresa": "INVERSIONES GALVEZ MARTINEZ",
-        "Placa Cisterna": "AJO-981",
+        "Placa de cisterna": "AJO-981",
         "Propietario": "PROPIA",
         "Capacidad": 6000.0,
         "# Compartimentos": 7,
@@ -100,8 +107,9 @@
         ]
     },
     "ANC-872": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 6500.0,
         "# Compartimentos": 4,
@@ -113,8 +121,9 @@
         ]
     },
     "AUG-888": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 3500.0,
         "# Compartimentos": 4,
@@ -126,8 +135,9 @@
         ]
     },
     "AXY-949": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
-        "Placa Cisterna": "AJZ-994",
+        "Placa de cisterna": "AJZ-994",
         "Propietario": "PROPIA",
         "Capacidad": 9000.0,
         "# Compartimentos": 3,
@@ -138,8 +148,9 @@
         ]
     },
     "B6J-896": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "TERCERA",
         "Capacidad": 3000.0,
         "# Compartimentos": 4,
@@ -151,8 +162,9 @@
         ]
     },
     "AUG-895": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 4,
@@ -164,8 +176,9 @@
         ]
     },
     "AHP-831": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "TERCERA",
         "Capacidad": 4000.0,
         "# Compartimentos": 3,
@@ -176,8 +189,9 @@
         ]
     },
     "AVL-851": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSPORTES GENERALES J&F S.A.C",
-        "Placa Cisterna": "F9O-990",
+        "Placa de cisterna": "F9O-990",
         "Propietario": "PROPIA",
         "Capacidad": 3500.0,
         "# Compartimentos": 4,
@@ -189,8 +203,9 @@
         ]
     },
     "V5I-821": {
+        "Flota": "TRANSCORD",
         "Empresa": "UL&PH INVERSIONES SAC",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 5,
@@ -203,8 +218,9 @@
         ]
     },
     "APM-857": {
+        "Flota": "TRANSCORD",
         "Empresa": "UL&PH INVERSIONES SAC",
-        "Placa Cisterna": "F0P-977",
+        "Placa de cisterna": "F0P-977",
         "Propietario": "PROPIA",
         "Capacidad": 7600.0,
         "# Compartimentos": 8,
@@ -220,8 +236,9 @@
         ]
     },
     "ANW-916": {
+        "Flota": "TRANSCORD",
         "Empresa": "UL&PH INVERSIONES SAC",
-        "Placa Cisterna": "AJA-984",
+        "Placa de cisterna": "AJA-984",
         "Propietario": "PROPIA",
         "Capacidad": 7500.0,
         "# Compartimentos": 8,
@@ -237,8 +254,9 @@
         ]
     },
     "D5D-868": {
+        "Flota": "TRANSCORD",
         "Empresa": "HERMELINDA HUATAY MANTILLA",
-        "Placa Cisterna": "AXV-975",
+        "Placa de cisterna": "AXV-975",
         "Propietario": "PROPIA",
         "Capacidad": 9000.0,
         "# Compartimentos": 6,
@@ -252,8 +270,9 @@
         ]
     },
     "D5Q-922": {
+        "Flota": "TRANSCORD",
         "Empresa": "HERMELINDA HUATAY MANTILLA",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 2500.0,
         "# Compartimentos": 4,
@@ -265,8 +284,9 @@
         ]
     },
     "D1J-885": {
+        "Flota": "TRANSCORD",
         "Empresa": "HERMELINDA HUATAY MANTILLA",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "TERCERA",
         "Capacidad": 4000.0,
         "# Compartimentos": 5,
@@ -279,8 +299,9 @@
         ]
     },
     "AFZ-941": {
+        "Flota": "TRANSCORD",
         "Empresa": "HERMELINDA HUATAY MANTILLA",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 5,
@@ -293,8 +314,9 @@
         ]
     },
     "C6Z-768": {
+        "Flota": "TRANSCORD",
         "Empresa": "RAMOS",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 6,
@@ -308,8 +330,9 @@
         ]
     },
     "AUV-718": {
+        "Flota": "TRANSCORD",
         "Empresa": "JWENVERT TRANSPORTES",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 5,
@@ -322,8 +345,9 @@
         ]
     },
     "D6H-880": {
+        "Flota": "TRANSCORD",
         "Empresa": "JWENVERT TRANSPORTES",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 6,
@@ -337,8 +361,9 @@
         ]
     },
     "AYX-789": {
+        "Flota": "TRANSCORD",
         "Empresa": "JWENVERT TRANSPORTES",
-        "Placa Cisterna": "ALH-986",
+        "Placa de cisterna": "ALH-986",
         "Propietario": "PROPIA",
         "Capacidad": 9000.0,
         "# Compartimentos": 8,
@@ -354,8 +379,9 @@
         ]
     },
     "AMQ-925": {
+        "Flota": "TRANSCORD",
         "Empresa": "JWENVERT TRANSPORTES",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 5,
@@ -368,8 +394,9 @@
         ]
     },
     "AWJ-767": {
+        "Flota": "TRANSCORD",
         "Empresa": "CORPORACIÓN ENRIQUE & JANIS",
-        "Placa Cisterna": "ABS-990",
+        "Placa de cisterna": "ABS-990",
         "Propietario": "PROPIA",
         "Capacidad": 10000.0,
         "# Compartimentos": 7,
@@ -384,8 +411,9 @@
         ]
     },
     "AFH-736": {
+        "Flota": "TRANSCORD",
         "Empresa": "CORPORACIÓN ENRIQUE & JANIS",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 5,
@@ -398,8 +426,9 @@
         ]
     },
     "BBF-813": {
+        "Flota": "TRANSCORD",
         "Empresa": "CORPORACIÓN ENRIQUE & JANIS",
-        "Placa Cisterna": "AMO-993",
+        "Placa de cisterna": "AMO-993",
         "Propietario": "PROPIA",
         "Capacidad": 9000.0,
         "# Compartimentos": 7,
@@ -414,8 +443,9 @@
         ]
     },
     "BJL-708": {
+        "Flota": "TRANSCORD",
         "Empresa": "INVERSIONES JULIO III",
-        "Placa Cisterna": "M4I-971",
+        "Placa de cisterna": "M4I-971",
         "Propietario": "PROPIA",
         "Capacidad": 10000.0,
         "# Compartimentos": 9,
@@ -432,8 +462,9 @@
         ]
     },
     "C2Y-745": {
+        "Flota": "TRANSCORD",
         "Empresa": "TRANSCORD S.R.L",
-        "Placa Cisterna": "-",
+        "Placa de cisterna": "-",
         "Propietario": "PROPIA",
         "Capacidad": 4000.0,
         "# Compartimentos": 4,
@@ -442,6 +473,239 @@
             1000.0,
             1000.0,
             1500.0
+        ]
+    },
+    "C5X-762": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            1000.0,
+            500.0,
+            1000.0,
+            500.0,
+            1000.0
+        ]
+    },
+    "AXK-781": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            1000.0,
+            500.0,
+            500.0,
+            500.0,
+            1500.0
+        ]
+    },
+    "ALT-928": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            1000.0,
+            500.0,
+            1000.0,
+            500.0,
+            1000.0
+        ]
+    },
+    "ATB-820": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            500.0,
+            1000.0,
+            1000.0
+        ]
+    },
+    "AXJ-918": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 3000.0,
+        "# Compartimentos": 4,
+        "Compartimentos": [
+            1000.0,
+            500.0,
+            500.0,
+            1000.0
+        ]
+    },
+    "BEL-721": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "-",
+        "Propietario": "PROPIA",
+        "Capacidad": 4000.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            500.0,
+            1000.0,
+            1000.0,
+            1000.0,
+            500.0
+        ]
+    },
+    "F3Y-722": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "TEM-993",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 8,
+        "Compartimentos": [
+            2000.0,
+            1500.0,
+            1000.0,
+            500.0,
+            500.0,
+            1000.0,
+            1000.0,
+            1500.0
+        ]
+    },
+    "ACG-766": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "TDK-986",
+        "Propietario": "PROPIA",
+        "Capacidad": 10400.0,
+        "# Compartimentos": 5,
+        "Compartimentos": [
+            3000.0,
+            2000.0,
+            3000.0,
+            1000.0,
+            1400.0
+        ]
+    },
+    "BAC-761": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "TGA-975",
+        "Propietario": "PROPIA",
+        "Capacidad": 7500.0,
+        "# Compartimentos": 7,
+        "Compartimentos": [
+            2000.0,
+            1500.0,
+            500.0,
+            500.0,
+            500.0,
+            1000.0,
+            1500.0
+        ]
+    },
+    "ADY-911": {
+        "Flota": "LTP",
+        "Empresa": "LOGISTIC TRANSPORT PERU SAC",
+        "Placa de cisterna": "F9P-987",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 6,
+        "Compartimentos": [
+            2000.0,
+            1500.0,
+            1000.0,
+            1000.0,
+            1500.0,
+            2000.0
+        ]
+    },
+    "AYR-9451": {
+        "Flota": "APOYO",
+        "Empresa": "TRANSLYM",
+        "Placa de cisterna": "AWY-975",
+        "Propietario": "PROPIA",
+        "Capacidad": 7500.0,
+        "# Compartimentos": 8,
+        "Compartimentos": [
+            2000.0,
+            500.0,
+            1000.0,
+            500.0,
+            1000.0,
+            500.0,
+            1000.0,
+            1000.0
+        ]
+    },
+    "AHJ-851": {
+        "Flota": "APOYO",
+        "Empresa": "TRANSLYM",
+        "Placa de cisterna": "F4X-999",
+        "Propietario": "PROPIA",
+        "Capacidad": 6000.0,
+        "# Compartimentos": 6,
+        "Compartimentos": [
+            1500.0,
+            1500.0,
+            1000.0,
+            1000.0,
+            500.0,
+            500.0
+        ]
+    },
+    "F2F-729": {
+        "Flota": "APOYO",
+        "Empresa": "TRANSLYM",
+        "Placa de cisterna": "A5D-983",
+        "Propietario": "PROPIA",
+        "Capacidad": 6000.0,
+        "# Compartimentos": 7,
+        "Compartimentos": [
+            1500.0,
+            1000.0,
+            500.0,
+            500.0,
+            500.0,
+            1000.0,
+            1000.0
+        ]
+    },
+    "C5V-914": {
+        "Flota": "APOYO",
+        "Empresa": "TRANSLYM",
+        "Placa de cisterna": "F9S-981",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 6,
+        "Compartimentos": [
+            2000.0,
+            1000.0,
+            1000.0,
+            2000.0,
+            1500.0,
+            1500.0
+        ]
+    },
+    "AYR-9452": {
+        "Flota": "APOYO",
+        "Empresa": "TRANSLYM",
+        "Placa de cisterna": "AEO-992",
+        "Propietario": "PROPIA",
+        "Capacidad": 9000.0,
+        "# Compartimentos": 1,
+        "Compartimentos": [
+            9000.0
         ]
     }
 }

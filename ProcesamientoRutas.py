@@ -5,21 +5,6 @@ import pandas as pd
 from geopy.distance import geodesic
 
 
-def unirUnidades():
-    unidades = {}
-
-    unidadesTranscord = json.load(open('archivos_json/transcord.json', encoding='utf8'))
-    unidadesLTP = json.load(open('archivos_json/ltp.json', encoding='utf8'))
-    unidadesApoyo = json.load(open('archivos_json/apoyo.json', encoding='utf8'))
-
-    # Se unen todas las flotas en una sola
-    unidades.update(unidadesTranscord)
-    unidades.update(unidadesLTP)
-    unidades.update(unidadesApoyo)
-
-    return unidades
-
-
 def guardarRutaTSP(rutaArchivo, TSP, distancia):
     with open(rutaArchivo, 'w') as ruta:
         for estacion in TSP:
@@ -54,7 +39,7 @@ class ProcesamientoRutas:
         self.dataCOESTI = dataCOESTI
         self.dataExternos = dataExternos
         self.direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
-        self.unidades = unirUnidades()
+        self.unidades = json.load(open('archivos_json/unidades.json', encoding='utf8'))
         self.combustibles = json.load(open('archivos_json/combustibles.json', encoding='utf8'))
 
     def optimizacionRutaMayor(self, recorridoGlobal):
