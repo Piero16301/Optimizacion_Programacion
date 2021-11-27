@@ -27,20 +27,21 @@ class ProcesamientoUnidades:
     def guardarIndice(self, dataFrame):
         indice = {}
         for index, row, in dataFrame.iterrows():
-            placa = row['Placa de tracto']
-            indice[placa] = {
-                'Flota': row['Flota'],
-                'Empresa': row['Empresa'],
-                'Placa de cisterna': row['Placa de cisterna'],
-                'Propietario': row['Propietario'],
-                'Capacidad': float(row['Capacidad']),
-                '# Compartimentos': row['# Compartimentos'],
-                'Compartimentos': []
-            }
+            if row['Disponible'] == 'SI':
+                placa = row['Placa de tracto']
+                indice[placa] = {
+                    'Flota': row['Flota'],
+                    'Empresa': row['Empresa'],
+                    'Placa de cisterna': row['Placa de cisterna'],
+                    'Propietario': row['Propietario'],
+                    'Capacidad': float(row['Capacidad']),
+                    '# Compartimentos': row['# Compartimentos'],
+                    'Compartimentos': []
+                }
 
-            for i in range(1, 10):
-                if pd.notna(row[str(i)]):
-                    indice[placa]['Compartimentos'].append(float(row[str(i)]))
+                for i in range(1, 10):
+                    if pd.notna(row[str(i)]):
+                        indice[placa]['Compartimentos'].append(float(row[str(i)]))
 
         self.indiceUnidades = indice
         with open('archivos_json/unidades.json', 'w', encoding='utf8') as unidadesJSON:
