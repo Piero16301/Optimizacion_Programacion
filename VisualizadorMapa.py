@@ -8,7 +8,7 @@ from timeit import default_timer as timer
 
 
 class VisualizadorMapa:
-    def __init__(self, dataFrame, recorrido, unidades):
+    def __init__(self, dataFrame, recorrido, unidades, detallado):
         # Se desencripta la key de mapbox con la key de fernet
         credenciales = json.load(open('archivos_json/credenciales.json'))
         keyFernet = credenciales['keyFernet']
@@ -29,6 +29,7 @@ class VisualizadorMapa:
 
         self.recorrido = recorrido
         self.unidades = unidades
+        self.detallado = detallado
 
         # Se encripta la key de mapbox con una nueva key de fernet
         keyFernet = Fernet.generate_key().decode()
@@ -63,25 +64,49 @@ class VisualizadorMapa:
         # G = ox.load_graphml('grafos/grafo.graphml')
         # ox.plot_graph(G)
 
-    def construirCamino(self, ruta):
-        # Construir un camino a partir de nodos
-        nodosBorde = list(zip(ruta[:-1], ruta[1:]))
-        lineas = []
+    def construirCamino(self, ruta, detallado):
+        if detallado:
+            # Construir un camino a partir de nodos
+            nodosBorde = list(zip(ruta[:-1], ruta[1:]))
+            lineas = []
 
-        for u, v in nodosBorde:
-            data = min(self.grafo.get_edge_data(u, v).values(), key=lambda x: x['length'])
-            if 'geometry' in data:
-                xs, ys = data['geometry'].xy
-                lineas.append(list(zip(xs, ys)))
-            else:
-                x1 = self.grafo.nodes[u]['x']
-                y1 = self.grafo.nodes[u]['y']
-                x2 = self.grafo.nodes[v]['x']
-                y2 = self.grafo.nodes[v]['y']
-                linea = [(x1, y1), (x2, y2)]
-                lineas.append(linea)
+            for u, v in nodosBorde:
+                data = min(self.grafo.get_edge_data(u, v).values(), key=lambda x: x['length'])
+                if 'geometry' in data:
+                    xs, ys = data['geometry'].xy
+                    lineas.append(list(zip(xs, ys)))
+                else:
+                    x1 = self.grafo.nodes[u]['x']
+                    y1 = self.grafo.nodes[u]['y']
+                    x2 = self.grafo.nodes[v]['x']
+                    y2 = self.grafo.nodes[v]['y']
+                    linea = [(x1, y1), (x2, y2)]
+                    lineas.append(linea)
 
-        return lineas
+            return lineas
+        else:
+            return ruta
+
+    def construirCoordenadas(self, caminoTotal, detallado):
+        if detallado:
+            latitudes = []
+            longitudes = []
+            for i in range(len(caminoTotal)):
+                z = list(caminoTotal[i])
+                l1 = list(list(zip(*z))[0])
+                l2 = list(list(zip(*z))[1])
+                for j in range(len(l1)):
+                    latitudes.append(l2[j])
+                    longitudes.append(l1[j])
+            return latitudes, longitudes
+        else:
+            latitudes = []
+            longitudes = []
+            for i in caminoTotal:
+                punto = self.grafo.nodes[i]
+                latitudes.append(punto['y'])
+                longitudes.append(punto['x'])
+            return latitudes, longitudes
 
     def agregarCamino(self, recorridoUnidad, unidad):
         caminoTotal = []
@@ -103,7 +128,7 @@ class VisualizadorMapa:
             distanciaActual = geodesic(puntoOrigen, puntoDestino).kilometers
             distanciaTotal = distanciaTotal + distanciaActual
 
-            camino = self.construirCamino(ruta)
+            camino = self.construirCamino(ruta, detallado=self.detallado)
             caminoTotal = caminoTotal + camino
 
         if len(recorridoUnidad) == 1:
@@ -119,19 +144,10 @@ class VisualizadorMapa:
 
             ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
 
-            camino = self.construirCamino(ruta)
+            camino = self.construirCamino(ruta, detallado=self.detallado)
             caminoTotal = caminoTotal + camino
 
-        latitudes = []
-        longitudes = []
-
-        for i in range(len(caminoTotal)):
-            z = list(caminoTotal[i])
-            l1 = list(list(zip(*z))[0])
-            l2 = list(list(zip(*z))[1])
-            for j in range(len(l1)):
-                latitudes.append(l2[j])
-                longitudes.append(l1[j])
+        latitudes, longitudes = self.construirCoordenadas(caminoTotal, detallado=self.detallado)
 
         self.mapa.add_trace(go.Scattermapbox(
             name=unidad,
