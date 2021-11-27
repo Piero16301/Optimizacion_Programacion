@@ -14,7 +14,6 @@ from VisualizadorMapa import VisualizadorMapa
 
 separador = '='
 
-
 if __name__ == "__main__":
     # Inicio de tiempo
     inicio = timer()
@@ -95,7 +94,7 @@ if __name__ == "__main__":
     print('{0: <50}'.format('   3.1. Cargando grafo de la ciudad'),
           separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
           )
-    visualizador = VisualizadorMapa(dataFrameDirecciones, recorrido, unidades, detallado=False)
+    visualizador = VisualizadorMapa(dataFrameDirecciones, recorrido, unidades, detallado=True)
 
     visualizador.visualizarEstaciones('Cliente', separador, inicio)
 
