@@ -94,9 +94,9 @@ if __name__ == "__main__":
     print('{0: <50}'.format('   3.1. Cargando grafo de la ciudad'),
           separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
           )
-    visualizador = VisualizadorMapa(dataFrameDirecciones, recorrido, unidades, detallado=True)
+    visualizador = VisualizadorMapa(recorrido, unidades, detallado=True)
 
-    visualizador.visualizarEstaciones('Cliente', separador, inicio)
+    visualizador.visualizarEstaciones(separador, inicio)
 
     # Fin de tiempo
     tiempo = '{:.3f}'.format(round(timer() - inicio, 3))

@@ -1,14 +1,16 @@
 import plotly.graph_objects as go
 import osmnx as ox
 import networkx as nx
-from cryptography.fernet import Fernet
 import json
+import random
+
+from cryptography.fernet import Fernet
 from geopy.distance import geodesic
 from timeit import default_timer as timer
 
 
 class VisualizadorMapa:
-    def __init__(self, dataFrame, recorrido, unidades, detallado):
+    def __init__(self, recorrido, unidades, detallado):
         # Se desencripta la key de mapbox con la key de fernet
         credenciales = json.load(open('archivos_json/credenciales.json'))
         keyFernet = credenciales['keyFernet']
@@ -21,8 +23,6 @@ class VisualizadorMapa:
 
         self.mapboxToken = keyDesencriptada
 
-        self.dataFrame = dataFrame
-
         self.mapa = go.Figure()
 
         self.grafo = ox.load_graphml('grafos/grafoLima.graphml')
@@ -30,6 +30,17 @@ class VisualizadorMapa:
         self.recorrido = recorrido
         self.unidades = unidades
         self.detallado = detallado
+
+        self.colores = ['black', 'blue', 'blueviolet', 'brown', 'cadetblue', 'chocolate', 'coral', 'cornflowerblue',
+                        'crimson', 'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgreen', 'darkmagenta', 'darkorange',
+                        'darkorchid', 'darkred', 'darksalmon', 'darkturquoise', 'darkviolet', 'deeppink', 'deepskyblue',
+                        'dimgray', 'dodgerblue', 'firebrick', 'forestgreen', 'fuchsia', 'goldenrod', 'gray', 'green',
+                        'hotpink', 'indianred', 'indigo', 'lightcoral', 'lightsalmon', 'lightseagreen',
+                        'lightslategray', 'limegreen', 'magenta', 'maroon', 'mediumblue', 'mediumorchid',
+                        'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumvioletred', 'midnightblue', 'navy',
+                        'olive', 'orange', 'orangered', 'orchid', 'palevioletred', 'peru', 'purple', 'red', 'rosybrown',
+                        'royalblue', 'saddlebrown', 'salmon', 'sandybrown', 'seagreen', 'sienna', 'slateblue',
+                        'slategray', 'steelblue', 'teal', 'tomato', 'violet', 'yellowgreen']
 
         # Se encripta la key de mapbox con una nueva key de fernet
         keyFernet = Fernet.generate_key().decode()
@@ -149,20 +160,47 @@ class VisualizadorMapa:
 
         latitudes, longitudes = self.construirCoordenadas(caminoTotal, detallado=self.detallado)
 
+        colorActual = random.choice(self.colores)
+
         self.mapa.add_trace(go.Scattermapbox(
             name=unidad,
             mode='lines',
             lat=latitudes,
             lon=longitudes,
-            marker={'size': 10},
-            line=dict(
-                width=4
-            )
+            marker={
+                'size': 10,
+                'color': colorActual
+            },
+            line={
+                'width': 4
+            }
         ))
+
+        self.colores.remove(colorActual)
 
         return distanciaTotal
 
-    def visualizarEstaciones(self, columnaTexto, separador, inicio):
+    def extraerEstacionesRecorridas(self):
+        estacionesDuplicadas = []
+        for recorridoUnidad in self.recorrido:
+            for estacionUnidad in recorridoUnidad:
+                estacionesDuplicadas.append(estacionUnidad)
+        estacionesUnicas = list(dict.fromkeys(estacionesDuplicadas))
+
+        textos = []
+        latitudes = []
+        longitudes = []
+        simbolos = []
+
+        for estacion in estacionesUnicas:
+            textos.append(self.direcciones[estacion]['Estación'])
+            latitudes.append(self.direcciones[estacion]['Latitud'])
+            longitudes.append(self.direcciones[estacion]['Longitud'])
+            simbolos.append(self.direcciones[estacion]['Símbolo'])
+
+        return textos, latitudes, longitudes, simbolos
+
+    def visualizarEstaciones(self, separador, inicio):
         # Construir grafo para las rutas
         self.construirGrafo()
 
@@ -172,16 +210,17 @@ class VisualizadorMapa:
             '{0: <50}'.format('   3.2. Agregando localizacion de estaciones'),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
+        textos, latitudes, longitudes, simbolos = self.extraerEstacionesRecorridas()
         self.mapa = go.Figure(go.Scattermapbox(
             mode='markers',
             showlegend=False,
-            lat=self.dataFrame['Latitud'],
-            lon=self.dataFrame['Longitud'],
-            text=self.dataFrame[columnaTexto],
+            text=textos,
+            lat=latitudes,
+            lon=longitudes,
             marker={
-                'symbol': self.dataFrame['Símbolo'],
+                'symbol': simbolos,
                 'size': 13,
-                'color': 'brown'
+                'color': 'green'
             }
         ))
 
@@ -212,8 +251,8 @@ class VisualizadorMapa:
         )
 
         # Calcular centro del mapa
-        promLatitud = self.dataFrame['Latitud'].mean()
-        promLongitud = self.dataFrame['Longitud'].mean()
+        promLatitud = sum(latitudes) / len(latitudes)
+        promLongitud = sum(longitudes) / len(longitudes)
 
         # Establecer configuraciones del mapa
         self.mapa.update_layout(
