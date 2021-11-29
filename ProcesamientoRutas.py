@@ -157,10 +157,9 @@ class ProcesamientoRutas:
 
         # Exportar varias hojas en el mismo archivo Excel
         with pd.ExcelWriter(rutaSalida) as archivoExcel:
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 1')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 2')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 3')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 4')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 1')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 2')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 3')
 
     def distribuirUnidades(self, recorridoGlobal):
         recorrido = []
@@ -327,10 +326,9 @@ class ProcesamientoRutas:
 
         # Exportar varias hojas en el mismo archivo Excel
         with pd.ExcelWriter(rutaSalida) as archivoExcel:
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 1')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 2')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 3')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Turno 4')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 1')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 2')
+            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 3')
 
     def calcularRutas(self, separador, inicio):
         estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()

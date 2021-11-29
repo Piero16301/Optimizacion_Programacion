@@ -12,33 +12,23 @@ token = fernet.decrypt(bytes(keyMapbox, 'UTF-8')).decode()
 
 fig = go.Figure()
 
-cantidadgrupos = 10
-elementosPorGrupo = 15
+cantidadgrupos = 3
+elementosPorGrupo = 10
 estacionesPorElemento = 3
 
 latitud = []
 longitud = []
 grupos = []
 
-colores = ['aliceblue', 'antiquewhite', 'aqua', 'aquamarine', 'azure', 'beige', 'bisque', 'black', 'blanchedalmond',
-           'blue', 'blueviolet', 'brown', 'burlywood', 'cadetblue', 'chartreuse', 'chocolate', 'coral',
-           'cornflowerblue', 'cornsilk', 'crimson', 'cyan', 'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgray',
-           'darkgrey', 'darkgreen', 'darkkhaki', 'darkmagenta', 'darkolivegreen', 'darkorange', 'darkorchid',
-           'darkred', 'darksalmon', 'darkseagreen', 'darkslateblue', 'darkslategray', 'darkslategrey', 'darkturquoise',
-           'darkviolet', 'deeppink', 'deepskyblue', 'dimgray', 'dimgrey', 'dodgerblue', 'firebrick', 'floralwhite',
-           'forestgreen', 'fuchsia', 'gainsboro', 'ghostwhite', 'gold', 'goldenrod', 'gray', 'grey', 'green',
-           'greenyellow', 'honeydew', 'hotpink', 'indianred', 'indigo', 'ivory', 'khaki', 'lavender', 'lavenderblush',
-           'lawngreen', 'lemonchiffon', 'lightblue', 'lightcoral', 'lightcyan', 'lightgoldenrodyellow', 'lightgray',
-           'lightgrey', 'lightgreen', 'lightpink', 'lightsalmon', 'lightseagreen', 'lightskyblue', 'lightslategray',
-           'lightslategrey', 'lightsteelblue', 'lightyellow', 'lime', 'limegreen', 'linen', 'magenta', 'maroon',
-           'mediumaquamarine', 'mediumblue', 'mediumorchid', 'mediumpurple', 'mediumseagreen', 'mediumslateblue',
-           'mediumspringgreen', 'mediumturquoise', 'mediumvioletred', 'midnightblue', 'mintcream', 'mistyrose',
-           'moccasin', 'navajowhite', 'navy', 'oldlace', 'olive', 'olivedrab', 'orange', 'orangered', 'orchid',
-           'palegoldenrod', 'palegreen', 'paleturquoise', 'palevioletred', 'papayawhip', 'peachpuff', 'peru', 'pink',
-           'plum', 'powderblue', 'purple', 'red', 'rosybrown', 'royalblue', 'saddlebrown', 'salmon', 'sandybrown',
-           'seagreen', 'seashell', 'sienna', 'silver', 'skyblue', 'slateblue', 'slategray', 'slategrey', 'snow',
-           'springgreen', 'steelblue', 'tan', 'teal', 'thistle', 'tomato', 'turquoise', 'violet', 'wheat', 'white',
-           'whitesmoke', 'yellow', 'yellowgreen']
+colores = ['black', 'blue', 'blueviolet', 'brown', 'cadetblue', 'chocolate', 'coral', 'cornflowerblue', 'crimson',
+           'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgreen', 'darkmagenta', 'darkorange', 'darkorchid', 'darkred',
+           'darksalmon', 'darkturquoise', 'darkviolet', 'deeppink', 'deepskyblue', 'dimgray', 'dodgerblue', 'firebrick',
+           'forestgreen', 'fuchsia', 'goldenrod', 'gray', 'green', 'hotpink', 'indianred', 'indigo', 'lightcoral',
+           'lightsalmon', 'lightseagreen', 'lightslategray', 'limegreen', 'magenta', 'maroon', 'mediumblue',
+           'mediumorchid', 'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumvioletred', 'midnightblue',
+           'navy', 'olive', 'orange', 'orangered', 'orchid', 'palevioletred', 'peru', 'purple', 'red', 'rosybrown',
+           'royalblue', 'saddlebrown', 'salmon', 'sandybrown', 'seagreen', 'sienna', 'slateblue', 'slategray',
+           'steelblue', 'teal', 'tomato', 'violet', 'yellowgreen']
 
 for i in range(cantidadgrupos * elementosPorGrupo):
     latitudActual = []
@@ -50,17 +40,18 @@ for i in range(cantidadgrupos * elementosPorGrupo):
     longitud.append(longitudActual)
 
 for i in range(cantidadgrupos):
-    grupos.append('Turno ' + str(i + 1))
+    grupos.append('Vuelta ' + str(i + 1))
 
 for i in range(cantidadgrupos * elementosPorGrupo):
     fig.add_trace(go.Scattermapbox(
         legendgroup=grupos[i // elementosPorGrupo],
-        legendgrouptitle={'font': {'color': 'brown', 'size': 15}, 'text': grupos[i // elementosPorGrupo]},
+        legendgrouptitle={'font': {'color': 'black', 'size': 15}, 'text': grupos[i // elementosPorGrupo]},
         name=str(i+1),
         mode='markers+lines',
         lat=latitud[i],
         lon=longitud[i],
-        marker={'size': 15, 'symbol': 'fuel', 'color': colores[i]}
+        marker={'size': 15, 'symbol': 'fuel', 'color': colores[i]},
+        line={'width': 4}
     ))
 
 totalLatitudes = []
@@ -75,15 +66,9 @@ promedioLongitud = sum(totalLongitudes) / len(totalLongitudes)
 
 fig.update_layout(
     margin={'l': 0, 't': 0, 'b': 0, 'r': 0},
-    legend=dict(
-        title=dict(
-            font=dict(
-                color='black',
-                size=20
-            ),
-            text='Unidades'
-        )
-    ),
+    legend={
+        'title': {'font': {'color': 'black', 'size': 20}, 'text': 'Unidades'}
+    },
     mapbox={
         'accesstoken': token,
         'center': {'lat': promedioLatitud, 'lon': promedioLongitud},

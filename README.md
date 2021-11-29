@@ -63,6 +63,12 @@ de mayor a menor capacidad, o viceversa; obteniendo los siguientes resultados.
 
 ![](imagenes_mapas/recorrido-unidades-creciente.png)
 
+## Distribución de unidades por vueltas
+Para el abastecimiento total, cada unidad va a poder realizar más de una vuelta,
+y se va a agrupar como se muestra a continuación.
+
+![](imagenes_mapas/grupos-unidades.png)
+
 ## Ejecución del programa
 Durante la ejecución del programa, se mostrará cada una de las etapas del
 programa, así como también los tiempos de ejecución de cada una de ellas. La manera
