@@ -69,6 +69,17 @@ y se va a agrupar como se muestra a continuación.
 
 ![](imagenes_mapas/grupos-unidades.png)
 
+## Nivel de detalle de las rutas
+Si se necesita un mayor nivel de detalle del recorrido que van a realizar las unidades
+se puede realizar un intercambio entre mostrar rutas a nivel de calles o rutas directas,
+como se muestra a continuación.
+
+### Rutas directas
+![](imagenes_mapas/rutas-directas.png)
+
+### Rutas detalladas
+![](imagenes_mapas/rutas-detalladas.png)
+
 ## Ejecución del programa
 Durante la ejecución del programa, se mostrará cada una de las etapas del
 programa, así como también los tiempos de ejecución de cada una de ellas. La manera
