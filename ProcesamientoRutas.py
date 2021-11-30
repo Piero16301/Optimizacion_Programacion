@@ -332,7 +332,7 @@ class ProcesamientoRutas:
 
     def calcularRutas(self, separador, inicio):
         estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()
-        # estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
+        estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
         # estaciones = estacionesCOESTI + estacionesExternos
         estaciones = estacionesCOESTI
 
@@ -341,6 +341,8 @@ class ProcesamientoRutas:
         for estacion in estaciones:
             if estacion in self.direcciones:
                 estacionesExistentes.append(estacion)
+            else:
+                print('Estación:', estacion, 'no encontrada')
         estaciones = estacionesExistentes
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))

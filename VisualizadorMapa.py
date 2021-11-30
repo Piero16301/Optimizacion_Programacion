@@ -10,7 +10,7 @@ from timeit import default_timer as timer
 
 
 class VisualizadorMapa:
-    def __init__(self, recorrido, unidades, detallado):
+    def __init__(self, recorrido, unidades, caminosDetallados, rutasDetalladas):
         # Se desencripta la key de mapbox con la key de fernet
         credenciales = json.load(open('archivos_json/credenciales.json'))
         keyFernet = credenciales['keyFernet']
@@ -25,11 +25,13 @@ class VisualizadorMapa:
 
         self.mapa = go.Figure()
 
-        self.grafo = ox.load_graphml('grafos/grafoLima.graphml')
+        if rutasDetalladas:
+            self.grafo = ox.load_graphml('grafos/grafoLima.graphml')
 
         self.recorrido = recorrido
         self.unidades = unidades
-        self.detallado = detallado
+        self.caminosDetallados = caminosDetallados
+        self.rutasDetalladas = rutasDetalladas
 
         self.colores = ['black', 'blue', 'blueviolet', 'brown', 'cadetblue', 'chocolate', 'coral', 'cornflowerblue',
                         'crimson', 'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgreen', 'darkmagenta', 'darkorange',
@@ -119,7 +121,7 @@ class VisualizadorMapa:
                 longitudes.append(punto['x'])
             return latitudes, longitudes
 
-    def agregarCamino(self, recorridoUnidad, unidad):
+    def agregarCaminoDetallado(self, recorridoUnidad, unidad):
         caminoTotal = []
         distanciaTotal = 0
         for i in range(len(recorridoUnidad) - 1):
@@ -139,7 +141,7 @@ class VisualizadorMapa:
             distanciaActual = geodesic(puntoOrigen, puntoDestino).kilometers
             distanciaTotal = distanciaTotal + distanciaActual
 
-            camino = self.construirCamino(ruta, detallado=self.detallado)
+            camino = self.construirCamino(ruta, detallado=self.caminosDetallados)
             caminoTotal = caminoTotal + camino
 
         if len(recorridoUnidad) == 1:
@@ -155,10 +157,10 @@ class VisualizadorMapa:
 
             ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
 
-            camino = self.construirCamino(ruta, detallado=self.detallado)
+            camino = self.construirCamino(ruta, detallado=self.caminosDetallados)
             caminoTotal = caminoTotal + camino
 
-        latitudes, longitudes = self.construirCoordenadas(caminoTotal, detallado=self.detallado)
+        latitudes, longitudes = self.construirCoordenadas(caminoTotal, detallado=self.caminosDetallados)
 
         colorActual = random.choice(self.colores)
 
@@ -167,6 +169,41 @@ class VisualizadorMapa:
             mode='lines',
             lat=latitudes,
             lon=longitudes,
+            marker={
+                'size': 10,
+                'color': colorActual
+            },
+            line={
+                'width': 4
+            }
+        ))
+
+        self.colores.remove(colorActual)
+
+        return distanciaTotal
+
+    def agregarCaminoSimple(self, recorridoUnidad, unidad):
+        distanciaTotal = 0
+
+        for i in range(len(recorridoUnidad) - 1):
+            puntoOrigen = (
+                self.direcciones[recorridoUnidad[i]]['Latitud'],
+                self.direcciones[recorridoUnidad[i]]['Longitud']
+            )
+            puntoDestino = (
+                self.direcciones[recorridoUnidad[i + 1]]['Latitud'],
+                self.direcciones[recorridoUnidad[i + 1]]['Longitud']
+            )
+            distanciaActual = geodesic(puntoOrigen, puntoDestino).kilometers
+            distanciaTotal = distanciaTotal + distanciaActual
+
+        colorActual = random.choice(self.colores)
+
+        self.mapa.add_trace(go.Scattermapbox(
+            name=unidad,
+            mode='lines',
+            lat=[self.direcciones[codUnidad]['Latitud'] for codUnidad in recorridoUnidad],
+            lon=[self.direcciones[codUnidad]['Longitud'] for codUnidad in recorridoUnidad],
             marker={
                 'size': 10,
                 'color': colorActual
@@ -207,11 +244,26 @@ class VisualizadorMapa:
         # Iniciar las posiciones de los puntos
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
-            '{0: <50}'.format('   3.2. Agregando localizacion de estaciones'),
+            '{0: <50}'.format('   3.2. Construyendo caminos de cada unidad'),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
+        distanciaTotal = 0
+        for i in range(len(self.recorrido)):
+            if self.rutasDetalladas:
+                distanciaCamino = self.agregarCaminoDetallado(self.recorrido[i], self.unidades[i])
+            else:
+                distanciaCamino = self.agregarCaminoSimple(self.recorrido[i], self.unidades[i])
+
+            distanciaTotal = distanciaTotal + distanciaCamino
+
+        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
+        print(
+            '{0: <50}'.format('   3.3. Agregando localización de estaciones'),
+            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
+        )
+
         textos, latitudes, longitudes, simbolos = self.extraerEstacionesRecorridas()
-        self.mapa = go.Figure(go.Scattermapbox(
+        self.mapa.add_trace(go.Scattermapbox(
             mode='markers',
             showlegend=False,
             text=textos,
@@ -223,17 +275,6 @@ class VisualizadorMapa:
                 'color': 'green'
             }
         ))
-
-        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
-        print(
-            '{0: <50}'.format('   3.3. Construyendo caminos de cada unidad'),
-            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
-        )
-
-        distanciaTotal = 0
-        for i in range(len(self.recorrido)):
-            distanciaCamino = self.agregarCamino(self.recorrido[i], self.unidades[i])
-            distanciaTotal = distanciaTotal + distanciaCamino
 
         stringDistanciaTotal = '        3.3.1. Distancia total: ' + str(round(distanciaTotal, 3)) + ' Km'
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
