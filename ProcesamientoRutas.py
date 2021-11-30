@@ -330,7 +330,7 @@ class ProcesamientoRutas:
             dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 2')
             dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 3')
 
-    def calcularRutas(self, separador, inicio):
+    def calcularRutas(self, separador, inicio, maximaOptimizacionRecorrido):
         estacionesCOESTI = self.dataCOESTI['Destinatario'].unique().tolist()
         estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
         # estaciones = estacionesCOESTI + estacionesExternos
@@ -376,7 +376,15 @@ class ProcesamientoRutas:
         # Construir recorrido TSP
         funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
         ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=True)
-        posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(ajusteProblema, random_state=2)
+
+        if maximaOptimizacionRecorrido:
+            posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
+                ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
+            )
+        else:
+            posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
+                ajusteProblema, random_state=2
+            )
 
         guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
 

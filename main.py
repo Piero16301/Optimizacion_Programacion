@@ -82,7 +82,7 @@ if __name__ == "__main__":
           )
 
     procesadorRutas = ProcesamientoRutas(dataFrameCOESTI, dataFrameExterno)
-    recorrido, unidades = procesadorRutas.calcularRutas(separador, inicio)
+    recorrido, unidades = procesadorRutas.calcularRutas(separador, inicio, maximaOptimizacionRecorrido=False)
 
     # Se muestran las estaciones en el mapa
     tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
