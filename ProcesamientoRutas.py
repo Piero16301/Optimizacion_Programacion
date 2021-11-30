@@ -180,14 +180,14 @@ class ProcesamientoRutas:
 
         for estacion in recorridoGlobal:
             # Filtrar pedidos de una estación
-            dataFrameEstacion = self.dataCOESTI[self.dataCOESTI['Centro'] == estacion]
+            dataFrameEstacion = self.dataCOESTI[self.dataCOESTI['Destinatario'] == estacion]
             # print(dataFrameEstacion.to_string())
 
             # Recorrer pedidos de la estación
             for index, row, in dataFrameEstacion.iterrows():
                 # Se extrae la cantidad y tipo de combustible al pedido
-                pedido = row['Sugerido']
-                tipo = row['Material']
+                pedido = row['Cant. entrega']
+                tipo = row['Producto']
                 while pedido > 0.0:
                     # Buscar compartimento no lleno del mismo tipo de combustible o uno que esté vacío
                     compartimentoALlenar = buscarSiguienteCompartimento(tipo, capacidadCompartimento, tiposCombustible)
@@ -331,7 +331,7 @@ class ProcesamientoRutas:
             dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 3')
 
     def calcularRutas(self, separador, inicio):
-        estacionesCOESTI = self.dataCOESTI['Centro'].unique().tolist()
+        estacionesCOESTI = self.dataCOESTI['Destinatario'].unique().tolist()
         estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
         # estaciones = estacionesCOESTI + estacionesExternos
         estaciones = estacionesCOESTI
@@ -352,20 +352,20 @@ class ProcesamientoRutas:
         )
 
         # Construir lista de distancias
-        # distanciasEstaciones = []
-        # for i in range(len(estaciones)):
-        #     for j in range(len(estaciones)):
-        #         if i != j:
-        #             origen = (
-        #                 self.direcciones[estaciones[i]]['Latitud'],
-        #                 self.direcciones[estaciones[i]]['Longitud']
-        #             )
-        #             destino = (
-        #                 self.direcciones[estaciones[j]]['Latitud'],
-        #                 self.direcciones[estaciones[j]]['Longitud']
-        #             )
-        #             distancia = geodesic(origen, destino).kilometers
-        #             distanciasEstaciones.append((i, j, distancia))
+        distanciasEstaciones = []
+        for i in range(len(estaciones)):
+            for j in range(len(estaciones)):
+                if i != j:
+                    origen = (
+                        self.direcciones[estaciones[i]]['Latitud'],
+                        self.direcciones[estaciones[i]]['Longitud']
+                    )
+                    destino = (
+                        self.direcciones[estaciones[j]]['Latitud'],
+                        self.direcciones[estaciones[j]]['Longitud']
+                    )
+                    distancia = geodesic(origen, destino).kilometers
+                    distanciasEstaciones.append((i, j, distancia))
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
@@ -373,14 +373,12 @@ class ProcesamientoRutas:
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        # # Construir recorrido TSP
-        # funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
-        # ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=True)
-        # posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
-        #     ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
-        # )
-        #
-        # guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
+        # Construir recorrido TSP
+        funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
+        ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=True)
+        posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(ajusteProblema, random_state=2)
+
+        guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
 
         posicionesRecorrido, distanciaGlobal = cargarRutaTSP('datos_intermedios/rutaTSP.txt')
 
