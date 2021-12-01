@@ -32,6 +32,7 @@ def buscarSiguienteCompartimento(tipo, capacidadCompartimento, tiposCombustible)
             return i
         elif tiposCombustible[i] == '-':
             return i
+    return -1
 
 
 class ProcesamientoRutas:
@@ -42,45 +43,47 @@ class ProcesamientoRutas:
         self.unidades = json.load(open('archivos_json/unidades.json', encoding='utf8'))
         self.combustibles = json.load(open('archivos_json/combustibles.json', encoding='utf8'))
 
-    def optimizacionRutaMayor(self, recorridoGlobal):
+        self.recorridoGlobal = []
+
+    def optimizacionRutaMayor(self):
         maximaDistancia = 0
         indiceMaximo = 0
 
-        for i in range(len(recorridoGlobal)):
-            if i == len(recorridoGlobal) - 1:
+        for i in range(len(self.recorridoGlobal)):
+            if i == len(self.recorridoGlobal) - 1:
                 origen = (
-                    self.direcciones[recorridoGlobal[i]]['Latitud'],
-                    self.direcciones[recorridoGlobal[i]]['Longitud']
+                    self.direcciones[self.recorridoGlobal[i]]['Latitud'],
+                    self.direcciones[self.recorridoGlobal[i]]['Longitud']
                 )
                 destino = (
-                    self.direcciones[recorridoGlobal[0]]['Latitud'],
-                    self.direcciones[recorridoGlobal[0]]['Longitud']
+                    self.direcciones[self.recorridoGlobal[0]]['Latitud'],
+                    self.direcciones[self.recorridoGlobal[0]]['Longitud']
                 )
             else:
                 origen = (
-                    self.direcciones[recorridoGlobal[i]]['Latitud'],
-                    self.direcciones[recorridoGlobal[i]]['Longitud']
+                    self.direcciones[self.recorridoGlobal[i]]['Latitud'],
+                    self.direcciones[self.recorridoGlobal[i]]['Longitud']
                 )
                 destino = (
-                    self.direcciones[recorridoGlobal[i + 1]]['Latitud'],
-                    self.direcciones[recorridoGlobal[i + 1]]['Longitud']
+                    self.direcciones[self.recorridoGlobal[i + 1]]['Latitud'],
+                    self.direcciones[self.recorridoGlobal[i + 1]]['Longitud']
                 )
 
             if geodesic(origen, destino).kilometers > maximaDistancia:
                 maximaDistancia = geodesic(origen, destino).kilometers
                 indiceMaximo = i
 
-        if indiceMaximo != (len(recorridoGlobal) - 1):
+        if indiceMaximo != (len(self.recorridoGlobal) - 1):
             nuevoRecorridoGlobal = []
-            for i in range(indiceMaximo + 1, len(recorridoGlobal)):
-                nuevoRecorridoGlobal.append(recorridoGlobal[i])
+            for i in range(indiceMaximo + 1, len(self.recorridoGlobal)):
+                nuevoRecorridoGlobal.append(self.recorridoGlobal[i])
 
             for i in range(indiceMaximo + 1):
-                nuevoRecorridoGlobal.append(recorridoGlobal[i])
+                nuevoRecorridoGlobal.append(self.recorridoGlobal[i])
 
             return nuevoRecorridoGlobal
         else:
-            return recorridoGlobal
+            return self.recorridoGlobal
 
     def exportarDetalleCombustiblePorCompartimento(self, rutaSalida, unidades, capacidadCompartimento,
                                                    tiposCombustible):
@@ -161,7 +164,7 @@ class ProcesamientoRutas:
             dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 2')
             dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 3')
 
-    def distribuirUnidades(self, recorridoGlobal):
+    def distribuirUnidades(self):
         recorrido = []
         unidades = []
 
@@ -170,18 +173,26 @@ class ProcesamientoRutas:
         unidadesCompartimento = []
 
         estacionesPorUnidades = {}
+
         listaUnidades = list(self.unidades.keys())
         for idUnidad in listaUnidades:
             unidad = self.unidades[idUnidad]
             capacidadCompartimento = capacidadCompartimento + unidad['Compartimentos']
-            tiposCombustible = tiposCombustible + ['-' for i in range(unidad['# Compartimentos'])]
-            unidadesCompartimento = unidadesCompartimento + [idUnidad for i in range(unidad['# Compartimentos'])]
+            tiposCombustible = tiposCombustible + ['-' for _ in range(unidad['# Compartimentos'])]
+            unidadesCompartimento = unidadesCompartimento + [idUnidad for _ in range(unidad['# Compartimentos'])]
             estacionesPorUnidades[idUnidad] = []
 
-        for estacion in recorridoGlobal:
+        totalEstacionesIniciales = len(self.recorridoGlobal)
+        for _ in range(totalEstacionesIniciales):
+            # Copias de los arrays iniciales
+            capacidadCompartimentoTemporal = list(capacidadCompartimento)
+            tiposCombustibleTemporal = list(tiposCombustible)
+            unidadesCompartimentoTemporal = list(unidadesCompartimento)
+
+            estacionesPorUnidadesTemporal = dict(estacionesPorUnidades)
+
             # Filtrar pedidos de una estación
-            dataFrameEstacion = self.dataCOESTI[self.dataCOESTI['Destinatario'] == estacion]
-            # print(dataFrameEstacion.to_string())
+            dataFrameEstacion = self.dataCOESTI[self.dataCOESTI['Destinatario'] == self.recorridoGlobal[0]]
 
             # Recorrer pedidos de la estación
             for index, row, in dataFrameEstacion.iterrows():
@@ -190,19 +201,27 @@ class ProcesamientoRutas:
                 tipo = row['Producto']
                 while pedido > 0.0:
                     # Buscar compartimento no lleno del mismo tipo de combustible o uno que esté vacío
-                    compartimentoALlenar = buscarSiguienteCompartimento(tipo, capacidadCompartimento, tiposCombustible)
+                    compartimentoALlenar = buscarSiguienteCompartimento(
+                        tipo, capacidadCompartimentoTemporal, tiposCombustibleTemporal
+                    )
+
+                    if compartimentoALlenar == -1:
+                        # Cuando la flota ya está llena (cambio de vuelta)
+                        pass
 
                     # Se asigna el tipo de combustible al compartimento
-                    tiposCombustible[compartimentoALlenar] = tipo
+                    tiposCombustibleTemporal[compartimentoALlenar] = tipo
 
                     # Si el pedido alcanza en el compartimento
-                    if pedido <= capacidadCompartimento[compartimentoALlenar]:
+                    if pedido <= capacidadCompartimentoTemporal[compartimentoALlenar]:
                         # Se reduce la cantidad del pedido al compartimento
-                        capacidadCompartimento[compartimentoALlenar] = \
-                            capacidadCompartimento[compartimentoALlenar] - pedido
+                        capacidadCompartimentoTemporal[compartimentoALlenar] = \
+                            capacidadCompartimentoTemporal[compartimentoALlenar] - pedido
 
                         # Se agrega la estación al recorrido de la unidad
-                        estacionesPorUnidades[unidadesCompartimento[compartimentoALlenar]].append(estacion)
+                        estacionesPorUnidadesTemporal[unidadesCompartimentoTemporal[compartimentoALlenar]].append(
+                            self.recorridoGlobal[0]
+                        )
 
                         # El pedido queda en cero
                         pedido = pedido - pedido
@@ -210,14 +229,27 @@ class ProcesamientoRutas:
                     # Si el pedido no alcanza en el compartimento
                     else:
                         # Se resta la capacidad restante del compartimento al pedido
-                        pedido = pedido - capacidadCompartimento[compartimentoALlenar]
+                        pedido = pedido - capacidadCompartimentoTemporal[compartimentoALlenar]
 
                         # La capacidad del compartimento queda en cero
-                        capacidadCompartimento[compartimentoALlenar] = \
-                            capacidadCompartimento[compartimentoALlenar] - capacidadCompartimento[compartimentoALlenar]
+                        capacidadCompartimentoTemporal[compartimentoALlenar] = \
+                            capacidadCompartimentoTemporal[compartimentoALlenar] -\
+                            capacidadCompartimentoTemporal[compartimentoALlenar]
 
                         # Se agrega la estación al recorrido de la unidad
-                        estacionesPorUnidades[unidadesCompartimento[compartimentoALlenar]].append(estacion)
+                        estacionesPorUnidadesTemporal[unidadesCompartimentoTemporal[compartimentoALlenar]].append(
+                            self.recorridoGlobal[0]
+                        )
+
+            # Se copia a los arrays principales si se ha despachado con éxito la estación
+            capacidadCompartimento = list(capacidadCompartimentoTemporal)
+            tiposCombustible = list(tiposCombustibleTemporal)
+            unidadesCompartimento = list(unidadesCompartimento)
+
+            estacionesPorUnidades = dict(estacionesPorUnidadesTemporal)
+
+            # Se elimina la estación abastecida
+            self.recorridoGlobal.remove(self.recorridoGlobal[0])
 
         # Se recorren todas las unidades
         for idUnidad in estacionesPorUnidades.keys():
@@ -398,11 +430,10 @@ class ProcesamientoRutas:
         )
 
         # Convertir posiciones a codigos de estación
-        recorridoGlobal = []
         for i in range(len(posicionesRecorrido)):
-            recorridoGlobal.append(estaciones[posicionesRecorrido[i]])
+            self.recorridoGlobal.append(estaciones[posicionesRecorrido[i]])
 
-        recorridoGlobal = self.optimizacionRutaMayor(recorridoGlobal)
+        self.recorridoGlobal = self.optimizacionRutaMayor()
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
@@ -423,7 +454,7 @@ class ProcesamientoRutas:
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        recorrido, unidades = self.distribuirUnidades(recorridoGlobal)
+        recorrido, unidades = self.distribuirUnidades()
         recorrido = self.optimizarRutasUnidades(recorrido)
 
         # Exportar rutas de unidades
