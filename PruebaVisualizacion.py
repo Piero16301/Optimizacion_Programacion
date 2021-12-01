@@ -12,7 +12,7 @@ token = fernet.decrypt(bytes(keyMapbox, 'UTF-8')).decode()
 
 fig = go.Figure()
 
-cantidadgrupos = 3
+cantidadgrupos = 7
 elementosPorGrupo = 10
 estacionesPorElemento = 3
 
@@ -20,15 +20,16 @@ latitud = []
 longitud = []
 grupos = []
 
-colores = ['black', 'blue', 'blueviolet', 'brown', 'cadetblue', 'chocolate', 'coral', 'cornflowerblue', 'crimson',
-           'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgreen', 'darkmagenta', 'darkorange', 'darkorchid', 'darkred',
-           'darksalmon', 'darkturquoise', 'darkviolet', 'deeppink', 'deepskyblue', 'dimgray', 'dodgerblue', 'firebrick',
-           'forestgreen', 'fuchsia', 'goldenrod', 'gray', 'green', 'hotpink', 'indianred', 'indigo', 'lightcoral',
-           'lightsalmon', 'lightseagreen', 'lightslategray', 'limegreen', 'magenta', 'maroon', 'mediumblue',
-           'mediumorchid', 'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumvioletred', 'midnightblue',
-           'navy', 'olive', 'orange', 'orangered', 'orchid', 'palevioletred', 'peru', 'purple', 'red', 'rosybrown',
-           'royalblue', 'saddlebrown', 'salmon', 'sandybrown', 'seagreen', 'sienna', 'slateblue', 'slategray',
-           'steelblue', 'teal', 'tomato', 'violet', 'yellowgreen']
+colores = ['blue', 'brown', 'chocolate', 'crimson', 'darkcyan', 'darkgoldenrod', 'darkorange',
+           'darkorchid', 'darkturquoise', 'darkviolet', 'deeppink', 'dodgerblue', 'goldenrod', 'limegreen',
+           'magenta', 'orange', 'red', 'royalblue', 'seagreen', 'tomato', 'black', 'blueviolet',
+           'cadetblue', 'coral', 'cornflowerblue', 'darkblue', 'darkgreen', 'darkmagenta', 'darkred',
+           'darksalmon', 'deepskyblue', 'dimgray', 'firebrick', 'forestgreen', 'fuchsia', 'gray', 'green',
+           'hotpink', 'indianred', 'indigo', 'lightcoral', 'lightsalmon', 'lightseagreen',
+           'lightslategray', 'maroon', 'mediumblue', 'mediumorchid', 'mediumpurple', 'mediumseagreen',
+           'mediumslateblue', 'mediumvioletred', 'midnightblue', 'navy', 'olive', 'orangered', 'orchid',
+           'palevioletred', 'peru', 'purple', 'rosybrown', 'saddlebrown', 'salmon', 'sandybrown', 'sienna',
+           'slateblue', 'slategray', 'steelblue', 'teal', 'violet', 'yellowgreen']
 
 for i in range(cantidadgrupos * elementosPorGrupo):
     latitudActual = []
@@ -46,7 +47,7 @@ for i in range(cantidadgrupos * elementosPorGrupo):
     fig.add_trace(go.Scattermapbox(
         legendgroup=grupos[i // elementosPorGrupo],
         legendgrouptitle={'font': {'color': 'black', 'size': 15}, 'text': grupos[i // elementosPorGrupo]},
-        name=str(i+1),
+        name=colores[i],
         mode='markers+lines',
         lat=latitud[i],
         lon=longitud[i],

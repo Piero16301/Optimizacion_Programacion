@@ -330,7 +330,7 @@ class ProcesamientoRutas:
             dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 2')
             dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 3')
 
-    def calcularRutas(self, separador, inicio, maximaOptimizacionRecorrido):
+    def calcularRutas(self, separador, inicio, maximosIntentosRecorrido):
         estacionesCOESTI = self.dataCOESTI['Destinatario'].unique().tolist()
         estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
         # estaciones = estacionesCOESTI + estacionesExternos
@@ -351,21 +351,21 @@ class ProcesamientoRutas:
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        # Construir lista de distancias
-        distanciasEstaciones = []
-        for i in range(len(estaciones)):
-            for j in range(len(estaciones)):
-                if i != j:
-                    origen = (
-                        self.direcciones[estaciones[i]]['Latitud'],
-                        self.direcciones[estaciones[i]]['Longitud']
-                    )
-                    destino = (
-                        self.direcciones[estaciones[j]]['Latitud'],
-                        self.direcciones[estaciones[j]]['Longitud']
-                    )
-                    distancia = geodesic(origen, destino).kilometers
-                    distanciasEstaciones.append((i, j, distancia))
+        # # Construir lista de distancias
+        # distanciasEstaciones = []
+        # for i in range(len(estaciones)):
+        #     for j in range(len(estaciones)):
+        #         if i != j:
+        #             origen = (
+        #                 self.direcciones[estaciones[i]]['Latitud'],
+        #                 self.direcciones[estaciones[i]]['Longitud']
+        #             )
+        #             destino = (
+        #                 self.direcciones[estaciones[j]]['Latitud'],
+        #                 self.direcciones[estaciones[j]]['Longitud']
+        #             )
+        #             distancia = geodesic(origen, destino).kilometers
+        #             distanciasEstaciones.append((i, j, distancia))
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
@@ -373,20 +373,20 @@ class ProcesamientoRutas:
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        # Construir recorrido TSP
-        funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
-        ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=True)
-
-        if maximaOptimizacionRecorrido:
-            posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
-                ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
-            )
-        else:
-            posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
-                ajusteProblema, random_state=2
-            )
-
-        guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
+        # # Construir recorrido TSP
+        # funcionConveniencia = mlrose.TravellingSales(distances=distanciasEstaciones)
+        # ajusteProblema = mlrose.TSPOpt(length=len(estaciones), fitness_fn=funcionConveniencia, maximize=True)
+        #
+        # if maximosIntentosRecorrido:
+        #     posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
+        #         ajusteProblema, mutation_prob=0.2, max_attempts=100, random_state=2
+        #     )
+        # else:
+        #     posicionesRecorrido, distanciaGlobal = mlrose.genetic_alg(
+        #         ajusteProblema, random_state=2
+        #     )
+        #
+        # guardarRutaTSP('datos_intermedios/rutaTSP.txt', posicionesRecorrido, distanciaGlobal)
 
         posicionesRecorrido, distanciaGlobal = cargarRutaTSP('datos_intermedios/rutaTSP.txt')
 
