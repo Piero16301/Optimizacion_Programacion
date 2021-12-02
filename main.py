@@ -82,31 +82,31 @@ if __name__ == "__main__":
           )
 
     procesadorRutas = ProcesamientoRutas(dataFrameCOESTI, dataFrameExterno)
-    recorrido, unidades = procesadorRutas.calcularRutas(separador, inicio, maximosIntentosRecorrido=False)
+    procesadorRutas.calcularRutas(separador, inicio, maximosIntentosRecorrido=False)
 
-    # Se muestran las estaciones en el mapa
-    tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
-    print('{0: <51}'.format('\n3. Graficación de rutas'),
-          separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
-          )
-
-    tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
-    print('{0: <50}'.format('   3.1. Cargando grafo de la ciudad'),
-          separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
-          )
-    visualizador = VisualizadorMapa(recorrido, unidades, caminosDetallados=True, rutasDetalladas=False)
-
-    visualizador.visualizarEstaciones(separador, inicio)
-
-    # Fin de tiempo
-    tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
-    print('{0: <51}'.format('\n4. Término de todos los cálculos'),
-          separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
-          )
-
-    horaFin = time.localtime()
-    print('\n' + separador * 39, 'FINALIZANDO EL PROGRAMA', separador * 39, '    ')
-    print(' ' * 45, time.strftime('%I:%M:%S %p', horaFin))
+    # # Se muestran las estaciones en el mapa
+    # tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
+    # print('{0: <51}'.format('\n3. Graficación de rutas'),
+    #       separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
+    #       )
+    #
+    # tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
+    # print('{0: <50}'.format('   3.1. Cargando grafo de la ciudad'),
+    #       separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
+    #       )
+    # visualizador = VisualizadorMapa(recorrido, unidades, caminosDetallados=True, rutasDetalladas=False)
+    #
+    # visualizador.visualizarEstaciones(separador, inicio)
+    #
+    # # Fin de tiempo
+    # tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
+    # print('{0: <51}'.format('\n4. Término de todos los cálculos'),
+    #       separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
+    #       )
+    #
+    # horaFin = time.localtime()
+    # print('\n' + separador * 39, 'FINALIZANDO EL PROGRAMA', separador * 39, '    ')
+    # print(' ' * 45, time.strftime('%I:%M:%S %p', horaFin))
 
     # # Server para mostrar el mapa
     # app = dash.Dash()

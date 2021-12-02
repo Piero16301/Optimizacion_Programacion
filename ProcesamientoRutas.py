@@ -1,7 +1,9 @@
 import json
-from timeit import default_timer as timer
 import mlrose
 import pandas as pd
+import copy
+
+from timeit import default_timer as timer
 from geopy.distance import geodesic
 
 
@@ -45,6 +47,8 @@ class ProcesamientoRutas:
 
         self.recorridoGlobal = []
 
+        self.vueltas = {}
+
     def optimizacionRutaMayor(self):
         maximaDistancia = 0
         indiceMaximo = 0
@@ -85,89 +89,7 @@ class ProcesamientoRutas:
         else:
             return self.recorridoGlobal
 
-    def exportarDetalleCombustiblePorCompartimento(self, rutaSalida, unidades, capacidadCompartimento,
-                                                   tiposCombustible):
-        # Placa de tracto | Empresa | Capacidad total | Total de compartimentos | Número de compartimento |
-        # Capacidad de compartimento | Material | Descripción | Producto | Cantidad suministrada
-        unidadesUtilizadas = [unidad for unidad in unidades]
-        datos = []
-        while len(unidadesUtilizadas) > 0:
-            unidad = unidadesUtilizadas[0]
-            numeroCompartimentos = self.unidades[unidad]['# Compartimentos']
-
-            # Se extrae datos de la unidad
-            capacidadCompartimentoActual = capacidadCompartimento[:numeroCompartimentos]
-            tiposCombustibleActual = tiposCombustible[:numeroCompartimentos]
-
-            # Se eliminan los datos de los arrays globales
-            del capacidadCompartimento[:numeroCompartimentos]
-            del tiposCombustible[:numeroCompartimentos]
-            del unidadesUtilizadas[0]
-
-            arrayCompartimentos = self.unidades[unidad]['Compartimentos']
-
-            for i in range(numeroCompartimentos):
-                fila = []
-
-                # Se agrega columna de Placa de tracto
-                fila.append(unidad)
-
-                # Se agrega columna de Empresa
-                fila.append(self.unidades[unidad]['Empresa'])
-
-                # Se agrega columna de Capacidad total
-                fila.append(self.unidades[unidad]['Capacidad'])
-
-                # Se agrega columna de Total de compartimentos
-                fila.append(self.unidades[unidad]['# Compartimentos'])
-
-                # Se agrega columna de Número de compartimento
-                fila.append(i + 1)
-
-                # Se agrega columna de Capacidad de compartimento
-                fila.append(arrayCompartimentos[i])
-
-                if str(tiposCombustibleActual[i]) == '-':
-                    # Se agrega columna de Material
-                    fila.append('Ninguno')
-
-                    # Se agrega columna de Descripción
-                    fila.append('Ninguno')
-
-                    # Se agrega columna de Producto
-                    fila.append('Ninguno')
-                else:
-                    # Se agrega columna de Material
-                    fila.append(str(tiposCombustibleActual[i]))
-
-                    # Se agrega columna de Descripción
-                    fila.append(self.combustibles[str(tiposCombustibleActual[i])]['Descripción'])
-
-                    # Se agrega columna de Producto
-                    fila.append(self.combustibles[str(tiposCombustibleActual[i])]['Producto'])
-
-                # Se agrega columna de Cantidad
-                fila.append(arrayCompartimentos[i] - capacidadCompartimentoActual[i])
-
-                # Se agrega la fila a los datos
-                datos.append(fila)
-
-        # Se crea y exporta el data frame con los datos
-        encabezados = ['Placa de tracto', 'Empresa', 'Capacidad total', 'Total de compartimentos',
-                       'Número de compartimento', 'Capacidad de compartimento', 'Material', 'Descripción',
-                       'Producto', 'Cantidad llenada']
-        dataFrameFinal = pd.DataFrame(datos, columns=encabezados)
-
-        # Exportar varias hojas en el mismo archivo Excel
-        with pd.ExcelWriter(rutaSalida) as archivoExcel:
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 1')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 2')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 3')
-
     def distribuirUnidades(self):
-        recorrido = []
-        unidades = []
-
         capacidadCompartimento = []
         tiposCombustible = []
         unidadesCompartimento = []
@@ -189,7 +111,7 @@ class ProcesamientoRutas:
             tiposCombustibleTemporal = list(tiposCombustible)
             unidadesCompartimentoTemporal = list(unidadesCompartimento)
 
-            estacionesPorUnidadesTemporal = dict(estacionesPorUnidades)
+            estacionesPorUnidadesTemporal = copy.deepcopy(estacionesPorUnidades)
 
             # Filtrar pedidos de una estación
             dataFrameEstacion = self.dataCOESTI[self.dataCOESTI['Destinatario'] == self.recorridoGlobal[0]]
@@ -205,9 +127,18 @@ class ProcesamientoRutas:
                         tipo, capacidadCompartimentoTemporal, tiposCombustibleTemporal
                     )
 
+                    # Cuando la flota ya está llena (cambio de vuelta)
                     if compartimentoALlenar == -1:
-                        # Cuando la flota ya está llena (cambio de vuelta)
-                        pass
+                        numeroVuelta = 'Vuelta ' + str(len(self.vueltas) + 1)
+                        self.vueltas[numeroVuelta] = {
+                            'Capacidad de Compartimento': capacidadCompartimento,
+                            'Tipos de Combustible': tiposCombustible,
+                            'Unidades de Compartimento': unidadesCompartimento,
+                            'Estaciones por Unidades': {
+                                key: list(dict.fromkeys(estacionesPorUnidades[key])) for key in estacionesPorUnidades
+                            }
+                        }
+                        return False
 
                     # Se asigna el tipo de combustible al compartimento
                     tiposCombustibleTemporal[compartimentoALlenar] = tipo
@@ -241,126 +172,235 @@ class ProcesamientoRutas:
                             self.recorridoGlobal[0]
                         )
 
-            # Se copia a los arrays principales si se ha despachado con éxito la estación
+            # Se copia a los arrays principales si se ha despachado con éxito todos los pedidos de la estación
             capacidadCompartimento = list(capacidadCompartimentoTemporal)
             tiposCombustible = list(tiposCombustibleTemporal)
-            unidadesCompartimento = list(unidadesCompartimento)
+            unidadesCompartimento = list(unidadesCompartimentoTemporal)
 
-            estacionesPorUnidades = dict(estacionesPorUnidadesTemporal)
+            estacionesPorUnidades = copy.deepcopy(estacionesPorUnidadesTemporal)
 
             # Se elimina la estación abastecida
             self.recorridoGlobal.remove(self.recorridoGlobal[0])
 
-        # Se recorren todas las unidades
-        for idUnidad in estacionesPorUnidades.keys():
-            # Si se tiene al menos una parada en la unidad
-            if len(estacionesPorUnidades[idUnidad]) > 0:
-                # Se agrega la unidad y el array del recorrido, eliminando los duplicados
-                unidades.append(idUnidad)
-                recorrido.append(list(dict.fromkeys(estacionesPorUnidades[idUnidad])))
+        # Todos los pedidos fueron abastecidos en esta vuelta
+        numeroVuelta = 'Vuelta ' + str(len(self.vueltas) + 1)
+        self.vueltas[numeroVuelta] = {
+            'Capacidad de Compartimento': capacidadCompartimento,
+            'Tipos de Combustible': tiposCombustible,
+            'Unidades de Compartimento': unidadesCompartimento,
+            'Estaciones por Unidades': {
+                key: list(dict.fromkeys(estacionesPorUnidades[key])) for key in estacionesPorUnidades
+            }
+        }
+        return True
 
-        # Exportar Excel con los tipos de combustibles por compartimento
-        self.exportarDetalleCombustiblePorCompartimento('datos_salida/Distribución_Combustibles_Unidades.xlsx',
-                                                        unidades, capacidadCompartimento, tiposCombustible)
+    def optimizarRutasUnidades(self):
+        for vuelta in self.vueltas:
+            estacionesVueltaActual = self.vueltas[vuelta]['Estaciones por Unidades']
+            for unidad in estacionesVueltaActual:
+                recorrido = estacionesVueltaActual[unidad]
+                if len(recorrido) > 2:
+                    recorridoActual = recorrido
+                    maximaDistancia = 0
+                    indiceMaximo = 0
+                    for j in range(len(recorridoActual)):
+                        if j == len(recorridoActual) - 1:
+                            origen = (
+                                self.direcciones[recorridoActual[j]]['Latitud'],
+                                self.direcciones[recorridoActual[j]]['Longitud']
+                            )
+                            destino = (
+                                self.direcciones[recorridoActual[0]]['Latitud'],
+                                self.direcciones[recorridoActual[0]]['Longitud']
+                            )
+                        else:
+                            origen = (
+                                self.direcciones[recorridoActual[j]]['Latitud'],
+                                self.direcciones[recorridoActual[j]]['Longitud']
+                            )
+                            destino = (
+                                self.direcciones[recorridoActual[j + 1]]['Latitud'],
+                                self.direcciones[recorridoActual[j + 1]]['Longitud']
+                            )
 
-        return recorrido, unidades
+                        if geodesic(origen, destino).kilometers > maximaDistancia:
+                            maximaDistancia = geodesic(origen, destino).kilometers
+                            indiceMaximo = j
 
-    def optimizarRutasUnidades(self, recorrido):
-        for i in range(len(recorrido)):
-            if len(recorrido[i]) > 2:
-                recorridoActual = recorrido[i]
-                maximaDistancia = 0
-                indiceMaximo = 0
-                for j in range(len(recorridoActual)):
-                    if j == len(recorridoActual) - 1:
-                        origen = (
-                            self.direcciones[recorridoActual[j]]['Latitud'],
-                            self.direcciones[recorridoActual[j]]['Longitud']
-                        )
-                        destino = (
-                            self.direcciones[recorridoActual[0]]['Latitud'],
-                            self.direcciones[recorridoActual[0]]['Longitud']
-                        )
+                    if indiceMaximo != (len(recorridoActual) - 1):
+                        nuevoRecorridoActual = []
+                        for j in range(indiceMaximo + 1, len(recorridoActual)):
+                            nuevoRecorridoActual.append(recorridoActual[j])
+
+                        for j in range(indiceMaximo + 1):
+                            nuevoRecorridoActual.append(recorridoActual[j])
+
+                        self.vueltas[vuelta]['Estaciones por Unidades'][unidad] = list(nuevoRecorridoActual)
+
+    def exportarDetalleCombustiblePorCompartimento(self, rutaSalida):
+        # Placa de tracto | Empresa | Capacidad total | Total de compartimentos | Número de compartimento |
+        # Capacidad de compartimento | Material | Descripción | Producto | Cantidad suministrada
+
+        # Array con un Data Frame por vuelta
+        dataFrames = []
+
+        # Iteración sobre el número de vueltas
+        for vuelta in self.vueltas:
+            unidades = []
+
+            for unidad in self.vueltas[vuelta]['Estaciones por Unidades']:
+                if len(self.vueltas[vuelta]['Estaciones por Unidades'][unidad]) > 0:
+                    unidades.append(unidad)
+
+            capacidadCompartimento = list(self.vueltas[vuelta]['Capacidad de Compartimento'])
+            tiposCombustible = list(self.vueltas[vuelta]['Tipos de Combustible'])
+
+            unidadesUtilizadas = [unidad for unidad in unidades]
+            datos = []
+            while len(unidadesUtilizadas) > 0:
+                unidad = unidadesUtilizadas[0]
+                numeroCompartimentos = self.unidades[unidad]['# Compartimentos']
+
+                # Se extrae datos de la unidad
+                capacidadCompartimentoActual = capacidadCompartimento[:numeroCompartimentos]
+                tiposCombustibleActual = tiposCombustible[:numeroCompartimentos]
+
+                # Se eliminan los datos de los arrays globales
+                del capacidadCompartimento[:numeroCompartimentos]
+                del tiposCombustible[:numeroCompartimentos]
+                del unidadesUtilizadas[0]
+
+                arrayCompartimentos = self.unidades[unidad]['Compartimentos']
+
+                for i in range(numeroCompartimentos):
+                    fila = []
+
+                    # Se agrega columna de Placa de tracto
+                    fila.append(unidad)
+
+                    # Se agrega columna de Empresa
+                    fila.append(self.unidades[unidad]['Empresa'])
+
+                    # Se agrega columna de Capacidad total
+                    fila.append(self.unidades[unidad]['Capacidad'])
+
+                    # Se agrega columna de Total de compartimentos
+                    fila.append(self.unidades[unidad]['# Compartimentos'])
+
+                    # Se agrega columna de Número de compartimento
+                    fila.append(i + 1)
+
+                    # Se agrega columna de Capacidad de compartimento
+                    fila.append(arrayCompartimentos[i])
+
+                    if str(tiposCombustibleActual[i]) == '-':
+                        # Se agrega columna de Material
+                        fila.append('Ninguno')
+
+                        # Se agrega columna de Descripción
+                        fila.append('Ninguno')
+
+                        # Se agrega columna de Producto
+                        fila.append('Ninguno')
                     else:
-                        origen = (
-                            self.direcciones[recorridoActual[j]]['Latitud'],
-                            self.direcciones[recorridoActual[j]]['Longitud']
-                        )
-                        destino = (
-                            self.direcciones[recorridoActual[j + 1]]['Latitud'],
-                            self.direcciones[recorridoActual[j + 1]]['Longitud']
-                        )
+                        # Se agrega columna de Material
+                        fila.append(str(tiposCombustibleActual[i]))
 
-                    if geodesic(origen, destino).kilometers > maximaDistancia:
-                        maximaDistancia = geodesic(origen, destino).kilometers
-                        indiceMaximo = j
+                        # Se agrega columna de Descripción
+                        fila.append(self.combustibles[str(tiposCombustibleActual[i])]['Descripción'])
 
-                if indiceMaximo != (len(recorridoActual) - 1):
-                    nuevoRecorridoActual = []
-                    for j in range(indiceMaximo + 1, len(recorridoActual)):
-                        nuevoRecorridoActual.append(recorridoActual[j])
+                        # Se agrega columna de Producto
+                        fila.append(self.combustibles[str(tiposCombustibleActual[i])]['Producto'])
 
-                    for j in range(indiceMaximo + 1):
-                        nuevoRecorridoActual.append(recorridoActual[j])
+                    # Se agrega columna de Cantidad
+                    fila.append(arrayCompartimentos[i] - capacidadCompartimentoActual[i])
 
-                    recorrido[i] = nuevoRecorridoActual
+                    # Se agrega la fila a los datos
+                    datos.append(fila)
 
-        return recorrido
+            # Se crea y exporta el data frame con los datos
+            encabezados = ['Placa de tracto', 'Empresa', 'Capacidad total', 'Total de compartimentos',
+                           'Número de compartimento', 'Capacidad de compartimento', 'Material', 'Descripción',
+                           'Producto', 'Cantidad llenada']
+            dataFrameVuelta = pd.DataFrame(datos, columns=encabezados)
 
-    def exportarRecorridoUnidades(self, rutaSalida, recorrido, unidades):
-        # Placa de tracto | Empresa | Capacidad total | # Compartimentos | Orden de llegada | Destinatario |
-        # Distrito | Estación | Dirección | Grupo
-        datos = []
-        for i in range(len(unidades)):
-            unidad = unidades[i]
-            recorridoActual = recorrido[i]
-            for j in range(len(recorridoActual)):
-                fila = []
-                estacion = recorridoActual[j]
-
-                # Se agrega columna de Placa de tracto
-                fila.append(unidad)
-
-                # Se agrega columna de Empresa
-                fila.append(self.unidades[unidad]['Empresa'])
-
-                # Se agrega columna de Capacidad total
-                fila.append(self.unidades[unidad]['Capacidad'])
-
-                # Se agrega columna de # Compartimentos
-                fila.append(self.unidades[unidad]['# Compartimentos'])
-
-                # Se agrega columna de Orden de llegada
-                fila.append(j + 1)
-
-                # Se agrega columna de Destinatario
-                fila.append(estacion)
-
-                # Se agrega columna de Distrito
-                fila.append(self.direcciones[estacion]['Distrito'])
-
-                # Se agrega columna de Estación
-                fila.append(self.direcciones[estacion]['Estación'])
-
-                # Se agrega columna de Dirección
-                fila.append(self.direcciones[estacion]['Dirección'])
-
-                # Se agrega columna de Grupo
-                fila.append(self.direcciones[estacion]['Grupo'])
-
-                # Se agrega la fila a los datos
-                datos.append(fila)
-
-        # Se crea y exporta el data frame con los datos
-        encabezados = ['Placa de tracto', 'Empresa', 'Capacidad total', '# Compartimentos', 'Orden de llegada',
-                       'Destinatario', '# Distrito', 'Estación', 'Dirección', 'Grupo']
-        dataFrameFinal = pd.DataFrame(datos, columns=encabezados)
+            dataFrames.append(dataFrameVuelta)
 
         # Exportar varias hojas en el mismo archivo Excel
         with pd.ExcelWriter(rutaSalida) as archivoExcel:
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 1')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 2')
-            dataFrameFinal.to_excel(archivoExcel, index=True, header=True, sheet_name='Vuelta 3')
+            for i in range(len(dataFrames)):
+                nombreHoja = 'Vuelta ' + str(i + 1)
+                dataFrames[i].to_excel(archivoExcel, index=True, header=True, sheet_name=nombreHoja)
+
+    def exportarRecorridoUnidades(self, rutaSalida):
+        # Placa de tracto | Empresa | Capacidad total | # Compartimentos | Orden de llegada | Destinatario |
+        # Distrito | Estación | Dirección | Grupo
+
+        # Array con un Data Frame por vuelta
+        dataFrames = []
+
+        # Iteración sobre el número de vueltas
+        for vuelta in self.vueltas:
+            recorrido = []
+            unidades = []
+            for unidad in self.vueltas[vuelta]['Estaciones por Unidades']:
+                if len(self.vueltas[vuelta]['Estaciones por Unidades'][unidad]) > 0:
+                    recorrido.append(self.vueltas[vuelta]['Estaciones por Unidades'][unidad])
+                    unidades.append(unidad)
+
+            datos = []
+            for i in range(len(unidades)):
+                unidad = unidades[i]
+                recorridoActual = recorrido[i]
+                for j in range(len(recorridoActual)):
+                    fila = []
+                    estacion = recorridoActual[j]
+
+                    # Se agrega columna de Placa de tracto
+                    fila.append(unidad)
+
+                    # Se agrega columna de Empresa
+                    fila.append(self.unidades[unidad]['Empresa'])
+
+                    # Se agrega columna de Capacidad total
+                    fila.append(self.unidades[unidad]['Capacidad'])
+
+                    # Se agrega columna de # Compartimentos
+                    fila.append(self.unidades[unidad]['# Compartimentos'])
+
+                    # Se agrega columna de Orden de llegada
+                    fila.append(j + 1)
+
+                    # Se agrega columna de Destinatario
+                    fila.append(estacion)
+
+                    # Se agrega columna de Distrito
+                    fila.append(self.direcciones[estacion]['Distrito'])
+
+                    # Se agrega columna de Estación
+                    fila.append(self.direcciones[estacion]['Estación'])
+
+                    # Se agrega columna de Dirección
+                    fila.append(self.direcciones[estacion]['Dirección'])
+
+                    # Se agrega columna de Grupo
+                    fila.append(self.direcciones[estacion]['Grupo'])
+
+                    # Se agrega la fila a los datos
+                    datos.append(fila)
+
+            # Se crea y exporta el data frame con los datos
+            encabezados = ['Placa de tracto', 'Empresa', 'Capacidad total', '# Compartimentos', 'Orden de llegada',
+                           'Destinatario', '# Distrito', 'Estación', 'Dirección', 'Grupo']
+            dataFrameVuelta = pd.DataFrame(datos, columns=encabezados)
+
+            dataFrames.append(dataFrameVuelta)
+
+        # Exportar varias hojas en el mismo archivo Excel
+        with pd.ExcelWriter(rutaSalida) as archivoExcel:
+            for i in range(len(dataFrames)):
+                nombreHoja = 'Vuelta ' + str(i + 1)
+                dataFrames[i].to_excel(archivoExcel, index=True, header=True, sheet_name=nombreHoja)
 
     def calcularRutas(self, separador, inicio, maximosIntentosRecorrido):
         estacionesCOESTI = self.dataCOESTI['Destinatario'].unique().tolist()
@@ -454,10 +494,14 @@ class ProcesamientoRutas:
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
-        recorrido, unidades = self.distribuirUnidades()
-        recorrido = self.optimizarRutasUnidades(recorrido)
+        # Procesar el número de vueltas y su optimización
+        todosPedidosCompletados = False
+        while not todosPedidosCompletados:
+            # Se sigue llamando a la función hasta que se despachen todos los pedidos
+            todosPedidosCompletados = self.distribuirUnidades()
 
-        # Exportar rutas de unidades
-        self.exportarRecorridoUnidades('datos_salida/Recorrido_Estaciones_Unidades.xlsx', recorrido, unidades)
+        self.optimizarRutasUnidades()
 
-        return recorrido, unidades
+        # Exportar archivos de distribución de compartimentos y recorrido de estaciones
+        self.exportarDetalleCombustiblePorCompartimento('datos_salida/Distribución_Combustibles_Unidades.xlsx')
+        self.exportarRecorridoUnidades('datos_salida/Recorrido_Estaciones_Unidades.xlsx')
