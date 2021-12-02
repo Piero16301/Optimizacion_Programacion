@@ -63,15 +63,9 @@ de mayor a menor capacidad, o viceversa; obteniendo los siguientes resultados.
 
 ![](imagenes_mapas/recorrido-unidades-creciente.png)
 
-## Distribución de unidades por vueltas
-Para el abastecimiento total, cada unidad va a poder realizar más de una vuelta,
-y se va a agrupar como se muestra a continuación.
-
-![](imagenes_mapas/grupos-unidades.png)
-
 ## Nivel de detalle de las rutas
 Si se necesita un mayor nivel de detalle del recorrido que van a realizar las unidades
-se puede realizar un intercambio entre mostrar rutas a nivel de calles o rutas directas,
+se puede realizar un intercambio entre mostrar rutas en calles o rutas directas,
 como se muestra a continuación.
 
 ### Rutas directas
@@ -79,6 +73,17 @@ como se muestra a continuación.
 
 ### Rutas detalladas
 ![](imagenes_mapas/rutas-detalladas.png)
+
+## Agrupación de unidades por vueltas
+Luego de realizar la distribución de las unidades, se ha agrupado todas las unidades
+por el número de vuelta, la cual de muestra de la siguiente forma en el mapa, tanto
+de forma directa, como el recorrido detallado.
+
+### Rutas directas agrupadas
+![](imagenes_mapas/rutas-directas-agrupadas.png)
+
+### Rutas detalladas agrupadas
+![](imagenes_mapas/rutas-detalladas-agrupadas.png)
 
 ## Ejecución del programa
 Durante la ejecución del programa, se mostrará cada una de las etapas del
