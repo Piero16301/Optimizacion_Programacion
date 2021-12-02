@@ -402,6 +402,10 @@ class ProcesamientoRutas:
                 nombreHoja = 'Vuelta ' + str(i + 1)
                 dataFrames[i].to_excel(archivoExcel, index=True, header=True, sheet_name=nombreHoja)
 
+    def exportarVueltas(self):
+        with open('archivos_json/vueltas.json', 'w', encoding='utf8') as vueltasJSON:
+            json.dump(self.vueltas, vueltasJSON, indent=4, ensure_ascii=False)
+
     def calcularRutas(self, separador, inicio, maximosIntentosRecorrido):
         estacionesCOESTI = self.dataCOESTI['Destinatario'].unique().tolist()
         estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
@@ -419,7 +423,7 @@ class ProcesamientoRutas:
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
-            '{0: <50}'.format('   2.1. Calculando distancias entre estaciones'),
+            '{0: <60}'.format('   2.1. Calculando distancias entre estaciones'),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
@@ -441,7 +445,7 @@ class ProcesamientoRutas:
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
-            '{0: <50}'.format('   2.2. Construyendo recorrido óptimo'),
+            '{0: <60}'.format('   2.2. Construyendo recorrido óptimo'),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
@@ -465,7 +469,7 @@ class ProcesamientoRutas:
         stringDistanciaTotal = '        2.2.1. Distancia total: ' + str(round(distanciaGlobal, 3)) + ' Km'
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
-            '{0: <50}'.format(stringDistanciaTotal),
+            '{0: <60}'.format(stringDistanciaTotal),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
@@ -477,7 +481,7 @@ class ProcesamientoRutas:
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
-            '{0: <50}'.format('   2.3. Ordenando unidades'),
+            '{0: <60}'.format('   2.3. Ordenando unidades'),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
@@ -490,7 +494,7 @@ class ProcesamientoRutas:
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
-            '{0: <50}'.format('   2.4. Distribuyendo unidades'),
+            '{0: <60}'.format('   2.4. Distribuyendo unidades'),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
@@ -500,8 +504,12 @@ class ProcesamientoRutas:
             # Se sigue llamando a la función hasta que se despachen todos los pedidos
             todosPedidosCompletados = self.distribuirUnidades()
 
+        # Optimizar rutas individuales
         self.optimizarRutasUnidades()
 
         # Exportar archivos de distribución de compartimentos y recorrido de estaciones
         self.exportarDetalleCombustiblePorCompartimento('datos_salida/Distribución_Combustibles_Unidades.xlsx')
         self.exportarRecorridoUnidades('datos_salida/Recorrido_Estaciones_Unidades.xlsx')
+
+        # Exportar JSON de las vueltas
+        self.exportarVueltas()

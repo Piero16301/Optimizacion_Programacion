@@ -312,52 +312,5 @@
             1000.0,
             1000.0
         ]
-    },
-    "C6Z-768": {
-        "Flota": "TRANSCORD",
-        "Empresa": "RAMOS",
-        "Placa de cisterna": "-",
-        "Propietario": "PROPIA",
-        "Capacidad": 4000.0,
-        "# Compartimentos": 6,
-        "Compartimentos": [
-            500.0,
-            500.0,
-            500.0,
-            1000.0,
-            1000.0,
-            500.0
-        ]
-    },
-    "AUV-718": {
-        "Flota": "TRANSCORD",
-        "Empresa": "JWENVERT TRANSPORTES",
-        "Placa de cisterna": "-",
-        "Propietario": "PROPIA",
-        "Capacidad": 4000.0,
-        "# Compartimentos": 5,
-        "Compartimentos": [
-            500.0,
-            1000.0,
-            1000.0,
-            1000.0,
-            500.0
-        ]
-    },
-    "D6H-880": {
-        "Flota": "TRANSCORD",
-        "Empresa": "JWENVERT TRANSPORTES",
-        "Placa de cisterna": "-",
-        "Propietario": "PROPIA",
-        "Capacidad": 4000.0,
-        "# Compartimentos": 6,
-        "Compartimentos": [
-            500.0,
-            500.0,
-            500.0,
-            500.0,
-            1000.0,
-            1000.0
-        ]
     }
 }

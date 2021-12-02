@@ -10,7 +10,7 @@ from timeit import default_timer as timer
 
 
 class VisualizadorMapa:
-    def __init__(self, recorrido, unidades, caminosDetallados, rutasDetalladas):
+    def __init__(self, caminosPrecisos, rutasDirectas):
         # Se desencripta la key de mapbox con la key de fernet
         credenciales = json.load(open('archivos_json/credenciales.json'))
         keyFernet = credenciales['keyFernet']
@@ -25,13 +25,24 @@ class VisualizadorMapa:
 
         self.mapa = go.Figure()
 
-        if rutasDetalladas:
+        if not rutasDirectas:
             self.grafo = ox.load_graphml('grafos/grafoLima.graphml')
 
-        self.recorrido = recorrido
-        self.unidades = unidades
-        self.caminosDetallados = caminosDetallados
-        self.rutasDetalladas = rutasDetalladas
+        self.vueltas = json.load(open('archivos_json/vueltas.json', encoding='utf8'))
+        self.caminosPrecisos = caminosPrecisos
+        self.rutasDirectas = rutasDirectas
+
+        self.coloresBackup = ['blue', 'brown', 'chocolate', 'crimson', 'darkcyan', 'darkgoldenrod', 'darkorange',
+                              'darkorchid', 'darkturquoise', 'darkviolet', 'deeppink', 'dodgerblue', 'goldenrod',
+                              'limegreen', 'magenta', 'orange', 'red', 'royalblue', 'seagreen', 'tomato', 'black',
+                              'blueviolet', 'cadetblue', 'coral', 'cornflowerblue', 'darkblue', 'darkgreen',
+                              'darkmagenta', 'darkred', 'darksalmon', 'deepskyblue', 'dimgray', 'firebrick',
+                              'forestgreen', 'fuchsia', 'gray', 'green', 'hotpink', 'indianred', 'indigo', 'lightcoral',
+                              'lightsalmon', 'lightseagreen', 'lightslategray', 'maroon', 'mediumblue', 'mediumorchid',
+                              'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumvioletred', 'midnightblue',
+                              'navy', 'olive', 'orangered', 'orchid', 'palevioletred', 'peru', 'purple', 'rosybrown',
+                              'saddlebrown', 'salmon', 'sandybrown', 'sienna', 'slateblue', 'slategray', 'steelblue',
+                              'teal', 'violet', 'yellowgreen']
 
         self.colores = ['blue', 'brown', 'chocolate', 'crimson', 'darkcyan', 'darkgoldenrod', 'darkorange',
                         'darkorchid', 'darkturquoise', 'darkviolet', 'deeppink', 'dodgerblue', 'goldenrod', 'limegreen',
@@ -122,12 +133,15 @@ class VisualizadorMapa:
             return latitudes, longitudes
 
     def extraerSiguienteColor(self):
+        if len(self.colores) == 0:
+            self.colores = list(self.coloresBackup)
+
         if len(self.colores) <= 50:
             return random.choice(self.colores)
         else:
             return self.colores[0]
 
-    def agregarCaminoDetallado(self, recorridoUnidad, unidad):
+    def agregarCaminoDetallado(self, recorridoUnidad, unidad, vuelta):
         caminoTotal = []
         distanciaTotal = 0
         for i in range(len(recorridoUnidad) - 1):
@@ -147,7 +161,7 @@ class VisualizadorMapa:
             distanciaActual = geodesic(puntoOrigen, puntoDestino).kilometers
             distanciaTotal = distanciaTotal + distanciaActual
 
-            camino = self.construirCamino(ruta, detallado=self.caminosDetallados)
+            camino = self.construirCamino(ruta, detallado=self.caminosPrecisos)
             caminoTotal = caminoTotal + camino
 
         if len(recorridoUnidad) == 1:
@@ -163,14 +177,22 @@ class VisualizadorMapa:
 
             ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
 
-            camino = self.construirCamino(ruta, detallado=self.caminosDetallados)
+            camino = self.construirCamino(ruta, detallado=self.caminosPrecisos)
             caminoTotal = caminoTotal + camino
 
-        latitudes, longitudes = self.construirCoordenadas(caminoTotal, detallado=self.caminosDetallados)
+        latitudes, longitudes = self.construirCoordenadas(caminoTotal, detallado=self.caminosPrecisos)
 
         colorActual = self.extraerSiguienteColor()
 
         self.mapa.add_trace(go.Scattermapbox(
+            legendgroup=vuelta,
+            legendgrouptitle={
+                'font': {
+                    'color': 'black',
+                    'size': 15
+                },
+                'text': vuelta
+            },
             name=unidad,
             mode='lines',
             lat=latitudes,
@@ -188,7 +210,7 @@ class VisualizadorMapa:
 
         return distanciaTotal
 
-    def agregarCaminoSimple(self, recorridoUnidad, unidad):
+    def agregarCaminoSimple(self, recorridoUnidad, unidad, vuelta):
         distanciaTotal = 0
 
         for i in range(len(recorridoUnidad) - 1):
@@ -206,6 +228,14 @@ class VisualizadorMapa:
         colorActual = self.extraerSiguienteColor()
 
         self.mapa.add_trace(go.Scattermapbox(
+            legendgroup=vuelta,
+            legendgrouptitle={
+                'font': {
+                    'color': 'black',
+                    'size': 15
+                },
+                'text': vuelta
+            },
             name=unidad,
             mode='lines',
             lat=[self.direcciones[codUnidad]['Latitud'] for codUnidad in recorridoUnidad],
@@ -225,9 +255,10 @@ class VisualizadorMapa:
 
     def extraerEstacionesRecorridas(self):
         estacionesDuplicadas = []
-        for recorridoUnidad in self.recorrido:
-            for estacionUnidad in recorridoUnidad:
-                estacionesDuplicadas.append(estacionUnidad)
+        for vuelta in self.vueltas:
+            for unidad in self.vueltas[vuelta]['Estaciones por Unidades']:
+                estacionesDuplicadas = estacionesDuplicadas + self.vueltas[vuelta]['Estaciones por Unidades'][unidad]
+
         estacionesUnicas = list(dict.fromkeys(estacionesDuplicadas))
 
         textos = []
@@ -250,21 +281,36 @@ class VisualizadorMapa:
         # Iniciar las posiciones de los puntos
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
-            '{0: <50}'.format('   3.2. Construyendo caminos de cada unidad'),
+            '{0: <60}'.format('   3.2. Construyendo caminos de cada unidad'),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
-        distanciaTotal = 0
-        for i in range(len(self.recorrido)):
-            if self.rutasDetalladas:
-                distanciaCamino = self.agregarCaminoDetallado(self.recorrido[i], self.unidades[i])
-            else:
-                distanciaCamino = self.agregarCaminoSimple(self.recorrido[i], self.unidades[i])
+        datosVueltas = []
+        for vuelta in self.vueltas:
+            distanciaTotal = 0
+            unidadesUtilizadas = 0
+            for unidad in self.vueltas[vuelta]['Estaciones por Unidades']:
+                if self.rutasDirectas:
+                    distanciaCamino = self.agregarCaminoSimple(
+                        self.vueltas[vuelta]['Estaciones por Unidades'][unidad],
+                        unidad,
+                        vuelta
+                    )
+                else:
+                    distanciaCamino = self.agregarCaminoDetallado(
+                        self.vueltas[vuelta]['Estaciones por Unidades'][unidad],
+                        unidad,
+                        vuelta
+                    )
 
-            distanciaTotal = distanciaTotal + distanciaCamino
+                distanciaTotal = distanciaTotal + distanciaCamino
+                if len(self.vueltas[vuelta]['Estaciones por Unidades'][unidad]) > 0:
+                    unidadesUtilizadas = unidadesUtilizadas + 1
+
+            datosVueltas.append([distanciaTotal, unidadesUtilizadas])
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
-            '{0: <50}'.format('   3.3. Agregando localización de estaciones'),
+            '{0: <60}'.format('   3.3. Agregando localización de estaciones'),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
@@ -282,20 +328,37 @@ class VisualizadorMapa:
             }
         ))
 
-        stringDistanciaTotal = '        3.3.1. Distancia total: ' + str(round(distanciaTotal, 3)) + ' Km'
-        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
-        print(
-            '{0: <50}'.format(stringDistanciaTotal),
-            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
-        )
+        for i in range(len(self.vueltas)):
+            stringVuelta = '        3.3.' + str(i+1) + '. Vuelta ' + str(i+1)
+            tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
+            print(
+                '{0: <60}'.format(stringVuelta),
+                separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
+            )
 
-        stringPromedioUnidad = '        3.3.2. Promedio por unidad: ' + \
-                               str(round(distanciaTotal / len(self.unidades), 3)) + ' Km'
-        tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
-        print(
-            '{0: <50}'.format(stringPromedioUnidad),
-            separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
-        )
+            stringUnidades = '               3.3.' + str(i+1) + '.1. Unidades utilizadas: ' +\
+                             str(datosVueltas[i][1]) + ' uds'
+            tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
+            print(
+                '{0: <60}'.format(stringUnidades),
+                separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
+            )
+
+            stringDistanciaTotal = '               3.3.' + str(i+1) + '.2. Distancia total: ' + \
+                                   str(round(datosVueltas[i][0], 3)) + ' Km'
+            tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
+            print(
+                '{0: <60}'.format(stringDistanciaTotal),
+                separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
+            )
+
+            stringPromedioUnidad = '               3.3.' + str(i+1) + '.3. Promedio por unidad: ' + \
+                                   str(round(datosVueltas[i][0] / datosVueltas[i][1], 3)) + ' Km'
+            tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
+            print(
+                '{0: <60}'.format(stringPromedioUnidad),
+                separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
+            )
 
         # Calcular centro del mapa
         promLatitud = sum(latitudes) / len(latitudes)
