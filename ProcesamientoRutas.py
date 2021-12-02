@@ -330,7 +330,7 @@ class ProcesamientoRutas:
         with pd.ExcelWriter(rutaSalida) as archivoExcel:
             for i in range(len(dataFrames)):
                 nombreHoja = 'Vuelta ' + str(i + 1)
-                dataFrames[i].to_excel(archivoExcel, index=True, header=True, sheet_name=nombreHoja)
+                dataFrames[i].to_excel(archivoExcel, index=False, header=True, sheet_name=nombreHoja)
 
     def exportarRecorridoUnidades(self, rutaSalida):
         # Placa de tracto | Empresa | Capacidad total | # Compartimentos | Orden de llegada | Destinatario |
@@ -400,7 +400,7 @@ class ProcesamientoRutas:
         with pd.ExcelWriter(rutaSalida) as archivoExcel:
             for i in range(len(dataFrames)):
                 nombreHoja = 'Vuelta ' + str(i + 1)
-                dataFrames[i].to_excel(archivoExcel, index=True, header=True, sheet_name=nombreHoja)
+                dataFrames[i].to_excel(archivoExcel, index=False, header=True, sheet_name=nombreHoja)
 
     def exportarVueltas(self):
         with open('archivos_json/vueltas.json', 'w', encoding='utf8') as vueltasJSON:
