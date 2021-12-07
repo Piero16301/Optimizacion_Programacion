@@ -1,22 +1,22 @@
 {
     "P600": {
-        "Nombre": "Terminal Callao",
-        "Latitud": -123.123,
-        "Longitud": -123.123
+        "Nombre": "TERMINAL CALLAO",
+        "Latitud": -12.03825869780003,
+        "Longitud": -77.12739805709725
     },
     "P601": {
-        "Nombre": "Terminal Refinería Conchán",
-        "Latitud": -123.123,
-        "Longitud": -123.123
+        "Nombre": "TERMINAL REFINERÍA CONCHÁN",
+        "Latitud": -12.251462543804031,
+        "Longitud": -76.92675632201994
     },
     "P611": {
-        "Nombre": "Terminal Refinería Pampilla",
-        "Latitud": -123.123,
-        "Longitud": -123.123
+        "Nombre": "TERMINAL REFINERÍA PAMPILLA",
+        "Latitud": -11.921387908117758,
+        "Longitud": -77.1296772486938
     },
     "P614": {
-        "Nombre": "Terminal PBF Callao",
-        "Latitud": -123.123,
-        "Longitud": -123.123
+        "Nombre": "TERMINAL PBF CALLAO",
+        "Latitud": -11.949108026112842,
+        "Longitud": -77.13308815686229
     }
 }

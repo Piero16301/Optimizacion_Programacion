@@ -20,6 +20,7 @@ class VisualizadorMapa:
         keyDesencriptada = fernet.decrypt(bytes(keyMapbox, 'UTF-8')).decode()
 
         self.direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
+        self.terminales = json.load(open('archivos_json/terminales.json', encoding='utf8'))
 
         self.mapboxToken = keyDesencriptada
 
@@ -274,6 +275,19 @@ class VisualizadorMapa:
 
         return textos, latitudes, longitudes, simbolos
 
+    def extraerTerminales(self):
+        textos = []
+        latitudes = []
+        longitudes = []
+
+        for terminal in self.terminales:
+            texto = self.terminales[terminal]['Nombre'] + ' (' + terminal + ')'
+            textos.append(texto)
+            latitudes.append(self.terminales[terminal]['Latitud'])
+            longitudes.append(self.terminales[terminal]['Longitud'])
+
+        return textos, latitudes, longitudes
+
     def visualizarEstaciones(self, separador, inicio):
         # Construir grafo para las rutas
         self.construirGrafo()
@@ -310,7 +324,7 @@ class VisualizadorMapa:
 
         tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
         print(
-            '{0: <60}'.format('   3.3. Agregando localización de estaciones'),
+            '{0: <60}'.format('   3.3. Agregando localización de estaciones y terminales'),
             separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
         )
 
@@ -323,8 +337,22 @@ class VisualizadorMapa:
             lon=longitudes,
             marker={
                 'symbol': simbolos,
-                'size': 15,
+                'size': 12,
                 'color': 'green'
+            }
+        ))
+
+        textos, latitudes, longitudes = self.extraerTerminales()
+        self.mapa.add_trace(go.Scattermapbox(
+            mode='markers',
+            showlegend=False,
+            text=textos,
+            lat=latitudes,
+            lon=longitudes,
+            marker={
+                'symbol': 'museum',
+                'size': 25,
+                'color': 'black'
             }
         ))
 
