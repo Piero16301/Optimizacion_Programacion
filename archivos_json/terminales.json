@@ -1,0 +1,22 @@
+{
+    "P600": {
+        "Nombre": "Terminal Callao",
+        "Latitud": -123.123,
+        "Longitud": -123.123
+    },
+    "P601": {
+        "Nombre": "Terminal Refinería Conchán",
+        "Latitud": -123.123,
+        "Longitud": -123.123
+    },
+    "P611": {
+        "Nombre": "Terminal Refinería Pampilla",
+        "Latitud": -123.123,
+        "Longitud": -123.123
+    },
+    "P614": {
+        "Nombre": "Terminal PBF Callao",
+        "Latitud": -123.123,
+        "Longitud": -123.123
+    }
+}

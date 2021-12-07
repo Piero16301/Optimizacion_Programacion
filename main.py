@@ -32,7 +32,7 @@ if __name__ == "__main__":
     procesadorCOESTI = ProcesamientoCOESTI('datos_entrada/Pedidos_COESTI.xlsx')
     procesadorExterno = ProcesamientoExterno('datos_entrada/Pedidos_Externos.xlsx')
     procesadorUnidades = ProcesamientoUnidades('datos_entrada/Detalle_Unidades.xlsx')
-    # procesadorRestricciones = ProcesamientoRestricciones('datos_entrada/Restricciones_Estaciones.xlsx')
+    procesadorRestricciones = ProcesamientoRestricciones('datos_entrada/Restricciones_Estaciones.xlsx')
 
     # Procesamiento de data
     tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
@@ -63,17 +63,20 @@ if __name__ == "__main__":
     )
     procesadorUnidades.procesarData()
 
-    # print(
-    #     '{0: <60}'.format('   1.5. Leyendo restricciones de estaciones'),
-    #     separador * 30, '    ', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
-    # )
-    # procesadorRestricciones.procesarData()
+    print(
+        '{0: <60}'.format('   1.5. Leyendo restricciones de estaciones'),
+        separador * 30, '    ', '{0: >7}'.format(str(round(timer() - inicio, 3))), 'segundos'
+    )
+    procesadorRestricciones.procesarData()
 
     # Se obtiene el data frame con toda la data necesaria
     dataFrameDirecciones = procesadorDirecciones.dataFrame
     dataFrameCOESTI = procesadorCOESTI.dataFrame
     dataFrameExterno = procesadorExterno.dataFrame
-    # dataFrameRestricciones = procesadorRestricciones.dataFrame
+    dataFrameRestricciones = procesadorRestricciones.dataFrame
+
+    print(dataFrameCOESTI.to_string())
+    print(dataFrameExterno.to_string())
 
     # Calcular las rutas de las unidades
     tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
