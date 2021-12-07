@@ -19,6 +19,7 @@ class ProcesamientoCOESTI:
     def __init__(self, archivoExcel):
         self.rutaExcel = archivoExcel
         self.dataFrame = pd.DataFrame()
+
         self.direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
         self.combustibles = json.load(open('archivos_json/combustibles.json', encoding='utf8'))
         self.terminales = json.load(open('archivos_json/terminales.json', encoding='utf8'))
@@ -53,7 +54,7 @@ class ProcesamientoCOESTI:
             fila.append(self.direcciones[row['Destinatario']]['Población'])
             fila.append(self.direcciones[row['Destinatario']]['Zona'])
             fila.append(row['Cant. entrega'])
-            fila.append(row['Producto'])
+            fila.append(str(row['Producto']))
             fila.append(self.combustibles[str(row['Producto'])]['Descripción'])
             fila.append(row['Centro carga'])
             fila.append(self.terminales[row['Centro carga']]['Nombre'])

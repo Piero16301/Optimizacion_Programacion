@@ -37,10 +37,22 @@ def buscarSiguienteCompartimento(tipo, capacidadCompartimento, tiposCombustible)
     return -1
 
 
+def unirDataFrames(dataCOESTI, dataExternos):
+    datos = dataCOESTI.values.tolist()
+    datos = datos + dataExternos.values.tolist()
+
+    encabezados = ['Código de estación', 'Nombre de estación', 'Dirección', 'Distrito', 'Población', 'Zona',
+                   'Cantidad de entrega', 'Producto', 'Descripción', 'Código de centro de carga',
+                   'Nombre de centro de carga']
+
+    dataFrameFinal = pd.DataFrame(datos, columns=encabezados)
+
+    return dataFrameFinal
+
+
 class ProcesamientoRutas:
     def __init__(self, dataCOESTI, dataExternos):
-        self.dataCOESTI = dataCOESTI
-        self.dataExternos = dataExternos
+        self.dataFrame = unirDataFrames(dataCOESTI, dataExternos)
         self.direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
         self.unidades = json.load(open('archivos_json/unidades.json', encoding='utf8'))
         self.combustibles = json.load(open('archivos_json/combustibles.json', encoding='utf8'))
@@ -114,12 +126,12 @@ class ProcesamientoRutas:
             estacionesPorUnidadesTemporal = copy.deepcopy(estacionesPorUnidades)
 
             # Filtrar pedidos de una estación
-            dataFrameEstacion = self.dataCOESTI[self.dataCOESTI['Destinatario'] == self.recorridoGlobal[0]]
+            dataFrameEstacion = self.dataFrame[self.dataFrame['Código de estación'] == self.recorridoGlobal[0]]
 
             # Recorrer pedidos de la estación
             for index, row, in dataFrameEstacion.iterrows():
                 # Se extrae la cantidad y tipo de combustible al pedido
-                pedido = row['Cant. entrega']
+                pedido = row['Cantidad de entrega']
                 tipo = row['Producto']
                 while pedido > 0.0:
                     # Buscar compartimento no lleno del mismo tipo de combustible o uno que esté vacío
@@ -164,7 +176,7 @@ class ProcesamientoRutas:
 
                         # La capacidad del compartimento queda en cero
                         capacidadCompartimentoTemporal[compartimentoALlenar] = \
-                            capacidadCompartimentoTemporal[compartimentoALlenar] -\
+                            capacidadCompartimentoTemporal[compartimentoALlenar] - \
                             capacidadCompartimentoTemporal[compartimentoALlenar]
 
                         # Se agrega la estación al recorrido de la unidad
@@ -407,10 +419,8 @@ class ProcesamientoRutas:
             json.dump(self.vueltas, vueltasJSON, indent=4, ensure_ascii=False)
 
     def calcularRutas(self, separador, inicio, maximosIntentosRecorrido):
-        estacionesCOESTI = self.dataCOESTI['Destinatario'].unique().tolist()
-        estacionesExternos = list(map(str, self.dataExternos['Solicitante'].unique().tolist()))
-        # estaciones = estacionesCOESTI + estacionesExternos
-        estaciones = estacionesCOESTI
+        # Extraer los códigos de estaciones de todos los pedidos (sin duplicados)
+        estaciones = [str(x) for x in self.dataFrame['Código de estación'].unique().tolist()]
 
         # Se verifica si es que existen las estaciones en el Excel de direcciones
         estacionesExistentes = []

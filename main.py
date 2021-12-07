@@ -75,9 +75,6 @@ if __name__ == "__main__":
     dataFrameExterno = procesadorExterno.dataFrame
     dataFrameRestricciones = procesadorRestricciones.dataFrame
 
-    print(dataFrameCOESTI.to_string())
-    print(dataFrameExterno.to_string())
-
     # Calcular las rutas de las unidades
     tiempo = '{:.3f}'.format(round(timer() - inicio, 3))
     print('{0: <61}'.format('\n2. Procesamiento de rutas'),
