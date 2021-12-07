@@ -60,5 +60,5 @@ class ProcesamientoExterno:
         # Guardar como Excel
         guardarExcel(self.dataFrame, 'datos_intermedios/Data_Filtrada_Externos.xlsx', False, True)
 
-        # Carga de datos desde Excel
-        self.dataFrame = cargarExcel('datos_intermedios/Data_Filtrada_Externos.xlsx', 0)
+        # # Carga de datos desde Excel
+        # self.dataFrame = cargarExcel('datos_intermedios/Data_Filtrada_Externos.xlsx', 0)

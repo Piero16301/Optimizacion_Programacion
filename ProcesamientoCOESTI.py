@@ -80,5 +80,5 @@ class ProcesamientoCOESTI:
         # Guardar como Excel
         guardarExcel(self.dataFrame, 'datos_intermedios/Data_Filtrada_COESTI.xlsx', False, True)
 
-        # Carga de datos desde Excel
-        self.dataFrame = cargarExcel('datos_intermedios/Data_Filtrada_COESTI.xlsx', 0)
+        # # Carga de datos desde Excel
+        # self.dataFrame = cargarExcel('datos_intermedios/Data_Filtrada_COESTI.xlsx', 0)
