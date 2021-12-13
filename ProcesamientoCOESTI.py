@@ -47,6 +47,7 @@ class ProcesamientoCOESTI:
         for index, row, in self.dataFrame.iterrows():
             fila = []
 
+            fila.append(str(row['Pedido']))
             fila.append(row['Destinatario'])
             fila.append(self.direcciones[row['Destinatario']]['Estación'])
             fila.append(self.direcciones[row['Destinatario']]['Dirección'])
@@ -61,9 +62,9 @@ class ProcesamientoCOESTI:
 
             datos.append(fila)
 
-        encabezados = ['Código de estación', 'Nombre de estación', 'Dirección', 'Distrito', 'Población', 'Zona',
-                       'Cantidad de entrega', 'Producto', 'Descripción', 'Código de centro de carga',
-                       'Nombre de centro de carga']
+        encabezados = ['Código de pedido', 'Código de estación', 'Nombre de estación', 'Dirección', 'Distrito',
+                       'Población', 'Zona', 'Cantidad de entrega', 'Producto', 'Descripción',
+                       'Código de centro de carga', 'Nombre de centro de carga']
 
         return pd.DataFrame(datos, columns=encabezados)
 

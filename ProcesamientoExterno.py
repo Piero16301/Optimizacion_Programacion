@@ -30,6 +30,7 @@ class ProcesamientoExterno:
             if str(row['Solicitante']) in self.direcciones:
                 fila = []
 
+                fila.append(str(row['Documento comercial']))
                 fila.append(str(row['Solicitante']))
                 fila.append(self.direcciones[str(row['Solicitante'])]['Estación'])
                 fila.append(self.direcciones[str(row['Solicitante'])]['Dirección'])
@@ -44,9 +45,9 @@ class ProcesamientoExterno:
 
                 datos.append(fila)
 
-        encabezados = ['Código de estación', 'Nombre de estación', 'Dirección', 'Distrito', 'Población', 'Zona',
-                       'Cantidad de entrega', 'Producto', 'Descripción', 'Código de centro de carga',
-                       'Nombre de centro de carga']
+        encabezados = ['Código de pedido', 'Código de estación', 'Nombre de estación', 'Dirección', 'Distrito',
+                       'Población', 'Zona', 'Cantidad de entrega', 'Producto', 'Descripción',
+                       'Código de centro de carga', 'Nombre de centro de carga']
 
         return pd.DataFrame(datos, columns=encabezados)
 

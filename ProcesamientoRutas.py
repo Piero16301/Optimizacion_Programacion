@@ -41,8 +41,8 @@ def unirDataFrames(dataCOESTI, dataExternos):
     datos = dataCOESTI.values.tolist()
     datos = datos + dataExternos.values.tolist()
 
-    encabezados = ['Código de estación', 'Nombre de estación', 'Dirección', 'Distrito', 'Población', 'Zona',
-                   'Cantidad de entrega', 'Producto', 'Descripción', 'Código de centro de carga',
+    encabezados = ['Código de pedido', 'Código de estación', 'Nombre de estación', 'Dirección', 'Distrito', 'Población',
+                   'Zona', 'Cantidad de entrega', 'Producto', 'Descripción', 'Código de centro de carga',
                    'Nombre de centro de carga']
 
     dataFrameFinal = pd.DataFrame(datos, columns=encabezados)
@@ -105,6 +105,7 @@ class ProcesamientoRutas:
         capacidadCompartimento = []
         tiposCombustible = []
         unidadesCompartimento = []
+        datosPedidos = []
 
         estacionesPorUnidades = {}
 
@@ -122,6 +123,7 @@ class ProcesamientoRutas:
             capacidadCompartimentoTemporal = list(capacidadCompartimento)
             tiposCombustibleTemporal = list(tiposCombustible)
             unidadesCompartimentoTemporal = list(unidadesCompartimento)
+            datosPedidosTemporal = list(datosPedidos)
 
             estacionesPorUnidadesTemporal = copy.deepcopy(estacionesPorUnidades)
 
@@ -133,6 +135,7 @@ class ProcesamientoRutas:
                 # Se extrae la cantidad y tipo de combustible al pedido
                 pedido = row['Cantidad de entrega']
                 tipo = row['Producto']
+                codigo = row['Código de pedido']
                 while pedido > 0.0:
                     # Buscar compartimento no lleno del mismo tipo de combustible o uno que esté vacío
                     compartimentoALlenar = buscarSiguienteCompartimento(
@@ -148,7 +151,8 @@ class ProcesamientoRutas:
                             'Unidades de Compartimento': unidadesCompartimento,
                             'Estaciones por Unidades': {
                                 key: list(dict.fromkeys(estacionesPorUnidades[key])) for key in estacionesPorUnidades
-                            }
+                            },
+                            'Datos pedidos': datosPedidos
                         }
                         return False
 
@@ -157,6 +161,16 @@ class ProcesamientoRutas:
 
                     # Si el pedido alcanza en el compartimento
                     if pedido <= capacidadCompartimentoTemporal[compartimentoALlenar]:
+                        # Se agrega la carga a los pedidos globales
+                        # Código | Unidad | Destino | Combustible | Cantidad
+                        datosPedidosTemporal.append([
+                            codigo,
+                            unidadesCompartimentoTemporal[compartimentoALlenar],
+                            self.recorridoGlobal[0],
+                            tipo,
+                            pedido
+                        ])
+
                         # Se reduce la cantidad del pedido al compartimento
                         capacidadCompartimentoTemporal[compartimentoALlenar] = \
                             capacidadCompartimentoTemporal[compartimentoALlenar] - pedido
@@ -171,6 +185,16 @@ class ProcesamientoRutas:
 
                     # Si el pedido no alcanza en el compartimento
                     else:
+                        # Se agrega la carga a los pedidos globales
+                        # Código | Unidad | Destino | Combustible | Cantidad
+                        datosPedidosTemporal.append([
+                            codigo,
+                            unidadesCompartimentoTemporal[compartimentoALlenar],
+                            self.recorridoGlobal[0],
+                            tipo,
+                            capacidadCompartimentoTemporal[compartimentoALlenar]
+                        ])
+
                         # Se resta la capacidad restante del compartimento al pedido
                         pedido = pedido - capacidadCompartimentoTemporal[compartimentoALlenar]
 
@@ -188,6 +212,7 @@ class ProcesamientoRutas:
             capacidadCompartimento = list(capacidadCompartimentoTemporal)
             tiposCombustible = list(tiposCombustibleTemporal)
             unidadesCompartimento = list(unidadesCompartimentoTemporal)
+            datosPedidos = list(datosPedidosTemporal)
 
             estacionesPorUnidades = copy.deepcopy(estacionesPorUnidadesTemporal)
 
@@ -202,7 +227,8 @@ class ProcesamientoRutas:
             'Unidades de Compartimento': unidadesCompartimento,
             'Estaciones por Unidades': {
                 key: list(dict.fromkeys(estacionesPorUnidades[key])) for key in estacionesPorUnidades
-            }
+            },
+            'Datos pedidos': datosPedidos
         }
         return True
 
@@ -401,9 +427,87 @@ class ProcesamientoRutas:
                     # Se agrega la fila a los datos
                     datos.append(fila)
 
-            # Se crea y exporta el data frame con los datos
+            # Se crea y exporta data frame con los datos
             encabezados = ['Placa de tracto', 'Empresa', 'Capacidad total', '# Compartimentos', 'Orden de llegada',
-                           'Destinatario', '# Distrito', 'Estación', 'Dirección', 'Grupo']
+                           'Destinatario', 'Distrito', 'Estación', 'Dirección', 'Grupo']
+            dataFrameVuelta = pd.DataFrame(datos, columns=encabezados)
+
+            dataFrames.append(dataFrameVuelta)
+
+        # Exportar varias hojas en el mismo archivo Excel
+        with pd.ExcelWriter(rutaSalida) as archivoExcel:
+            for i in range(len(dataFrames)):
+                nombreHoja = 'Vuelta ' + str(i + 1)
+                dataFrames[i].to_excel(archivoExcel, index=False, header=True, sheet_name=nombreHoja)
+
+    def exportarProgramacionCompleta(self, rutaSalida):
+        # Código de pedido | Placa de tracto | Empresa | Capacidad total | # Compartimentos | Destinatario | Estación
+        # Grupo | Distrito | Dirección | Material | Descripción | Producto | Cantidad
+
+        # Array con un Data Frame por vuelta
+        dataFrames = []
+
+        # Iteración sobre el número de vueltas
+        for vuelta in self.vueltas:
+            # Array global con los datos de los pedidos
+            datosPedido = self.vueltas[vuelta]['Datos pedidos']
+
+            # Array global que contiene las filas del Data Frame
+            datos = []
+
+            for pedido in datosPedido:
+                fila = []
+
+                # Se agrega Código de pedido
+                fila.append(pedido[0])
+
+                # Se agrega Placa de tracto
+                fila.append(pedido[1])
+
+                # Se agrega Empresa
+                fila.append(self.unidades[pedido[1]]['Empresa'])
+
+                # Se agrega Capacidad total
+                fila.append(self.unidades[pedido[1]]['Capacidad'])
+
+                # Se agrega # Compartimentos
+                fila.append(self.unidades[pedido[1]]['# Compartimentos'])
+
+                # Se agrega Destinatario
+                fila.append(pedido[2])
+
+                # Se agrega Estación
+                fila.append(self.direcciones[pedido[2]]['Estación'])
+
+                # Se agrega Grupo
+                fila.append(self.direcciones[pedido[2]]['Grupo'])
+
+                # Se agrega Distrito
+                fila.append(self.direcciones[pedido[2]]['Distrito'])
+
+                # Se agrega Dirección
+                fila.append(self.direcciones[pedido[2]]['Dirección'])
+
+                # Se agrega Material
+                fila.append(pedido[3])
+
+                # Se agrega Descripción
+                fila.append(self.combustibles[pedido[3]]['Descripción'])
+
+                # Se agrega Producto
+                fila.append(self.combustibles[pedido[3]]['Producto'])
+
+                # Se agrega Cantidad
+                fila.append(pedido[4])
+
+                # Se agrega fila a los datos
+                datos.append(fila)
+
+            # Se crea y exporta data frame con los datos
+            encabezados = ['Código de pedido', 'Placa de tracto', 'Empresa', 'Capacidad total', '# Compartimentos',
+                           'Destinatario', 'Estación', 'Grupo', 'Distrito', 'Dirección', 'Material', 'Descripción',
+                           'Producto', 'Cantidad']
+
             dataFrameVuelta = pd.DataFrame(datos, columns=encabezados)
 
             dataFrames.append(dataFrameVuelta)
@@ -520,6 +624,7 @@ class ProcesamientoRutas:
         # Exportar archivos de distribución de compartimentos y recorrido de estaciones
         self.exportarDetalleCombustiblePorCompartimento('datos_salida/Distribución_Combustibles_Unidades.xlsx')
         self.exportarRecorridoUnidades('datos_salida/Recorrido_Estaciones_Unidades.xlsx')
+        self.exportarProgramacionCompleta('datos_salida/Programación_General.xlsx')
 
         # Exportar JSON de las vueltas
         self.exportarVueltas()
