@@ -69,7 +69,7 @@ class ProcesamientoCOESTI:
         return pd.DataFrame(datos, columns=encabezados)
 
     def procesarData(self):
-        # Organizar data del Excel Inicial
+        # Cargar data del Excel Inicial
         self.dataFrame = cargarExcel(self.rutaExcel, 0)
 
         # Aplicar filtros

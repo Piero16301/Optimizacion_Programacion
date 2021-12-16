@@ -51,8 +51,10 @@ def unirDataFrames(dataCOESTI, dataExternos):
 
 
 class ProcesamientoRutas:
-    def __init__(self, dataCOESTI, dataExternos):
+    def __init__(self, dataCOESTI, dataExternos, dataFrameRestricciones):
         self.dataFrame = unirDataFrames(dataCOESTI, dataExternos)
+        self.dataFrameRestricciones = dataFrameRestricciones
+
         self.direcciones = json.load(open('archivos_json/direcciones.json', encoding='utf8'))
         self.unidades = json.load(open('archivos_json/unidades.json', encoding='utf8'))
         self.combustibles = json.load(open('archivos_json/combustibles.json', encoding='utf8'))
@@ -60,6 +62,16 @@ class ProcesamientoRutas:
         self.recorridoGlobal = []
 
         self.vueltas = {}
+
+    def comprobarCapacidadUnidad(self, unidad, estacion):
+        filaRestriccionEstacion = self.dataFrameRestricciones[
+            self.dataFrameRestricciones['Código de estación'] == estacion
+            ]
+        capacidadMaximaEstacion = filaRestriccionEstacion['Tamaño de unidad'].tolist()[0]
+        if self.unidades[unidad]['Capacidad'] <= capacidadMaximaEstacion:
+            return True
+        else:
+            return False
 
     def buscarUnidadALlenar(self, dataFrameEstacion, capacidadCompartimento, tiposCombustible, unidadesCompartimento):
         unidadesUnicas = list(dict.fromkeys(unidadesCompartimento))
@@ -102,7 +114,11 @@ class ProcesamientoRutas:
             if siguienteUnidad:
                 continue
             else:
-                return [indiceInicio, indiceFinal]
+                # Comprobar si es que la unidad puede ingresar a la estación
+                estacion = dataFrameEstacion['Código de estación'].tolist()[0]
+                if self.comprobarCapacidadUnidad(unidad, estacion):
+                    return [indiceInicio, indiceFinal]
+                continue
 
         return [-1, -1]
 
@@ -687,6 +703,7 @@ class ProcesamientoRutas:
         while not todosPedidosCompletados:
             # Se sigue llamando a la función hasta que se despachen todos los pedidos
             todosPedidosCompletados = self.distribuirUnidades()
+            print(self.recorridoGlobal)
 
         # Optimizar rutas individuales
         self.optimizarRutasUnidades()
