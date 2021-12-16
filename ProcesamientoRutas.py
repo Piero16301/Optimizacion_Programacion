@@ -61,6 +61,51 @@ class ProcesamientoRutas:
 
         self.vueltas = {}
 
+    def buscarUnidadALlenar(self, dataFrameEstacion, capacidadCompartimento, tiposCombustible, unidadesCompartimento):
+        unidadesUnicas = list(dict.fromkeys(unidadesCompartimento))
+        for unidad in unidadesUnicas:
+            indiceInicio = unidadesCompartimento.index(unidad)
+            indiceFinal = indiceInicio + self.unidades[unidad]['# Compartimentos']
+
+            capacidadCompartimentoTemporal = capacidadCompartimento[indiceInicio:indiceFinal]
+            tiposCombustibleTemporal = tiposCombustible[indiceInicio:indiceFinal]
+
+            siguienteUnidad = False
+
+            for index, row, in dataFrameEstacion.iterrows():
+                pedido = row['Cantidad de entrega']
+                tipo = row['Producto']
+                while pedido > 0.0:
+                    compartimentoALlenar = buscarSiguienteCompartimento(
+                        tipo, capacidadCompartimentoTemporal, tiposCombustibleTemporal
+                    )
+                    if compartimentoALlenar == -1:
+                        siguienteUnidad = True
+                        break
+
+                    tiposCombustibleTemporal[compartimentoALlenar] = tipo
+
+                    if pedido <= capacidadCompartimentoTemporal[compartimentoALlenar]:
+                        capacidadCompartimentoTemporal[compartimentoALlenar] = \
+                            capacidadCompartimentoTemporal[compartimentoALlenar] - pedido
+                        pedido = pedido - pedido
+
+                    else:
+                        pedido = pedido - capacidadCompartimentoTemporal[compartimentoALlenar]
+                        capacidadCompartimentoTemporal[compartimentoALlenar] = \
+                            capacidadCompartimentoTemporal[compartimentoALlenar] - \
+                            capacidadCompartimentoTemporal[compartimentoALlenar]
+
+                if siguienteUnidad:
+                    break
+
+            if siguienteUnidad:
+                continue
+            else:
+                return [indiceInicio, indiceFinal]
+
+        return [-1, -1]
+
     def optimizacionRutaMayor(self):
         maximaDistancia = 0
         indiceMaximo = 0
@@ -117,18 +162,31 @@ class ProcesamientoRutas:
             unidadesCompartimento = unidadesCompartimento + [idUnidad for _ in range(unidad['# Compartimentos'])]
             estacionesPorUnidades[idUnidad] = []
 
+        estacionesAbastecidas = []
         totalEstacionesIniciales = len(self.recorridoGlobal)
-        for _ in range(totalEstacionesIniciales):
+        for i in range(totalEstacionesIniciales):
+            # Filtrar pedidos de una estación
+            dataFrameEstacion = self.dataFrame[self.dataFrame['Código de estación'] == self.recorridoGlobal[i]]
+
+            # Retorna el rango de compartimentos de la unidad en la que alcanza el pedido completo
+            rangoCompartimentosUnidad = self.buscarUnidadALlenar(dataFrameEstacion, capacidadCompartimento,
+                                                                 tiposCombustible, unidadesCompartimento)
+
+            # Cuando no se puede abastecer a la estación en esta vuelta, pasa a la siguiente estación
+            if rangoCompartimentosUnidad[0] == -1:
+                continue
+
             # Copias de los arrays iniciales
-            capacidadCompartimentoTemporal = list(capacidadCompartimento)
-            tiposCombustibleTemporal = list(tiposCombustible)
-            unidadesCompartimentoTemporal = list(unidadesCompartimento)
+            capacidadCompartimentoTemporal = capacidadCompartimento[rangoCompartimentosUnidad[0]:
+                                                                    rangoCompartimentosUnidad[1]]
+            tiposCombustibleTemporal = tiposCombustible[rangoCompartimentosUnidad[0]:
+                                                        rangoCompartimentosUnidad[1]]
+            unidadesCompartimentoTemporal = unidadesCompartimento[rangoCompartimentosUnidad[0]:
+                                                                  rangoCompartimentosUnidad[1]]
+
             datosPedidosTemporal = list(datosPedidos)
 
             estacionesPorUnidadesTemporal = copy.deepcopy(estacionesPorUnidades)
-
-            # Filtrar pedidos de una estación
-            dataFrameEstacion = self.dataFrame[self.dataFrame['Código de estación'] == self.recorridoGlobal[0]]
 
             # Recorrer pedidos de la estación
             for index, row, in dataFrameEstacion.iterrows():
@@ -142,20 +200,6 @@ class ProcesamientoRutas:
                         tipo, capacidadCompartimentoTemporal, tiposCombustibleTemporal
                     )
 
-                    # Cuando la flota ya está llena (cambio de vuelta)
-                    if compartimentoALlenar == -1:
-                        numeroVuelta = 'Vuelta ' + str(len(self.vueltas) + 1)
-                        self.vueltas[numeroVuelta] = {
-                            'Capacidad de Compartimento': capacidadCompartimento,
-                            'Tipos de Combustible': tiposCombustible,
-                            'Unidades de Compartimento': unidadesCompartimento,
-                            'Estaciones por Unidades': {
-                                key: list(dict.fromkeys(estacionesPorUnidades[key])) for key in estacionesPorUnidades
-                            },
-                            'Datos pedidos': datosPedidos
-                        }
-                        return False
-
                     # Se asigna el tipo de combustible al compartimento
                     tiposCombustibleTemporal[compartimentoALlenar] = tipo
 
@@ -166,7 +210,7 @@ class ProcesamientoRutas:
                         datosPedidosTemporal.append([
                             codigo,
                             unidadesCompartimentoTemporal[compartimentoALlenar],
-                            self.recorridoGlobal[0],
+                            self.recorridoGlobal[i],
                             tipo,
                             pedido
                         ])
@@ -177,7 +221,7 @@ class ProcesamientoRutas:
 
                         # Se agrega la estación al recorrido de la unidad
                         estacionesPorUnidadesTemporal[unidadesCompartimentoTemporal[compartimentoALlenar]].append(
-                            self.recorridoGlobal[0]
+                            self.recorridoGlobal[i]
                         )
 
                         # El pedido queda en cero
@@ -190,7 +234,7 @@ class ProcesamientoRutas:
                         datosPedidosTemporal.append([
                             codigo,
                             unidadesCompartimentoTemporal[compartimentoALlenar],
-                            self.recorridoGlobal[0],
+                            self.recorridoGlobal[i],
                             tipo,
                             capacidadCompartimentoTemporal[compartimentoALlenar]
                         ])
@@ -205,19 +249,28 @@ class ProcesamientoRutas:
 
                         # Se agrega la estación al recorrido de la unidad
                         estacionesPorUnidadesTemporal[unidadesCompartimentoTemporal[compartimentoALlenar]].append(
-                            self.recorridoGlobal[0]
+                            self.recorridoGlobal[i]
                         )
 
             # Se copia a los arrays principales si se ha despachado con éxito todos los pedidos de la estación
-            capacidadCompartimento = list(capacidadCompartimentoTemporal)
-            tiposCombustible = list(tiposCombustibleTemporal)
-            unidadesCompartimento = list(unidadesCompartimentoTemporal)
+            # Se copia los valores dentro del mismo rango
+            capacidadCompartimento[rangoCompartimentosUnidad[0]:rangoCompartimentosUnidad[1]]\
+                = capacidadCompartimentoTemporal
+            tiposCombustible[rangoCompartimentosUnidad[0]:rangoCompartimentosUnidad[1]]\
+                = tiposCombustibleTemporal
+            unidadesCompartimento[rangoCompartimentosUnidad[0]:rangoCompartimentosUnidad[1]]\
+                = unidadesCompartimentoTemporal
+
             datosPedidos = list(datosPedidosTemporal)
 
             estacionesPorUnidades = copy.deepcopy(estacionesPorUnidadesTemporal)
 
-            # Se elimina la estación abastecida
-            self.recorridoGlobal.remove(self.recorridoGlobal[0])
+            # Se agrega estacion a Estaciones Abastecidas
+            estacionesAbastecidas.append(self.recorridoGlobal[i])
+
+        # Se eliminan estaciones abastecidas del recorrido global
+        for e in estacionesAbastecidas:
+            self.recorridoGlobal.remove(e)
 
         # Todos los pedidos fueron abastecidos en esta vuelta
         numeroVuelta = 'Vuelta ' + str(len(self.vueltas) + 1)
@@ -230,7 +283,11 @@ class ProcesamientoRutas:
             },
             'Datos pedidos': datosPedidos
         }
-        return True
+
+        if len(self.recorridoGlobal) == 0:
+            return True
+        else:
+            return False
 
     def optimizarRutasUnidades(self):
         for vuelta in self.vueltas:
@@ -600,7 +657,7 @@ class ProcesamientoRutas:
         )
 
         # Ordenar las unidades de menor a mayor
-        unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'], reverse=True)
+        unidadesOrdenadas = sorted(self.unidades, key=lambda valor: self.unidades[valor]['Capacidad'], reverse=False)
         unidadesOrdenadasDict = {}
         for unidad in unidadesOrdenadas:
             unidadesOrdenadasDict[unidad] = self.unidades[unidad]
