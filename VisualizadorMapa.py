@@ -143,9 +143,34 @@ class VisualizadorMapa:
             return self.colores[0]
 
     def agregarCaminoDetallado(self, recorridoUnidad, unidad, vuelta):
+        if len(recorridoUnidad) == 0:
+            return 0
+
         caminoTotal = []
         distanciaTotal = 0
-        for i in range(len(recorridoUnidad) - 1):
+
+        # Se agrega camino entre terminal y la primera estación
+        puntoOrigen = (
+            self.terminales[recorridoUnidad[0]]['Latitud'],
+            self.terminales[recorridoUnidad[0]]['Longitud']
+        )
+        puntoDestino = (
+            self.direcciones[recorridoUnidad[1]]['Latitud'],
+            self.direcciones[recorridoUnidad[1]]['Longitud']
+        )
+
+        nodoOrigen = ox.get_nearest_node(self.grafo, puntoOrigen)
+        nodoDestino = ox.get_nearest_node(self.grafo, puntoDestino)
+
+        ruta = nx.shortest_path(self.grafo, nodoOrigen, nodoDestino, weight='length')
+        distanciaActual = geodesic(puntoOrigen, puntoDestino).kilometers
+        distanciaTotal = distanciaTotal + distanciaActual
+
+        camino = self.construirCamino(ruta, detallado=self.caminosPrecisos)
+        caminoTotal = caminoTotal + camino
+
+        # Se agrega los caminos entre las estaciones
+        for i in range(1, len(recorridoUnidad) - 1):
             puntoOrigen = (
                 self.direcciones[recorridoUnidad[i]]['Latitud'],
                 self.direcciones[recorridoUnidad[i]]['Longitud']
@@ -166,7 +191,7 @@ class VisualizadorMapa:
             caminoTotal = caminoTotal + camino
 
         if len(recorridoUnidad) == 1:
-            # Se mueve 200m a la derecha
+            # Se mueve 200 metros a la derecha
             nodoOrigen = ox.get_nearest_node(self.grafo, (
                 self.direcciones[recorridoUnidad[0]]['Latitud'],
                 self.direcciones[recorridoUnidad[0]]['Longitud'] + 0.0018204086027)
@@ -220,14 +245,25 @@ class VisualizadorMapa:
         latitudes = []
         longitudes = []
 
-        # Agregar camino entre terminal y primera estación
+        # Se agrega camino entre terminal y la primera estación
+        puntoOrigen = (
+            self.terminales[recorridoUnidad[0]]['Latitud'],
+            self.terminales[recorridoUnidad[0]]['Longitud']
+        )
+        puntoDestino = (
+            self.direcciones[recorridoUnidad[1]]['Latitud'],
+            self.direcciones[recorridoUnidad[1]]['Longitud']
+        )
+        distanciaActual = geodesic(puntoOrigen, puntoDestino).kilometers
+        distanciaTotal = distanciaTotal + distanciaActual
+
         latitudes.append(self.terminales[recorridoUnidad[0]]['Latitud'])
         longitudes.append(self.terminales[recorridoUnidad[0]]['Longitud'])
 
         latitudes.append(self.direcciones[recorridoUnidad[1]]['Latitud'])
         longitudes.append(self.direcciones[recorridoUnidad[1]]['Longitud'])
 
-        # Agregar caminos estaciones
+        # Se agrega los caminos entre las estaciones
         for i in range(1, len(recorridoUnidad) - 1):
             puntoOrigen = (
                 self.direcciones[recorridoUnidad[i]]['Latitud'],

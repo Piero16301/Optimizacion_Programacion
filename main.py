@@ -94,7 +94,7 @@ if __name__ == "__main__":
     print('{0: <60}'.format('   3.1. Cargando grafo de la ciudad'),
           separador * 30, '    ', '{0: >7}'.format(tiempo), 'segundos'
           )
-    visualizador = VisualizadorMapa(caminosPrecisos=True, rutasDirectas=True)
+    visualizador = VisualizadorMapa(caminosPrecisos=True, rutasDirectas=False)
 
     visualizador.visualizarEstaciones(separador, inicio)
 

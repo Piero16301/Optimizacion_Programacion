@@ -703,7 +703,6 @@ class ProcesamientoRutas:
         while not todosPedidosCompletados:
             # Se sigue llamando a la función hasta que se despachen todos los pedidos
             todosPedidosCompletados = self.distribuirUnidades()
-            print(self.recorridoGlobal)
 
         # Optimizar rutas individuales
         self.optimizarRutasUnidades()
