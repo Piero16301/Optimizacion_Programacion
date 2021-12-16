@@ -575,6 +575,19 @@ class ProcesamientoRutas:
                 nombreHoja = 'Vuelta ' + str(i + 1)
                 dataFrames[i].to_excel(archivoExcel, index=False, header=True, sheet_name=nombreHoja)
 
+    def agregarTerminales(self):
+        for vuelta in self.vueltas:
+            for unidad in self.vueltas[vuelta]['Estaciones por Unidades']:
+                # Se extrae la ruta actual (solo estaciones)
+                rutaActual = self.vueltas[vuelta]['Estaciones por Unidades'][unidad]
+
+                if len(rutaActual) > 0:
+                    # Se extraen las filas correspondientes a la primera estación
+                    filasEstacion = self.dataFrame[self.dataFrame['Código de estación'] == rutaActual[0]]
+
+                    # Se inserta el código del terminal al inicio de la ruta
+                    rutaActual.insert(0, filasEstacion['Código de centro de carga'].tolist()[0])
+
     def exportarVueltas(self):
         with open('archivos_json/vueltas.json', 'w', encoding='utf8') as vueltasJSON:
             json.dump(self.vueltas, vueltasJSON, indent=4, ensure_ascii=False)
@@ -682,6 +695,9 @@ class ProcesamientoRutas:
         self.exportarDetalleCombustiblePorCompartimento('datos_salida/Distribución_Combustibles_Unidades.xlsx')
         self.exportarRecorridoUnidades('datos_salida/Recorrido_Estaciones_Unidades.xlsx')
         self.exportarProgramacionCompleta('datos_salida/Programación_General.xlsx')
+
+        # Agregar terminal de partida
+        self.agregarTerminales()
 
         # Exportar JSON de las vueltas
         self.exportarVueltas()

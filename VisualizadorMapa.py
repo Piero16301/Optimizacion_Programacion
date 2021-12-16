@@ -212,9 +212,23 @@ class VisualizadorMapa:
         return distanciaTotal
 
     def agregarCaminoSimple(self, recorridoUnidad, unidad, vuelta):
+        if len(recorridoUnidad) == 0:
+            return 0
+
         distanciaTotal = 0
 
-        for i in range(len(recorridoUnidad) - 1):
+        latitudes = []
+        longitudes = []
+
+        # Agregar camino entre terminal y primera estación
+        latitudes.append(self.terminales[recorridoUnidad[0]]['Latitud'])
+        longitudes.append(self.terminales[recorridoUnidad[0]]['Longitud'])
+
+        latitudes.append(self.direcciones[recorridoUnidad[1]]['Latitud'])
+        longitudes.append(self.direcciones[recorridoUnidad[1]]['Longitud'])
+
+        # Agregar caminos estaciones
+        for i in range(1, len(recorridoUnidad) - 1):
             puntoOrigen = (
                 self.direcciones[recorridoUnidad[i]]['Latitud'],
                 self.direcciones[recorridoUnidad[i]]['Longitud']
@@ -225,6 +239,12 @@ class VisualizadorMapa:
             )
             distanciaActual = geodesic(puntoOrigen, puntoDestino).kilometers
             distanciaTotal = distanciaTotal + distanciaActual
+
+            latitudes.append(self.direcciones[recorridoUnidad[i]]['Latitud'])
+            longitudes.append(self.direcciones[recorridoUnidad[i]]['Longitud'])
+
+            latitudes.append(self.direcciones[recorridoUnidad[i + 1]]['Latitud'])
+            longitudes.append(self.direcciones[recorridoUnidad[i + 1]]['Longitud'])
 
         colorActual = self.extraerSiguienteColor()
 
@@ -239,8 +259,8 @@ class VisualizadorMapa:
             },
             name=unidad,
             mode='lines',
-            lat=[self.direcciones[codUnidad]['Latitud'] for codUnidad in recorridoUnidad],
-            lon=[self.direcciones[codUnidad]['Longitud'] for codUnidad in recorridoUnidad],
+            lat=latitudes,
+            lon=longitudes,
             marker={
                 'size': 10,
                 'color': colorActual
@@ -258,7 +278,8 @@ class VisualizadorMapa:
         estacionesDuplicadas = []
         for vuelta in self.vueltas:
             for unidad in self.vueltas[vuelta]['Estaciones por Unidades']:
-                estacionesDuplicadas = estacionesDuplicadas + self.vueltas[vuelta]['Estaciones por Unidades'][unidad]
+                estacionesDuplicadas = \
+                    estacionesDuplicadas + self.vueltas[vuelta]['Estaciones por Unidades'][unidad][1:]
 
         estacionesUnicas = list(dict.fromkeys(estacionesDuplicadas))
 
