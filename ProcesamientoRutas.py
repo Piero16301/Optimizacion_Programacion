@@ -30,9 +30,11 @@ def cargarRutaTSP(rutaArchivo):
 
 def buscarSiguienteCompartimento(tipo, capacidadCompartimento, tiposCombustible):
     for i in range(len(tiposCombustible)):
-        if tiposCombustible[i] == tipo and capacidadCompartimento[i] > 0.0:
-            return i
-        elif tiposCombustible[i] == '-':
+        # if tiposCombustible[i] == tipo and capacidadCompartimento[i] > 0.0:
+        #     return i
+        # elif tiposCombustible[i] == '-':
+        #     return i
+        if tiposCombustible[i] == '-':
             return i
     return -1
 
