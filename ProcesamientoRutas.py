@@ -73,7 +73,20 @@ class ProcesamientoRutas:
         else:
             return False
 
-    def buscarUnidadALlenar(self, dataFrameEstacion, capacidadCompartimento, tiposCombustible, unidadesCompartimento):
+    def comprobarZonaUnidad(self, unidad, estacion, zonasUnidades):
+        # Si la unidad aún no ha sido asignada a una zona
+        if zonasUnidades[unidad] == 0:
+            # Se asigna la zona de la estación a la unidad
+            zonasUnidades[unidad] = self.direcciones[estacion]['Código Zona']
+            return True
+
+        if zonasUnidades[unidad] == self.direcciones[estacion]['Código Zona']:
+            return True
+
+        return False
+
+    def buscarUnidadALlenar(self, dataFrameEstacion, capacidadCompartimento, tiposCombustible, unidadesCompartimento,
+                            zonasUnidades):
         unidadesUnicas = list(dict.fromkeys(unidadesCompartimento))
         for unidad in unidadesUnicas:
             indiceInicio = unidadesCompartimento.index(unidad)
@@ -117,7 +130,9 @@ class ProcesamientoRutas:
                 # Comprobar si es que la unidad puede ingresar a la estación
                 estacion = dataFrameEstacion['Código de estación'].tolist()[0]
                 if self.comprobarCapacidadUnidad(unidad, estacion):
-                    return [indiceInicio, indiceFinal]
+                    # Comprobar si la unidad y ha sido asignada a una zona diferente
+                    if self.comprobarZonaUnidad(unidad, estacion, zonasUnidades):
+                        return [indiceInicio, indiceFinal]
                 continue
 
         return [-1, -1]
@@ -168,6 +183,8 @@ class ProcesamientoRutas:
         unidadesCompartimento = []
         datosPedidos = []
 
+        zonasUnidades = {}
+
         estacionesPorUnidades = {}
 
         listaUnidades = list(self.unidades.keys())
@@ -177,6 +194,7 @@ class ProcesamientoRutas:
             tiposCombustible = tiposCombustible + ['-' for _ in range(unidad['# Compartimentos'])]
             unidadesCompartimento = unidadesCompartimento + [idUnidad for _ in range(unidad['# Compartimentos'])]
             estacionesPorUnidades[idUnidad] = []
+            zonasUnidades[idUnidad] = 0
 
         estacionesAbastecidas = []
         totalEstacionesIniciales = len(self.recorridoGlobal)
@@ -186,7 +204,7 @@ class ProcesamientoRutas:
 
             # Retorna el rango de compartimentos de la unidad en la que alcanza el pedido completo
             rangoCompartimentosUnidad = self.buscarUnidadALlenar(dataFrameEstacion, capacidadCompartimento,
-                                                                 tiposCombustible, unidadesCompartimento)
+                                                                 tiposCombustible, unidadesCompartimento, zonasUnidades)
 
             # Cuando no se puede abastecer a la estación en esta vuelta, pasa a la siguiente estación
             if rangoCompartimentosUnidad[0] == -1:

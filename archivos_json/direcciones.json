@@ -9,7 +9,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.7405898,
         "Longitud": -76.6126007,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 3
     },
     "3006302": {
         "Estación": "ASIA GRIFOS Y SERVICIOS GENERALES S.A.",
@@ -21,7 +22,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.76212,
         "Longitud": -76.60003,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 3
     },
     "1002634": {
         "Estación": "INVERSIONES LUMARCO S.A.",
@@ -33,7 +35,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0147295,
         "Longitud": -76.8848201,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1002661": {
         "Estación": "ESTACION DE SERVICIOS MAYORAZGO",
@@ -45,7 +48,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.040322772605,
         "Longitud": -76.9234207259805,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1012420": {
         "Estación": "EMP. TRANSP. Y SERV. EL SOL DE STA. CLARA",
@@ -57,7 +61,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0225122353289,
         "Longitud": -76.8859664257054,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1002643": {
         "Estación": "ESTACION CORMAR S.A.",
@@ -69,7 +74,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0515739900722,
         "Longitud": -76.9566549549309,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3000603": {
         "Estación": "SERVICENTRO LA MERCED S.A.C.",
@@ -81,7 +87,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.054684545592,
         "Longitud": -76.9555771001738,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1003117": {
         "Estación": "ESTACION DE SERVICIOS HORNA S.R.L.",
@@ -93,7 +100,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0715356845659,
         "Longitud": -76.982815253156,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1013193": {
         "Estación": "CORGAS S.A.C.",
@@ -105,7 +113,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0701198245257,
         "Longitud": -76.9883900357557,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3006966": {
         "Estación": "ESTACION PACHACUTEC S.A.C",
@@ -117,7 +126,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1427659904286,
         "Longitud": -77.0180116425935,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3000673": {
         "Estación": "DUOGAS S.A.",
@@ -129,7 +139,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0582293590105,
         "Longitud": -77.0468068892807,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011710": {
         "Estación": "GASCORVILL S.A.C.",
@@ -141,7 +152,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0032129696651,
         "Longitud": -77.1049453310544,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3004519": {
         "Estación": "SIROCO HOLDINGS S.A.C.",
@@ -153,7 +165,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0455591336021,
         "Longitud": -77.0989350722025,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010501": {
         "Estación": "FULL SERVICE SAN VICENTE S.R.LTDA.",
@@ -165,7 +178,8 @@
         "Grupo": "Dealer",
         "Latitud": -13.0651425048518,
         "Longitud": -76.3573308902519,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 3
     },
     "1002666": {
         "Estación": "FORMAS METALICAS S.A. FOMETSA",
@@ -177,7 +191,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0446932052753,
         "Longitud": -77.0538034929804,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1002737": {
         "Estación": "ESTACION DE SERVICIO NIAGARA S.R.L.",
@@ -189,7 +204,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0513431332576,
         "Longitud": -77.0779004202129,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1012231": {
         "Estación": "ESTACION SANTA MARGHERITA S.A.C.",
@@ -201,7 +217,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0576083800274,
         "Longitud": -77.0685989467483,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3009778": {
         "Estación": "XIN XING S.A.",
@@ -213,7 +230,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0441978689628,
         "Longitud": -77.0532746357557,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1003180": {
         "Estación": "OLGA SALAZAR SANTIVAÑEZ S.A.C.",
@@ -225,7 +243,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.976515185049,
         "Longitud": -76.7734979001899,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1002734": {
         "Estación": "SERVICENTRO LA ALAMEDA S.A.C.",
@@ -237,7 +256,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.9905055665932,
         "Longitud": -77.0974147755107,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1003089": {
         "Estación": "SERVICENTRO TACALA S.R.L.",
@@ -249,7 +269,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1868979397001,
         "Longitud": -76.9892849973581,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010840": {
         "Estación": "GRIFO TRAPICHE S.R.L.",
@@ -261,7 +282,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.9209356820925,
         "Longitud": -77.062273381545,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3003208": {
         "Estación": "CONSULTORA NORQUEENS S.A.C.",
@@ -273,7 +295,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.4901993381644,
         "Longitud": -77.2129906483139,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 1
     },
     "3006095": {
         "Estación": "GRUPO DE GESTION - NARANJAL",
@@ -285,7 +308,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.9769312967962,
         "Longitud": -77.0603283826678,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3004645": {
         "Estación": "GRIFOS ESPINOZA S.A.",
@@ -297,7 +321,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0857606612295,
         "Longitud": -76.9016247174122,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1002685": {
         "Estación": "ORGANIZACION FUTURO S.A.C.",
@@ -309,7 +334,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.067752665334,
         "Longitud": -76.9465969557271,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1015005": {
         "Estación": "INVERSIONES Y COMERCIALIZACION MAKA",
@@ -321,7 +347,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0816857129408,
         "Longitud": -76.9680302286293,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3008006": {
         "Estación": "INVERSIONES Y COMERCIALIZACION MAKA",
@@ -333,7 +360,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0730392719243,
         "Longitud": -76.9647674086678,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1002607": {
         "Estación": "AUTO SERVICIO LA PERLA S.A.",
@@ -345,7 +373,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0643958017856,
         "Longitud": -77.1124421896093,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1003274": {
         "Estación": "ESTACION DE SERVICIOS LA MARINA S.A.C.",
@@ -357,7 +386,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0672084417974,
         "Longitud": -77.1157232268568,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1007571": {
         "Estación": "SERVICIOS Y REPRESENTACIONES TACNA",
@@ -369,7 +399,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0636095934342,
         "Longitud": -77.0232624226751,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3010229": {
         "Estación": "SIROCO HOLDINGS S.A.C.",
@@ -381,7 +412,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0619377222565,
         "Longitud": -77.0293054064484,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1012886": {
         "Estación": "ESTACIÓN DE SERVICIOS LOS OLIVOS",
@@ -393,7 +425,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.97603535029,
         "Longitud": -77.0771892179781,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1003199": {
         "Estación": "MULTISERVICIOS ECOGAS S.A.C.",
@@ -405,7 +438,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.000606013746,
         "Longitud": -76.853373193295,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010752": {
         "Estación": "REIMIJ S.R.LTDA.",
@@ -417,7 +451,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0200365810644,
         "Longitud": -76.9192199874825,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011647": {
         "Estación": "ESTACION DE SERVICIOS LOS NORTEÑOS",
@@ -429,7 +464,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.2982327046592,
         "Longitud": -76.848401345862,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010564": {
         "Estación": "VELDI S.A.",
@@ -441,7 +477,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1093523369761,
         "Longitud": -77.0484047793589,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010516": {
         "Estación": "DERK S.A.C.",
@@ -453,7 +490,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.066731709336,
         "Longitud": -77.0544745206745,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011023": {
         "Estación": "SERVICENTRO CAMINOS DEL INCA S.A.C.",
@@ -465,7 +503,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.081488002282,
         "Longitud": -77.0709988014209,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3005787": {
         "Estación": "ASIA GRIFOS Y SERVICIOS",
@@ -477,7 +516,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.8574292019243,
         "Longitud": -77.0840366172605,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1003122": {
         "Estación": "RAMPOIL S.A.C.",
@@ -489,7 +529,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0327999643944,
         "Longitud": -77.0266009463382,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1002793": {
         "Estación": "ESTACION DE SERVICIOS AVIACION S.A.",
@@ -501,7 +542,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0939702586023,
         "Longitud": -77.0029496969649,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011179": {
         "Estación": "JLF ASOCIADOS S.A.C.",
@@ -513,7 +555,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0960808400087,
         "Longitud": -76.9884297426017,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3005215": {
         "Estación": "INVERSIONES BOREAL S.A.",
@@ -525,7 +568,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1033246607464,
         "Longitud": -77.0582139343249,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010755": {
         "Estación": "ESTACION DE SERVICIOS CORPAC S.A.",
@@ -537,7 +581,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0971156047964,
         "Longitud": -77.0238767680458,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1002654": {
         "Estación": "ESTACION DE SERVICIO PONCE S.R.LTDA.",
@@ -549,7 +594,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0204645870094,
         "Longitud": -76.957975993405,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1003092": {
         "Estación": "SERVICENTRO EL PIONERO E.I.R.L.",
@@ -561,7 +607,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0115739729988,
         "Longitud": -76.9351142669395,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011113": {
         "Estación": "SERVI GRIFOS S.A.",
@@ -573,7 +620,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1733872016886,
         "Longitud": -76.9778542261982,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3009726": {
         "Estación": "EMP. TRANSP. SERV. Y COMERC. REYDA E.",
@@ -585,7 +633,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1260857197261,
         "Longitud": -76.9515733959955,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1012213": {
         "Estación": "ESTACION PACHACUTEC S.A.C.",
@@ -597,7 +646,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1467844455747,
         "Longitud": -76.9706500215507,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3000679": {
         "Estación": "SERVICENTRO LA ALAMEDA S.A.C.",
@@ -609,7 +659,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.9905216679934,
         "Longitud": -77.0974260455971,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3000237": {
         "Estación": "INVERSIONES EL PIBE S.A.C.",
@@ -621,7 +672,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.013292676857,
         "Longitud": -77.082751356153,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010882": {
         "Estación": "TRAILER GAS S.A.C.",
@@ -633,7 +685,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.9431668815256,
         "Longitud": -77.0705640546562,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1002721": {
         "Estación": "INVERSIONES UCHIYAMA S.A.C.",
@@ -645,7 +698,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0743040461438,
         "Longitud": -77.0835193532819,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1005508": {
         "Estación": "ESTACION DE SERVICIOS GAMARRA",
@@ -657,7 +711,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0838974376795,
         "Longitud": -77.0962771747665,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3001096": {
         "Estación": "INVERSIONES GARAY S.R.L.",
@@ -669,7 +724,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0383889589906,
         "Longitud": -76.954703877955,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1013194": {
         "Estación": "PETRO REAL GAS E.I.R.L.",
@@ -681,7 +737,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.9220915143137,
         "Longitud": -76.6642158586318,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1000146": {
         "Estación": "SERVICENTRO LOS ROSALES S.A.",
@@ -693,7 +750,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1421748002233,
         "Longitud": -77.0018634778662,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010766": {
         "Estación": "INVERSIONES GASSURCO S.A.C.",
@@ -705,7 +763,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1715111640844,
         "Longitud": -76.9918206436837,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010770": {
         "Estación": "CORPORACION BLUE GAS S.A.C.",
@@ -717,7 +776,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1088721911248,
         "Longitud": -76.9709993250558,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1012890": {
         "Estación": "REPRESENTACIONES CASASI S.A.",
@@ -729,7 +789,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.0936089048694,
         "Longitud": -76.9673313422919,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010753": {
         "Estación": "SUR EXPORT E.I.R.L.",
@@ -741,7 +802,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1315773743939,
         "Longitud": -76.9768990121525,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3004459": {
         "Estación": "RAPIGRIFOS S.A.C.",
@@ -753,7 +815,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1159869720985,
         "Longitud": -77.0180844006493,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3004042": {
         "Estación": "DERK - ALTA GRACIA",
@@ -765,7 +828,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.8717711001232,
         "Longitud": -77.1270985511164,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3000653": {
         "Estación": "PETROSUR S.A.C.",
@@ -777,7 +841,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.2231285892358,
         "Longitud": -76.9745788165743,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011014": {
         "Estación": "PACHACUTEC INVERSIONES GENERALES S.A.C.",
@@ -789,7 +854,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1957592526539,
         "Longitud": -76.9350134504503,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011026": {
         "Estación": "ESTACION DE SERVICIOS PERCY CAR S.R.",
@@ -801,7 +867,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.205159526535,
         "Longitud": -76.9528338180811,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011030": {
         "Estación": "EUROMAXX INVERSIONES GENERALES S.A.",
@@ -813,7 +880,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.2008893779725,
         "Longitud": -76.9506348130718,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3000798": {
         "Estación": "GRIFOS CAJAMARCA S.A.C.",
@@ -825,7 +893,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1682269413244,
         "Longitud": -76.9512459150689,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011615": {
         "Estación": "SERVICIOS MULTIPLES POGAS S.A.C.",
@@ -837,7 +906,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1709489484897,
         "Longitud": -76.9172224998741,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3010098": {
         "Estación": "OPERACIONES Y SERVICIOS GENERALES",
@@ -849,7 +919,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1037626169173,
         "Longitud": -77.064294288305,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010764": {
         "Estación": "F & R INVERSIONES Y PROYECTOS S.A.C",
@@ -861,7 +932,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1237697769125,
         "Longitud": -76.8721735107331,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "3000197": {
         "Estación": "SERVICENTRO EL CONDOR S.R.L.",
@@ -873,7 +945,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.8793141139927,
         "Longitud": -77.0685574681136,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1010757": {
         "Estación": "HM INVERSIONES Y SERVICIOS S.A.",
@@ -885,7 +958,8 @@
         "Grupo": "Dealer",
         "Latitud": -11.9771963874306,
         "Longitud": -77.0103025151064,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011598": {
         "Estación": "REPRESENTACIONES E INVERSIONES",
@@ -897,7 +971,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.1365456623889,
         "Longitud": -76.9600233293639,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "1011063": {
         "Estación": "ESTACION DE SERVICIOS NUEVO",
@@ -909,7 +984,8 @@
         "Grupo": "Dealer",
         "Latitud": -12.194933376923,
         "Longitud": -76.9344183756851,
-        "Símbolo": "rail"
+        "Símbolo": "rail",
+        "Código Zona": 2
     },
     "P306": {
         "Estación": "E/S SARAPAMPA 1",
@@ -921,7 +997,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.8188599733398,
         "Longitud": -76.5380043344871,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 3
     },
     "P204": {
         "Estación": "E/S SARAPAMPA 2",
@@ -933,7 +1010,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.818191955917,
         "Longitud": -76.5376188077009,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 3
     },
     "P127": {
         "Estación": "E/S ASIA",
@@ -945,7 +1023,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.7629293301805,
         "Longitud": -76.5992377022115,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 3
     },
     "P126": {
         "Estación": "E/S ATE 2",
@@ -957,7 +1036,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0026003108764,
         "Longitud": -76.8413625672687,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P223": {
         "Estación": "E/S FELVERANA",
@@ -969,7 +1049,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0632487109759,
         "Longitud": -76.9816331939713,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P135": {
         "Estación": "E/S ATE 1",
@@ -981,7 +1062,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0601424867401,
         "Longitud": -76.9762370807892,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P118": {
         "Estación": "E/S BARRANCA",
@@ -993,7 +1075,8 @@
         "Grupo": "COESTI",
         "Latitud": -10.7454801557989,
         "Longitud": -77.7660279441,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 1
     },
     "P294": {
         "Estación": "E/S SAN JOSÉ",
@@ -1005,7 +1088,8 @@
         "Grupo": "COESTI",
         "Latitud": -10.7428854593875,
         "Longitud": -77.7669304840382,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 1
     },
     "P150": {
         "Estación": "E/S ARICA",
@@ -1017,7 +1101,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0592799117636,
         "Longitud": -77.0458299614045,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P179": {
         "Estación": "E/S BREÑA",
@@ -1029,7 +1114,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0652694311626,
         "Longitud": -77.0602906557782,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P283": {
         "Estación": "E/S QUILCA",
@@ -1041,7 +1127,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0308274316058,
         "Longitud": -77.0950915257138,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P128": {
         "Estación": "E/S ARGENTINA",
@@ -1053,7 +1140,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0485015485951,
         "Longitud": -77.1014879926683,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P191": {
         "Estación": "E/S MARCO POLO",
@@ -1065,7 +1153,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0633672399451,
         "Longitud": -77.1428240307733,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P218": {
         "Estación": "E/S ESCOSA",
@@ -1077,7 +1166,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1838629783152,
         "Longitud": -77.0031576461033,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P171": {
         "Estación": "E/S WIESSE",
@@ -1089,7 +1179,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.9795162912195,
         "Longitud": -77.0050420233666,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P255": {
         "Estación": "E/S LURIGANCHO",
@@ -1101,7 +1192,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0166990630142,
         "Longitud": -76.9948286710048,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P174": {
         "Estación": "E/S CAÑETE",
@@ -1113,7 +1205,8 @@
         "Grupo": "COESTI",
         "Latitud": -13.0500772253076,
         "Longitud": -76.432537080915,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 3
     },
     "P239": {
         "Estación": "E/S JAVIER PRADO",
@@ -1125,7 +1218,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0904798335498,
         "Longitud": -77.0198567964544,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P328": {
         "Estación": "E/S ZORRITOS",
@@ -1137,7 +1231,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0502416583719,
         "Longitud": -77.0468474054271,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P211": {
         "Estación": "E/S DUEÑAS",
@@ -1149,7 +1244,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0458317675665,
         "Longitud": -77.0653845140524,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P309": {
         "Estación": "E/S SUDAMERICANO",
@@ -1161,7 +1257,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0478461783754,
         "Longitud": -77.0536581422806,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P317": {
         "Estación": "E/S TINGO MARIA",
@@ -1173,7 +1270,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0595193157412,
         "Longitud": -77.0588534634652,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P161": {
         "Estación": "E/S COLONIAL 2",
@@ -1185,7 +1283,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0464927891803,
         "Longitud": -77.0458190012917,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P159": {
         "Estación": "E/S COLONIAL 1",
@@ -1197,7 +1296,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0479046299727,
         "Longitud": -77.0595730843663,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P235": {
         "Estación": "E/S HUANUCO",
@@ -1209,7 +1309,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0577032497069,
         "Longitud": -77.0172320586143,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P201": {
         "Estación": "E/S CHANCAY 1",
@@ -1221,7 +1322,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.4976207699218,
         "Longitud": -77.3022245465997,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 1
     },
     "P154": {
         "Estación": "E/S CHANCAY 2",
@@ -1233,7 +1335,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.5436011479177,
         "Longitud": -77.2796294095379,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 1
     },
     "P193": {
         "Estación": "E/S CHILCA",
@@ -1245,7 +1348,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.5086101268111,
         "Longitud": -76.7375965349348,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 3
     },
     "P316": {
         "Estación": "E/S TAVIRSA",
@@ -1257,7 +1361,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1904144870926,
         "Longitud": -77.0063285855375,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P216": {
         "Estación": "E/S EL CHORRILLANO",
@@ -1269,7 +1374,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1678001679389,
         "Longitud": -77.0256002003777,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P205": {
         "Estación": "E/S CHORRILLOS",
@@ -1281,7 +1387,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1755311697206,
         "Longitud": -77.0176079424996,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P206": {
         "Estación": "E/S CORCONA",
@@ -1293,7 +1400,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.9116804893685,
         "Longitud": -76.5850814605005,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P114": {
         "Estación": "E/S COLOMA",
@@ -1305,7 +1413,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.1064814974013,
         "Longitud": -77.6060952350687,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 1
     },
     "P194": {
         "Estación": "E/S CALLE DERECHA",
@@ -1317,7 +1426,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.4930804841361,
         "Longitud": -77.2021551752597,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 1
     },
     "P113": {
         "Estación": "E/S HUARALINO",
@@ -1329,7 +1439,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.4974906192335,
         "Longitud": -77.2132318698139,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 1
     },
     "P278": {
         "Estación": "E/S PERSHING",
@@ -1341,7 +1452,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0890835137274,
         "Longitud": -77.0587467932563,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P236": {
         "Estación": "E/S HUIRACOCHA",
@@ -1353,7 +1465,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.084048030983,
         "Longitud": -77.0518147448125,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P234": {
         "Estación": "E/S HIPODROMO",
@@ -1365,7 +1478,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0844328581157,
         "Longitud": -76.9746758669459,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P265": {
         "Estación": "E/S MONTERRICO",
@@ -1377,7 +1491,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.064371389137,
         "Longitud": -76.9604852827563,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P324": {
         "Estación": "E/S UNIVERSIDAD",
@@ -1389,7 +1504,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.075248392321,
         "Longitud": -76.93614842156,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P225": {
         "Estación": "E/S FERRERO",
@@ -1401,7 +1517,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0918343512697,
         "Longitud": -76.9528291863465,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P245": {
         "Estación": "E/S LA MOLINA",
@@ -1413,7 +1530,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0699966714235,
         "Longitud": -76.9511254810288,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P277": {
         "Estación": "E/S PERLA",
@@ -1425,7 +1543,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0758582529162,
         "Longitud": -77.1147625037387,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P147": {
         "Estación": "E/S BAHIA",
@@ -1437,7 +1556,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0789041117328,
         "Longitud": -77.0104898224316,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P371": {
         "Estación": "E/S LA VICTORIA",
@@ -1449,7 +1569,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0703845729208,
         "Longitud": -77.0306832051888,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P102": {
         "Estación": "E/S 28 DE JULIO",
@@ -1461,7 +1582,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0619140622746,
         "Longitud": -77.0186263154479,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P182": {
         "Estación": "E/S AREQUIPA 2",
@@ -1473,7 +1595,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.08350488654,
         "Longitud": -77.0347836560314,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P124": {
         "Estación": "E/S AREQUIPA 1",
@@ -1485,7 +1608,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0987677881982,
         "Longitud": -77.0321971101285,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P289": {
         "Estación": "E/S SALAVERRY 1",
@@ -1497,7 +1621,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0851939688016,
         "Longitud": -77.0482626815758,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P287": {
         "Estación": "E/S RISSO",
@@ -1509,7 +1634,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.086060101873,
         "Longitud": -77.0356243628869,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P275": {
         "Estación": "E/S PANSUR",
@@ -1521,7 +1647,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.2756123880631,
         "Longitud": -76.8893087401074,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P292": {
         "Estación": "E/S SAN CARLOS",
@@ -1533,7 +1660,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.272251289534,
         "Longitud": -76.897042957689,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P226": {
         "Estación": "E/S FLORA TRISTAN",
@@ -1545,7 +1673,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0936488848253,
         "Longitud": -77.0572368281276,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P175": {
         "Estación": "E/S SALAVERRY 2",
@@ -1557,7 +1686,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0941940094888,
         "Longitud": -77.0748723236314,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P257": {
         "Estación": "E/S MAGDALENA",
@@ -1569,7 +1699,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0971170471632,
         "Longitud": -77.0714985286563,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P178": {
         "Estación": "E/S BRASIL",
@@ -1581,7 +1712,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0973249445032,
         "Longitud": -77.0716589476971,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P213": {
         "Estación": "E/S EJÉRCITO",
@@ -1593,7 +1725,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1166009976711,
         "Longitud": -77.0449634136639,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P270": {
         "Estación": "E/S ORRANTIA",
@@ -1605,7 +1738,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1004205622682,
         "Longitud": -77.0619233597077,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P158": {
         "Estación": "E/S PASEO DE LA REPÚBLICA",
@@ -1617,7 +1751,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.119368384071,
         "Longitud": -77.0251667411961,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P285": {
         "Estación": "E/S REPÚBLICA",
@@ -1629,7 +1764,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1026371262477,
         "Longitud": -77.0277015373681,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P151": {
         "Estación": "E/S RICARDO PALMA",
@@ -1641,7 +1777,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1199584357904,
         "Longitud": -77.0235743153879,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P122": {
         "Estación": "E/S ALEGRÍA",
@@ -1653,7 +1790,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1276715778241,
         "Longitud": -77.0104655161821,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P133": {
         "Estación": "E/S ARMENDARIZ",
@@ -1665,7 +1803,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1350055492554,
         "Longitud": -77.0251749370895,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P167": {
         "Estación": "E/S MIRAFLORES",
@@ -1677,7 +1816,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1234992864366,
         "Longitud": -77.024910278762,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P291": {
         "Estación": "E/S SAN ANTONIO",
@@ -1689,7 +1829,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.12352406007,
         "Longitud": -77.0242323194083,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P176": {
         "Estación": "E/S AURORA",
@@ -1701,7 +1842,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1225820597273,
         "Longitud": -77.0109473376893,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P269": {
         "Estación": "E/S ÑAÑA",
@@ -1713,7 +1855,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.9904111483349,
         "Longitud": -76.8205579712541,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P390": {
         "Estación": "E/S GAMBETA",
@@ -1725,7 +1868,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.9639075009985,
         "Longitud": -77.1261494260859,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P160": {
         "Estación": "E/S BOLÍVAR",
@@ -1737,7 +1881,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.071970667906,
         "Longitud": -77.0646297710887,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P308": {
         "Estación": "E/S SUCRE",
@@ -1749,7 +1894,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0817014469289,
         "Longitud": -77.0668409812528,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P110": {
         "Estación": "E/S NEOX",
@@ -1761,7 +1907,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.8410338912942,
         "Longitud": -77.103478583334,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P260": {
         "Estación": "E/S MEJIA",
@@ -1773,7 +1920,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.8342636497783,
         "Longitud": -77.1135264816018,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P105": {
         "Estación": "E/S PUENTE PIEDRA",
@@ -1785,7 +1933,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.8640258144293,
         "Longitud": -77.0676233114641,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P181": {
         "Estación": "E/S PUNTA HERMOSA",
@@ -1797,7 +1946,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.3160848548241,
         "Longitud": -76.8318097610277,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P125": {
         "Estación": "E/S LOLESA",
@@ -1809,7 +1959,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0308367532999,
         "Longitud": -77.042131064617,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P297": {
         "Estación": "E/S SAN LUIS 2",
@@ -1821,7 +1972,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1008251152492,
         "Longitud": -76.994379468857,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P157": {
         "Estación": "E/S PRINCIPAL",
@@ -1833,7 +1985,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1073573319387,
         "Longitud": -77.0102123722537,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P152": {
         "Estación": "E/S NAVAL",
@@ -1845,7 +1998,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0983264789608,
         "Longitud": -76.9952399217164,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P372": {
         "Estación": "E/S SAN BORJA",
@@ -1857,7 +2011,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0862331998801,
         "Longitud": -76.9931138645059,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P199": {
         "Estación": "E/S CASTAÑOS",
@@ -1869,7 +2024,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0948717602614,
         "Longitud": -77.0503372687645,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P293": {
         "Estación": "E/S SAN ISIDRO",
@@ -1881,7 +2037,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1018062736728,
         "Longitud": -77.0190377880759,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P338": {
         "Estación": "E/S JOVEME",
@@ -1893,7 +2050,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0961352808733,
         "Longitud": -77.0209052061847,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P353": {
         "Estación": "E/S MARBELLA",
@@ -1905,7 +2063,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1033281207526,
         "Longitud": -77.0582171303133,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P146": {
         "Estación": "E/S PRÓCERES",
@@ -1917,7 +2076,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0198906641002,
         "Longitud": -77.0049462551142,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P143": {
         "Estación": "E/S AULY",
@@ -1929,7 +2089,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.9849154655868,
         "Longitud": -77.0071842353155,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P296": {
         "Estación": "E/S SAN LUIS 1",
@@ -1941,7 +2102,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0640754460868,
         "Longitud": -76.9953646769365,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P134": {
         "Estación": "E/S ARRIOLA",
@@ -1953,7 +2115,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0832591282222,
         "Longitud": -77.0135671691771,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P197": {
         "Estación": "E/S CANADA",
@@ -1965,7 +2128,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0837090683064,
         "Longitud": -77.0124860022751,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P189": {
         "Estación": "E/S CASTILLA",
@@ -1977,7 +2141,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0872229257244,
         "Longitud": -77.0164300860642,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P237": {
         "Estación": "E/S IGARZA",
@@ -1989,7 +2154,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0128793588952,
         "Longitud": -77.0855883062676,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P132": {
         "Estación": "E/S TOMÁS VALLE",
@@ -2001,7 +2167,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0103430872195,
         "Longitud": -77.0701873334809,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P184": {
         "Estación": "E/S GAMARRA",
@@ -2013,7 +2180,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.006935065118,
         "Longitud": -77.0827634783026,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P196": {
         "Estación": "E/S UNIVERSITARIA",
@@ -2025,7 +2193,8 @@
         "Grupo": "COESTI",
         "Latitud": -11.9958385633391,
         "Longitud": -77.0849615027535,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P215": {
         "Estación": "E/S EL CARMELO",
@@ -2037,7 +2206,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0754679720711,
         "Longitud": -77.0969743433713,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P244": {
         "Estación": "E/S LA MARINA",
@@ -2049,7 +2219,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0782865199289,
         "Longitud": -77.084219326433,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P246": {
         "Estación": "E/S LA PAZ 1",
@@ -2061,7 +2232,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0865097142438,
         "Longitud": -77.0916542936918,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P222": {
         "Estación": "E/S FAUCETT",
@@ -2073,7 +2245,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0671554497356,
         "Longitud": -77.0971944733874,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P274": {
         "Estación": "E/S PANDO",
@@ -2085,7 +2258,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0786862686952,
         "Longitud": -77.0820229041999,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P165": {
         "Estación": "E/S ESCARDÓ",
@@ -2097,7 +2271,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0807291387247,
         "Longitud": -77.0947816741614,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P187": {
         "Estación": "E/S LA PAZ 2",
@@ -2109,7 +2284,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.0852061612377,
         "Longitud": -77.0938482537461,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P224": {
         "Estación": "E/S FERRARI",
@@ -2121,7 +2297,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1480023469326,
         "Longitud": -76.9865823193251,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P185": {
         "Estación": "E/S JORGE CHÁVEZ",
@@ -2133,7 +2310,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1468660224849,
         "Longitud": -77.0116817124206,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P200": {
         "Estación": "E/S CHAMA",
@@ -2145,7 +2323,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1316324204107,
         "Longitud": -76.9989470836976,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P217": {
         "Estación": "E/S EL ROSARIO",
@@ -2157,7 +2336,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.112681464575,
         "Longitud": -77.0123541418915,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P162": {
         "Estación": "E/S TOMÁS MARSANO",
@@ -2169,7 +2349,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1391984025715,
         "Longitud": -76.9941743361616,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P231": {
         "Estación": "E/S GRANADA",
@@ -2181,7 +2362,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1352429852887,
         "Longitud": -77.0071773759271,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P325": {
         "Estación": "E/S VALLE HERMOSO",
@@ -2193,7 +2375,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1098648815583,
         "Longitud": -76.9773123891666,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P266": {
         "Estación": "E/S MONTREAL",
@@ -2205,7 +2388,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1302472783789,
         "Longitud": -76.9817297067297,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P188": {
         "Estación": "E/S LAS GARDENIAS",
@@ -2217,7 +2401,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1274413755016,
         "Longitud": -76.9774254658792,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P373": {
         "Estación": "E/S SURCO",
@@ -2229,7 +2414,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1309994444005,
         "Longitud": -76.9775404775058,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P311": {
         "Estación": "E/S SUPE",
@@ -2241,7 +2427,8 @@
         "Grupo": "COESTI",
         "Latitud": -10.8031543018191,
         "Longitud": -77.7083234433141,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 1
     },
     "P166": {
         "Estación": "E/S REPÚBLICA DE PANAMÁ",
@@ -2253,7 +2440,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1160398855112,
         "Longitud": -77.0186231834517,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P177": {
         "Estación": "E/S LA CALERA",
@@ -2265,7 +2453,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1198312817196,
         "Longitud": -76.9985242790653,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P183": {
         "Estación": "E/S ANGAMOS",
@@ -2277,7 +2466,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1127767180148,
         "Longitud": -77.0169830662585,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P180": {
         "Estación": "E/S VILLA EL SALVADOR",
@@ -2289,7 +2479,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.1931460595188,
         "Longitud": -76.9645023152947,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P101": {
         "Estación": "E/S MIGUEL ANGEL",
@@ -2301,7 +2492,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.2238717341667,
         "Longitud": -76.9084075542356,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P112": {
         "Estación": "E/S MARIÁTEGUI",
@@ -2313,7 +2505,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.2207573637512,
         "Longitud": -76.9323977442741,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "P327": {
         "Estación": "E/S ZARATE",
@@ -2325,7 +2518,8 @@
         "Grupo": "COESTI",
         "Latitud": -12.031684196295,
         "Longitud": -77.011883486387,
-        "Símbolo": "fuel"
+        "Símbolo": "fuel",
+        "Código Zona": 2
     },
     "3000606": {
         "Estación": "EMPRESA DE TRANSPORTES NUEVO HORIZONTE",
@@ -2337,7 +2531,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0260193359519,
         "Longitud": -76.9343730517483,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3000859": {
         "Estación": "SERVICENTRO SMILE S.A.",
@@ -2349,7 +2544,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0635976744345,
         "Longitud": -76.9633999157865,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3000680": {
         "Estación": "INVERSIONES JIARA S.A.C.",
@@ -2361,7 +2557,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0694540523049,
         "Longitud": -76.9887054464002,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009233": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2373,7 +2570,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0630662710991,
         "Longitud": -76.9830481617851,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3001413": {
         "Estación": "AUCALLAMAS S.A.C.",
@@ -2385,7 +2583,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.6128444446483,
         "Longitud": -77.2327373877609,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 1
     },
     "3010103": {
         "Estación": "INVERSIONES JIARA S.A.C.",
@@ -2397,7 +2596,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0565702220292,
         "Longitud": -77.0543504114743,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1006917": {
         "Estación": "CHIE S.A.C.",
@@ -2409,7 +2609,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0662299055598,
         "Longitud": -77.0504838463335,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1003098": {
         "Estación": "PETRODEL S.A.C.",
@@ -2421,7 +2622,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9002529807052,
         "Longitud": -77.0368101588949,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1007928": {
         "Estación": "ESTACION SANTA MARIA S.A.C.",
@@ -2433,7 +2635,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.8380274094588,
         "Longitud": -77.0509114889317,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3000652": {
         "Estación": "COOPERATIVA DE SERV. MULTIPLES ALAS",
@@ -2445,7 +2648,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0601112364555,
         "Longitud": -77.0772162660852,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009235": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2457,7 +2661,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0387102405276,
         "Longitud": -77.066279123197,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009241": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2469,7 +2674,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.075613671276,
         "Longitud": -77.0348470861518,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1007251": {
         "Estación": "EMPRESA DE TRANSPORTES APOCALIPSIS",
@@ -2481,7 +2687,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9187239426804,
         "Longitud": -77.0413472218833,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009228": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2493,7 +2700,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9107072665136,
         "Longitud": -77.0555654839786,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1010575": {
         "Estación": "SERVICENTRO MUSA E.I.R.L",
@@ -2505,7 +2713,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0859147346313,
         "Longitud": -76.8922349167872,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1007344": {
         "Estación": "MASTER GAS GNV GLP E.I.R.L.",
@@ -2517,7 +2726,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0758914314964,
         "Longitud": -77.0256444994404,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3000642": {
         "Estación": "ALTA VIDDA GAS S.A.C.",
@@ -2529,7 +2739,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9741054179587,
         "Longitud": -77.0610481835379,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009231": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2541,7 +2752,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.978814931787,
         "Longitud": -77.0725878278068,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009243": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2553,7 +2765,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9522241409701,
         "Longitud": -77.0703900026249,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009245": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2565,7 +2778,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.2594250216789,
         "Longitud": -76.8852017806184,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1002706": {
         "Estación": "GRIFOS TERESA DE CALCUTA S.A.",
@@ -2577,7 +2791,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0844928148657,
         "Longitud": -76.8780557447449,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1010551": {
         "Estación": "ESTACION DE SERVICIO GRECS S.R.L.",
@@ -2589,7 +2804,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.1193462048517,
         "Longitud": -76.8723761847347,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1002736": {
         "Estación": "SERVICENTRO SANTA CECILIA S.A.C.",
@@ -2601,7 +2817,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0724646105176,
         "Longitud": -77.0577880982539,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1003315": {
         "Estación": "GAS POINT S.A.C.",
@@ -2613,7 +2830,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0773426185404,
         "Longitud": -77.0807462710085,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3003815": {
         "Estación": "ESTACION DE SERVICIOS MAYORAZGO S.A.",
@@ -2625,7 +2843,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9130361583745,
         "Longitud": -76.5999014955974,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009226": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2637,7 +2856,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0338019414513,
         "Longitud": -77.0384411479227,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3002730": {
         "Estación": "ALTA VIDDA GAS S.A.C.",
@@ -2649,7 +2869,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9848388352891,
         "Longitud": -76.9948253757076,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3002750": {
         "Estación": "SHIN S.A.C.",
@@ -2661,7 +2882,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9688500347433,
         "Longitud": -77.0023907458785,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009223": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2673,7 +2895,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.946236732857,
         "Longitud": -76.9844589648381,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1002647": {
         "Estación": "EMP. DE TRANSP. UNIDOS DOCE DE NOV.",
@@ -2685,7 +2908,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.1361591519271,
         "Longitud": -76.9612966065755,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3001425": {
         "Estación": "EMP. DE TRANSP. UNIDOS DOCE DE NOV.",
@@ -2697,7 +2921,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.1227764610939,
         "Longitud": -76.9604695489321,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3013263": {
         "Estación": "TRANSLIMA S.A.",
@@ -2709,7 +2934,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9884395593428,
         "Longitud": -77.115349757846,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1006823": {
         "Estación": "ESTACION SANTA RITA S.A.C.",
@@ -2721,7 +2947,8 @@
         "Grupo": "Independientes",
         "Latitud": -11.9892855528592,
         "Longitud": -77.1062968466339,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1007929": {
         "Estación": "SERVICENTRO EL ASESOR S.A.C.",
@@ -2733,7 +2960,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.0377307456563,
         "Longitud": -76.9546123517866,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1007010": {
         "Estación": "ESTACION SAN DIEGO S.A.C.",
@@ -2745,7 +2973,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.2122731654455,
         "Longitud": -76.9645025741834,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009232": {
         "Estación": "TERPEL PERU S.A.C.",
@@ -2757,7 +2986,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.2394374235841,
         "Longitud": -76.9126551249982,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3009165": {
         "Estación": "JEVARO S.A.C.",
@@ -2769,7 +2999,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.231134847276,
         "Longitud": -76.9328734545198,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "3013039": {
         "Estación": "EMPRESA DE TRANSPORTES ESFUERZOS UNIDOS",
@@ -2781,7 +3012,8 @@
         "Grupo": "Independientes",
         "Latitud": -12.134627702855,
         "Longitud": -76.945544316955,
-        "Símbolo": "car"
+        "Símbolo": "car",
+        "Código Zona": 2
     },
     "1000435": {
         "Estación": "ONASA S.R.L.",
@@ -2793,7 +3025,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0282671768318,
         "Longitud": -76.9059510177365,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1012228": {
         "Estación": "APM TERMINALS INLAND SERVICES S.A.",
@@ -2805,7 +3038,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9547292648882,
         "Longitud": -77.1260239792602,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3002847": {
         "Estación": "NEPTUNIA S.A.",
@@ -2817,7 +3051,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9537230523231,
         "Longitud": -77.1308139328003,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3006867": {
         "Estación": "PETRAMAS S.A.C. - CALLAO",
@@ -2829,7 +3064,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9355347769943,
         "Longitud": -77.1266236573043,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3005850": {
         "Estación": "QUIMPAC S.A.",
@@ -2841,7 +3077,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9750035640196,
         "Longitud": -77.1264784859476,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1012144": {
         "Estación": "TRUCKS AND MOTORS DEL PERU S.A.C.",
@@ -2853,7 +3090,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0056682981726,
         "Longitud": -77.1137214687105,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1012504": {
         "Estación": "APM TERMINALS CALLAO S.A.",
@@ -2865,7 +3103,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0522802882151,
         "Longitud": -77.1436094723856,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1015412": {
         "Estación": "NEPTUNIA S.A.",
@@ -2877,7 +3116,8 @@
         "Grupo": "Industria",
         "Latitud": -12.04789282463,
         "Longitud": -77.1199651540473,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1012634": {
         "Estación": "DP WORLD CALLAO S.R.L.",
@@ -2889,7 +3129,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0563689484088,
         "Longitud": -77.1481937683286,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3004821": {
         "Estación": "ALICORP S.A.",
@@ -2901,7 +3142,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0478973279091,
         "Longitud": -77.0943846983154,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "P843": {
         "Estación": "CORPORACIÓN PRIMAX S.A. - RANSA",
@@ -2913,7 +3155,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0208381645576,
         "Longitud": -77.1305410597876,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1000156": {
         "Estación": "PRODUCTOS DE ACERO CASSADO PRODAC S.A.C.",
@@ -2925,7 +3168,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9879820141644,
         "Longitud": -77.1280467166018,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3010105": {
         "Estación": "CONSORCIO CONSTRUCTOR M2 LIMA",
@@ -2937,7 +3181,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0227603282293,
         "Longitud": -77.105385770577,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3004418": {
         "Estación": "BLENDING S.A.C.",
@@ -2949,7 +3194,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0434081795944,
         "Longitud": -77.1369273895475,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3010116": {
         "Estación": "ALICORP S.A.C.",
@@ -2961,7 +3207,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0481915362986,
         "Longitud": -77.0974662594625,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1013034": {
         "Estación": "MOVIL BUS S.A.C.",
@@ -2973,7 +3220,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0415393285888,
         "Longitud": -77.0702817445282,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1012165": {
         "Estación": "TURISMO CIVA S.A.C.",
@@ -2985,7 +3233,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0407771619208,
         "Longitud": -77.041890281048,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "P816": {
         "Estación": "CORPORACIÓN PRIMAX S.A. - MATERIALES",
@@ -2997,7 +3246,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0401142460605,
         "Longitud": -77.0817127530142,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "P817": {
         "Estación": "CORPORACIÓN PRIMAX S.A. - ANCIETA UNI",
@@ -3009,7 +3259,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0379957195267,
         "Longitud": -77.0074097443959,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3010147": {
         "Estación": "UNION DE CONCRETERAS S.A.",
@@ -3021,7 +3272,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0424872277945,
         "Longitud": -77.0117411438134,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1000144": {
         "Estación": "CLUB DE REGATAS LIMA",
@@ -3033,7 +3285,8 @@
         "Grupo": "Industria",
         "Latitud": -12.1671836544998,
         "Longitud": -77.0311812877046,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3004707": {
         "Estación": "FERROCARRIL CENTRAL ANDINO S.A.",
@@ -3045,7 +3298,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9347327662536,
         "Longitud": -76.6916478763134,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3006999": {
         "Estación": "UNION DE CONCRETERAS S.A.",
@@ -3057,7 +3311,8 @@
         "Grupo": "Industria",
         "Latitud": -11.7754684986648,
         "Longitud": -76.9355790255604,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3004916": {
         "Estación": "PETRAMAS S.A.C. - HUAROCHIRI",
@@ -3069,7 +3324,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9320729267387,
         "Longitud": -76.8730762198564,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3000483": {
         "Estación": "CIA MINERA E INDUSTRIAL SAGITARIO",
@@ -3081,7 +3337,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0016105749476,
         "Longitud": -76.9277769402049,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3013580": {
         "Estación": "CHEMTRADE S.A.C.",
@@ -3093,7 +3350,8 @@
         "Grupo": "Industria",
         "Latitud": -10.8887373980359,
         "Longitud": -77.6747199505833,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 1
     },
     "3004771": {
         "Estación": "QUIMPAC S.A.",
@@ -3105,7 +3363,8 @@
         "Grupo": "Industria",
         "Latitud": -11.2963178796148,
         "Longitud": -77.5760835838544,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 1
     },
     "3004794": {
         "Estación": "FAMESA EXPLOSIVOS S.A.C.",
@@ -3117,7 +3376,8 @@
         "Grupo": "Industria",
         "Latitud": -11.5620699762589,
         "Longitud": -77.2210773060408,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 1
     },
     "1012160": {
         "Estación": "EMP. DE TRANSPORTES TURISTICO OLANO",
@@ -3129,7 +3389,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0660972252463,
         "Longitud": -77.0216303468101,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "P822": {
         "Estación": "CORPORACIÓN PRIMAX S.A. - CONCREMAX",
@@ -3141,7 +3402,8 @@
         "Grupo": "Industria",
         "Latitud": -12.2782550503719,
         "Longitud": -76.8274754023034,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1011958": {
         "Estación": "COORDINAC Y TRANSMISORES INTEGRADOS",
@@ -3153,7 +3415,8 @@
         "Grupo": "Industria",
         "Latitud": -12.125884867713,
         "Longitud": -76.872457280223,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1011799": {
         "Estación": "JOCKEY CLUB DEL PERU",
@@ -3165,7 +3428,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0925212750508,
         "Longitud": -76.9787767339629,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "P831": {
         "Estación": "CORPORACIÓN PRIMAX S.A. - PARAMONGA",
@@ -3177,7 +3441,8 @@
         "Grupo": "Industria",
         "Latitud": -10.6741262781705,
         "Longitud": -77.8208647428894,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 1
     },
     "3003375": {
         "Estación": "TRANSPORTES NACIONALES S.A.",
@@ -3189,7 +3454,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0185804491905,
         "Longitud": -76.9154817422143,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "P818": {
         "Estación": "CORPORACIÓN PRIMAX S.A. - COLLIQUE",
@@ -3201,7 +3467,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9221194098194,
         "Longitud": -77.0725300701209,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1001147": {
         "Estación": "SERVICIOS GENERALES SATURNO S.A.",
@@ -3213,7 +3480,8 @@
         "Grupo": "Industria",
         "Latitud": -12.4584129695089,
         "Longitud": -76.7540592658179,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3005032": {
         "Estación": "TRANSP. Y SERV. GENER. JOSELITO S.A.",
@@ -3225,7 +3493,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9139465830961,
         "Longitud": -77.0743607140417,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1012205": {
         "Estación": "INMOBILIARIA E INVERS. SAN FERNANDO",
@@ -3237,7 +3506,8 @@
         "Grupo": "Industria",
         "Latitud": -11.8567794879488,
         "Longitud": -77.0545155800828,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3010195": {
         "Estación": "FAMESA EXPLOSIVOS S.A.C.",
@@ -3249,7 +3519,8 @@
         "Grupo": "Industria",
         "Latitud": -11.8876020763209,
         "Longitud": -77.0761027428197,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3005031": {
         "Estación": "CERAMICOS PERUANOS S.A.",
@@ -3261,7 +3532,8 @@
         "Grupo": "Industria",
         "Latitud": -11.8450739490435,
         "Longitud": -77.0609037519167,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "P815": {
         "Estación": "CORPORACIÓN PRIMAX S.A. - SAN JUAN",
@@ -3273,7 +3545,8 @@
         "Grupo": "Industria",
         "Latitud": -12.1466370518367,
         "Longitud": -76.9795452373723,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3008054": {
         "Estación": "TRANSMAR EXPRESS S.A.C.",
@@ -3285,7 +3558,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0616347196059,
         "Longitud": -77.0045697203256,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1013243": {
         "Estación": "TRANSPORTES CRUZ DEL SUR S.A.C.",
@@ -3297,7 +3571,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0545534886077,
         "Longitud": -76.9706763612822,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3007124": {
         "Estación": "UNION DE CONCRETERAS S.A.",
@@ -3309,7 +3584,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0459313061268,
         "Longitud": -76.9509621343827,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "1010846": {
         "Estación": "EMPRESA DE TRANSPORTES GOCARIVE 19",
@@ -3321,7 +3597,8 @@
         "Grupo": "Industria",
         "Latitud": -12.0392738855888,
         "Longitud": -76.8789466050834,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3014038": {
         "Estación": "TERMINALES PORTUARIOS PERUANOS S.A.C.",
@@ -3333,7 +3610,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9521274354389,
         "Longitud": -77.1286477261683,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3010191": {
         "Estación": "CUPRICA S.A.C.",
@@ -3345,7 +3623,8 @@
         "Grupo": "Industria",
         "Latitud": -11.8621277056029,
         "Longitud": -77.1255153416225,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3004927": {
         "Estación": "CONCREMAX S.A.",
@@ -3357,7 +3636,8 @@
         "Grupo": "Industria",
         "Latitud": -12.2129239499062,
         "Longitud": -76.9713770302586,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "3009902": {
         "Estación": "UNION DE CONCRETERAS S.A.",
@@ -3369,7 +3649,8 @@
         "Grupo": "Industria",
         "Latitud": -11.9613478750774,
         "Longitud": -76.8945806028277,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     },
     "P836": {
         "Estación": "CORPORACIÓN PRIMAX S.A. - S.L.A.",
@@ -3381,6 +3662,7 @@
         "Grupo": "Industria",
         "Latitud": -12.2619413594799,
         "Longitud": -76.81869608748,
-        "Símbolo": "town-hall"
+        "Símbolo": "town-hall",
+        "Código Zona": 2
     }
 }
