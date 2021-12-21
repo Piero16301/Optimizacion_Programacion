@@ -301,8 +301,12 @@ class ProcesamientoRutas:
 
             estacionesPorUnidades = copy.deepcopy(estacionesPorUnidadesTemporal)
 
-            # Se agrega estacion a Estaciones Abastecidas
+            # Se agrega estación a Estaciones Abastecidas
             estacionesAbastecidas.append(self.recorridoGlobal[i])
+
+        # Si no se puede abastecer a ninguna estación más, se termina la distribución
+        if len(estacionesAbastecidas) == 0:
+            return True
 
         # Se eliminan estaciones abastecidas del recorrido global
         for e in estacionesAbastecidas:
